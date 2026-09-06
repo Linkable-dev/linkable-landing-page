@@ -49,6 +49,27 @@ def resolve_links(t, page_url):
         return m.group(0)
     return re.sub(r'href="([^"]*)"', fix, t)
 
+LINK_FIXES = {  # visible button text -> (href, target)
+    'Log In': ('https://app.linkable.link/auth/login', '_blank'),
+    'Sign Up': ('https://apps.shopify.com/linkable-1', '_blank'),
+    'Start free trial': ('https://apps.shopify.com/linkable-1', '_blank'),
+    'Start for free': ('https://apps.shopify.com/linkable-1', '_blank'),
+}
+
+def fix_missing_hrefs(t):
+    def fix(m):
+        tag = m.group(0)
+        if 'href=' in tag:
+            return tag
+        rest = t[m.end():m.end() + 3000]
+        rest = rest[:rest.find('</a>')]
+        text = re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', rest)).strip()
+        if text in LINK_FIXES:
+            href, target = LINK_FIXES[text]
+            return tag[:-1] + f' href="{href}" target="{target}" rel="noopener">'
+        return tag
+    return re.sub(r'<a\b[^>]*>', fix, t)
+
 def convert(src, page_url):
     t = open(src, encoding='utf-8').read()
     # --- head cleanup -------------------------------------------------------
@@ -79,6 +100,10 @@ def convert(src, page_url):
     # --- assets & links -----------------------------------------------------
     t = localize_assets(t)
     t = resolve_links(t, page_url)
+    # --- link fixes ---------------------------------------------------------
+    # Some CTA buttons were exported by Framer without an href (the live site
+    # has the same bug). Give them the target their siblings use.
+    t = fix_missing_hrefs(t)
     # --- our runtime --------------------------------------------------------
     t = t.replace('</head>', '    <link rel="stylesheet" href="/src/site.css">\n    <script type="module" src="/src/main.js"></script>\n</head>')
     t = t.replace('</body>', SVG_SPRITE + '\n</body>')
