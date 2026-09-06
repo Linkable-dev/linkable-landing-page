@@ -1,0 +1,77 @@
+/* Native runtime styles replacing the Framer JS behaviours. */
+
+/* --- scroll-in appear animation ---------------------------------------- */
+.lk-appear {
+  transition: opacity 0.6s cubic-bezier(0.25, 0.1, 0.25, 1), transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+@media (prefers-reduced-motion: reduce) {
+  .lk-appear { transition: none; }
+}
+
+/* --- button label opacity settles at 1 once hydrated ------------------- */
+[data-framer-name="Button label"][style*="opacity:0.9"] { opacity: 1 !important; }
+
+/* --- pulsing status dot ------------------------------------------------- */
+@keyframes lk-pulse {
+  0%   { transform: scale(1);   opacity: 0.64; }
+  100% { transform: scale(6);   opacity: 0; }
+}
+[data-framer-name="Dot"] > [data-framer-name="Pulser"] {
+  animation: lk-pulse 2s cubic-bezier(0.2, 0.6, 0.4, 1) infinite;
+}
+
+/* --- hover states (values captured from the live site) ----------------- */
+[data-highlight="true"], [data-highlight="true"] [data-framer-name="Icon"], [data-framer-name="Icon"] > div,
+.framer-8xZRi, .framer-8xZRi > div {
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+/* primary (dark) buttons */
+a[data-highlight="true"][style*="background-color:rgb(35, 35, 35)"]:hover,
+a[data-highlight="true"][style*="background-color:var(--token-5886e9fd-2bbf-4eac-99db-e48c08846d5f, rgb(35, 35, 35))"]:hover,
+button[data-reset="button"][style*="rgb(21, 22, 25)"]:hover {
+  background-color: rgb(41, 43, 50) !important;
+}
+/* secondary (white) buttons: border appears, background tints */
+a[data-highlight="true"][data-border="true"][style*="--border-top-width:0px"][style*="rgb(255, 255, 255)"]:hover {
+  --border-top-width: 1px !important;
+  --border-right-width: 1px !important;
+  --border-bottom-width: 1px !important;
+  --border-left-width: 1px !important;
+  background-color: rgb(248, 250, 252) !important;
+}
+a[data-highlight="true"][data-border="true"][style*="--border-top-width:1px"][style*="--border-color:var(--token-5cf59a88"]:hover {
+  --border-color: rgb(217, 223, 232) !important;
+  background-color: rgb(248, 250, 252) !important;
+}
+/* nav items (dark pill navbar) */
+a[data-framer-name="Desktop - Inverted"]:hover { background-color: rgba(241, 242, 244, 0.06) !important; }
+a[data-framer-name="Desktop - Inverted"]:hover [data-framer-name="nav item"] { --extracted-r6o4lv: rgb(255, 255, 255) !important; }
+a[data-framer-name="Mobile - Default"]:hover { background-color: rgb(246, 247, 248) !important; }
+/* hamburger */
+.framer-8xZRi:hover { background-color: rgb(238, 239, 242) !important; }
+/* FAQ row */
+[data-framer-name="Question"] { cursor: pointer; }
+[data-framer-name="Question"]:hover [data-framer-name="Icon"] { background-color: rgb(255, 255, 255) !important; }
+[data-framer-name="Question"]:hover [data-framer-name="Icon"] > div > div { background-color: rgb(18, 20, 25) !important; }
+[data-framer-name="Question"] [data-framer-name="Icon"] > div > div { transition: transform 0.3s ease, background-color 0.25s ease; }
+[data-framer-name="Answer"] { transition: opacity 0.3s ease, height 0.3s ease; }
+.lk-faq { transition: gap 0.3s ease; }
+
+/* --- slideshows ---------------------------------------------------------- */
+.lk-slides { transition: transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.lk-slides.lk-no-transition { transition: none; }
+.lk-slides > li > div { transition: transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1); visibility: visible !important; }
+
+/* --- how-it-works progress bar ------------------------------------------ */
+[data-framer-name="progress"] > div { transition: transform 0.15s linear; }
+
+/* --- mobile menu -------------------------------------------------------- */
+.lk-menu-open .framer-10v9w5w { transition: background-color 0.3s ease, box-shadow 0.3s ease; }
+.framer-10v9w5w { transition: background-color 0.3s ease, box-shadow 0.3s ease, height 0.35s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.framer-8xZRi > [data-framer-name="Line"] { transition: transform 0.3s ease, opacity 0.2s ease, background-color 0.25s ease; }
+body.lk-menu-locked { overflow: hidden; }
+
+/* --- forms ---------------------------------------------------------------- */
+.lk-form-message { font: 500 14px/20px "Satoshi", "Satoshi Placeholder", sans-serif; color: rgb(35, 35, 35); padding: 12px 0 0; width: 100%; }
+.lk-form-message[data-state="error"] { color: rgb(220, 38, 38); }
+form[data-lk-busy] button[type="submit"] { opacity: 0.6; pointer-events: none; }
