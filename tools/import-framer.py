@@ -37,7 +37,9 @@ def localize_assets(t):
     return t
 
 def resolve_links(t, page_url):
-    base = page_url if page_url.endswith('/') else page_url + '/'
+    # Standard URL semantics: relative links resolve against the page's directory
+    # (/pricing -> /, /legal/privacy-policy -> /legal/, /blog/post -> /blog/).
+    base = page_url.rsplit('/', 1)[0] + '/'
     def fix(m):
         href = m.group(1)
         if href.startswith('./') or href.startswith('../'):
