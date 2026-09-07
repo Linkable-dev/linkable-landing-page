@@ -54,6 +54,7 @@ LINK_FIXES = {  # visible button text -> (href, target)
     'Sign Up': ('https://apps.shopify.com/linkable-1', '_blank'),
     'Start free trial': ('https://apps.shopify.com/linkable-1', '_blank'),
     'Start for free': ('https://apps.shopify.com/linkable-1', '_blank'),
+    'Get started': ('https://apps.shopify.com/linkable-1', '_blank'),
 }
 
 def fix_missing_hrefs(t):

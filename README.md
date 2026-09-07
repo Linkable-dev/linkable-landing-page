@@ -46,8 +46,8 @@ the forms fall back to opening the visitor's mail client, addressed to `FALLBACK
 
 ## Re-importing from Framer
 
-Note: since the Sep 6, 2026 republish Framer serves four older blog posts client-side only (empty server HTML).
-Their pages here were rebuilt from the previous full snapshots with the updated shared header.
+Note: since the Sep 6, 2026 republish Framer serves three older blog posts client-side only (empty server HTML).
+Their pages here were rebuilt from the previous full snapshots with the current shared header and footer.
 
 `tools/import-framer.py` converts fresh snapshots of the Framer site into these pages: it strips the Framer runtime,
 localises every asset via `tools/assetmap.json`, resolves internal links and injects the SVG icon sprite
