@@ -40,9 +40,19 @@ Vite: build command `vite build`, output directory `dist`.
 
 ## Forms
 
-Framer used to receive form submissions server-side. Set `VITE_FORM_ENDPOINT` (for example a Vercel function or
-Formspree URL) and the forms will POST JSON `{ ...fields, form: "contact" | "newsletter", page }` there. Without it
-the forms fall back to opening the visitor's mail client, addressed to `FALLBACK_MAILTO` in `src/config.js`.
+The contact form and the newsletter box POST to `api/form.js`, a Vercel serverless function that emails each
+submission to `federico@linkable.link` (override with the `FORM_TO` environment variable). The function sends
+through SMTP and needs these variables in the Vercel project (Settings → Environment Variables):
+
+| Variable | Value |
+| --- | --- |
+| `SMTP_USER` | the sending mailbox, e.g. `federico@linkable.link` |
+| `SMTP_PASS` | its password; for Google Workspace create an App Password (Google Account → Security → 2-Step Verification → App passwords) |
+| `SMTP_HOST` / `SMTP_PORT` | optional, default `smtp.gmail.com` / `465` |
+
+Until those are set the function answers 503 and the page falls back to opening the visitor's mail client,
+addressed to `federico@linkable.link`. To use another backend instead, set `VITE_FORM_ENDPOINT` at build time
+(the forms POST JSON `{ ...fields, form: "contact" | "newsletter", page }`).
 
 ## Re-importing from Framer
 

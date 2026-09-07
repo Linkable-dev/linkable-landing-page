@@ -324,15 +324,16 @@ function initForms() {
         msg.dataset.state = state;
       };
       if (trap) return say('Thanks!', 'ok');
-      if (!FORM_ENDPOINT) {
+      const mailto = () => {
         const subject = isNewsletter ? 'Newsletter subscription' : 'Contact request from linkable.link';
         const body = Object.entries(data)
-          .filter(([k]) => !/^(website|company|message|subject|title|description|feedback|notes|comment|url|link|honeypot)$/.test(k) || /[A-Z]/.test(k))
+          .filter(([k, v]) => /^[A-Z]/.test(k) && String(v).trim())
           .map(([k, v]) => `${k}: ${v}`)
           .join('\n');
         location.href = `mailto:${FALLBACK_MAILTO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        return say('Opening your mail client…', 'ok');
-      }
+        say('Opening your mail client…', 'ok');
+      };
+      if (!FORM_ENDPOINT) return mailto();
       form.setAttribute('data-lk-busy', '');
       try {
         const res = await fetch(FORM_ENDPOINT, {
@@ -344,7 +345,8 @@ function initForms() {
         form.reset();
         say(isNewsletter ? 'You are subscribed. Thanks!' : 'Message sent. We will get back to you shortly.', 'ok');
       } catch (err) {
-        say('Something went wrong. Please try again or email ' + FALLBACK_MAILTO + '.', 'error');
+        // Endpoint unreachable or not configured: hand over to the mail client.
+        mailto();
       } finally {
         form.removeAttribute('data-lk-busy');
       }

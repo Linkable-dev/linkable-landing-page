@@ -1,6 +1,6 @@
 // Endpoint that receives form submissions (contact form + newsletter).
-// Framer used to handle these server-side; point this at your own API,
-// a Vercel function, or a service such as Formspree. Leave empty to
-// fall back to opening the visitor's mail client.
-export const FORM_ENDPOINT = import.meta.env.VITE_FORM_ENDPOINT || '';
-export const FALLBACK_MAILTO = 'support@linkable.link'; // address used on the live site
+// Defaults to the Vercel function in api/form.js, which emails them to
+// federico@linkable.link (see README for the SMTP variables it needs).
+export const FORM_ENDPOINT = import.meta.env.VITE_FORM_ENDPOINT ?? '/api/form';
+// Used when the endpoint is unavailable: opens the visitor's mail client.
+export const FALLBACK_MAILTO = 'federico@linkable.link';
