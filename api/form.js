@@ -1,9 +1,8 @@
 // Vercel serverless function: receives the contact / newsletter form
-// submissions and emails them. Configure SMTP_USER and SMTP_PASS in the
-// Vercel project (for Google Workspace: the mailbox and an App Password).
-import nodemailer from 'nodemailer';
-
+// submissions and emails them through Resend (RESEND_API_KEY in the
+// Vercel project; the linkable.link domain is verified there).
 const TO = process.env.FORM_TO || 'federico@linkable.link';
+const FROM = process.env.FORM_FROM || 'Linkable website <noreply@linkable.link>';
 const HONEYPOT = ['website', 'company', 'message', 'subject', 'title', 'description', 'feedback', 'notes'];
 
 export default async function handler(req, res) {
@@ -22,27 +21,29 @@ export default async function handler(req, res) {
 
   const fields = Object.entries(body)
     .filter(([k, v]) => /^[A-Z]/.test(k) && String(v).trim())
-    .map(([k, v]) => `${k}: ${String(v).trim()}`);
-  fields.push(`Page: ${body.page || ''}`);
+    .map(([k, v]) => `${k}: ${String(v).trim().slice(0, 5000)}`);
+  fields.push(`Page: ${String(body.page || '').slice(0, 200)}`);
 
-  const { SMTP_USER, SMTP_PASS, SMTP_HOST = 'smtp.gmail.com', SMTP_PORT = '465' } = process.env;
-  if (!SMTP_USER || !SMTP_PASS) return res.status(503).json({ error: 'Email delivery is not configured' });
+  if (!process.env.RESEND_API_KEY) return res.status(503).json({ error: 'Email delivery is not configured' });
 
-  const transport = nodemailer.createTransport({
-    host: SMTP_HOST,
-    port: Number(SMTP_PORT),
-    secure: Number(SMTP_PORT) === 465,
-    auth: { user: SMTP_USER, pass: SMTP_PASS },
-  });
   try {
-    await transport.sendMail({
-      from: `"Linkable website" <${SMTP_USER}>`,
-      to: TO,
-      replyTo: email,
-      subject: form === 'newsletter' ? `Newsletter signup: ${email}` : `Contact request from ${body.Name || email}`,
-      text: fields.join('\n'),
+    const r = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${process.env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        from: FROM,
+        to: [TO],
+        reply_to: email,
+        subject: form === 'newsletter' ? `Newsletter signup: ${email}` : `Contact request from ${body.Name || email}`,
+        text: fields.join('\n'),
+      }),
     });
-    return res.status(200).json({ ok: true });
+    const out = await r.json().catch(() => ({}));
+    if (!r.ok) {
+      console.error('resend error', r.status, out);
+      return res.status(502).json({ error: 'Could not send the message' });
+    }
+    return res.status(200).json({ ok: true, id: out.id });
   } catch (err) {
     console.error('form email failed', err);
     return res.status(502).json({ error: 'Could not send the message' });
