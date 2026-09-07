@@ -7,6 +7,11 @@ const HONEYPOT = ['website', 'company', 'message', 'subject', 'title', 'descript
 
 export default async function handler(req, res) {
   res.setHeader('Cache-Control', 'no-store');
+  if (req.method === 'GET') {
+    // Diagnostic: which delivery-related variables exist (names only).
+    const names = Object.keys(process.env).filter((k) => /^(RESEND|FORM)/i.test(k));
+    return res.status(200).json({ configured: Boolean(process.env.RESEND_API_KEY), env: process.env.VERCEL_ENV || null, names });
+  }
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
   const body = typeof req.body === 'string' ? safeJson(req.body) : req.body || {};
