@@ -11,9 +11,11 @@ replaced by a small native script (`src/main.js`).
 | `/` | `index.html` |
 | `/pricing`, `/creators`, `/contact`, `/blog` | `<route>/index.html` |
 | `/legal/privacy-policy`, `/legal/terms-of-service` | `legal/<slug>/index.html` |
-| `/blog/<slug>` (5 posts) | `blog/<slug>/index.html` |
+| `/blog/<slug>` (6 posts) | `blog/<slug>/index.html` |
+| not-found page | `404.html` (served by Vercel for unknown routes) |
 
-All media lives in `public/assets/images` and every font in `public/assets/fonts`.
+All media lives in `public/assets/images` and every font in `public/assets/fonts`. `public/sitemap.xml` and
+`public/robots.txt` list the public pages; update the sitemap when adding a page.
 
 ## Develop / build
 

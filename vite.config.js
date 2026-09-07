@@ -11,6 +11,7 @@ function findPages(dir, base = '') {
     if (statSync(full).isDirectory()) Object.assign(pages, findPages(full, base ? `${base}/${name}` : name));
   }
   if (existsSync(resolve(dir, 'index.html'))) pages[base || 'index'] = resolve(dir, 'index.html');
+  if (!base && existsSync(resolve(dir, '404.html'))) pages['404'] = resolve(dir, '404.html'); // Vercel's custom not-found page
   return pages;
 }
 

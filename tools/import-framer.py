@@ -25,7 +25,11 @@ PAGES = {  # snapshot file -> site url path
     'page_blog_leaked-discount-codes.html': '/blog/leaked-discount-codes',
     'page_blog_onboard-first-creators.html': '/blog/onboard-first-creators',
     'page_blog_tiktok-shop-vs-driving-traffic-to-shopify.html': '/blog/tiktok-shop-vs-driving-traffic-to-shopify',
+    'page_blog_creator-partnerships-that-sell.html': '/blog/creator-partnerships-that-sell',
+    'page_404.html': '/404',
 }
+# Pages written somewhere other than <url>/index.html (Vercel serves 404.html for unknown routes).
+OUTPUT_OVERRIDE = {'/404': '404.html'}
 
 # longest URLs first so "x.png?scale-down-to=512" wins over "x.png"
 URLS = sorted(ASSETMAP, key=len, reverse=True)
@@ -115,7 +119,7 @@ for f, url in PAGES.items():
     src = os.path.join(SNAP, f)
     if not os.path.exists(src):
         print('missing', src); continue
-    out = os.path.join(ROOT, url.strip('/'), 'index.html') if url != '/' else os.path.join(ROOT, 'index.html')
+    out = os.path.join(ROOT, OUTPUT_OVERRIDE.get(url, 'index.html' if url == '/' else url.strip('/') + '/index.html'))
     os.makedirs(os.path.dirname(out), exist_ok=True)
     result = convert(src, url)
     open(out, 'w', encoding='utf-8').write(result)
