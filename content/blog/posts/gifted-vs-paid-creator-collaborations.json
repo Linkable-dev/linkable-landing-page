@@ -1,0 +1,132 @@
+{
+  "blocks": [
+    {
+      "text": "You have a shortlist of creators, a product worth showing off, and a budget that will not stretch to paying everyone a fee. So you default to sending free product and hoping for the best. Sometimes that works. Sometimes you get one story and silence.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "When is gifted enough for a creator collaboration?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Gifted is enough when the creator is smaller, the product is easy to show and use on camera, and you are testing whether the creator likes your brand at all. It is a low-risk way to get content and see how someone talks about your product before you commit any cash. For skincare, coffee, snacks, or small accessories, a single free item is often reason enough for a creator to film something.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Gifted collaborations also suit volume. If you want a wide spread of content from many creators rather than a big push from a few, sending product to dozens of people costs less than paying each one a fee. This is the model most brands use to get their first wave of content moving, and it is what we walk through in [the creator activation playbook](/blog/creator-activation-playbook).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "The catch is that gifted only works when the ask is small. One post, one story, maybe a link in bio. Ask a creator for a full video series, usage rights, or a posting schedule on top of a free product, and most will either decline or produce something rushed.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "When should you add a fee?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Add a fee when you need certainty: a guaranteed post by a set date, a specific format, usage rights for your ads, or access to a creator whose audience is big enough that their time has real value. Paid collaboration is the right call once you are relying on a creator's output for a launch, a paid ad, or a seasonal push where a missed deadline actually costs you something.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "It is also the right call for creators who get pitched constantly. A creator with a sizeable, engaged following has plenty of gifted offers in their inbox already. If you want their attention and their best work, a fixed fee says you are serious.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Say you run an activewear brand and a creator with a modest but loyal following posts a great gifted video of your leggings that quietly drives more tagged sales than anything else that month. That is the moment to reach out with a fee for a second, planned piece, rather than hoping they gift you another one for free.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you move a creator from gifted to paid without overpaying?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Move a creator from gifted to paid only after they have already produced something that worked, and base the fee on that evidence rather than on their follower count. A creator who sends you one so-so photo does not automatically deserve a fee next time just because they posted once.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "A practical sequence looks like this:",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": null,
+      "type": "ol",
+      "items": [
+        "Start every new creator on gifted product with a clear, small ask (one post, one story).",
+        "Watch what they actually deliver: content quality, whether they post on time, and whether it drove clicks or tracked sales.",
+        "For the ones who performed, offer a paid or affiliate deal for the next piece, tied to a specific deliverable and date.",
+        "Keep the fee proportional to what the last piece produced, not to their follower count."
+      ]
+    },
+    {
+      "text": "This is where affiliate commission earns its place. Instead of a flat fee, you can offer a creator a percentage on tracked sales through their own link or discount code. It rewards creators who actually sell, and it protects you from paying a fixed fee for content that does not convert. If you are worried about codes leaking outside the creators you agreed to work with, read [our piece on uncontrolled discount codes](/blog/leaked-discount-codes) before you roll this out widely.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Mixing the three models in one campaign",
+      "type": "h3",
+      "items": null
+    },
+    {
+      "text": "You do not have to pick one model for your whole roster. A single campaign can run gifted product for new creators you are testing, paid fees for a handful of proven performers, and affiliate commission for anyone who wants to earn ongoing income from sales they drive. [Linkable](/pricing) supports gifted, paid and affiliate campaigns in the same account, with orders and payouts handled through your Shopify catalogue, so you are not managing three separate spreadsheets to track who gets what.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What does this look like in practice?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Picture a coffee brand doing 150 orders a month. They send free bags to fifteen creators picked through [creator discovery](/blog/how-to-find-creators-shopify-brand), most under 10,000 followers. Twelve post something, three of those posts clearly drive orders through a tracked link. The brand offers those three an affiliate deal for the next three months instead of more gifted product, and reserves a small paid fee for one creator whose audience size justifies a guaranteed feature ahead of a seasonal launch. Everyone else stays on gifted while the brand keeps testing new names.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "That structure costs very little upfront, pays real money only where sales are proven, and keeps a paid slot for the one creator worth locking in early.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "If you are setting this up for the first time, [launching your first campaign](/blog/launch-campaign-linkable) with a gifted tier and an affiliate tier side by side is the fastest way to see which creators are worth paying, without committing a fee budget before you have any data.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This week, sort your current creator list into three groups: those who have delivered nothing yet, those who posted something decent, and those who clearly moved sales. Keep the first group on gifted, offer the second an affiliate link, and put a real fee in front of the third before someone else does.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Yes, and it is common once a creator has an established audience. If their rates are outside your budget, offer affiliate commission as a middle ground so they can earn based on what they actually sell.",
+      "q": "Can a creator refuse gifted product and ask for payment instead?"
+    },
+    {
+      "a": "Not entirely, but most new brands get more value from starting gifted and reserving paid fees for the few creators who prove they can produce and sell. This avoids spending fee budget before you know who performs.",
+      "q": "Should new brands avoid paid collaborations altogether at first?"
+    },
+    {
+      "a": "A short written agreement is worth having even for gifted collaborations, covering what you expect (one post, a timeframe, any usage rights). It avoids confusion later if you want to reuse the content in ads.",
+      "q": "Does gifted product need a written agreement?"
+    },
+    {
+      "a": "Give each gifted creator a unique discount code or tracked link so any resulting orders are attributed to them specifically. Without this, you are guessing which gifted posts are worth upgrading to paid.",
+      "q": "How do you track whether a gifted post actually drove sales?"
+    }
+  ]
+}

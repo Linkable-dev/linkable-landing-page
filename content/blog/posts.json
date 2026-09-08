@@ -114,5 +114,55 @@
     "category": "Sourcing",
     "readMinutes": 7,
     "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
+      "id": 6958455,
+      "alt": "A person unboxes a small item from a cardboard package filled with crinkle paper, indoors.",
+      "src": "https://images.pexels.com/photos/6958455/pexels-photo-6958455.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/man-unpacking-a-package-6958455/",
+      "query": "creator unboxing product package",
+      "width": 6720,
+      "credit": {
+        "url": "https://www.pexels.com/@karola-g",
+        "name": "https://kaboompics.com/"
+      },
+      "height": 4480,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/6958455/pexels-photo-6958455.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/6958455/pexels-photo-6958455.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/gifted-vs-paid-creator-collaborations-6958455-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/gifted-vs-paid-creator-collaborations-6958455-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "gifted-vs-paid-creator-collaborations",
+    "title": "Gifted vs paid creator collaborations: which do you need",
+    "description": "Gifted vs paid creator collaborations explained: when free product works, when to pay, and how to move a creator up without overpaying.",
+    "excerpt": "A guide to deciding between gifted product and paid fees for creator collaborations, plus how to graduate a creator from one to the other without wasting budget.",
+    "date": "2026-09-08",
+    "updated": "2026-09-08",
+    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
+    "imageAlt": "A person unboxes a small item from a cardboard package filled with crinkle paper, indoors.",
+    "words": 949,
+    "source": "generated",
+    "keyword": "gifted vs paid creator collaborations",
+    "category": "Strategy",
+    "readMinutes": 5,
+    "author": "Linkable Team"
   }
 ]
