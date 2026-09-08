@@ -1,10 +1,12 @@
 name: Blog sync
 
-# Renders the articles stored in the blog database into the site. Runs every
-# two hours, when the ops app asks for it (repository_dispatch), or manually.
+# Renders the articles stored in the blog database into the site.
+# Every 10 minutes a cheap check compares the database fingerprint with the
+# last synced state and exits early when nothing changed; the full render
+# runs only on changes, on a repository_dispatch from the ops app, or manually.
 on:
   schedule:
-    - cron: "15 */2 * * *"
+    - cron: "*/10 * * * *"
   repository_dispatch:
     types: [blog-publish]
   workflow_dispatch:
@@ -21,19 +23,39 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Check for changes
+        id: check
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then echo "changed=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+          latest=$(curl -sf "$SUPABASE_URL/rest/v1/blog_posts?status=eq.published&source=neq.framer&select=updated_at&order=updated_at.desc&limit=1" \
+            -H "apikey: $SUPABASE_SERVICE_ROLE_KEY" -H "Authorization: Bearer $SUPABASE_SERVICE_ROLE_KEY" | python3 -c 'import json,sys;d=json.load(sys.stdin);print(d[0]["updated_at"] if d else "")')
+          count=$(curl -sfI "$SUPABASE_URL/rest/v1/blog_posts?status=eq.published&source=neq.framer&select=id" \
+            -H "apikey: $SUPABASE_SERVICE_ROLE_KEY" -H "Authorization: Bearer $SUPABASE_SERVICE_ROLE_KEY" -H "Prefer: count=exact" -H "Range: 0-0" | tr -d '\r' | awk -F'/' 'tolower($0) ~ /^content-range/ {print $2}')
+          state_latest=$(python3 -c 'import json;d=json.load(open("content/blog/sync-state.json"));print(d.get("latest") or "")' 2>/dev/null || echo "")
+          state_count=$(python3 -c 'import json;d=json.load(open("content/blog/sync-state.json"));print(d.get("published"))' 2>/dev/null || echo "")
+          echo "db: $count published, latest $latest | synced: $state_count, $state_latest"
+          if [ "$latest" = "$state_latest" ] && [ "$count" = "$state_count" ]; then echo "changed=false" >> "$GITHUB_OUTPUT"; else echo "changed=true" >> "$GITHUB_OUTPUT"; fi
       - uses: actions/setup-node@v4
+        if: steps.check.outputs.changed == 'true'
         with:
           node-version: 24
           cache: npm
       - run: npm ci
+        if: steps.check.outputs.changed == 'true'
       - name: Render published articles
+        if: steps.check.outputs.changed == 'true'
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: node tools/blog/sync.mjs
       - name: Build check
+        if: steps.check.outputs.changed == 'true'
         run: npm run build
       - name: Commit and push
+        if: steps.check.outputs.changed == 'true'
         run: |
           git config user.name "linkable-blog-bot"
           git config user.email "blog-bot@linkable.link"

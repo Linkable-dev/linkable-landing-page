@@ -75,4 +75,6 @@ const sm = path.join(ROOT, 'public', 'sitemap.xml');
 let xml = fs.readFileSync(sm, 'utf8');
 for (const slug of before) if (!now.has(slug)) xml = xml.replace(new RegExp(`  <url><loc>https://www.linkable.link/blog/${slug}</loc>[^\\n]*\\n`), '');
 fs.writeFileSync(sm, xml);
+// State fingerprint used by the workflow's change check (see blog-sync.yml).
+writeJson(path.join(CONTENT, 'sync-state.json'), { published: rows.length, latest: rows.map((r) => r.updated_at).sort().pop() || null, syncedAt: new Date().toISOString() });
 console.log(`synced ${generated.length} published article(s): ${generated.map((p) => p.slug).join(', ') || 'none'}`);

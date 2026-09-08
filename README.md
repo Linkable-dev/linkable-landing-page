@@ -69,6 +69,8 @@ Linkable Ops app (Blog section), which also writes one AI-drafted article per da
   the pages offline (the Framer importer calls it, since re-importing overwrites `blog/index.html`).
 - Hero images: a per-article stock photo chosen in the ops app (downloaded into `public/assets/blog` by the sync, with a
   credit line under the hero), falling back to `content/blog/images.json` (on-brand photos by asset id).
+- The sync workflow polls the database every 10 minutes with a two-request fingerprint check (`content/blog/sync-state.json`)
+  and only renders when something changed, so edits go live within about 10 minutes even without a GitHub token.
 - The blog index shows 9 cards (newest in the wide slot); further pages are pre-rendered as `public/blog-cards/<n>.json`
   and appended by the "Load More" button, which stays hidden when there is nothing more. Framer's own cards are cached in
   `content/blog/framer-cards.json` when a fresh import is detected.
