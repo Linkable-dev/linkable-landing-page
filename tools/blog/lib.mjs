@@ -260,7 +260,16 @@ export function injectIndexCards(posts) {
   });
 
   const all = [...generated, ...cache.cards].sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
-  if (all.length) all[0] = { ...all[0], html: withSpan(all[0].html, cache.wideStyle) };
+  // Latest article: full-width hero card using the component's horizontal
+  // variant (image left, text right). Framer's own layout left a gap next to
+  // its two-column card; spanning the whole row avoids that. site.css stacks
+  // it vertically on phones.
+  if (all.length) {
+    let hero = withSpan(all[0].html, '--1q1styz:span 3;--1xlim7f:span 2;--7ad6xv:span 1');
+    hero = hero.replace('<div class="framer-1sivl9o-container"', '<div class="framer-1sivl9o-container lk-featured"');
+    hero = hero.replace(/(<a class="[^"]*?)framer-v-qyvjkd/, '$1framer-v-nzwxgq');
+    all[0] = { ...all[0], html: hero };
+  }
   const pages = Math.max(1, Math.ceil(all.length / PAGE_SIZE));
   const first = all.slice(0, PAGE_SIZE).map((c) => c.html).join('');
 

@@ -75,3 +75,13 @@ body.lk-menu-locked { overflow: hidden; }
 .lk-form-message { font: 500 14px/20px "Satoshi", "Satoshi Placeholder", sans-serif; color: rgb(35, 35, 35); padding: 12px 0 0; width: 100%; }
 .lk-form-message[data-state="error"] { color: rgb(220, 38, 38); }
 form[data-lk-busy] button[type="submit"] { opacity: 0.6; pointer-events: none; }
+
+/* --- blog index: latest article as a full-width horizontal card ---------- */
+.lk-featured .framer-cUNKI.framer-v-nzwxgq { align-items: stretch !important; }
+.lk-featured .framer-cUNKI.framer-v-nzwxgq .framer-1yucjox { justify-content: center !important; height: auto !important; align-self: stretch !important; padding: 12px 24px !important; }
+.lk-featured .framer-cUNKI.framer-v-nzwxgq .framer-lthv9t { max-width: 50% !important; }
+@media (max-width: 809.98px) {
+  .lk-featured .framer-cUNKI.framer-v-nzwxgq { flex-direction: column !important; align-items: center !important; }
+  .lk-featured .framer-cUNKI.framer-v-nzwxgq .framer-lthv9t { max-width: 100% !important; width: 100% !important; flex: none !important; }
+  .lk-featured .framer-cUNKI.framer-v-nzwxgq .framer-1yucjox { width: 100% !important; flex: none !important; padding: 12px !important; }
+}
