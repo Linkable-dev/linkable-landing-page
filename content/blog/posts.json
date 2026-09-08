@@ -66,7 +66,40 @@
     "source": "framer"
   },
   {
-    "heroImage": null,
+    "heroImage": {
+      "id": 6593779,
+      "alt": "An Asian woman vlogs at home using a smartphone and ring light, perfect setup for influencers.",
+      "src": "https://images.pexels.com/photos/6593779/pexels-photo-6593779.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/woman-filming-vlog-on-smartphone-camera-6593779/",
+      "query": "content creator filming smartphone ring light",
+      "width": 6027,
+      "credit": {
+        "url": "https://www.pexels.com/@shvetsa",
+        "name": "Anna Shvets"
+      },
+      "height": 4018,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/6593779/pexels-photo-6593779.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/6593779/pexels-photo-6593779.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/how-to-find-creators-shopify-brand-6593779-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/how-to-find-creators-shopify-brand-6593779-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
     "slug": "how-to-find-creators-shopify-brand",
     "title": "How to find creators for your Shopify brand every month",
     "description": "How to find creators for your Shopify brand with a repeatable process: applications first, then targeted discovery, then hand-picked invitations.",
@@ -74,7 +107,7 @@
     "date": "2026-09-08",
     "updated": "2026-09-08",
     "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
-    "imageAlt": "Creator filming a product video on a phone",
+    "imageAlt": "An Asian woman vlogs at home using a smartphone and ring light, perfect setup for influencers.",
     "words": 1348,
     "source": "generated",
     "keyword": "how to find creators for your shopify brand",
