@@ -105,10 +105,21 @@ function replaceImgAfter(html, marker, from, info, alt) {
   return html.slice(0, i) + setImg(html.slice(i, j), info, alt) + html.slice(j);
 }
 
+// Resolve the picture for a post: a per-article photo (downloaded into
+// public/assets/blog by sync.mjs) or one of the pool images by id.
+export function heroInfo(post) {
+  if (post.heroImage?.files?.length) {
+    const files = [...post.heroImage.files].sort((a, b) => a.w - b.w);
+    const big = files[files.length - 1];
+    return { src: big.path, srcset: files.map((f) => `${f.path} ${f.w}w`).join(','), width: big.w, height: Math.round(big.w * (post.heroImage.height / post.heroImage.width)) };
+  }
+  return imageInfo(post.image);
+}
+
 export function renderPost(post) {
   let html = fs.readFileSync(path.join(ROOT, 'tools', 'blog', 'post-template.html'), 'utf8');
   const url = `${SITE}/blog/${post.slug}`;
-  const img = imageInfo(post.image);
+  const img = heroInfo(post);
   const title = esc(post.title), desc = esc(post.description);
 
   // ---- head
@@ -145,6 +156,17 @@ export function renderPost(post) {
     from += 10;
   }
   head = replaceImgAfter(head, 'data-framer-name="16:9"', 0, img, post.imageAlt || post.title);
+  if (post.heroImage?.credit?.name) {
+    // Photo credit under the hero (stock-photo licence asks for it).
+    const wrap = head.indexOf('<div class="framer-83owg2">');
+    if (wrap >= 0) {
+      let depth = 0, i = wrap; const re = /<div\b|<\/div>/g; re.lastIndex = wrap; let m;
+      while ((m = re.exec(head))) { depth += m[0] === '</div>' ? -1 : 1; if (depth === 0) { i = m.index + 6; break; } }
+      const c = post.heroImage.credit;
+      const credit = `<div style="width:100%;padding:10px 0 0;text-align:right"><p class="framer-text framer-styles-preset-ry8ix7" data-styles-preset="YAPoH_BCZ" style="--framer-text-color:rgb(131, 139, 158)">Photo: <a class="framer-text" href="${esc(c.url || post.heroImage.page || '#')}" target="_blank" rel="noopener nofollow" style="color:inherit;text-decoration:underline">${esc(c.name)}</a>${post.heroImage.provider ? ` on ${esc(post.heroImage.provider === 'pexels' ? 'Pexels' : post.heroImage.provider)}` : ''}</p></div>`;
+      head = head.slice(0, i) + credit + head.slice(i);
+    }
+  }
   html = html.slice(0, s1) + head + html.slice(s3);
 
   // ---- body
@@ -165,26 +187,63 @@ export function writePost(post) {
 }
 
 /* ------------------------------------------------------- blog index */
+// Rebuilds the card grid on blog/index.html: Framer's own cards (cached the
+// first time we see a fresh import) plus the generated ones, newest first,
+// the first card in the wide slot. Only PAGE_SIZE cards ship in the HTML; the
+// rest are written as /blog-cards/<n>.json fragments that the "Load More"
+// button appends client-side, so the live site never queries the database.
+export const PAGE_SIZE = Number(process.env.BLOG_PAGE_SIZE) || 9;
+const CARD_RE = /<div class="ssr-variant"><div class="framer-1sivl9o-container"[^>]*>[\s\S]*?<\/a><!--\/\$--><\/div><\/div>/g;
+const SPAN1 = '--1q1styz:span 1;--1xlim7f:span 1;--7ad6xv:span 1';
+
+function gridBounds(html) {
+  const start = html.indexOf('<div class="framer-2ewk8">');
+  if (start < 0) throw new Error('blog index grid not found');
+  let depth = 0, end = -1;
+  const re = /<div\b|<\/div>/g;
+  re.lastIndex = start;
+  let m;
+  while ((m = re.exec(html))) { depth += m[0] === '</div>' ? -1 : 1; if (depth === 0) { end = m.index; break; } }
+  return { start: start + '<div class="framer-2ewk8">'.length, end };
+}
+function parseCardDate(wrapper) {
+  const m = wrapper.match(/data-framer-name="Date"[^>]*>[\s\S]*?<p[^>]*>([^<]*)<\/p>/);
+  const d = m ? new Date(m[1].trim() + ' UTC') : null;
+  return d && !isNaN(d) ? d.toISOString().slice(0, 10) : '1970-01-01';
+}
+function withSpan(wrapper, style) {
+  return wrapper.replace(/<div class="framer-1sivl9o-container"(?: style="[^"]*")?>/, `<div class="framer-1sivl9o-container" style="${style}">`);
+}
+
 export function injectIndexCards(posts) {
   const p = path.join(ROOT, 'blog', 'index.html');
+  const cachePath = path.join(CONTENT, 'framer-cards.json');
   let html = fs.readFileSync(p, 'utf8');
-  html = html.replace(/<!--gen:start-->[\s\S]*?<!--gen:end-->/, '');
-  const grid = html.indexOf('<div class="framer-2ewk8">');
-  if (grid < 0) throw new Error('blog index grid not found');
-  // Clone the second card including its ssr-variant wrapper (it carries the grid span style).
-  const firstCard = html.indexOf('data-framer-name="Card - Stacked"', grid);
-  const secondCard = html.indexOf('data-framer-name="Card - Stacked"', firstCard + 10);
-  const wrapStart = html.lastIndexOf('<div class="ssr-variant">', secondCard);
-  const wrapEnd = html.indexOf('</a><!--/$--></div></div>', secondCard) + '</a><!--/$--></div></div>'.length;
-  const tpl = html.slice(wrapStart, wrapEnd);
-  const generated = posts.filter((x) => x.source === 'generated').sort((a, b) => (a.date < b.date ? 1 : -1));
-  const cards = generated.map((post) => {
-    const img = imageInfo(post.image);
+  let { start, end } = gridBounds(html);
+  const inner = html.slice(start, end);
+
+  // Framer's cards + the "Load More" block: read them from a fresh import, else from the cache.
+  let cache = readJson(cachePath, null);
+  if (!inner.includes('<!--gen:grid-->') || !cache) {
+    const clean = inner.replace(/<!--gen:start-->[\s\S]*?<!--gen:end-->/, '');
+    const wrappers = (clean.match(CARD_RE) || []).filter((w) => !w.includes('data-generated="1"'));
+    const lastEnd = clean.lastIndexOf(wrappers[wrappers.length - 1]) + wrappers[wrappers.length - 1].length;
+    const wideStyle = wrappers[0].match(/<div class="framer-1sivl9o-container" style="([^"]*)"/)?.[1] || '--1q1styz:span 2;--1xlim7f:span 2;--7ad6xv:span 1';
+    cache = {
+      wideStyle,
+      loadMore: clean.slice(lastEnd),
+      cards: wrappers.map((w) => ({ date: parseCardDate(w), html: withSpan(w, SPAN1) })),
+    };
+    writeJson(cachePath, cache);
+  }
+
+  // Generated cards, rendered from a regular Framer card as template.
+  const tpl = cache.cards.find((c) => c.html.includes('data-framer-name="Label"'))?.html || cache.cards[0].html;
+  const generated = posts.filter((x) => x.source === 'generated').map((post) => {
+    const img = heroInfo(post);
     let c = tpl.replace(/href="[^"]*"/, `href="/blog/${post.slug}" data-generated="1"`);
     const i = c.indexOf('<img'), j = c.indexOf('>', i) + 1;
     c = c.slice(0, i) + setImg(c.slice(i, j), img, post.imageAlt || post.title) + c.slice(j);
-    // Fill each text slot by the container it sits in: the image badge (Label),
-    // the author + read-time pair (Metadata), the title, the excerpt, the Date.
     let metaSeen = 0;
     const src = c;
     c = c.replace(/(<p class="framer-text framer-styles-preset-(ry8ix7|i7193b|1wdsr2i)"[^>]*>)[^<]*(<\/p>)/g, (m, a, cls, b, offset) => {
@@ -197,10 +256,31 @@ export function injectIndexCards(posts) {
       if (name === 'Metadata') return `${a}${metaSeen++ === 0 ? esc(post.author || AUTHOR.name) : `${post.readMinutes || 5} Min Read `}${b}`;
       return m;
     });
-    return c;
+    return { date: post.date, html: c };
   });
-  const at = grid + '<div class="framer-2ewk8">'.length;
-  html = html.slice(0, at) + '<!--gen:start-->' + cards.join('') + '<!--gen:end-->' + html.slice(at);
+
+  const all = [...generated, ...cache.cards].sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
+  if (all.length) all[0] = { ...all[0], html: withSpan(all[0].html, cache.wideStyle) };
+  const pages = Math.max(1, Math.ceil(all.length / PAGE_SIZE));
+  const first = all.slice(0, PAGE_SIZE).map((c) => c.html).join('');
+
+  // Fragments for pages 2..n
+  const fragDir = path.join(ROOT, 'public', 'blog-cards');
+  fs.rmSync(fragDir, { recursive: true, force: true });
+  if (pages > 1) {
+    fs.mkdirSync(fragDir, { recursive: true });
+    for (let n = 2; n <= pages; n++) writeJson(path.join(fragDir, `${n}.json`), { page: n, pages, html: all.slice((n - 1) * PAGE_SIZE, n * PAGE_SIZE).map((c) => c.html).join('') });
+  }
+
+  // "Load More" block: hook for main.js, hidden when everything is already shown.
+  let loadMore = cache.loadMore.replace(/<div class="(framer-[a-z0-9]+-container)"([^>]*)>/, (m, cls, attrs) => {
+    const style = attrs.match(/style="([^"]*)"/)?.[1];
+    const rest = attrs.replace(/\s*style="[^"]*"/, '');
+    const hidden = pages > 1 ? '' : 'display:none;';
+    return `<div class="${cls}"${rest} id="lk-load-more" data-pages="${pages}" style="${hidden}${style || ''}">`;
+  });
+
+  html = html.slice(0, start) + '<!--gen:grid-->' + first + loadMore + html.slice(end);
   fs.writeFileSync(p, html);
 }
 

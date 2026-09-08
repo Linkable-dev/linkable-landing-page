@@ -360,6 +360,40 @@ function initForms() {
   });
 }
 
+/* ------------------------------------------------------- blog load more */
+// The blog index ships PAGE_SIZE cards; the rest live in /blog-cards/<n>.json
+// fragments pre-rendered at build time. No database is involved at runtime.
+function initLoadMore() {
+  const el = document.getElementById('lk-load-more');
+  if (!el) return;
+  const pages = Number(el.dataset.pages || 1);
+  let next = 2;
+  let busy = false;
+  if (pages < 2) el.style.display = 'none';
+  el.addEventListener(
+    'click',
+    async (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      if (busy || next > pages) return;
+      busy = true;
+      try {
+        const res = await fetch(`/blog-cards/${next}.json`);
+        if (!res.ok) throw new Error(String(res.status));
+        const { html } = await res.json();
+        el.insertAdjacentHTML('beforebegin', html);
+        next += 1;
+        if (next > pages) el.style.display = 'none';
+      } catch (err) {
+        console.error('load more failed', err);
+      } finally {
+        busy = false;
+      }
+    },
+    true,
+  );
+}
+
 /* ----------------------------------------------------------------- boot */
 function boot() {
   initYear();
@@ -370,6 +404,7 @@ function boot() {
   initSlideshows();
   initProgress();
   initForms();
+  initLoadMore();
 }
 if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
 else boot();

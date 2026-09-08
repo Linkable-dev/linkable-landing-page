@@ -67,7 +67,11 @@ Linkable Ops app (Blog section), which also writes one AI-drafted article per da
 - Repo secrets: `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` (the blog project).
 - `content/blog/posts/*.json` is a committed cache of the article bodies so `npm run blog:render` can rebuild
   the pages offline (the Framer importer calls it, since re-importing overwrites `blog/index.html`).
-- Hero images rotate through `content/blog/images.json` (existing on-brand photos by asset id).
+- Hero images: a per-article stock photo chosen in the ops app (downloaded into `public/assets/blog` by the sync, with a
+  credit line under the hero), falling back to `content/blog/images.json` (on-brand photos by asset id).
+- The blog index shows 9 cards (newest in the wide slot); further pages are pre-rendered as `public/blog-cards/<n>.json`
+  and appended by the "Load More" button, which stays hidden when there is nothing more. Framer's own cards are cached in
+  `content/blog/framer-cards.json` when a fresh import is detected.
 
 ## Re-importing from Framer
 

@@ -21,14 +21,37 @@ const registry = readJson(path.join(CONTENT, 'posts.json'), []);
 const framer = registry.filter((p) => p.source !== 'generated');
 const before = new Set(registry.filter((p) => p.source === 'generated').map((p) => p.slug));
 
-const generated = rows.map((r) => ({
+// Per-article photos are self-hosted: download each size once into public/assets/blog.
+const BLOG_IMG = path.join(ROOT, 'public', 'assets', 'blog');
+fs.mkdirSync(BLOG_IMG, { recursive: true });
+async function localizeHero(r) {
+  const h = r.hero_image;
+  if (!h?.srcset?.length) return null;
+  const files = [];
+  for (const v of h.srcset) {
+    const ext = (v.url.split('?')[0].match(/\.(jpe?g|png|webp)$/i) || [, 'jpg'])[1].toLowerCase().replace('jpeg', 'jpg');
+    const name = `${r.slug}-${h.id}-${v.w}.${ext}`;
+    const file = path.join(BLOG_IMG, name);
+    if (!fs.existsSync(file) || fs.statSync(file).size === 0) {
+      const res = await fetch(v.url);
+      if (!res.ok) { console.warn('image download failed', v.url, res.status); continue; }
+      fs.writeFileSync(file, Buffer.from(await res.arrayBuffer()));
+    }
+    files.push({ path: `/assets/blog/${name}`, w: v.w });
+  }
+  return files.length ? { ...h, files } : null;
+}
+
+const generated = [];
+for (const r of rows) generated.push({ heroImage: await localizeHero(r), ...rowMeta(r) });
+function rowMeta(r) { return ({
   slug: r.slug, title: r.title, description: r.description, excerpt: r.excerpt,
   date: r.published_at || r.created_at.slice(0, 10), updated: (r.updated_at || '').slice(0, 10) || undefined,
   image: poolIds.has(r.hero_image_id) ? r.hero_image_id : pool[0]?.id, imageAlt: r.hero_image_alt || r.title,
   words: r.word_count, source: 'generated', keyword: r.keyword, category: r.category,
   readMinutes: r.read_minutes, author: r.author_name,
   blocks: r.blocks || [], faqs: r.faqs || [],
-}));
+}); }
 
 fs.mkdirSync(path.join(CONTENT, 'posts'), { recursive: true });
 for (const post of generated) {
