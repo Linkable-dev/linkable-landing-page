@@ -49,7 +49,8 @@ function rowMeta(r) { return ({
   date: r.published_at || r.created_at.slice(0, 10), updated: (r.updated_at || '').slice(0, 10) || undefined,
   image: poolIds.has(r.hero_image_id) ? r.hero_image_id : pool[0]?.id, imageAlt: r.hero_image_alt || r.title,
   words: r.word_count, source: 'generated', keyword: r.keyword, category: r.category,
-  readMinutes: r.read_minutes, author: r.author_name,
+  // The public site keeps a 3-minute floor for aesthetics; the ops app shows the exact value.
+  readMinutes: Math.max(3, Number(r.read_minutes) || 3), author: r.author_name,
   blocks: r.blocks || [], faqs: r.faqs || [],
 }); }
 
