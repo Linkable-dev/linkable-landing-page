@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "blog:render": "node tools/blog/render.mjs",
+    "blog:sync": "node tools/blog/sync.mjs"
   },
   "devDependencies": {
     "vite": "^7.1.0"

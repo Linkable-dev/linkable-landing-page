@@ -1,0 +1,43 @@
+name: Blog sync
+
+# Renders the articles stored in the blog database into the site. Runs every
+# two hours, when the ops app asks for it (repository_dispatch), or manually.
+on:
+  schedule:
+    - cron: "15 */2 * * *"
+  repository_dispatch:
+    types: [blog-publish]
+  workflow_dispatch:
+
+concurrency:
+  group: blog-sync
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Render published articles
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: node tools/blog/sync.mjs
+      - name: Build check
+        run: npm run build
+      - name: Commit and push
+        run: |
+          git config user.name "linkable-blog-bot"
+          git config user.email "blog-bot@linkable.link"
+          git add -A
+          git diff --cached --quiet && echo "nothing changed" && exit 0
+          git commit -m "blog: sync articles from database"
+          git push

@@ -55,6 +55,20 @@ If the function is unavailable the page falls back to opening the visitor's mail
 `federico@linkable.link`. To use another backend instead, set `VITE_FORM_ENDPOINT` at build time (the forms
 POST JSON `{ ...fields, form: "contact" | "newsletter", page }`).
 
+## Blog articles
+
+Articles are stored in the blog Supabase project (tables `blog_posts` / `blog_topics`) and managed from the
+Linkable Ops app (Blog section), which also writes one AI-drafted article per day. This repo only renders them:
+
+- `.github/workflows/blog-sync.yml` runs every two hours, on a `blog-publish` repository dispatch from the ops
+  app, or manually. It executes `tools/blog/sync.mjs`, which pulls the published rows, renders each one into the
+  Framer post template (`tools/blog/post-template.html`), adds a card to `blog/index.html`, updates
+  `public/sitemap.xml`, removes pages for unpublished articles and commits. Vercel deploys the push.
+- Repo secrets: `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` (the blog project).
+- `content/blog/posts/*.json` is a committed cache of the article bodies so `npm run blog:render` can rebuild
+  the pages offline (the Framer importer calls it, since re-importing overwrites `blog/index.html`).
+- Hero images rotate through `content/blog/images.json` (existing on-brand photos by asset id).
+
 ## Re-importing from Framer
 
 Note: Framer occasionally serves a blog post client-side only (empty server HTML, ~37 KB). If that happens, rebuild

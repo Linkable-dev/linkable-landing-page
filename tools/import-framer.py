@@ -124,3 +124,9 @@ for f, url in PAGES.items():
     result = convert(src, url)
     open(out, 'w', encoding='utf-8').write(result)
     print('wrote', os.path.relpath(out, ROOT))
+
+# Generated blog posts live outside Framer: re-render them and restore their
+# cards in the blog index (the import just overwrote blog/index.html).
+import subprocess
+if os.path.exists(os.path.join(ROOT, 'tools/blog/render.mjs')):
+    subprocess.run(['node', os.path.join(ROOT, 'tools/blog/render.mjs')], check=True)
