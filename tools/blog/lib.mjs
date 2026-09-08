@@ -163,7 +163,9 @@ export function renderPost(post) {
       let depth = 0, i = wrap; const re = /<div\b|<\/div>/g; re.lastIndex = wrap; let m;
       while ((m = re.exec(head))) { depth += m[0] === '</div>' ? -1 : 1; if (depth === 0) { i = m.index + 6; break; } }
       const c = post.heroImage.credit;
-      const credit = `<div style="width:100%;padding:10px 0 0;text-align:right"><p class="framer-text framer-styles-preset-ry8ix7" data-styles-preset="YAPoH_BCZ" style="--framer-text-color:rgb(131, 139, 158)">Photo: <a class="framer-text" href="${esc(c.url || post.heroImage.page || '#')}" target="_blank" rel="noopener nofollow" style="color:inherit;text-decoration:underline">${esc(c.name)}</a>${post.heroImage.provider ? ` on ${esc(post.heroImage.provider === 'pexels' ? 'Pexels' : post.heroImage.provider)}` : ''}</p></div>`;
+      // Some contributors are listed as a bare URL; show the hostname instead.
+      const creditName = /^https?:\/\//i.test(c.name) ? c.name.replace(/^https?:\/\/(www\.)?/i, '').replace(/\/.*$/, '') : c.name;
+      const credit = `<div style="width:100%;padding:10px 0 0;text-align:right"><p class="framer-text framer-styles-preset-ry8ix7" data-styles-preset="YAPoH_BCZ" style="--framer-text-color:rgb(131, 139, 158)">Photo: <a class="framer-text" href="${esc(c.url || post.heroImage.page || '#')}" target="_blank" rel="noopener nofollow" style="color:inherit;text-decoration:underline">${esc(creditName)}</a>${post.heroImage.provider ? ` on ${esc(post.heroImage.provider === 'pexels' ? 'Pexels' : post.heroImage.provider)}` : ''}</p></div>`;
       head = head.slice(0, i) + credit + head.slice(i);
     }
   }
