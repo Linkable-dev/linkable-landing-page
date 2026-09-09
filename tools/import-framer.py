@@ -130,3 +130,11 @@ for f, url in PAGES.items():
 import subprocess
 if os.path.exists(os.path.join(ROOT, 'tools/blog/render.mjs')):
     subprocess.run(['node', os.path.join(ROOT, 'tools/blog/render.mjs')], check=True)
+
+# Framer's CDN transcodes images per request; a static copy cannot, so this
+# writes WebP beside each photograph and wraps the <img> in a <picture>. Skipped
+# without cwebp, which only costs page weight, never correctness.
+if subprocess.run(['which', 'cwebp'], capture_output=True).returncode == 0:
+    subprocess.run(['python3', os.path.join(ROOT, 'tools/optimise-images.py')], check=True)
+else:
+    print('cwebp not installed; skipping image optimisation (brew install webp)')

@@ -121,3 +121,10 @@ form[data-lk-busy] button[type="submit"] { opacity: 0.6; pointer-events: none; }
   min-height: 28px;
   align-items: center !important;
 }
+
+/* tools/optimise-images.py wraps each photograph in <picture> so the browser can
+   take a WebP instead of the original PNG or JPEG. `display: contents` removes
+   the wrapper from the layout entirely, so the <img> keeps the exact box Framer
+   gave it. Nothing in the site's CSS selects `img`, so the extra element is
+   invisible to the styling. */
+picture { display: contents; }
