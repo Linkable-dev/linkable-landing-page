@@ -128,3 +128,11 @@ form[data-lk-busy] button[type="submit"] { opacity: 0.6; pointer-events: none; }
    gave it. Nothing in the site's CSS selects `img`, so the extra element is
    invisible to the styling. */
 picture { display: contents; }
+
+/* Two decorative cards in the "Partner with creators" section sit at
+   left: -192px, so only about 8px of each pokes in from the edge of the screen
+   and reads as a glitch. The live Framer site does the same, so hiding them is a
+   deliberate departure from the mirror. Targeted by their authored names rather
+   than Framer's hashed class names, which are regenerated on every re-import. */
+[data-framer-name="Engagement rate"],
+[data-framer-name="Creator match"] { display: none !important; }
