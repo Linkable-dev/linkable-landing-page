@@ -85,3 +85,39 @@ form[data-lk-busy] button[type="submit"] { opacity: 0.6; pointer-events: none; }
   .lk-featured .framer-cUNKI.framer-v-nzwxgq .framer-lthv9t { max-width: 100% !important; width: 100% !important; flex: none !important; }
   .lk-featured .framer-cUNKI.framer-v-nzwxgq .framer-1yucjox { width: 100% !important; flex: none !important; padding: 12px !important; }
 }
+
+/* Blog index cards: every card in a row is the same height, and the parts inside
+   line up across the row.
+
+   Framer sized each card to its own photo, so a landscape hero made one card
+   shorter than the portrait one beside it, and the category chip that only some
+   cards carry pushed their text down further. These rules hang off the .lk-card
+   hook the renderer adds and reach inside structurally, because Framer's own
+   class names are hashes that change every time the site is re-imported.
+
+   Card anatomy:
+     .lk-card > a > div:first-child   image area (optional chip, then the photo)
+     .lk-card > a > div:last-child    text column (meta, title, excerpt, then date) */
+.lk-card { align-self: stretch !important; }
+.lk-card > a { height: 100% !important; }
+
+/* One ratio for every photo: crop to fill rather than resize the card. */
+.lk-card:not(.lk-featured) > a > div:first-child > div:last-child {
+  aspect-ratio: 16 / 10 !important;
+  height: auto !important;
+  width: 100% !important;
+  overflow: hidden;
+}
+.lk-card:not(.lk-featured) > a > div:first-child > div:last-child > * { height: 100% !important; width: 100% !important; }
+.lk-card > a > div:first-child img { width: 100% !important; height: 100% !important; object-fit: cover !important; }
+
+/* The text column absorbs the leftover height so the date sits on the same line
+   in every card, however long the title runs. */
+.lk-card:not(.lk-featured) > a > div:last-child { flex: 1 1 auto !important; height: auto !important; }
+/* The footer holds the date, and on some cards a category chip beside it. Reserve
+   the chip's height everywhere so the date sits on the same line either way. */
+.lk-card:not(.lk-featured) > a > div:last-child > div:last-child {
+  margin-top: auto !important;
+  min-height: 28px;
+  align-items: center !important;
+}

@@ -214,7 +214,9 @@ function parseCardDate(wrapper) {
   return d && !isNaN(d) ? d.toISOString().slice(0, 10) : '1970-01-01';
 }
 function withSpan(wrapper, style) {
-  return wrapper.replace(/<div class="framer-1sivl9o-container"(?: style="[^"]*")?>/, `<div class="framer-1sivl9o-container" style="${style}">`);
+  // Keep any classes already on the wrapper (lk-card, and lk-featured later);
+  // matching the bare class name dropped them and the hero stopped spanning.
+  return wrapper.replace(/<div class="(framer-1sivl9o-container[^"]*)"(?: style="[^"]*")?>/, (m, cls) => `<div class="${cls}" style="${style}">`);
 }
 
 export function injectIndexCards(posts) {
@@ -261,14 +263,19 @@ export function injectIndexCards(posts) {
     return { date: post.date, html: c };
   });
 
-  const all = [...generated, ...cache.cards].sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
+  // A stable hook on every card wrapper. Framer's own class names are hashes that
+  // change whenever the site is re-imported, so site.css styles `.lk-card` and
+  // reaches the parts inside it structurally rather than by name.
+  const all = [...generated, ...cache.cards]
+    .map((c) => ({ ...c, html: c.html.replace('<div class="framer-1sivl9o-container"', '<div class="framer-1sivl9o-container lk-card"') }))
+    .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
   // Latest article: full-width hero card using the component's horizontal
   // variant (image left, text right). Framer's own layout left a gap next to
   // its two-column card; spanning the whole row avoids that. site.css stacks
   // it vertically on phones.
   if (all.length) {
     let hero = withSpan(all[0].html, '--1q1styz:span 3;--1xlim7f:span 2;--7ad6xv:span 1');
-    hero = hero.replace('<div class="framer-1sivl9o-container"', '<div class="framer-1sivl9o-container lk-featured"');
+    hero = hero.replace('<div class="framer-1sivl9o-container lk-card"', '<div class="framer-1sivl9o-container lk-card lk-featured"');
     hero = hero.replace(/(<a class="[^"]*?)framer-v-qyvjkd/, '$1framer-v-nzwxgq');
     all[0] = { ...all[0], html: hero };
   }
