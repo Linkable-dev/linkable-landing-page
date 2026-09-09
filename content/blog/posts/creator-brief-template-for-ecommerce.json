@@ -1,0 +1,163 @@
+{
+  "blocks": [
+    {
+      "text": "You approve a creator, send over a product, and a week later the content lands. The lighting is fine, the creator seems genuine, but nobody mentions the ingredient you launched the product around, the packaging is out of frame, and the caption gets your product name wrong. Now you're asking for a reshoot, the creator is annoyed, and the campaign timeline slips by another week.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This almost never happens because the creator did a bad job. It happens because the brief didn't tell them what mattered.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What must a creator brief template for ecommerce include",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "A working creator brief template for ecommerce needs seven things on one page: the product and what it does, the single message you need said, the must-show and must-say list, the format and length, tone and things to avoid, the deadline and delivery method, and how they'll be paid. Miss any one of these and you're relying on the creator to guess, and guesses are what cause reshoots.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Keep it to one page. A brief that reads like a legal document gets skimmed, and skimmed briefs produce the same vague content you were trying to avoid. If you're setting this up for your first batch of creators, the [creator activation playbook](/blog/creator-activation-playbook) covers how the brief fits into the wider campaign, and [onboarding your first 10 creators](/blog/onboard-first-creators) covers how much guidance to give before people start applying.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Why do creators send back unusable content",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "The most common cause isn't a lazy creator, it's a brief that assumed shared knowledge. You know your product solves dry skin in a specific way, that it pairs with your bestseller, that the packaging is part of the brand story. The creator doesn't know any of that unless you write it down.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Say you run a coffee subscription brand and you send a bag of beans with a one-line brief: \"show how you brew it\". You'll get ten different videos, half of them using equipment that doesn't match your target customer, none of them mentioning the subscription, and one filmed in a kitchen so dark you can't read the label. None of those creators did anything wrong. They filled the gap you left with their own judgement.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "The fix isn't longer briefs, it's more specific ones. Tell the coffee creator the audience is people who buy pre-ground coffee and want an easy upgrade, that the subscription discount code needs to appear on screen, and that you need at least one shot where the bag label is legible. That's three sentences, and it removes almost all the guesswork.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What goes wrong when a brief skips the must-show list",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "A must-show and must-say list is the single highest-impact part of the brief, and it's the part most brands leave out because it feels obvious. It isn't obvious to someone who has never used your product.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": null,
+      "type": "ul",
+      "items": [
+        "The product name and how it's spelled, said out loud or shown on screen",
+        "Any claim or benefit that must be mentioned word for word (an ingredient, a certification, a guarantee)",
+        "The discount code or affiliate link, and where it needs to appear",
+        "Packaging or logo visible in at least one shot",
+        "Anything you legally cannot have said (medical claims, comparisons to named competitors)"
+      ]
+    },
+    {
+      "text": "Five lines. That's usually enough to prevent the reshoot conversation entirely.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Should the brief specify format and length",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Yes, and it should say it in seconds and platform, not adjectives. \"Short and punchy\" means nothing. \"15 to 30 seconds, vertical, for TikTok and Instagram Reels\" means the creator edits to a spec instead of guessing what you'll accept.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "If you're running the same product across TikTok Shop and your own Shopify store, format matters even more, because the content that converts on each is different. Our post on [TikTok Shop versus driving traffic to Shopify](/blog/tiktok-shop-vs-driving-traffic-to-shopify) has more on how the destination changes what the video needs to do.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How specific should tone guidance be",
+      "type": "h3",
+      "items": null
+    },
+    {
+      "text": "Specific enough to rule things out, not specific enough to script the creator. Give two or three examples of language you like (",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Give two or three examples of language you like, and one or two things to avoid saying (over-claiming results, comparing to named competitors, using discount codes that aren't yours). Don't hand over a script. Creators who read from a script produce content that looks like an ad, and the reason brands hire creators in the first place is that their audience trusts them more than an ad.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "If you run affiliate or discount-code campaigns, be explicit in the brief about which code belongs to which creator and that codes shouldn't be shared or posted publicly outside the agreed content. Loose code handling is one of the more expensive mistakes brands make, covered in [the hidden cost of uncontrolled discount codes](/blog/leaked-discount-codes).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Where does payment and deadline information belong",
+      "type": "h3",
+      "items": null
+    },
+    {
+      "text": "At the bottom of the same page, not in a separate email. State whether it's gifted product, a fixed fee, or affiliate commission, when content is due, and how they should send it to you. A creator who doesn't know when they're being paid, or how, is a creator who deprioritises your brief when something better-organised lands in their inbox. On Linkable, this detail sits inside the campaign itself, so the payment terms and the brief travel together and nobody has to chase an email thread to find them.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "If you haven't decided between gifted and paid yet, work that out before you write the brief, because it changes what you can reasonably ask for. Our [gifted versus paid creator collaborations](/blog/gifted-vs-paid-creator-collaborations) post walks through when each makes sense.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Do you need a different brief for every campaign",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "No, but you need to update the specifics every time. Keep one template with the seven sections above, and rewrite the product details, must-show list and deadline for each campaign. Brands that reuse an old brief without updating the specifics are the ones who find out three days before a launch that half their creators are still promoting last month's product.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "If you're setting up a campaign for the first time, [launching your first creator campaign](/blog/launch-campaign-linkable) walks through where the brief sits alongside the rest of the setup, from product selection to invites.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Write the brief before you post the campaign, not after the first application comes in. Pull up your last campaign this week, check it against the seven sections above, and fix whichever one is missing before you send it to the next batch of creators.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "One page. If it takes more than a couple of minutes to read, creators skim it, and a skimmed brief produces exactly the vague content you were trying to prevent.",
+      "q": "How long should a creator brief be"
+    },
+    {
+      "a": "No. Give must-say points and examples of tone instead. Scripted content tends to look like an ad, which undercuts the reason brands work with creators rather than running ads directly.",
+      "q": "Should I give creators a script to read from"
+    },
+    {
+      "a": "A missing must-show and must-say list. Creators fill gaps in a brief with their own judgement, and their judgement rarely matches the specific claim, code or shot a brand actually needed.",
+      "q": "What's the biggest cause of creator reshoots"
+    },
+    {
+      "a": "The core seven sections stay the same, but paid and affiliate briefs usually need more detail on required claims and code placement, since more money or commission is riding on the content matching what was agreed.",
+      "q": "Should the brief change for gifted versus paid creators"
+    }
+  ]
+}

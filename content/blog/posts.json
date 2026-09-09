@@ -67,6 +67,56 @@
   },
   {
     "heroImage": {
+      "id": 5582865,
+      "alt": "A woman organizes sticky notes on a wall in a sleek and modern office setting, promoting productivity and focus.",
+      "src": "https://images.pexels.com/photos/5582865/pexels-photo-5582865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/a-person-taking-notes-5582865/",
+      "query": "woman writing notes product",
+      "width": 6706,
+      "credit": {
+        "url": "https://www.pexels.com/@thirdman",
+        "name": "Thirdman"
+      },
+      "height": 4471,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/5582865/pexels-photo-5582865.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/5582865/pexels-photo-5582865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/creator-brief-template-for-ecommerce-5582865-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/creator-brief-template-for-ecommerce-5582865-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "creator-brief-template-for-ecommerce",
+    "title": "A creator brief template for ecommerce that stops reshoots",
+    "description": "A one-page creator brief template for ecommerce brands that gives creators everything they need to deliver usable content the first time.",
+    "excerpt": "Most reshoots come from a brief that left something out, not a creator who got it wrong. Here is what a one-page brief needs to cover.",
+    "date": "2026-09-09",
+    "updated": "2026-09-09",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "A woman organizes sticky notes on a wall in a sleek and modern office setting, promoting productivity and focus.",
+    "words": 1075,
+    "source": "generated",
+    "keyword": "creator brief template for ecommerce",
+    "category": "Playbook",
+    "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 6593779,
       "alt": "An Asian woman vlogs at home using a smartphone and ring light, perfect setup for influencers.",
       "src": "https://images.pexels.com/photos/6593779/pexels-photo-6593779.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
