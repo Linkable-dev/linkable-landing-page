@@ -67,6 +67,56 @@
   },
   {
     "heroImage": {
+      "id": 6248957,
+      "alt": "A professional woman analyzes financial charts on a laptop and paper for business insights.",
+      "src": "https://images.pexels.com/photos/6248957/pexels-photo-6248957.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/photo-of-a-woman-holding-a-paper-with-charts-near-her-laptop-6248957/",
+      "query": "marketer reviewing analytics laptop",
+      "width": 7360,
+      "credit": {
+        "url": "https://www.pexels.com/@kampus",
+        "name": "Kampus Production"
+      },
+      "height": 4912,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/6248957/pexels-photo-6248957.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/6248957/pexels-photo-6248957.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/how-to-measure-creator-marketing-roi-6248957-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/how-to-measure-creator-marketing-roi-6248957-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "how-to-measure-creator-marketing-roi",
+    "title": "How to measure creator marketing ROI without guessing",
+    "description": "Learn how to measure creator marketing ROI by separating content value, reach and tracked sales, and accepting what you cannot attribute.",
+    "excerpt": "Creator campaigns produce three different kinds of value that get lumped into one number. Here is how to separate them, what to attribute, and what to compare your results against.",
+    "date": "2026-09-10",
+    "updated": "2026-09-10",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "A professional woman analyzes financial charts on a laptop and paper for business insights.",
+    "words": 994,
+    "source": "generated",
+    "keyword": "how to measure creator marketing roi",
+    "category": "Measurement",
+    "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 5582865,
       "alt": "A woman organizes sticky notes on a wall in a sleek and modern office setting, promoting productivity and focus.",
       "src": "https://images.pexels.com/photos/5582865/pexels-photo-5582865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",

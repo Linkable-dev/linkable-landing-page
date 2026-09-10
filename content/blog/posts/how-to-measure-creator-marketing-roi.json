@@ -1,0 +1,127 @@
+{
+  "blocks": [
+    {
+      "text": "You have run a handful of creator campaigns. Some content looked great, some creators drove sales you can point to, and a few just went quiet after posting once. Now someone is asking what the campaign actually returned, and you are trying to boil gifted product, paid fees and affiliate commission into one tidy figure that does not exist.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "That is the wrong instinct. Creator marketing produces three separate kinds of value, and how to measure creator marketing ROI properly means measuring each one on its own terms rather than forcing them into a single blended number.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you measure creator marketing roi?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "You measure it by tracking three things separately: the content itself (do you have usable photos and video), the reach and engagement it generated, and the sales you can actually trace back to that creator through a link or code. Add the cost of each campaign against each of those three outputs, rather than trying to reduce everything to a single return figure. A campaign can fail on sales and still pay for itself in content, or fail on content and still pay for itself in tracked affiliate revenue.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This matters because brands who only track sales tend to cancel campaigns that were quietly working in other ways, and brands who only track content tend to keep paying for creators whose audience never converts.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Separate content value from reach and from sales",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Content value is what the creator hands you: usable photos, video you can repost on your own channels, or ad creative you would otherwise pay a production agency for. If a gifted collaboration gives you five pieces of content you can reuse across paid social and your product pages, that has value even if the creator's own post gets modest engagement.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Reach and engagement is what happened on the creator's own channel: views, likes, comments, saves. This tells you whether the creator's audience actually paid attention, which is a different question from whether they bought anything. A creator with a small but engaged following in supplements or skincare can outperform a much bigger account whose comments section is full of other brands and bots.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Tracked sales are the orders you can attribute to a specific creator through a unique link or discount code. This is the number most people mean when they say ROI, but it is only one of the three, and treating it as the whole story undercounts what gifted and content-focused collaborations are actually worth. [Gifted vs paid creator collaborations](/blog/gifted-vs-paid-creator-collaborations) covers which of these outcomes to expect from each campaign type.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What you can attribute to a creator, and what you cannot",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "You can attribute sales that come through a creator's own tracked link or a code unique to them. That is the cleanest signal you have, and it is why unique codes matter more than a shared discount everyone uses. [The hidden cost of uncontrolled discount codes](/blog/leaked-discount-codes) explains what happens to your attribution once a code leaks beyond the creator it was issued to.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "You cannot cleanly attribute the customer who saw a creator's video, did not click anything, and bought two weeks later through a search ad or a friend's recommendation. That influence is real and it is also invisible to your reporting. Accept it rather than trying to force a number onto it. The honest move is to note qualitatively that a handful of creators seem to be driving a disproportionate share of both content quality and tracked sales, and to keep investing there, rather than inventing an attribution model to justify the whole programme.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "A brand selling coffee subscriptions might find that one creator's tracked link produces steady weekly orders, while three other creators produce almost no tracked sales but keep generating content the brand reuses in paid ads for months. Both are working. Only one shows up if you only look at the sales column.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What to compare your results against",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Compare a campaign against its own cost, not against an industry benchmark you cannot verify. If a paid collaboration cost you a fixed fee and produced content plus a run of tracked orders, ask whether that fee was worth those two things combined, not whether it beat some average you read somewhere.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Compare creators against each other within the same campaign type. A gifted skincare campaign should be judged against other gifted skincare campaigns, not against a paid activewear collaboration with a completely different cost structure and audience. Linkable's [reporting](/pricing) shows content delivered, reach, engagement and tracked sales per campaign and per creator, so you can see which creators are worth repeating without guessing across incompatible campaigns.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Compare this month against last month for the same creator, once you have run more than one collaboration with them. A single campaign tells you almost nothing about whether a creator's audience actually buys from you; a second and third collaboration tells you whether the first result was real or a fluke.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Build a reporting habit you will actually keep",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Set up your tracking before the campaign launches, not after you want to report on it. That means a unique link or code per creator from the first post, agreed with the creator during onboarding rather than bolted on afterwards. [Onboarding your first ten creators](/blog/onboard-first-creators) is the point where this habit either sticks or gets skipped.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Review results per creator at the end of each campaign, sorting by content usefulness, engagement and tracked sales as three separate columns rather than one score. Keep the creators who show up well on any of the three, drop the ones who show up on none, and give the ambiguous middle group a second campaign before deciding.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This week, pull your last three creator collaborations and write down what each one produced across content, reach and tracked sales, even where the answer for one column is honestly nothing. That gap in your own records is usually the clearest signal of where your next campaign should focus.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Judge them mainly on content and reach, since gifted collaborations rarely include a paid incentive strong enough to guarantee tracked sales. If a gifted creator also drives orders through their link, treat that as a bonus rather than the target you measure the campaign against.",
+      "q": "Should gifted campaigns be judged on sales at all?"
+    },
+    {
+      "a": "Give a creator at least one full campaign cycle, including the days after posting when views and saves keep accumulating, before drawing a conclusion. A second collaboration is more useful than the first for deciding whether to keep working with someone.",
+      "q": "How long should I wait before judging a creator's results?"
+    },
+    {
+      "a": "Give every creator their own discount code or tracked link rather than a shared one, and keep it exclusive to them. Shared or leaked codes make it impossible to know which sales belong to which creator.",
+      "q": "What is the simplest way to track sales per creator?"
+    },
+    {
+      "a": "No, but its usefulness usually declines once the product, packaging or offer it shows changes. Reuse strong creator content in ads and on product pages while it still matches what you currently sell.",
+      "q": "Does content value expire?"
+    }
+  ]
+}
