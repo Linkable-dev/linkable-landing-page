@@ -67,6 +67,56 @@
   },
   {
     "heroImage": {
+      "id": 3785806,
+      "alt": "A woman checks her skin in the mirror, engaging in her morning skincare routine indoors.",
+      "src": "https://images.pexels.com/photos/3785806/pexels-photo-3785806.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/reflection-photo-of-woman-touching-her-cheek-3785806/",
+      "query": "woman applying skincare product mirror",
+      "width": 7680,
+      "credit": {
+        "url": "https://www.pexels.com/@olly",
+        "name": "Andrea Piacquadio"
+      },
+      "height": 5120,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/3785806/pexels-photo-3785806.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/3785806/pexels-photo-3785806.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/creator-marketing-for-skincare-brands-3785806-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/creator-marketing-for-skincare-brands-3785806-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "creator-marketing-for-skincare-brands",
+    "title": "Creator marketing for skincare brands: what actually sells",
+    "description": "How creator marketing for skincare brands works: routines, before-and-after rules, ingredient claims, and which creators actually drive sales.",
+    "excerpt": "Skincare has its own rules for creator content: routine context, honest before-and-afters, careful ingredient claims. Here's how to run campaigns that produce content compliance can live with and sales you can measure.",
+    "date": "2026-09-11",
+    "updated": "2026-09-11",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "A woman checks her skin in the mirror, engaging in her morning skincare routine indoors.",
+    "words": 931,
+    "source": "generated",
+    "keyword": "creator marketing for skincare brands",
+    "category": "By category",
+    "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 6248957,
       "alt": "A professional woman analyzes financial charts on a laptop and paper for business insights.",
       "src": "https://images.pexels.com/photos/6248957/pexels-photo-6248957.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
