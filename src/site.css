@@ -126,8 +126,14 @@ form[data-lk-busy] button[type="submit"] { opacity: 0.6; pointer-events: none; }
    take a WebP instead of the original PNG or JPEG. `display: contents` removes
    the wrapper from the layout entirely, so the <img> keeps the exact box Framer
    gave it. Nothing in the site's CSS selects `img`, so the extra element is
-   invisible to the styling. */
-picture { display: contents; }
+   invisible to the styling.
+
+   Framer rounds a photograph by putting the radius on the wrapping div and
+   `border-radius: inherit` on the <img>. Inheritance reads the parent's computed
+   value and does not care that `display: contents` generates no box, so the
+   <picture> would hand the <img> its own 0px and square off every rounded
+   photograph. Passing the radius through keeps that chain intact. */
+picture { display: contents; border-radius: inherit; corner-shape: inherit; }
 
 /* Two decorative cards in the "Partner with creators" section sit at
    left: -192px, so only about 8px of each pokes in from the edge of the screen
