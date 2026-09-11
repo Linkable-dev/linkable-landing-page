@@ -13,17 +13,40 @@ where WebP is unsupported.
 
 Wrapping is safe here: Framer styles images through inline styles on the <img>
 itself, and no CSS rule in the site selects `img` at all, let alone as a direct
-child. `picture { display: contents }` in site.css keeps the element out of the
-layout entirely.
+child. `picture { display: contents; border-radius: inherit }` in site.css keeps
+the element out of the layout and passes a rounded corner through to the image.
+
+The WebP is encoded losslessly, so the browser gets the original pixels whichever
+source it picks. Lossy q90 used to be the setting here and it was measurably
+worse than its comment claimed: across the site's photographs the median came out
+at 41.6 dB PSNR but fifty files fell below 40 dB and the worst reached 28 dB.
+Raising the quality does not rescue those: some of these images plateau around
+38 dB however high you push it, and by q100 the WebP is larger than the PNG it
+replaces.
+
+Lossless is not a size win here, and it is not meant to be. On the photographs
+the homepage loads it comes to 7.45 MB against 5.82 MB for the originals, so
+MIN_SAVING rejects it for most of them and the page serves the original file
+instead. Only the images lossless genuinely beats keep a .webp, 73 of 191 at the
+time of writing. Either way the bytes on the wire decode to the source pixels,
+which is the point: this script no longer trades quality for weight, it only
+takes a smaller file when that file is exact. The cost is real and worth stating
+plainly, the homepage carries about 5.8 MB of photographs where the live Framer
+site serves 2.0 MB of lossy AVIF for the same pixels.
+
+`-m 6` rather than `-z 9`: the latter saves about 3% more and takes twenty five
+times longer, which is not a trade worth making on every import. cwebp drops the
+RGB values underneath fully transparent pixels unless `-exact` is passed, so a
+handful of files differ from the original there; every visible pixel matches.
 
 Idempotent, so re-running costs nothing. import-framer.py calls it after writing
 the pages; run it directly to redo just this step.
 """
-import os, re, subprocess, sys
+import os, re, struct, subprocess, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 IMAGES = os.path.join(ROOT, 'public', 'assets', 'images')
-QUALITY = '90'          # PSNR stays around 40 dB on this site's photographs
+ENCODE = ['-lossless', '-m', '6']   # pixel-exact; see the note above
 MIN_SAVING = 0.10       # skip WebP that barely beats the original
 RASTER = re.compile(r'/assets/images/([^"\s,)]+\.(?:png|jpe?g))', re.I)
 IMG_TAG = re.compile(r'<img\b[^>]*>', re.I)
@@ -42,6 +65,26 @@ def webp_for(name):
     return os.path.splitext(name)[0] + '.webp'
 
 
+def complete_webp(path):
+    """True when path is a whole WebP, not a half-written one.
+
+    A cwebp killed mid-write (a timed-out import, a cancelled build) leaves a
+    truncated or empty file behind. Judging it by existence and mtime alone
+    marks it current forever, and rewrite() then points a <source> at it, so the
+    browsers that prefer WebP get a broken image while the PNG fallback sits
+    there unused. The RIFF header carries the payload length, so a file that
+    ends early can be recognised without decoding it.
+    """
+    try:
+        with open(path, 'rb') as f:
+            head = f.read(12)
+        if len(head) < 12 or head[:4] != b'RIFF' or head[8:12] != b'WEBP':
+            return False
+        return struct.unpack('<I', head[4:8])[0] + 8 == os.path.getsize(path)
+    except OSError:
+        return False
+
+
 def encode(names):
     made = skipped = failed = bigger = 0
     for name in sorted(names):
@@ -49,12 +92,12 @@ def encode(names):
         dst = os.path.join(IMAGES, webp_for(name))
         if not os.path.exists(src):
             continue
-        if os.path.exists(dst) and os.path.getmtime(dst) >= os.path.getmtime(src):
+        if os.path.exists(dst) and os.path.getmtime(dst) >= os.path.getmtime(src) and complete_webp(dst):
             skipped += 1
             continue
-        r = subprocess.run(['cwebp', '-quiet', '-q', QUALITY, '-m', '6', src, '-o', dst],
+        r = subprocess.run(['cwebp', '-quiet', *ENCODE, src, '-o', dst],
                            capture_output=True)
-        if r.returncode != 0 or not os.path.exists(dst):
+        if r.returncode != 0 or not os.path.exists(dst) or not complete_webp(dst):
             failed += 1
             print('  could not encode', name, r.stderr.decode()[:120])
             if os.path.exists(dst):
