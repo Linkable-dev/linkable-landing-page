@@ -12,14 +12,15 @@ ASSETMAP = json.load(open(os.path.join(ROOT, 'tools/assetmap.json')))
 # SVG symbol sprite that Framer's runtime used to inject at hydration (<use href="#id">).
 SVG_SPRITE = open(os.path.join(ROOT, 'tools/svg-templates.html'), encoding='utf-8').read()
 
+# The legal pages are deliberately absent: their text is owned in this repo and
+# built by tools/build-legal.py, because while Framer held them every sync
+# overwrote whatever had been corrected. Adding them back here would undo that.
 PAGES = {  # snapshot file -> site url path
     'index.html': '/',
     'page_pricing.html': '/pricing',
     'page_creators.html': '/creators',
     'page_contact.html': '/contact',
     'page_blog.html': '/blog',
-    'page_legal_privacy-policy.html': '/legal/privacy-policy',
-    'page_legal_terms-of-service.html': '/legal/terms-of-service',
     'page_blog_creator-activation-playbook.html': '/blog/creator-activation-playbook',
     'page_blog_launch-campaign-linkable.html': '/blog/launch-campaign-linkable',
     'page_blog_leaked-discount-codes.html': '/blog/leaked-discount-codes',
@@ -176,13 +177,13 @@ for f, url in PAGES.items():
     open(out, 'w', encoding='utf-8').write(result)
     print('wrote', os.path.relpath(out, ROOT))
 
-# The cookie policy is a fourth legal page that Framer does not have, built from
-# the privacy policy shell so it inherits the chrome. Rebuild it here so it tracks
-# any restyle of the Framer legal template instead of drifting away from it.
+# The legal pages are ours now, rendered from tools/legal/content.py into the
+# Framer chrome. Rebuilt on every import so a change to the shared header or
+# footer reaches them along with every other page.
 import subprocess
-cookie_policy = os.path.join(ROOT, 'tools/build-cookie-policy.py')
-if os.path.exists(cookie_policy):
-    subprocess.run(['python3', cookie_policy], check=True)
+build_legal = os.path.join(ROOT, 'tools/build-legal.py')
+if os.path.exists(build_legal):
+    subprocess.run(['python3', build_legal], check=True)
 
 # Generated blog posts live outside Framer: re-render them and restore their
 # cards in the blog index (the import just overwrote blog/index.html).
