@@ -75,6 +75,55 @@ def fix_missing_hrefs(t):
         return tag
     return re.sub(r'<a\b[^>]*>', fix, t)
 
+# Tags Framer hard-codes in the <head>, matched by what they load rather than by
+# their surrounding markup, which Framer rewrites freely. Each becomes a parked
+# <script type="text/plain" data-consent="..."> that browsers will not execute;
+# src/consent.js revives the ones the visitor allows. Categories must match the
+# ones consent.js offers.
+GATED = [
+    ('googletagmanager\\.com/gtm\\.js', 'analytics'),   # Google Tag Manager loader
+    ('connect\\.facebook\\.net', 'marketing'),          # Meta pixel + its PageView/Schedule
+]
+
+def park_tracking(t, src):
+    """Stop the analytics and advertising tags running before there is consent."""
+    parked = 0
+
+    def park(m):
+        nonlocal parked
+        tag = m.group(0)
+        if 'data-consent=' in tag:
+            return tag
+        for pattern, category in GATED:
+            if re.search(pattern, tag):
+                parked += 1
+                open_tag = re.match(r'<script\b[^>]*>', tag).group(0)
+                rest = tag[len(open_tag):]
+                open_tag = re.sub(r'\s+type="[^"]*"', '', open_tag)
+                open_tag = open_tag[:-1] + f' type="text/plain" data-consent="{category}">'
+                return open_tag + rest
+        return tag
+
+    body_start = t.find('<body')
+    head, body = t[:body_start], t[body_start:]
+    head = re.sub(r'<script\b[^>]*>.*?</script>', park, head, flags=re.S)
+    # The GTM <noscript> iframe cannot be gated: it needs no JavaScript, so it
+    # would load Google's frame for a visitor who has consented to nothing and
+    # who has no way to consent either. Dropping it is the only correct option;
+    # it only ever existed as a fallback for scriptless browsers.
+    body, dropped = re.subn(
+        r'<noscript><iframe src="https://www\.googletagmanager\.com/ns\.html[^>]*></iframe></noscript>',
+        '', body)
+    t = head + body
+
+    leftover = re.search(r'<script(?![^>]*text/plain)[^>]*>(?:(?!</script>).)*?'
+                         r'(?:googletagmanager\.com/gtm\.js|connect\.facebook\.net)', t, re.S)
+    assert not leftover, (
+        f'{os.path.basename(src)}: a tracking tag escaped the consent gate near '
+        f'{leftover.group(0)[-90:]!r}. Add its pattern to GATED before shipping.')
+    return t
+
+
 def convert(src, page_url):
     t = open(src, encoding='utf-8').read()
     # --- head cleanup -------------------------------------------------------
@@ -102,6 +151,8 @@ def convert(src, page_url):
     head, body = t[:body_start], t[body_start:]
     body = re.sub(r'<script(?![^>]*googletagmanager)[^>]*>.*?</script>', '', body, flags=re.S)
     t = head + body
+    # --- consent gate -------------------------------------------------------
+    t = park_tracking(t, src)
     # --- assets & links -----------------------------------------------------
     t = localize_assets(t)
     t = resolve_links(t, page_url)
@@ -125,9 +176,16 @@ for f, url in PAGES.items():
     open(out, 'w', encoding='utf-8').write(result)
     print('wrote', os.path.relpath(out, ROOT))
 
+# The cookie policy is a fourth legal page that Framer does not have, built from
+# the privacy policy shell so it inherits the chrome. Rebuild it here so it tracks
+# any restyle of the Framer legal template instead of drifting away from it.
+import subprocess
+cookie_policy = os.path.join(ROOT, 'tools/build-cookie-policy.py')
+if os.path.exists(cookie_policy):
+    subprocess.run(['python3', cookie_policy], check=True)
+
 # Generated blog posts live outside Framer: re-render them and restore their
 # cards in the blog index (the import just overwrote blog/index.html).
-import subprocess
 if os.path.exists(os.path.join(ROOT, 'tools/blog/render.mjs')):
     subprocess.run(['node', os.path.join(ROOT, 'tools/blog/render.mjs')], check=True)
 

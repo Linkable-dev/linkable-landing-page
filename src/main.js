@@ -4,6 +4,7 @@
 import './site.css';
 import menuExpandedHtml from './menu-expanded.html?raw';
 import { FORM_ENDPOINT, FALLBACK_MAILTO } from './config.js';
+import { initConsent } from './consent.js';
 
 const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -396,6 +397,8 @@ function initLoadMore() {
 
 /* ----------------------------------------------------------------- boot */
 function boot() {
+  // First: nothing tracking-related may run until this has decided.
+  initConsent();
   initYear();
   initNestedLinks();
   initAppear();
