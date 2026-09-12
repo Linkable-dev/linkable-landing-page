@@ -67,6 +67,56 @@
   },
   {
     "heroImage": {
+      "id": 8357231,
+      "alt": "A woman with curly hair films a cooking video using a smartphone stabilizer in a modern kitchen.",
+      "src": "https://images.pexels.com/photos/8357231/pexels-photo-8357231.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/woman-recording-with-smartphone-8357231/",
+      "query": "woman filming product video kitchen",
+      "width": 6720,
+      "credit": {
+        "url": "https://www.pexels.com/@ron-lach",
+        "name": "Ron Lach"
+      },
+      "height": 4480,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/8357231/pexels-photo-8357231.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/8357231/pexels-photo-8357231.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/micro-influencers-for-ecommerce-brands-8357231-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/micro-influencers-for-ecommerce-brands-8357231-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "micro-influencers-for-ecommerce-brands",
+    "title": "Micro influencers for ecommerce brands: why smaller wins",
+    "description": "Why micro influencers for ecommerce brands often convert better than big names, how many to run, and how to manage them without a spreadsheet.",
+    "excerpt": "Smaller creators tend to sell more per pound spent than big names. Here is how many to work with and how to keep 20 collaborations organised.",
+    "date": "2026-09-12",
+    "updated": "2026-09-12",
+    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
+    "imageAlt": "A woman with curly hair films a cooking video using a smartphone stabilizer in a modern kitchen.",
+    "words": 842,
+    "source": "generated",
+    "keyword": "micro influencers for ecommerce brands",
+    "category": "Sourcing",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 3785806,
       "alt": "A woman checks her skin in the mirror, engaging in her morning skincare routine indoors.",
       "src": "https://images.pexels.com/photos/3785806/pexels-photo-3785806.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",

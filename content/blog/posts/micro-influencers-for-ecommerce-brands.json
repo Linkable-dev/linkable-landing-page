@@ -1,0 +1,102 @@
+{
+  "blocks": [
+    {
+      "text": "You have probably had this conversation internally: one creator with a huge following wants a fixed fee that eats your whole month's budget, and you are not sure the audience even buys the kind of thing you sell. Meanwhile a handful of smaller accounts have been tagging your product for free, and orders keep landing from their links.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Why do micro influencers convert better for ecommerce brands?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Micro influencers for ecommerce brands tend to convert better because their audience is narrower and more trusting. Someone with a few thousand followers in skincare or coffee has usually built that following around a specific interest, and their comments read like conversations with people who actually buy what they recommend. A creator with a broad, general audience has reach, but reach is not the same as an audience that wants your product category.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "The other reason is cost per result. A single large creator fee has to be justified by tracked sales, and if the audience is not a fit, the maths does not work. Spread the same budget across smaller creators on affiliate commission and you are only paying for what actually sells, which is a much lower risk way to test.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How many micro influencers should you run at once?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Most brands starting out find that a small number of creators produce most of the usable content and most of the sales, while the rest are useful for reach and social proof but do not move the needle much. That is normal. Do not judge the whole approach on any single creator's result.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Say you run a supplements brand and you want to test whether micro creators work for you. Running two or three at once tells you almost nothing, because a slow week or a bad brief can sink a small sample. Running a wider spread gives you enough data to see which content style, which product angle and which kind of creator actually drives orders, and you can double down on that pattern with your next batch of invitations.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you find and vet them without wasting weeks?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Manually searching hashtags and DMing creators one by one does not scale once you are trying to run more than a handful of collaborations a month. It also puts all the vetting weight on you, checking follower counts, engagement, whether they have posted anything embarrassing, whether they even ship to your warehouse's region.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "A creator platform built for this removes most of that friction. On [Linkable](/pricing), creators apply to your campaign directly, or you can discover and invite ones that match your brand using AI-powered matching, and applications typically start coming in within a day of launching a campaign. That means you are reviewing a shortlist of people who already want to work with you, rather than cold-pitching. If you have not run a campaign yet, our [guide to launching your first one](/blog/launch-campaign-linkable) walks through the setup.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you manage 20 creators without a spreadsheet falling apart?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Twenty active collaborations is where spreadsheets stop working. You lose track of who has been sent product, whose content is due, whose discount code is live, and whose sales you still need to reconcile against a payout. Miss one of those and you either underpay a creator or leave a discount code active long after it should have been switched off, which is its own problem (we wrote about [what happens when codes leak](/blog/leaked-discount-codes)).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "The fix is running everything through one system rather than juggling DMs, spreadsheets and your Shopify admin separately. With Linkable, product catalogue and orders sync from Shopify, gifted orders can be created automatically once you approve a creator, and affiliate sales are tracked through each creator's unique link and code, with payouts handled through the platform. Reporting then shows you content delivered, audience reached, engagement and tracked sales per creator and per campaign, so you can see at a glance who is worth inviting back. If you are just getting your first batch onboarded, our [guide to onboarding your first ten creators](/blog/onboard-first-creators) is the right next read.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What should your mix of gifted, paid and affiliate look like?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "With smaller creators, gifted product and affiliate commission usually do more work than fixed fees, because it aligns what you pay with what actually sells rather than paying upfront for reach that may not convert. That does not mean fixed fees never make sense, a creator with a strong track record for your category might be worth a paid deal, but for testing a wider group of micro creators, gifted plus commission keeps risk low while you learn who performs. Our post on [gifted versus paid collaborations](/blog/gifted-vs-paid-creator-collaborations) covers when to switch a creator from one to the other.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This week, pick one product line and open a campaign to a mix of gifted and affiliate creators rather than chasing one big name. Review whoever applies within the first day, approve a spread across follower sizes, and give it a few weeks before you judge results by creator rather than by campaign average.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "There is no fixed cutoff, but the term generally means creators with a smaller, tightly focused following rather than mass reach, where the audience shares a specific interest that matches your product category.",
+      "q": "What counts as a micro influencer in ecommerce?"
+    },
+    {
+      "a": "Gifted product with affiliate commission is usually the lower-risk starting point for smaller creators, since you only pay a fee once you see tracked sales, and you can move well-performing creators onto a paid deal later.",
+      "q": "Should micro influencers be paid or gifted?"
+    },
+    {
+      "a": "Yes. A clear brief on product angle, must-show details and posting timeline avoids reshoots and mismatched content, which matters more with a larger number of creators running at once.",
+      "q": "Do micro influencers need a formal brief?"
+    },
+    {
+      "a": "You can also track through unique creator links, which avoids the risk of codes being shared publicly or leaked outside your campaign.",
+      "q": "Can I track sales from creators without discount codes?"
+    }
+  ]
+}
