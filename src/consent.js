@@ -305,8 +305,34 @@ function addFooterLink() {
   for (const footer of document.querySelectorAll('footer')) {
     if (footer.querySelector('[data-cc="manage-footer"]')) continue;
     const legal = footer.querySelector('a[href="/legal/privacy-policy"]');
-    if (!legal?.parentElement) continue;
-    const link = legal.cloneNode(true);
+    if (!legal) continue;
+
+    // Each footer link sits in its own single-child wrapper, and those wrappers
+    // are what the row lays out. Inserting beside the <a> therefore drops the
+    // clone inside the privacy link's own wrapper, where it stacks underneath
+    // instead of joining the row. Climb to the wrapper whose parent also holds
+    // the terms link, which is the row itself, and clone at that level. Found by
+    // structure rather than by class, because the hashed names are regenerated
+    // on every re-import.
+    let wrapper = legal;
+    while (
+      wrapper.parentElement &&
+      wrapper.parentElement !== footer &&
+      !wrapper.parentElement.querySelector('a[href="/legal/terms-of-service"]')
+    ) {
+      wrapper = wrapper.parentElement;
+    }
+    const row = wrapper.parentElement;
+    if (!row) continue;
+    // Sit after the last legal link rather than beside the privacy one, so the
+    // footer reads Privacy, Terms, Cookie settings in the same order as the
+    // Policies sidebar.
+    const last = [...row.children].filter((el) => el.querySelector?.('a[href^="/legal/"]')).pop()
+      ?? wrapper;
+
+    const clone = wrapper.cloneNode(true);
+    const link = clone.matches('a') ? clone : clone.querySelector('a');
+    if (!link) continue;
     link.setAttribute('href', '#cookie-settings');
     link.setAttribute('data-cc', 'manage-footer');
     link.removeAttribute('data-framer-page-link-current');
@@ -314,7 +340,7 @@ function addFooterLink() {
     // the link keeps the footer's type styles.
     const label = link.querySelector('p') ?? link;
     label.textContent = 'Cookie settings';
-    legal.parentElement.insertBefore(link, legal.nextSibling);
+    last.insertAdjacentElement('afterend', clone);
   }
 }
 
