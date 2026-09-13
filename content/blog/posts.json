@@ -67,6 +67,56 @@
   },
   {
     "heroImage": {
+      "id": 7320788,
+      "alt": "Woman in a white robe taking a selfie with skincare products, set against a light blue background.",
+      "src": "https://images.pexels.com/photos/7320788/pexels-photo-7320788.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/a-woman-in-white-robe-sitting-while-holding-her-phone-7320788/",
+      "query": "creator reviewing product packaging phone",
+      "width": 6571,
+      "credit": {
+        "url": "https://www.pexels.com/@karola-g",
+        "name": "https://kaboompics.com/"
+      },
+      "height": 4381,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/7320788/pexels-photo-7320788.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/7320788/pexels-photo-7320788.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/affiliate-commission-rates-for-creators-7320788-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/affiliate-commission-rates-for-creators-7320788-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "affiliate-commission-rates-for-creators",
+    "title": "Affiliate commission rates for creators that protect margin",
+    "description": "How to set affiliate commission rates for creators that feel worth the effort without eating your margin, and when to add a flat fee.",
+    "excerpt": "A commission that's too low gets ignored and one that's too high eats your margin before you've covered costs. Here's how to land the number in between.",
+    "date": "2026-09-13",
+    "updated": "2026-09-13",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "Woman in a white robe taking a selfie with skincare products, set against a light blue background.",
+    "words": 967,
+    "source": "generated",
+    "keyword": "affiliate commission rates for creators",
+    "category": "Strategy",
+    "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 8357231,
       "alt": "A woman with curly hair films a cooking video using a smartphone stabilizer in a modern kitchen.",
       "src": "https://images.pexels.com/photos/8357231/pexels-photo-8357231.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",

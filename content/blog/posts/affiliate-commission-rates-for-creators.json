@@ -1,0 +1,122 @@
+{
+  "blocks": [
+    {
+      "text": "You've set up an affiliate campaign, a creator has posted, and a handful of sales have come through on their link. Now they message asking why the payout felt small compared to the effort of filming and editing. This is the moment most brands realise they picked a commission rate without really working out what it needed to do.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What's a reasonable affiliate commission rate for creators",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "There isn't a single right number, because it depends on your margin, your average order value and how much of the sale the creator actually drove. What matters is that the rate is high enough that a creator can look at it and see a real reason to keep posting, and low enough that you're still profitable once you account for product cost, any gifted item, and Linkable's tracked sales fee.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "For a lot of ecommerce brands, that lands somewhere in a range that feels generous on a single sale but sustainable across a month of sales from several creators. The mistake is picking the rate that sounds impressive to say out loud, rather than the one that still leaves you with margin after a creator sends you fifty orders in a month.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Work out your margin before you pick a number",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Start with landed cost, not retail price. If a supplement brand sells a product with a certain markup, the commission comes out of what's left after cost of goods, packaging and any shipping subsidy. Set the rate against that number, not against the sticker price, or you'll find yourself losing money on every affiliate sale without noticing until the payouts add up.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Say you run a coffee subscription brand and a bag costs you a few pounds to make and ship. A commission that looks small on paper might still be a large share of your actual margin once you strip out cost of goods. Do that arithmetic before you announce a rate to creators, not after the first payout run.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Account for the platform fee",
+      "type": "h3",
+      "items": null
+    },
+    {
+      "text": "On Linkable, affiliate sales are tracked through unique creator links and discount codes, with commission payouts handled through the platform, and tracked sales carry a 2.9% fee on top of your plan. That's a small number but it sits on top of whatever you're paying the creator, so build it into the margin calculation rather than treating it as a rounding error.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Should you pay a flat fee, a commission, or both",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "A pure commission structure asks the creator to take on all the risk. They post, and if the audience doesn't buy, they earn nothing for the time they spent filming and editing. Pure affiliate deals work best with creators who already have an audience that buys the category and who are confident in their own conversion.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "A flat fee plus commission structure splits the risk. You pay a fixed amount for the content itself, which covers the creator's time regardless of sales, then add a smaller commission on top so they still have a reason to keep promoting the link after the post goes live. This is usually the right structure for a first collaboration with a creator you haven't worked with before, because you're paying for the content as an asset and rewarding sales as a bonus.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Gifted product with an affiliate commission on top works differently again. The creator isn't out of pocket for the product, so the commission can sit lower than a paid deal, since their downside is limited to the time they spent creating. If you're still deciding between gifted and paid structures for a given creator tier, our piece on [gifted vs paid creator collaborations](/blog/gifted-vs-paid-creator-collaborations) walks through when each one makes sense.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How to set different rates without it looking arbitrary",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Creators compare notes, so an affiliate programme with rates that seem to shift for no reason gets a reputation fast. The fix isn't a single flat rate for everyone, it's a small number of clear tiers tied to something the creator can understand: audience size, whether the collaboration is gifted or paid, or whether they're a repeat creator who has already proven they convert.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "A simple version: one rate for first-time gifted collaborations, a higher rate for paid collaborations where the creator covers their own product cost, and a top rate reserved for creators who've already driven tracked sales for you before. Write the tiers down once and apply them consistently, so when a creator asks why their rate is what it is, you have an answer that isn't ",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "When to renegotiate a commission rate",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Revisit the rate when the data tells you something the original guess didn't know. If a creator is sending consistent tracked sales month after month, raising their rate costs you less than losing them to a brand that pays better, because replacing a proven affiliate takes longer than adjusting a number. Linkable's reporting shows tracked sales per creator, so you can see who's actually earning a renegotiation rather than guessing from gut feel.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "The reverse applies too. If a creator's link has produced applications and content but no sales after a fair run, that's a signal to move their next deal to gifted-only or a smaller flat fee, not to keep paying a commission rate against sales that aren't happening. For more on reading these numbers properly, see our guide on [measuring creator marketing ROI](/blog/how-to-measure-creator-marketing-roi).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This week, pull your margin per unit for your best-selling product, work out what commission rate still leaves you profitable after the platform fee, and write down two or three tiers instead of one flat number. If you're setting this up for the first time, [Linkable's pricing](/pricing) shows how affiliate tracking and payouts fit into the plans, and [/creators](/creators) is worth sharing with anyone asking how the payout actually works on their end.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Yes. Creators who receive free product and haven't spent their own money can reasonably take a lower commission than creators who paid full price and are relying on the commission to make the collaboration worthwhile.",
+      "q": "Should commission rates differ between gifted and paid creator collaborations"
+    },
+    {
+      "a": "No, but expect creators to compare notes informally. Keeping a small number of clear tiers based on audience size or collaboration type means you have a consistent answer if someone asks.",
+      "q": "Do I need to disclose commission rates to other creators"
+    },
+    {
+      "a": "Yes. Linkable charges 2.9% of tracked sales on every plan, on top of whatever commission you agree with the creator, so that fee needs to be built into your margin calculation.",
+      "q": "Does Linkable take a cut of affiliate sales on top of the creator's commission"
+    },
+    {
+      "a": "That's a sign to revisit the structure for that creator, either lowering the rate on their next campaign or moving to a flat fee for content rather than an ongoing commission tied to sales that aren't materialising.",
+      "q": "What happens if a creator's tracked sales don't cover the commission I'm paying"
+    }
+  ]
+}
