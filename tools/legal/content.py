@@ -19,6 +19,10 @@ and sets _fbp.
 """
 
 COMPANY = 'Linkable Ltd'
+# Companies House register, confirmed against the public record: LINKABLE LTD,
+# active, incorporated 13 February 2023, registered office as below. The record
+# also settles the address the old terms got wrong, which gave 10 York Rd SE1 7ND.
+COMPANY_NUMBER = '14658892'
 ADDRESS = ['10 Esprit Court', '21 Brune Street', 'London, England', 'E1 7ND']
 CONTACT = 'support@linkable.link'
 SITE = 'linkable.link'
@@ -27,8 +31,10 @@ UPDATED = '12 September 2026'
 # Facts the documents would be better for, which nothing in the repo establishes.
 # Left out rather than guessed; add them here and re-run tools/build-legal.py.
 TODO = [
-    'Companies House registration number, for the "who we are" section of both documents.',
-    'Whether Linkable is registered with the ICO as a data controller, and its registration number.',
+    'Whether Linkable is registered with the ICO as a data controller, and if so its '
+    'registration number. A UK controller normally has to pay the data protection fee, so if '
+    'there is no registration that is worth checking rather than simply omitting. The public '
+    'register could not be queried programmatically, so this is unconfirmed either way.',
     'The subscription terms that apply to the paid plans (fees, renewal, cancellation, refunds), '
     'which the current terms do not cover at all.',
     'Confirmation that support@linkable.link is the right address for data requests, '
@@ -50,8 +56,10 @@ PRIVACY = {
         ('p', f'This policy covers two things: the {SITE} website you are reading, and the '
               'Linkable app that merchants install in Shopify. Where a section applies to only '
               'one of them it says so.'),
-        ('p', f'{COMPANY} is the data controller for the information described here. You can '
-              f'reach us at <strong>{CONTACT}</strong> or at the address at the end of this page.'),
+        ('p', f'{COMPANY} is the data controller for the information described here. We are a '
+              f'company registered in England and Wales, number {COMPANY_NUMBER}, with our '
+              f'registered office at {ADDRESS[0]}, {ADDRESS[1]}, {ADDRESS[2]} {ADDRESS[3]}. You '
+              f'can reach us at <strong>{CONTACT}</strong>.'),
 
         ('h2', 'The website'),
         ('h3', 'What we collect when you visit'),
@@ -187,7 +195,10 @@ TERMS = {
     'blocks': [
         ('h1', 'Linkable Terms of Service'),
         ('p', f'<strong>Last updated: {UPDATED}</strong>'),
-        ('p', f'These terms are between you and {COMPANY}. They cover the {SITE} website. Where '
+        ('p', f'These terms are between you and {COMPANY}, a company registered in England and '
+              f'Wales under number {COMPANY_NUMBER}, whose registered office is at '
+              f'{ADDRESS[0]}, {ADDRESS[1]}, {ADDRESS[2]} {ADDRESS[3]}. They cover the {SITE} '
+              'website. Where '
               'you subscribe to a paid plan or run collaborations through the Linkable app, the '
               'plan terms presented at the point of purchase apply as well, and prevail over '
               'these terms if the two conflict.'),
