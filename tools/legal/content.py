@@ -28,18 +28,24 @@ CONTACT = 'support@linkable.link'
 SITE = 'linkable.link'
 UPDATED = '12 September 2026'
 
-# Facts the documents would be better for, which nothing in the repo establishes.
-# Left out rather than guessed; add them here and re-run tools/build-legal.py.
-TODO = [
-    'Whether Linkable is registered with the ICO as a data controller, and if so its '
-    'registration number. A UK controller normally has to pay the data protection fee, so if '
-    'there is no registration that is worth checking rather than simply omitting. The public '
-    'register could not be queried programmatically, so this is unconfirmed either way.',
-    'The subscription terms that apply to the paid plans (fees, renewal, cancellation, refunds), '
-    'which the current terms do not cover at all.',
-    'Confirmation that support@linkable.link is the right address for data requests, '
-    'rather than a dedicated privacy contact.',
-]
+# Nothing outstanding. support@linkable.link is confirmed as the address for data
+# requests, so it is what both documents give.
+#
+# Two points were raised while writing these and deliberately set aside by the
+# owner, recorded here so they read as decisions rather than oversights:
+#
+#   - ICO registration. A UK controller normally has to pay the data protection
+#     fee, and whether Linkable is on that register was never confirmed. The
+#     documents therefore name the ICO as the body to complain to, which is
+#     accurate regardless, but claim no registration of our own.
+#   - Subscription terms for the paid plans: fees, renewal, cancellation and
+#     refunds are not covered by the terms below, which govern the website and
+#     the collaboration model only. Anything contractual about money currently
+#     rests on whatever is shown at the point of purchase.
+#
+# Add an entry here if something new needs supplying; build-legal.py prints the
+# list on every run.
+TODO = []
 
 
 # --------------------------------------------------------------- privacy policy
