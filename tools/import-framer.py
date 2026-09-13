@@ -177,38 +177,6 @@ def convert(src, page_url):
     assert 'framerusercontent.com' not in t, f'leftover framer url in {src}: ' + re.search(r'https://framerusercontent\.com[^"\')\s]*', t).group(0)
     return t
 
-def chrome(t, tag):
-    """The page's <header> or <footer> element, with its offsets."""
-    m = re.search(r'<' + tag + r'\b.*</' + tag + r'>', t, re.S)
-    return (m.group(0), m.start(), m.end()) if m else (None, None, None)
-
-
-def graft_chrome(t, donor, page_name):
-    """Give a page the header and footer the rest of the site uses.
-
-    Framer never updated /contact when the navigation gained Pricing and the
-    footer was redesigned, so that page still ships the older pair: its menu has
-    no Pricing link at all, which leaves the pricing page unreachable from it.
-    That is Framer's inconsistency and it can only be corrected there, so this is
-    a deliberate departure from mirroring, like the two cards site.css hides, and
-    it means /contact no longer matches the live page's height.
-
-    The donor is the homepage, whose chrome is the current one. Framer marks the
-    link for the page you are on, so that marker is moved to the contact link
-    after the graft rather than left pointing at the homepage.
-    """
-    for tag in ('header', 'footer'):
-        new, _, _ = chrome(donor, tag)
-        old, start, end = chrome(t, tag)
-        if not new or not old:
-            print(f'  note: {page_name} has no <{tag}> to graft')
-            continue
-        t = t[:start] + new + t[end:]
-    t = t.replace(' data-framer-page-link-current="true"', '')
-    t = re.sub(r'<a ([^>]*href="/contact")', r'<a data-framer-page-link-current="true" \1', t)
-    return t
-
-
 converted = {}
 for f, url in PAGES.items():
     src = os.path.join(SNAP, f)
@@ -216,10 +184,6 @@ for f, url in PAGES.items():
         print('missing', src); continue
     converted[url] = (convert(src, url), OUTPUT_OVERRIDE.get(
         url, 'index.html' if url == '/' else url.strip('/') + '/index.html'))
-
-if '/contact' in converted and '/' in converted:
-    page, out = converted['/contact']
-    converted['/contact'] = (graft_chrome(page, converted['/'][0], '/contact'), out)
 
 for url, (result, rel) in converted.items():
     out = os.path.join(ROOT, rel)
