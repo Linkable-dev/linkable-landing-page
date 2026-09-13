@@ -121,6 +121,10 @@ def main():
         f'shell.html carries {shell.count("data-consent=")} parked tracking tags, expected 2'
     assert 'googletagmanager.com/ns.html' not in shell, \
         'shell.html still has the GTM noscript iframe, which cannot be consent-gated'
+    # Framer fires its Schedule conversion event on every page; the importer strips
+    # it, and a recaptured shell must not smuggle it back in.
+    assert "'Schedule'" not in shell, \
+        "shell.html fires Meta's Schedule conversion event on page view; strip it before use"
 
     for page in content.PAGES:
         print('wrote', os.path.relpath(build(shell, entry_tpl, page), ROOT))
