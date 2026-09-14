@@ -67,6 +67,56 @@
   },
   {
     "heroImage": {
+      "id": 6958448,
+      "alt": "A hand unboxes a beauty product in a sustainable cardboard package with shredded paper.",
+      "src": "https://images.pexels.com/photos/6958448/pexels-photo-6958448.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/a-person-holding-a-white-bottle-in-a-cardboard-box-6958448/",
+      "query": "unboxing skincare package creator",
+      "width": 6720,
+      "credit": {
+        "url": "https://www.pexels.com/@karola-g",
+        "name": "https://kaboompics.com/"
+      },
+      "height": 4480,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/6958448/pexels-photo-6958448.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/6958448/pexels-photo-6958448.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/product-seeding-campaign-strategy-6958448-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/product-seeding-campaign-strategy-6958448-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "product-seeding-campaign-strategy",
+    "title": "A product seeding campaign strategy that actually gets posts",
+    "description": "A product seeding campaign strategy that gets creators posting: who to send to, what to expect, when to follow up, and how to measure results.",
+    "excerpt": "Most seeded product ends up in a drawer. Here's a product seeding campaign strategy built around selection, expectations and follow-up, so free product turns into content.",
+    "date": "2026-09-14",
+    "updated": "2026-09-14",
+    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
+    "imageAlt": "A hand unboxes a beauty product in a sustainable cardboard package with shredded paper.",
+    "words": 1012,
+    "source": "generated",
+    "keyword": "product seeding campaign strategy",
+    "category": "Playbook",
+    "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 7320788,
       "alt": "Woman in a white robe taking a selfie with skincare products, set against a light blue background.",
       "src": "https://images.pexels.com/photos/7320788/pexels-photo-7320788.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
