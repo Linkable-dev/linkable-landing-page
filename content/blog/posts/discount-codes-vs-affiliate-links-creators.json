@@ -1,0 +1,132 @@
+{
+  "blocks": [
+    {
+      "text": "You've briefed ten creators, sent the products, and now you're staring at a spreadsheet trying to work out who actually sold anything. Some gave out a discount code. Some posted a link. Some did both, and the numbers don't add up.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This is the moment most brands realise that discount codes vs affiliate links for creators isn't really a choice between two tools. It's a choice about what you're trying to track and what you're willing to give away to track it.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What's the actual difference between a discount code and an affiliate link?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "A discount code is a price cut a customer types in at checkout. An affiliate link is a tracked URL a customer clicks that carries the attribution automatically, with no price change unless you choose to add one. Codes make the transaction visible to the customer (everyone can see the price drop). Links make the transaction visible to you (everyone can see who gets the credit).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "That single distinction explains most of the trade-offs below. Codes are easy for a creator to say out loud on camera. Links are easy for you to track without touching your margin.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Why do discount codes leak so easily?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Codes travel. A creator posts theirs, a follower screenshots it, it ends up on a coupon aggregator site, and six months later people you've never heard of are using a code meant for one creator's audience. You lose the ability to say which sale came from which post, and you're discounting orders that would have converted anyway.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "We covered this in detail in [the hidden cost of uncontrolled discount codes](/blog/leaked-discount-codes), but the short version is that a code with no expiry, no usage cap and no link to a specific campaign is a liability, not a tracking tool.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Affiliate links don't have this problem in the same way. A link is unique to the creator and the click either happens or it doesn't. Someone can still share a link, but there's no incentive for a stranger to reuse it the way there is with a percentage-off code, because the link itself doesn't reduce the price unless you've paired it with one.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Does the customer care which one they use?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Yes, and this is the part brands underrate. A discount code feels like a reward. The customer typed something in, they got money off, the transaction feels earned. An affiliate link is invisible to them. They click, they land on your product page, they buy, and they never think about attribution again.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "For a first-time buyer who needs a nudge, a code can be the difference between a browse and a purchase. For a creator whose audience already trusts the brand, a link with no discount protects your margin and the customer doesn't notice or mind, because they weren't buying for the discount in the first place.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Say you run a supplements brand and a creator with a loyal, engaged following posts an honest review with no discount attached. Their audience buys anyway, because the recommendation did the work the discount would otherwise have done. That's the case for skipping the code entirely.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "So which one should you actually use?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Use a code when you need the discount to convert a cold audience, and use a link (with or without a code layered on top) when you need clean attribution and you're paying on results rather than reach. Most brands running gifted, paid and affiliate mixes end up using both, just not for the same creator at the same time.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "For gifted collaborations, skip the discount code altogether. The creator got free product, the content is the deliverable, and a code just adds a leakage risk for no tracking benefit since you're not paying commission on sales anyway. For affiliate collaborations, the link is the whole point, since it's how commission gets calculated and paid. A discount code stacked on top of an affiliate link works well for launches or limited drops, where you want both the urgency of a price cut and the attribution of a link, but it should carry an expiry date and a cap.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "On Linkable, affiliate sales are tracked through unique creator links and discount codes together, with commission payouts handled through the platform, so you're not reconciling two separate systems by hand. If you're setting affiliate rates for the first time, [our guide to affiliate commission rates](/blog/affiliate-commission-rates-for-creators) covers how to set a rate that pays creators fairly without eating your margin.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you stop the two systems cannibalising each other?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "The most common margin problem isn't leakage, it's overlap: a customer who was going to buy anyway ends up counted (and discounted, and commissioned) twice because two creators pointed at the same purchase, or a code meant for one campaign got used in another. Fix this by giving every creator their own code and their own link, never a shared one, and by capping code usage per creator so a single leaked code can't quietly become the default discount for your whole store.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Check your reporting weekly rather than monthly while a campaign is live. If one creator's code is generating far more redemptions than their content reach would explain, that's your signal the code has escaped its intended audience, and it's much cheaper to fix in week one than after a full campaign cycle.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "If you're still working out how to structure the campaign itself before you get to tracking, [our first campaign launch guide](/blog/launch-campaign-linkable) walks through setup, and [the creator activation playbook](/blog/creator-activation-playbook) covers getting creators moving once the campaign is live.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This week, pull up your current live campaigns and check whether any creator is using a shared or unlimited code. If they are, replace it with a unique, capped one before your next payout cycle, so the numbers you report actually match the sales that creator drove.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Yes, and for launches this often works well: the code gives the customer a reason to buy now, while the link gives you clean attribution for who drove the sale. Just cap the code's usage and give it an expiry so it doesn't outlive the campaign.",
+      "q": "Can a creator use both a discount code and an affiliate link at the same time?"
+    },
+    {
+      "a": "Not on a platform built for it. Linkable tracks affiliate sales through unique creator links and codes and handles commission payouts in the same place, so there's no extra system to run alongside your Shopify store.",
+      "q": "Do affiliate links cost more to set up than discount codes?"
+    },
+    {
+      "a": "Generally no. Gifted collaborations are paid in product, not commission, so a discount code adds leakage risk without giving you any tracking benefit you don't already have from the content itself.",
+      "q": "Should gifted creators get a discount code at all?"
+    },
+    {
+      "a": "Giving multiple creators the same shared code. It makes it impossible to tell whose audience is actually buying, and it's the single easiest thing to fix by issuing a unique code or link per creator from the start.",
+      "q": "What's the biggest mistake brands make when choosing between codes and links?"
+    }
+  ]
+}

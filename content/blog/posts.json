@@ -67,6 +67,56 @@
   },
   {
     "heroImage": {
+      "id": 7948012,
+      "alt": "Man reviewing charts and graphs on a laptop for business analysis.",
+      "src": "https://images.pexels.com/photos/7948012/pexels-photo-7948012.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/person-using-black-laptop-on-table-7948012/",
+      "query": "person checking sales dashboard laptop",
+      "width": 6720,
+      "credit": {
+        "url": "https://www.pexels.com/@rdne",
+        "name": "RDNE Stock project"
+      },
+      "height": 4480,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/7948012/pexels-photo-7948012.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/7948012/pexels-photo-7948012.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/discount-codes-vs-affiliate-links-creators-7948012-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/discount-codes-vs-affiliate-links-creators-7948012-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "discount-codes-vs-affiliate-links-creators",
+    "title": "Discount codes vs affiliate links for creators",
+    "description": "Discount codes vs affiliate links for creators: how tracking, leakage and customer experience differ, and how to use both without cutting into margin.",
+    "excerpt": "Discount codes and affiliate links solve different problems. Here's how to pick the right one for each creator, and how to run both without leaking margin.",
+    "date": "2026-09-15",
+    "updated": "2026-09-15",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "Man reviewing charts and graphs on a laptop for business analysis.",
+    "words": 975,
+    "source": "generated",
+    "keyword": "discount codes vs affiliate links for creators",
+    "category": "Measurement",
+    "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 6958448,
       "alt": "A hand unboxes a beauty product in a sustainable cardboard package with shredded paper.",
       "src": "https://images.pexels.com/photos/6958448/pexels-photo-6958448.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
