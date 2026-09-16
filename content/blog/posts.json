@@ -67,6 +67,56 @@
   },
   {
     "heroImage": {
+      "id": 8360497,
+      "alt": "Man filming creative content with smartphone on gimbal indoors.",
+      "src": "https://images.pexels.com/photos/8360497/pexels-photo-8360497.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/man-filming-himself-using-a-smartphone-8360497/",
+      "query": "person filming supplement bottle phone",
+      "width": 6720,
+      "credit": {
+        "url": "https://www.pexels.com/@ron-lach",
+        "name": "Ron Lach"
+      },
+      "height": 4480,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/8360497/pexels-photo-8360497.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/8360497/pexels-photo-8360497.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/creator-marketing-for-supplement-brands-8360497-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/creator-marketing-for-supplement-brands-8360497-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "creator-marketing-for-supplement-brands",
+    "title": "Creator marketing for supplement brands that stays compliant",
+    "description": "Learn how to run creator marketing for supplement brands that avoids medical claims and builds trust with credible creators.",
+    "excerpt": "Supplement brands can grow fast through creators, but a single overreaching claim can get an ad account flagged. Here is how to brief creators, choose credible ones, and frame benefits safely.",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "Man filming creative content with smartphone on gimbal indoors.",
+    "words": 916,
+    "source": "generated",
+    "keyword": "creator marketing for supplement brands",
+    "category": "By category",
+    "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 7948012,
       "alt": "Man reviewing charts and graphs on a laptop for business analysis.",
       "src": "https://images.pexels.com/photos/7948012/pexels-photo-7948012.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
