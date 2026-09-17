@@ -67,6 +67,56 @@
   },
   {
     "heroImage": {
+      "id": 7014405,
+      "alt": "High angle of crop female photographer sitting at table with laptop and printed photoshoot while working remotely",
+      "src": "https://images.pexels.com/photos/7014405/pexels-photo-7014405.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/woman-working-with-laptop-and-photos-7014405/",
+      "query": "marketer reviewing creator profile laptop",
+      "width": 6000,
+      "credit": {
+        "url": "https://www.pexels.com/@george-milton",
+        "name": "George Milton"
+      },
+      "height": 4000,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/7014405/pexels-photo-7014405.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/7014405/pexels-photo-7014405.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/how-to-evaluate-a-creator-before-working-with-them-7014405-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/how-to-evaluate-a-creator-before-working-with-them-7014405-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "how-to-evaluate-a-creator-before-working-with-them",
+    "title": "How to evaluate a creator before working with them",
+    "description": "Learn how to evaluate a creator before working with them: audience fit, past brand work, engagement quality and the red flags to check first.",
+    "excerpt": "A quick review of a creator's profile before you send product or money tells you more than their follower count ever will. Here's what to check and in what order.",
+    "date": "2026-09-17",
+    "updated": "2026-09-17",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "High angle of crop female photographer sitting at table with laptop and printed photoshoot while working remotely",
+    "words": 856,
+    "source": "generated",
+    "keyword": "how to evaluate a creator before working with them",
+    "category": "Sourcing",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 8360497,
       "alt": "Man filming creative content with smartphone on gimbal indoors.",
       "src": "https://images.pexels.com/photos/8360497/pexels-photo-8360497.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",

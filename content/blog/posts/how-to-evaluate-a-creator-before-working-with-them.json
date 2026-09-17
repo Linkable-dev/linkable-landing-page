@@ -1,0 +1,122 @@
+{
+  "blocks": [
+    {
+      "text": "You've got an application or a creator you want to invite. The follower count looks fine, the niche looks right, and you're tempted to just send the product and move on. That's usually where campaigns go wrong. The gap between a creator who posts something decent and one whose audience actually buys is rarely visible in the profile grid.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you evaluate a creator before working with them",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "You evaluate a creator by checking four things in order: whether their audience matches your buyer, what their past brand content actually looked like, whether their engagement is real, and whether anything in their history or behaviour is a red flag. You can do all four from their public profile and a handful of recent posts, without a call or a paid tool.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "The point isn't to build a perfect scorecard. It's to catch the creators who will waste product or budget before you commit, and to spot the ones worth a proper collaboration. If you're building this into a repeatable process, our [creator activation playbook](/blog/creator-activation-playbook) covers what happens after you say yes.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Does their audience actually match your customer",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Follower count tells you reach, not fit. A creator with a smaller following whose comments are full of people asking where to buy the product she's holding is worth more than a bigger account whose comments are all emoji from other creators.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Look at who is actually watching, not who is following. Scroll the comments on their last few posts and note whether the people replying sound like your customer: same age range, same concerns, same tone. A skincare brand targeting people managing acne wants comments about breakouts and routines, not just \"gorgeous\" and \"love this\".",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Check the geography and platform mix too. A creator whose audience is mostly in a country you don't ship to, or whose growth is entirely from one viral video months ago, is a weaker bet than someone with steady, smaller numbers across several recent posts.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What does their past brand work tell you",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Scroll back through everything they've posted for other brands, not just the highlight they put in their media kit. Look at the products, the categories, and how often they post sponsored content versus their own life.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "A creator who has worked with a coffee brand, a supplement brand and three skincare brands in the same month is spreading trust thin, and their audience has likely tuned out the sponsored tag. A creator who works with one or two brands per category, and keeps working with them again, is a better signal. Repeat collaborations mean the brand saw a result worth paying for again.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Say you run a coffee subscription brand and you're looking at a creator who posted for a competing brand a few months back. Watch that video closely. Does the product actually get used, or just held up at the start and shelved for the rest of the clip. That's the difference between a creator who follows a brief and one who treats gifting as a quick post to get free stuff.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you read engagement and comment quality",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Engagement rate on its own is easy to fake or misread. What matters is the shape of it: are the likes and comments arriving steadily over the days after posting, or all at once in the first hour (a sign of a pod or bought engagement), and do the comments read like real replies or generic praise repeated word for word across multiple posts.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Open a handful of comments and check whether the creator replies to them. A creator who answers questions about sizing, ingredients or price in their own comments is running an active relationship with their audience, and that translates into a following that actually acts on recommendations. One that never replies is broadcasting, not building a community.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What red flags should stop you working with a creator",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Some things are worth walking away from outright. A profile that recently jumped in followers with no matching jump in comments or views is the clearest sign of bought followers. A creator who asks for payment before agreeing any deliverables, or who won't confirm what they'll post and when, is setting up a dispute later.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Watch how they talk about discount codes and links in past posts too. If you've read our piece on [leaked discount codes](/blog/leaked-discount-codes), you'll know how quickly an uncontrolled code can end up on a coupon site. A creator who's posted their code everywhere, including group chats and forums, rather than to their own audience, is a sign to set clearer terms before you start, not to skip them.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "On Linkable, the applications you get already come with the creator's profile and content history attached, which cuts most of this review down to a few minutes per applicant rather than hunting across platforms.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This week, before you approve your next batch of applications, run each one through these four checks. If you're still building your creator pool, our guide on [how to find creators for your Shopify brand](/blog/how-to-find-creators-shopify-brand) is a good place to start sourcing people worth reviewing in the first place.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Once you know what to check, most creators can be reviewed by scrolling their last several posts and the comments underneath, without needing a call or a separate tool.",
+      "q": "How long should reviewing a creator take before you approve them"
+    },
+    {
+      "a": "You can, but public post history tells you more, because a creator's own screenshots can be selective. Watching how comments and likes arrive over time on live posts is harder to fake.",
+      "q": "Should you ask a creator for their engagement stats directly"
+    },
+    {
+      "a": "Usually yes for a first collaboration. A smaller creator whose audience matches your customer and engages genuinely is more likely to drive tracked sales than a larger account with passive followers.",
+      "q": "Is a smaller creator with better engagement worth more than a bigger one"
+    },
+    {
+      "a": "Start with a gifted collaboration rather than a paid fee, so the risk stays low while you see how they handle the brief and whether their content performs.",
+      "q": "What should you do if a creator looks fine but you're still unsure"
+    }
+  ]
+}
