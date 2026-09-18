@@ -1,0 +1,107 @@
+{
+  "blocks": [
+    {
+      "text": "You brief a creator, get a nice video back, post it on their feed, watch it get a few hundred likes, and move on. Then your media buyer asks for something to put behind a paid ad, and you realise the clip you have isn't licensed for that, or wasn't shot with an ad in mind at all. This mix-up costs brands time and, sometimes, a legal headache.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What's the difference between UGC and influencer content for ads?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "UGC, in the way most Shopify brands use the term, is content made to look native and unpolished, filmed for the purpose of being used as an ad. It's shot to a brief, often by someone with no real following, and the brand owns full usage rights from the start. Influencer content is a post published on that creator's own channel, aimed at their audience, and only usable elsewhere if you separately license it.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Both can be good ad creative. The distinction is about ownership and intent, not quality. A UGC clip is built for your ad account. An influencer post is built for their feed, and turning it into an ad is a second transaction.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Why do brands need both?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Influencer posts do the reach and social proof job. A creator's own audience trusts them, and their comments section is often the most honest product feedback you'll ever get for free. UGC does the paid media job. It gives you raw material shaped to hook, demonstrate and close within the first few seconds, which is what an ad needs and a lifestyle post usually doesn't deliver.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Say you run a coffee brand and send bags to a handful of creators on a gifted collaboration. One posts a relaxed morning routine video that performs well organically. That same footage, cut down and run as a paid ad, might flop, because it wasn't paced or framed for someone scrolling past a sponsored post. You'd want a second, shorter cut, filmed with the ad placement in mind, ideally from the same creator while the product is fresh in their hands.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you brief for both types in one collaboration?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Ask for it explicitly, at the start, not after you've seen the first cut. Tell the creator you want a post for their own channel and a separate, shorter version framed as if the viewer has never heard of the product, with the hook in the first couple of seconds and no reliance on their usual intro or outro. Give them the specific claim or benefit you want in that second cut, since that's the version your ad account will actually run.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Our [creator brief template for ecommerce](/blog/creator-brief-template-for-ecommerce) covers how to write this without triggering endless reshoots. The short version: separate the two deliverables in the brief itself, so the creator isn't guessing which version needs to work as an ad and which one just needs to feel like them.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What rights do you need before you can run content as an ad?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "You need explicit usage rights in writing before you spend a pound of media budget behind someone else's face and voice. A gifted or affiliate arrangement doesn't automatically include the right to run that content as a paid ad, on a whitelisted handle, or in your own marketing. If you want that, say so in the brief and agree it before the shoot, not after you've fallen in love with the clip.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This is also where Linkable's [campaign](/blog/launch-campaign-linkable) setup helps, because you set the terms of the collaboration, including what the content can be used for, when you invite the creator, rather than negotiating rights after delivery.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you avoid paying twice for the same content?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Build the ad usage fee into the original offer rather than treating it as a surprise add-on later. If you're running a fixed-fee collaboration, include a line that covers organic posting plus a set period of paid usage, so the creator knows upfront and you're not re-opening the conversation, and the price, once the content already exists and you clearly want it.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "For affiliate-driven creators, the incentive is already aligned differently: they earn on tracked sales rather than a flat content fee, so the ad usage conversation is a separate, smaller negotiation rather than the whole deal. Our post on [affiliate commission rates for creators](/blog/affiliate-commission-rates-for-creators) goes into how to structure that without eating your margin.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This week, look at your last few creator collaborations and check whether any of the strongest performing organic posts were ever cleared for paid use. If they weren't, go back to the creator, offer a fair usage fee, and get it in writing before you touch the ad account. On your next brief, ask for both deliverables from day one so you're not choosing between reach and ad creative.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Yes, and it's often more efficient than briefing two different people, since the creator already has the product and understands the brand. Ask for the second, shorter cut at the same time as the main post so you're not going back to them separately.",
+      "q": "Can the same creator produce both organic content and paid ad content?"
+    },
+    {
+      "a": "No. UGC describes the style and purpose of the content, not the size of the creator's audience. A creator with a real following can still shoot content specifically intended for your ad account.",
+      "q": "Does UGC need to be filmed by someone with no following?"
+    },
+    {
+      "a": "It can, but only if you state it clearly in the brief and the creator agrees before filming. Free product alone rarely covers paid usage in a creator's mind, so treat it as a term you negotiate, not an assumption.",
+      "q": "Can a gifted collaboration include ad usage rights?"
+    },
+    {
+      "a": "You risk the creator asking you to take it down, requesting payment after the fact, or damaging the relationship for future collaborations. Agreeing usage terms upfront avoids all three.",
+      "q": "What happens if I run a creator's content as an ad without agreeing rights first?"
+    }
+  ]
+}

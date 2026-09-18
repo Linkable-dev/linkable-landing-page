@@ -67,6 +67,56 @@
   },
   {
     "heroImage": {
+      "id": 8154655,
+      "alt": "Woman recording a skincare vlog with cosmetics using a phone camera indoors.",
+      "src": "https://images.pexels.com/photos/8154655/pexels-photo-8154655.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/woman-using-makeup-while-doing-a-recording-on-phone-8154655/",
+      "query": "person filming product review phone",
+      "width": 6169,
+      "credit": {
+        "url": "https://www.pexels.com/@ron-lach",
+        "name": "Ron Lach"
+      },
+      "height": 4113,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/8154655/pexels-photo-8154655.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/8154655/pexels-photo-8154655.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/ugc-vs-influencer-content-for-ads-8154655-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/ugc-vs-influencer-content-for-ads-8154655-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "ugc-vs-influencer-content-for-ads",
+    "title": "UGC vs influencer content for ads and how they differ",
+    "description": "UGC vs influencer content for ads serve different jobs. Learn the difference and how to brief creators so you get both, without paying twice.",
+    "excerpt": "UGC and influencer content aren't the same asset. Here's what separates them, and how to brief a creator so you walk away with both an ad-ready clip and a post on their own channel.",
+    "date": "2026-09-18",
+    "updated": "2026-09-18",
+    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
+    "imageAlt": "Woman recording a skincare vlog with cosmetics using a phone camera indoors.",
+    "words": 800,
+    "source": "generated",
+    "keyword": "ugc vs influencer content for ads",
+    "category": "Strategy",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 7014405,
       "alt": "High angle of crop female photographer sitting at table with laptop and printed photoshoot while working remotely",
       "src": "https://images.pexels.com/photos/7014405/pexels-photo-7014405.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
