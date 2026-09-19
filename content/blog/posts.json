@@ -67,6 +67,56 @@
   },
   {
     "heroImage": {
+      "id": 8111871,
+      "alt": "Businesswoman pointing at paperwork on a desk in an office setting, highlighting key data.",
+      "src": "https://images.pexels.com/photos/8111871/pexels-photo-8111871.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/professional-person-pointing-on-a-contract-8111871/",
+      "query": "woman reviewing contract laptop desk",
+      "width": 6016,
+      "credit": {
+        "url": "https://www.pexels.com/@pavel-danilyuk",
+        "name": "Pavel Danilyuk"
+      },
+      "height": 4016,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/8111871/pexels-photo-8111871.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/8111871/pexels-photo-8111871.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/creator-contract-essentials-small-brands-8111871-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/creator-contract-essentials-small-brands-8111871-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "creator-contract-essentials-small-brands",
+    "title": "Creator contract essentials for small brands",
+    "description": "The handful of terms every small brand needs in a creator contract: usage rights, exclusivity, deliverables and payment timing, explained plainly.",
+    "excerpt": "You don't need a legal team to protect your brand in a creator deal. Here are the terms that actually matter, and what to say when a creator pushes back.",
+    "date": "2026-09-19",
+    "updated": "2026-09-19",
+    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
+    "imageAlt": "Businesswoman pointing at paperwork on a desk in an office setting, highlighting key data.",
+    "words": 1086,
+    "source": "generated",
+    "keyword": "creator contract essentials for small brands",
+    "category": "Playbook",
+    "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 8154655,
       "alt": "Woman recording a skincare vlog with cosmetics using a phone camera indoors.",
       "src": "https://images.pexels.com/photos/8154655/pexels-photo-8154655.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
