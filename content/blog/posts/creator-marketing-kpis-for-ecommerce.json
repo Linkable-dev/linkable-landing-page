@@ -1,0 +1,132 @@
+{
+  "blocks": [
+    {
+      "text": "You send a report to your founder or your finance lead after a creator campaign and they ask one question: did this work. If your slide has follower counts and likes on it, you don't have an answer. You have decoration.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "The right creator marketing kpis for ecommerce change depending on where you are in a campaign. Early on you're checking whether the mechanics work at all. Mid-campaign you're checking whether content and reach are showing up. After the campaign closes you're checking whether any of it made money. Mixing these up is why so many reports feel padded with numbers that don't lead anywhere.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What should you measure at launch?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "At launch, measure application volume, approval rate and time to first content. These tell you whether the campaign brief and offer are attracting the right creators and whether they're actually posting, before you worry about sales.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "If you set up a campaign and get almost no applications in the first day, the offer or the brief is the problem, not the creators. On Linkable, creators typically start applying within 24 hours of a campaign going live, so a quiet first day is a signal worth acting on immediately rather than waiting a week to see if it picks up. Check your product selection, your commission or fee, and whether the brief in the campaign is clear about what you want. [Launching your first creator campaign](/blog/launch-campaign-linkable) covers the setup steps that most affect this stage.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Approval rate matters too. If you're approving nearly everyone who applies, you're probably not being selective enough about fit, and you'll see it later in weak content or mismatched audiences. If you're rejecting most applicants, your criteria might be too narrow for the campaign size you want.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Which metrics matter once content starts coming in?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Once creators are posting, the metrics that matter are content delivered, audience reached and engagement generated, tracked per creator so you can see who's actually producing. This is the stage where you separate creators worth re-inviting from creators who took the product and went quiet.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Content delivered is the simplest check: did the creator post what they agreed to, on the platform they agreed to. Audience reached tells you the scale a piece of content is playing to, which matters more for paid collaborations where you're paying partly for visibility. Engagement (comments, shares, saves) tells you whether the content resonated enough for people to act on it, not just scroll past it.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Say you're running a coffee subscription brand with a gifted product campaign of a dozen creators. Three of them post content that gets meaningfully more comments and saves than the rest. That's your shortlist for a paid or affiliate arrangement next round, and it's a stronger reason to work with them again than the fact that they have a bigger following. [How to evaluate a creator before working with them](/blog/how-to-evaluate-a-creator-before-working-with-them) goes into what separates a creator worth repeating from one you shouldn't.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What actually proves creator marketing roi for ecommerce?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Tracked sales attributed to a creator, through a unique link or discount code, is the metric that proves return. Everything before this stage tells you whether the campaign is running well. This is the number that tells you whether it paid for itself.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Track sales per creator, not just per campaign. A campaign total can look healthy while most of the sales come from a handful of creators and the rest contributed almost nothing. That distinction changes who you rebook, who you move to affiliate terms, and who you drop. If you're on Linkable, affiliate sales are tracked automatically through creator-specific links and codes, with reporting broken out per creator so this comparison doesn't need a spreadsheet.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "For a full walkthrough of attributing sales correctly and avoiding the common mistakes in this step, see [how to measure creator marketing ROI without guessing](/blog/how-to-measure-creator-marketing-roi).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Which metrics should you stop reporting?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Drop follower count, likes and generic impressions from your report unless you're explaining a specific anomaly. None of these connect reliably to whether the campaign made you money, and reporting them alongside real numbers makes the real numbers look weaker by association.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Follower count is the worst offender because it measures the creator's audience size, not their audience's buying behaviour. A creator with a smaller, tightly relevant following will often outsell one with a much bigger, more general audience. This is most of the argument in [micro influencers for ecommerce brands](/blog/micro-influencers-for-ecommerce-brands): reach without relevance doesn't convert.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Likes are similarly weak. A like costs nothing and means very little. If you want a proxy for content quality before sales data comes in, use saves and comments instead, since both require more effort from the viewer and correlate better with people who are actually paying attention to the product.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you put this into one report?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Build the report around the funnel, not around a single scorecard. One section for setup health (applications, approvals, time to first post), one for content health (delivered, reached, engaged), one for commercial outcome (tracked sales, cost per sale, repeat creators worth rebooking). Anyone reading it should be able to tell in thirty seconds whether the campaign is a keep, a fix or a stop.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This structure is also what makes discount code leakage or affiliate link misuse easy to spot, because a mismatch between content delivered and sales tracked usually points to a tracking or code problem rather than a creator problem. [The hidden cost of uncontrolled discount codes](/blog/leaked-discount-codes) covers how that shows up in practice.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Pull last month's creator campaign report and take out anything that isn't application rate, approval rate, content delivered, reach, engagement or tracked sales. What's left is the version worth sending to your founder. If you want that reporting built in from the start rather than assembled after the fact, [Linkable's plans](/pricing) include campaign and creator insights on every tier.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Yes. Gifted campaigns are usually judged on content delivered and engagement since there's no direct cost per sale to measure against. Paid and affiliate campaigns should also be judged on tracked sales and cost per sale, since you're paying a fee or commission and need to know it earned out.",
+      "q": "Do I need different KPIs for gifted campaigns versus paid or affiliate ones?"
+    },
+    {
+      "a": "Application volume and time to first content tell you within days whether the setup is working. Sales attribution takes longer, often a few weeks, since it depends on when creators post and when their audience acts on it.",
+      "q": "How soon can I tell if a creator campaign is working?"
+    },
+    {
+      "a": "Engagement rate is a better signal than follower count but it still isn't proof of sales. Use it as an early filter for which creators to watch, then confirm with tracked sales data before deciding who to rebook.",
+      "q": "Should engagement rate replace follower count in reporting?"
+    },
+    {
+      "a": "Look at enough creators in one campaign to see a spread, not just one or two data points. A campaign with a dozen or so creators usually gives you enough contrast to see which ones are actually driving content and sales, versus which ones are simply present.",
+      "q": "What's a reasonable number of creators to compare before drawing conclusions?"
+    }
+  ]
+}

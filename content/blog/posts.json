@@ -67,6 +67,56 @@
   },
   {
     "heroImage": {
+      "id": 5912324,
+      "alt": "Close-up of a laptop displaying trading charts on a stylish wooden table, ideal for financial themes.",
+      "src": "https://images.pexels.com/photos/5912324/pexels-photo-5912324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/close-up-shot-of-a-laptop-on-wooden-table-5912324/",
+      "query": "marketing analytics dashboard laptop desk",
+      "width": 6000,
+      "credit": {
+        "url": "https://www.pexels.com/@joshuamayo",
+        "name": "Joshua Mayo"
+      },
+      "height": 4000,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/5912324/pexels-photo-5912324.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/5912324/pexels-photo-5912324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/creator-marketing-kpis-for-ecommerce-5912324-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/creator-marketing-kpis-for-ecommerce-5912324-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "creator-marketing-kpis-for-ecommerce",
+    "title": "Creator marketing KPIs for ecommerce, stage by stage",
+    "description": "Learn which creator marketing KPIs for ecommerce actually matter at each campaign stage, and which vanity metrics to stop reporting.",
+    "excerpt": "Different stages of a creator campaign need different numbers. Here's what to track at launch, mid-campaign and after, and what to drop from the report.",
+    "date": "2026-09-20",
+    "updated": "2026-09-20",
+    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
+    "imageAlt": "Close-up of a laptop displaying trading charts on a stylish wooden table, ideal for financial themes.",
+    "words": 980,
+    "source": "generated",
+    "keyword": "creator marketing kpis for ecommerce",
+    "category": "Measurement",
+    "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 8111871,
       "alt": "Businesswoman pointing at paperwork on a desk in an office setting, highlighting key data.",
       "src": "https://images.pexels.com/photos/8111871/pexels-photo-8111871.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
