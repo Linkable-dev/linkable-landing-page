@@ -67,6 +67,52 @@
   },
   {
     "heroImage": {
+      "id": 6933147,
+      "alt": "A person preparing coffee using a filter on a wooden table indoors.",
+      "src": "https://images.pexels.com/photos/6933147/pexels-photo-6933147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/a-person-making-coffee-6933147/",
+      "query": "person brewing coffee kitchen counter",
+      "width": 7952,
+      "credit": {
+        "url": "https://www.pexels.com/@mikhail-nilov",
+        "name": "Mikhail Nilov"
+      },
+      "height": 5304,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/6933147/pexels-photo-6933147.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/6933147/pexels-photo-6933147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/creator-marketing-coffee-food-brands-6933147-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "creator-marketing-coffee-food-brands",
+    "title": "Creator marketing for coffee and food brands that repeats",
+    "description": "Creator marketing for coffee and food brands works differently to skincare or apparel. Here's how to handle sampling, recipes and subscriptions.",
+    "excerpt": "Coffee, snacks and other consumables live or die on repeat purchase, not one big launch moment. Here's how to build creator marketing around sampling, recipe content and subscription hooks.",
+    "date": "2026-09-21",
+    "updated": "2026-09-21",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "A person preparing coffee using a filter on a wooden table indoors.",
+    "words": 891,
+    "source": "generated",
+    "keyword": "creator marketing for coffee and food brands",
+    "category": "By category",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 5912324,
       "alt": "Close-up of a laptop displaying trading charts on a stylish wooden table, ideal for financial themes.",
       "src": "https://images.pexels.com/photos/5912324/pexels-photo-5912324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",

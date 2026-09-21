@@ -1,0 +1,107 @@
+{
+  "blocks": [
+    {
+      "text": "Say you run a coffee subscription brand shipping a few hundred bags a month. A single creator post can bring in a wave of new customers, but if those customers order once and never come back, you have spent your margin on a one-off spike. Consumables need a different plan to skincare or apparel, because the win isn't the first order, it's the fifth.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What does creator marketing for coffee and food brands actually look like?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Creator marketing for coffee and food brands means running gifted or affiliate campaigns where creators receive product, brew or cook with it on camera, and either drive a discount code or an affiliate link back to your Shopify store. The mechanics are the same as any other category. What changes is the content brief, the sampling logistics, and what you measure after the first order, because a consumable's real value shows up in reorders, not the first sale.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "With coffee, snacks, sauces or supplements, a creator's audience already trusts them for a recommendation they can repeat weekly. That makes them a good fit for affiliate structures where the creator keeps earning as long as their followers keep ordering, rather than a flat fee that only rewards the first post. You can set this up as a mixed campaign on [Linkable](/pricing), gifting the first bag and switching high performers to an affiliate rate once you see who actually drives orders.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you handle sampling and shipping without losing margin?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Sampling is where food and drink brands lose money if they aren't careful. Coffee and snacks are heavier and bulkier than a serum, so postage eats into the value of the gift faster. Before you send product to fifty creators, work out what a single unit actually costs you delivered, not just the retail price, and size your gifting campaign around that number rather than around how many applications you want to approve.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "It also helps to batch shipments around a single product or seasonal flavour rather than letting every creator choose from your full range. That keeps your fulfilment simple and gives you a consistent set of content to compare. If you're new to sampling at scale, our [product seeding campaign strategy](/blog/product-seeding-campaign-strategy) covers how to structure the send so you get posts, not just quiet applications that go nowhere.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Perishables raise the stakes further. Fresh sauces, baked goods or anything with a short shelf life need creators who post quickly after receiving, so build a posting deadline into your brief rather than leaving it open-ended. A creator who sits on a jar of jam for three weeks before filming isn't being difficult, they just didn't know it mattered.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What kind of content actually sells consumables?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Unboxing works for a first impression, but recipe and usage content is what moves coffee, food and drink because it shows the product doing something rather than just sitting on a counter. A creator brewing a pour-over with your beans, building a snack board around your dip, or using your protein powder in a smoothie gives the viewer a reason to buy that a plain product shot never will.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Ask creators for one clear use case rather than a general review. \"Show your morning coffee routine\" or \"build a lunch around this sauce\" gives a creator something concrete to film and gives you content you can reuse in ads later. If you're writing this into a brief for the first time, our [creator brief template for ecommerce](/blog/creator-brief-template-for-ecommerce) has the structure that keeps this specific without micromanaging the creator's style.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Comparison and taste-test formats also work well for coffee and snacks, where a creator can genuinely have a preference, unlike a supplement where the effect is invisible on camera. Let creators be honest about flavour, because a slightly critical note reads as trustworthy and still sells the product to people who share that creator's taste.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do subscription hooks fit into creator campaigns?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Subscription is the whole point of a consumables brand, so your creator campaign should be built to drive sign-ups, not just single orders. A discount code that only applies to a subscription's first order (rather than a one-off purchase) nudges a creator's audience toward the behaviour you actually want, and it's easy to track through Shopify once the order syncs.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Affiliate links suit this better than flat fees, because a creator who keeps earning commission on every renewal has a reason to keep mentioning your brand months after the original post, rather than treating the collaboration as done once the video is live. If you're deciding between the two structures for a food or drink brand, [discount codes vs affiliate links for creators](/blog/discount-codes-vs-affiliate-links-creators) walks through when each makes sense.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Once a campaign is running, watch reorder rate by creator, not just first orders. A creator whose audience subscribes and stays is worth more to a coffee or supplement brand than one who drives a bigger first spike that never repeats, even if the first-order numbers look similar. [Linkable's](/pricing) reporting shows tracked sales per creator, which makes this comparison straightforward instead of a spreadsheet exercise.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Set up your next campaign this week with one clear use case, a shipping deadline for perishables, and a subscription-first discount code, then check which creators are still driving orders in a month. That's the number that tells you who to keep working with.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Start gifted for coffee, snacks and drinks, since the product cost is usually low enough that free product is a fair trade for content. Move your best performers to a fixed fee or affiliate rate once you can see who actually drives orders.",
+      "q": "Should coffee and food brands use gifted product or paid collaborations?"
+    },
+    {
+      "a": "Fewer creators sending consistent, repeatable content beats a large batch of one-off posts, especially while you're still working out your shipping costs and content brief. Expand once you know what a good post looks like.",
+      "q": "How many creators should a small food brand work with at once?"
+    },
+    {
+      "a": "The core terms are the same, but it helps to specify posting deadlines for perishable products and to be clear about allergen or ingredient claims creators can and can't make on camera. Our [creator contract essentials for small brands](/blog/creator-contract-essentials-small-brands) covers the general structure.",
+      "q": "Do food and drink brands need different contracts to other categories?"
+    },
+    {
+      "a": "Affiliate tracking follows the order as it syncs from Shopify, so a subscription's recurring orders can be attributed the same way as a one-off purchase, provided the discount code or link is applied at checkout each time.",
+      "q": "Can affiliate tracking handle subscription renewals, not just first orders?"
+    }
+  ]
+}
