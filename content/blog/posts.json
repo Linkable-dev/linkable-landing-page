@@ -67,6 +67,56 @@
   },
   {
     "heroImage": {
+      "id": 1587043,
+      "alt": "Businesswoman in blue suit using laptop, glancing over shoulder.",
+      "src": "https://images.pexels.com/photos/1587043/pexels-photo-1587043.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/woman-holding-laptop-computer-while-facing-backward-1587043/",
+      "query": "marketer reviewing creator profiles laptop",
+      "width": 6016,
+      "credit": {
+        "url": "https://www.pexels.com/@moose-photos-170195",
+        "name": "Moose Photos"
+      },
+      "height": 4016,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/1587043/pexels-photo-1587043.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/1587043/pexels-photo-1587043.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/creator-applications-vs-outbound-recruiting-1587043-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/creator-applications-vs-outbound-recruiting-1587043-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "creator-applications-vs-outbound-recruiting",
+    "title": "Creator applications vs outbound recruiting for your brand",
+    "description": "Creator applications vs outbound recruiting compared on cost, speed and quality, with a practical way to combine both for Shopify brands.",
+    "excerpt": "Waiting for creators to apply and going out to find them solve different problems. Here's how to work out which one your brand needs right now, and when to run both at once.",
+    "date": "2026-09-22",
+    "updated": "2026-09-22",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "Businesswoman in blue suit using laptop, glancing over shoulder.",
+    "words": 905,
+    "source": "generated",
+    "keyword": "creator applications vs outbound recruiting",
+    "category": "Sourcing",
+    "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 6933147,
       "alt": "A person preparing coffee using a filter on a wooden table indoors.",
       "src": "https://images.pexels.com/photos/6933147/pexels-photo-6933147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -90,6 +140,10 @@
       ],
       "provider": "pexels",
       "files": [
+        {
+          "path": "/assets/blog/creator-marketing-coffee-food-brands-6933147-940.jpg",
+          "w": 940
+        },
         {
           "path": "/assets/blog/creator-marketing-coffee-food-brands-6933147-1880.jpg",
           "w": 1880

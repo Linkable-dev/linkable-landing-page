@@ -1,0 +1,107 @@
+{
+  "blocks": [
+    {
+      "text": "You have launched a campaign and now you are staring at a list of creators wondering where they should come from. Do you open the doors and let people apply, or do you go and find the ones you actually want. Most brands do one and wish they had done the other.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Should you rely on creator applications or go outbound?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Use both, but for different jobs. Applications are for volume and speed when you need a lot of content fast and you are willing to filter. Outbound recruiting is for precision when you need a specific type of creator, a specific audience, or a small number of people you can trust with a bigger budget. Brands that only take applications end up with a mixed bag of content. Brands that only recruit outbound end up slow and expensive per creator. The strongest sourcing mix runs both at once and lets each one cover the other's weak spot.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "On a platform like Linkable, this looks like keeping a campaign open for applications while also using [discovery to invite](/creators) specific creators who match your brand. The application pool fills the campaign quickly and the invited creators raise the average quality.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What outbound recruiting costs you in time",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Outbound is a search problem before it is a negotiation problem. Someone on your team has to scroll through a platform, judge whether a creator's audience and tone fit the brand, find contact details, write a personal message, and follow up when nobody replies. Do that for a shortlist of thirty creators and you might end up with a handful who respond and fewer who actually deliver.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "That time cost is invisible on a spreadsheet but it is real. It is also why outbound tends to get skipped once a brand gets busy, which is a mistake, because outbound is where you find the creators nobody else is messaging yet. If you have never worked out where to look, our guide on [how to find creators for your Shopify brand](/blog/how-to-find-creators-shopify-brand) is a reasonable place to start before you build an outbound list.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "The upside is control. You choose exactly who gets asked, you can be selective about audience fit before anyone has posted a single piece of content, and you are not wading through applications from people who never read the brief.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Where creator applications fall down",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Applications solve the opposite problem. You post a campaign, and creators who already follow your product category come to you. Say you run a skincare brand and open a gifted campaign: within a day you might have dozens of applications from people who already talk about skincare, without you having to search for a single one of them. On Linkable, [creators start applying within 24 hours](/blog/launch-campaign-linkable) of a campaign going live, which is the whole point of the model, you are not waiting weeks for outbound replies.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "The catch is quality variance. Some applicants will be a great fit. Others will be applying to every gifted campaign they can find because free product is free product. You still need to look at their previous content, their engagement, and whether their audience matches yours before you approve anyone, which is exactly what our post on [how to evaluate a creator before working with them](/blog/how-to-evaluate-a-creator-before-working-with-them) walks through.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Applications also skew towards creators who are already comfortable applying to brand campaigns, which usually means smaller and mid-sized creators rather than the handful of bigger names you might want for a hero piece of content. That is not a flaw, it is just a different pool.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you combine both without losing quality?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Run applications as your default sourcing method for ongoing, lower-cost collaborations, and reserve outbound for the creators you specifically want and cannot afford to miss. In practice that means opening every campaign to applications so the pipeline never runs dry, then spending your own or your team's time only on the shortlist of creators you would regret not reaching, using direct invitations rather than a generic outbound message to a list.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This is where a platform earns its keep rather than being a nice extra. Managing two sourcing motions by hand, one inbox for applications and one spreadsheet for outbound targets, is where things get missed. Having applications and invitations sit in the same campaign, with the same approval and content tracking, is the difference between sourcing being a system and sourcing being a scramble. If you would rather someone plan and run that sourcing mix for you, Linkable's team can [take it on directly](/contact).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "A simple rule that works for most brands: if your campaign type is gifted product or a low affiliate rate, lean on applications, because the cost of a mismatch is low. If it is a paid, fixed-fee collaboration, spend more time on outbound, because the cost of picking the wrong creator is higher. You can read more about how those two campaign types differ in [gifted vs paid creator collaborations](/blog/gifted-vs-paid-creator-collaborations).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This week, look at your current campaign and count how many creators came from an application versus a direct invite. If it is entirely one or the other, open the gap. Post the campaign publicly if you have only been recruiting outbound, or spend an hour building a shortlist of five creators to invite directly if you have only been taking applications. Compare how each group performs before you decide where to put your effort next month.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Not in cash terms, since gifted or affiliate deals cost the same either way you find the creator. The extra cost with outbound is staff time spent searching, messaging and following up, which applications largely remove.",
+      "q": "Is outbound recruiting always more expensive than applications"
+    },
+    {
+      "a": "Larger creators are less likely to browse open campaigns, so if you want a specific well-known creator you will usually need to reach out directly rather than wait for an application.",
+      "q": "Do bigger creators apply to campaigns or do they need to be recruited"
+    },
+    {
+      "a": "Yes. A campaign can stay open for applications while you separately invite specific creators you have identified through discovery, and both routes feed into the same approval and tracking flow.",
+      "q": "Can I run applications and outbound recruiting on the same campaign"
+    },
+    {
+      "a": "There is no fixed number, but a short list of a handful of must-have creators is usually enough. Let applications fill the rest of the campaign rather than trying to recruit every creator by hand.",
+      "q": "How many creators should I recruit outbound before opening applications"
+    }
+  ]
+}
