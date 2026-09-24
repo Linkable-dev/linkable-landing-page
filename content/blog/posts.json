@@ -67,6 +67,56 @@
   },
   {
     "heroImage": {
+      "id": 6333757,
+      "alt": "Man vlogging with a smartphone and ring light, focused on content creation indoors.",
+      "src": "https://images.pexels.com/photos/6333757/pexels-photo-6333757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/shallow-focus-photo-of-a-man-making-a-vlog-6333757/",
+      "query": "two creators filming product phones",
+      "width": 6720,
+      "credit": {
+        "url": "https://www.pexels.com/@karola-g",
+        "name": "https://kaboompics.com/"
+      },
+      "height": 4480,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/6333757/pexels-photo-6333757.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/6333757/pexels-photo-6333757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/tiktok-vs-instagram-creators-ecommerce-6333757-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/tiktok-vs-instagram-creators-ecommerce-6333757-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "tiktok-vs-instagram-creators-ecommerce",
+    "title": "TikTok vs Instagram creators for ecommerce: which to pick",
+    "description": "Compare tiktok creators vs instagram creators for ecommerce by product type, funnel stage and content style, and how to run both without doubling your work.",
+    "excerpt": "TikTok and Instagram creators behave differently and suit different products and goals. Here is how to decide where to start and how to run both without doubling your workload.",
+    "date": "2026-09-24",
+    "updated": "2026-09-24",
+    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
+    "imageAlt": "Man vlogging with a smartphone and ring light, focused on content creation indoors.",
+    "words": 820,
+    "source": "generated",
+    "keyword": "tiktok creators vs instagram creators for ecommerce",
+    "category": "Strategy",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 1587043,
       "alt": "Businesswoman in blue suit using laptop, glancing over shoulder.",
       "src": "https://images.pexels.com/photos/1587043/pexels-photo-1587043.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",

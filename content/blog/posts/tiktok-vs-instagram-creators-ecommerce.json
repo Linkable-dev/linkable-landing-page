@@ -1,0 +1,102 @@
+{
+  "blocks": [
+    {
+      "text": "You have a product to seed and a shortlist of creators, and half of them live on TikTok, half on Instagram. Picking one platform because it feels simpler usually means leaving sales or reach on the table. The real question is not which platform is better, it is which one fits the product you sell and the goal you have this month.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Tiktok creators vs instagram creators for ecommerce: what actually differs",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "TikTok creators tend to win on reach and discovery, because the app pushes content to people who have never followed the creator before. Instagram creators tend to win on trust and repeat purchase, because their audience already follows them and treats their word as a recommendation, not a stranger's opinion. If your goal is to get in front of new people fast, TikTok creators are the better first move. If your goal is to convert an audience that already half-trusts the creator, Instagram creators usually close harder.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Neither is universally cheaper or more reliable. Both can run as gifted, paid or affiliate collaborations, and both can be tracked the same way once content goes live: through [discount codes or affiliate links](/blog/discount-codes-vs-affiliate-links-creators).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Which platform fits which product",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Products that need a demonstration, a transformation, or a bit of humour tend to travel further on TikTok. Skincare routines, supplement stacks, kitchen gadgets and anything with a visible before-and-after get picked up by people scrolling with no intent to buy anything that day, and the algorithm rewards a hook in the first second. Say you sell a coffee subscription: a fifteen-second TikTok of someone making their morning cup with a joke about their commute will usually outperform a polished Instagram post for pure reach.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Products that rely on aesthetic, aspiration or a considered purchase tend to do better on Instagram. Activewear, higher-priced skincare, home goods and anything where the buyer wants to see the creator's whole life, not just one clip, benefits from Instagram's slower, more curated feed and from Stories, which let a creator answer questions and build trust over several posts rather than one. We cover this in more depth for specific categories in [creator marketing for skincare brands](/blog/creator-marketing-for-skincare-brands) and [creator marketing for coffee and food brands](/blog/creator-marketing-coffee-food-brands).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do creator behaviour and content style differ between the two platforms",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "TikTok creators post more often and expect a faster turnaround from brand to content. They are used to filming on their phone, editing quickly, and posting within days of receiving product. Briefs that are too tight tend to kill the format, because the whole appeal of TikTok content is that it looks unscripted even when it is not.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Instagram creators tend to plan further ahead, take more care over lighting and composition, and think in terms of a feed post plus a set of Stories rather than a single clip. They are more likely to negotiate a fixed fee for a Reel and treat affiliate commission as a bonus rather than the main incentive. If you are writing briefs for either group, [a creator brief template for ecommerce](/blog/creator-brief-template-for-ecommerce) will save you a round of reshoots regardless of platform.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Running both without doubling your workload",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "The mistake most brands make is running two separate campaigns with two separate briefs, two trackers and two sets of creators to manage by hand. You do not need that. Set one goal and one product per campaign, then let the platform be a variable in the brief rather than the whole campaign.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "In practice that means writing one core brief with the product story, the key message and the do-not-say list, then adding a short platform note: TikTok creators get a looser format and a faster deadline, Instagram creators get more lead time and a request for a Story sequence alongside the main post. Both get the same tracked link or code so results land in one report. On [Linkable](/pricing) this is one campaign with creators from both platforms invited into it, with content, reach and tracked sales reported per creator regardless of where they posted.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Where to start if you can only run one",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "If you are launching a new product and need proof it resonates before you spend on paid media, start with TikTok creators for the reach and speed. If you already have an audience of buyers and want to lift repeat purchase or average order value, start with Instagram creators for the trust. Most brands end up running both within a couple of campaigns, once they see which platform's creators are actually driving tracked sales rather than just views. Our [creator activation playbook](/blog/creator-activation-playbook) walks through getting the first wave of either type live.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This week, pick one product and write the single core brief. Add the two platform notes, invite a small mix of TikTok and Instagram creators through [Linkable](/creators) or your usual sourcing method, and track everyone through the same link so you can compare platforms on sales, not guesswork.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Neither platform sets the price on its own. Cost depends on the individual creator's following and format, and on whether you are running gifted, paid or affiliate commission, not on which app they post to.",
+      "q": "Do TikTok creators or Instagram creators cost more to work with"
+    },
+    {
+      "a": "Yes, many creators post the same content, reworked slightly, to both TikTok and Instagram. Ask for platform-specific edits in the brief rather than one video cross-posted unedited, since each platform's audience expects a different pace.",
+      "q": "Can the same creator work across both platforms in one campaign"
+    },
+    {
+      "a": "Not necessarily. Running a small mix of both from the start lets you compare tracked sales per platform within one campaign, which tells you faster than guessing which one your specific product suits.",
+      "q": "Should a new Shopify brand pick one platform before trying the other"
+    },
+    {
+      "a": "Assign each creator their own unique link or code as usual, then tag which platform they posted on in your reporting. Reporting tools built for creator campaigns, including Linkable, show tracked sales per creator, so you can group by platform afterwards.",
+      "q": "How do I track sales separately by platform if creators use the same link format"
+    }
+  ]
+}
