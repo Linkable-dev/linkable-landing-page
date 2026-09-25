@@ -1,0 +1,98 @@
+{
+  "blocks": [
+    {
+      "text": "By the time Black Friday week arrives, most of the work is already done or it isn't happening. Creators who are still onboarding in mid-November won't have content ready when it matters, product that ships late sits in inboxes instead of on camera, and affiliate links switched on the week of the sale miss the run-up traffic that actually converts.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What does a q4 creator campaign timeline actually look like",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "A working q4 creator campaign timeline has four blocks: recruit creators in September, ship product through early October, collect and approve content by late October, then turn on affiliate links and start posting through November so the biggest push lands in the two weeks around Black Friday and Cyber Monday. Each block needs a buffer, because shipping delays and slow approvals are the two things that blow the whole schedule.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Work backwards from your sale date. If Black Friday content needs to go live in the days before the sale, content needs approving a week or two earlier, which means product needs to have arrived and been used a couple of weeks before that, which means creators need to be recruited and briefed before the end of September. Written forwards, September is recruiting month, October is product and content month, November is publishing and selling month.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "When should you start recruiting creators for Black Friday",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Now, if you haven't already. Recruiting in September gives you time to review applications, check fit and get contracts and briefs out before product needs to ship. If you're relying on [outbound recruiting rather than applications](/blog/creator-applications-vs-outbound-recruiting), add another week or two, because sourcing and messaging takes longer than reviewing people who've already applied.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Say you run a coffee brand and want fifteen creators posting in the two weeks before Black Friday. You need those fifteen confirmed, briefed and shipped to by early October at the latest, which means the recruiting and screening has to happen now. On Linkable, creators typically start applying to a new campaign within 24 hours of it going live, so launching the campaign this week rather than next buys you real time later in the quarter. If this is your first campaign, [the activation playbook](/blog/creator-activation-playbook) covers the setup steps.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How much lead time does product shipping actually need",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "More than you think, and more than any single creator will tell you. Courier delays get worse as Q4 volume rises everywhere, not just for your brand, so a package that normally arrives in a few days can take noticeably longer in October and November. Build in a buffer between the day you approve a creator and the day you need finished content back, and don't count on same-week turnaround once product lands.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This matters more for [gifted campaigns](/blog/gifted-vs-paid-creator-collaborations) than paid ones, because gifted creators are working to their own schedule once product arrives, and a slow unboxing means a slow post. If you're using Shopify, gifted orders can be created automatically on approval, which removes one manual step from the chain but doesn't remove the courier's part of it.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "When should content be approved before the sale starts",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Content should be approved and ready to post at least a week before you need it live, not the day before. Approving late in October rather than the first week of November gives you room to ask for a reshoot without missing the window, and it means creators aren't rushing edits during the busiest week of their own year. A [brief that's specific from the start](/blog/creator-brief-template-for-ecommerce) cuts down on reshoots and keeps this stage from stretching.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Reviewing content earlier also protects you from a problem that surfaces every Q4: creators using their own discount codes or links incorrectly because they weren't checked. If you're running codes alongside affiliate links, [read up on how leaked codes cost margin](/blog/leaked-discount-codes) before you finalise briefs, not after codes are already circulating.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "When should affiliate links go live",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Affiliate links should go live before Black Friday itself, not on the day, so tracked sales start building through the run-up rather than only during the peak. Affiliate sales are tracked through unique creator links and discount codes, and commission payouts run through the platform, so turning links on early doesn't cost you anything beyond the sales they were always going to drive. Turning them on late means creators are posting without a tracked incentive during exactly the window their audience is most likely to buy.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Set a single go-live date for the whole cohort rather than letting it drift creator by creator. Reporting on content delivered, audiences reached and tracked sales is far easier to read when everyone's links started on the same day, and it's the only way to know which creators actually earned their spot in next year's Q4 plan.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "It's tight but not too late. Cut the recruiting window short, prioritise creators who already have product from a past collaboration, and lean on paid or affiliate-only terms rather than gifted, since gifting adds a shipping step you no longer have time for.",
+      "q": "Is it too late to run a Black Friday creator campaign if September is nearly over"
+    },
+    {
+      "a": "Not necessarily. Creators who already know your product and posted well before are usually a safer bet for the highest-stakes month of the year than brand new applicants, so it's worth re-approaching people from earlier campaigns first.",
+      "q": "Should Black Friday creators be different from your regular monthly creators"
+    },
+    {
+      "a": "It depends on your order volume and campaign type, but the [guide to how many creators to work with](/blog/how-many-creators-brand-work-with) is a useful starting point before you set a Q4 target.",
+      "q": "How many creators should be lined up for a Q4 push"
+    }
+  ]
+}

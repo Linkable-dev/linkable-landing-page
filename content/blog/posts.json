@@ -67,6 +67,56 @@
   },
   {
     "heroImage": {
+      "id": 6169036,
+      "alt": "A person sealing a cardboard box with tape, emphasizing packaging and shipping processes.",
+      "src": "https://images.pexels.com/photos/6169036/pexels-photo-6169036.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/person-putting-tape-on-a-cardboard-6169036/",
+      "query": "packing boxes shipping products warehouse",
+      "width": 6000,
+      "credit": {
+        "url": "https://www.pexels.com/@tima-miroshnichenko",
+        "name": "Tima Miroshnichenko"
+      },
+      "height": 4000,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/6169036/pexels-photo-6169036.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/6169036/pexels-photo-6169036.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/q4-creator-campaign-timeline-6169036-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/q4-creator-campaign-timeline-6169036-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "q4-creator-campaign-timeline",
+    "title": "A Q4 creator campaign timeline that starts before Black Friday",
+    "description": "A practical q4 creator campaign timeline showing when to recruit, ship product, approve content and switch on affiliate links before Black Friday.",
+    "excerpt": "Work back from Black Friday and you get a clear q4 creator campaign timeline: recruit early, ship product with a buffer, approve content before the rush, then flip affiliate links on when it counts.",
+    "date": "2026-09-25",
+    "updated": "2026-09-25",
+    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
+    "imageAlt": "A person sealing a cardboard box with tape, emphasizing packaging and shipping processes.",
+    "words": 792,
+    "source": "generated",
+    "keyword": "q4 creator campaign timeline",
+    "category": "Playbook",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 6333757,
       "alt": "Man vlogging with a smartphone and ring light, focused on content creation indoors.",
       "src": "https://images.pexels.com/photos/6333757/pexels-photo-6333757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
