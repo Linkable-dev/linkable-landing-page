@@ -1,0 +1,117 @@
+{
+  "blocks": [
+    {
+      "text": "You launch a creator campaign, the content goes up, comments come in, and then you open Shopify analytics and the sales barely move. Someone on the team asks whether the campaign worked. The honest answer is you cannot fully tell, and that is not a reporting failure on your part. It is how attribution works.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Why does last-click attribution undercount creator marketing?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Last-click attribution gives full credit for a sale to whatever link or ad a customer clicked right before checkout, which is usually a retargeting ad or a branded search, not the creator video that actually made them want the product days earlier. Someone watches a review on their phone, closes the app, and buys later from a Google search or a saved bookmark. The creator gets no credit, the search term does.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This is worse for creator marketing than for paid ads because the gap between seeing the content and buying is longer. A skincare buyer might watch three or four videos over a couple of weeks before ordering. A coffee subscriber might see a creator's unboxing once, forget about it, then order after a friend mentions the brand. None of that shows up as a creator-attributed sale in a last-click model, even though the creator started the whole chain.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What do tracked sales actually show?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Tracked sales through unique creator links and discount codes show you the floor, not the ceiling. If a creator's link or code is tied to a purchase, you know that sale happened because of them. What you don't see is the customer who used a different device, typed the brand name into a search bar, or bought in store. Tracked sales are real and worth acting on. They are just an undercount of the creator's total effect.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "On Linkable, campaign and creator reporting shows content delivered, audiences reached, engagement generated and tracked sales side by side, which matters because a creator can drive strong reach and engagement with soft tracked sales and still be doing real work for the brand. Judging that creator on tracked sales alone would get you the wrong answer.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Say you run a supplement brand and a creator posts a routine video that gets a lot of comments asking where to buy. Two weeks later your branded search volume ticks up and repeat customers mention the video in support tickets. Your tracked sales report for that creator might show a handful of orders through their code. The real number is higher. You just can't see all of it in one dashboard.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you make decisions with imperfect attribution data?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Stop treating tracked sales as the only input and start treating them as one signal among a few. Watch branded search and direct traffic in the days after a wave of creator content goes live, since a jump there usually means the content is working even if the sales aren't tagged to a creator. Watch discount code usage even when it doesn't carry a tracked link, because customers often type a code from memory without clicking through anything.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Compare creators to each other using the same rules rather than trying to get an absolute number right. If two creators post similar content to similar audiences and one shows far more tracked sales, that difference is meaningful even if both numbers understate the truth. Consistency in how you measure matters more than precision in any single figure.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Also decide in advance what you're optimising for in a given campaign. A gifted seeding campaign is mostly about content and reach, so tracked sales are a secondary signal at best. A paid affiliate push is about sales, so you'd weight tracked revenue more heavily there, understanding it's still a floor. We cover the specific metrics to watch at each stage in [creator marketing KPIs for ecommerce](/blog/creator-marketing-kpis-for-ecommerce), and how to build a fuller ROI picture in [how to measure creator marketing ROI without guessing](/blog/how-to-measure-creator-marketing-roi).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What should you do about discount codes and leaks?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Attribution gets messier still when codes leak onto coupon sites or get shared outside the creator's own audience, because then tracked sales include people who never saw the content at all. That inflates the number for a creator whose code went viral for the wrong reasons, and it can quietly eat your margin too. If you haven't looked at how your codes are being used outside your creator programme, it's worth reading [the hidden cost of uncontrolled discount codes](/blog/leaked-discount-codes) before you draw conclusions from a spike in redemptions.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Unique per-creator links help here because they're harder to reuse anonymously than a shared code, and pairing a link with a code gives you two ways to catch the same sale rather than one. On Linkable, affiliate sales are tracked through each creator's own link and code, with payouts handled in the platform, so you can see which sales came through which creator without stitching together spreadsheets from several tools.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you keep reporting simple as you add creators?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "The more creators you run, the more tempting it is to build a complicated attribution model to make the numbers feel exact. Resist that. A simple, consistent view of content delivered, reach, engagement and tracked sales per creator, checked against branded search and code usage, tells you enough to decide who to rebook and who to drop. Perfect attribution isn't coming, no matter how many tools you stack on top of each other.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "If you're setting up creator tracking for the first time, start with the basics covered in [how to launch your first creator campaign on Linkable](/blog/launch-campaign-linkable) rather than trying to solve attribution before you've even run a campaign. The data gets more useful once you have a few months of it to compare against.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This week, pull your last three creator campaigns and check branded search and direct traffic for the week after each went live, alongside tracked sales. If you see a pattern of search or direct sales rising after content goes up, treat that as evidence the creators are working even where the tracked number looks thin, and rebook the creators whose content triggered it.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "No. Cross-device behaviour, delayed purchases and word of mouth all sit outside what any tracking link or code can see, so treat tracked sales as a reliable minimum rather than a complete count.",
+      "q": "Can you ever get exact attribution for creator marketing?"
+    },
+    {
+      "a": "Only as a secondary signal. Gifted campaigns are mainly about getting content and reach at low cost, so judge them on content delivered and audience reached first, and treat any tracked sales as a bonus.",
+      "q": "Should gifted campaigns be judged on tracked sales at all?"
+    },
+    {
+      "a": "Not automatically. More creators without a consistent way of comparing them just gives you more noisy numbers. Keep the same reporting fields across every creator so comparisons stay meaningful as volume grows.",
+      "q": "Does more creators mean better attribution data?"
+    },
+    {
+      "a": "Since product and order data sync from Shopify, tracked sales through creator links and codes show up alongside your normal order data, which makes it easier to spot patterns like repeat purchases from customers a creator originally brought in.",
+      "q": "How does Shopify affect what I can see about creator sales?"
+    }
+  ]
+}

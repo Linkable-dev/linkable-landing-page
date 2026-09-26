@@ -67,6 +67,56 @@
   },
   {
     "heroImage": {
+      "id": 577195,
+      "alt": "Overhead view of a laptop showing data visualizations and charts on its screen.",
+      "src": "https://images.pexels.com/photos/577195/pexels-photo-577195.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/turned-on-laptop-computer-577195/",
+      "query": "marketer reviewing analytics dashboard laptop",
+      "width": 6144,
+      "credit": {
+        "url": "https://www.pexels.com/@goumbik",
+        "name": "Lukas Blazek"
+      },
+      "height": 4069,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/577195/pexels-photo-577195.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/577195/pexels-photo-577195.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/creator-marketing-attribution-problems-577195-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/creator-marketing-attribution-problems-577195-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "creator-marketing-attribution-problems",
+    "title": "How creator marketing attribution problems skew your data",
+    "description": "Creator marketing attribution problems make last-click reporting misleading. See what tracked sales show and how to decide with imperfect data.",
+    "excerpt": "Last-click attribution hides most of what creator marketing actually does. Here's what tracked sales can tell you, and how to make calls without waiting for perfect numbers.",
+    "date": "2026-09-26",
+    "updated": "2026-09-26",
+    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
+    "imageAlt": "Overhead view of a laptop showing data visualizations and charts on its screen.",
+    "words": 1018,
+    "source": "generated",
+    "keyword": "creator marketing attribution problems",
+    "category": "Measurement",
+    "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 6169036,
       "alt": "A person sealing a cardboard box with tape, emphasizing packaging and shipping processes.",
       "src": "https://images.pexels.com/photos/6169036/pexels-photo-6169036.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
