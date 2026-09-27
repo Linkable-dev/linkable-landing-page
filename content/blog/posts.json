@@ -67,6 +67,56 @@
   },
   {
     "heroImage": {
+      "id": 6347607,
+      "alt": "Smiling young ethnic female blogger standing in room near wardrobe and mirror while demonstrating blouse on hanger and filming vlog on mobile with ring lamp",
+      "src": "https://images.pexels.com/photos/6347607/pexels-photo-6347607.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/happy-ethnic-woman-filming-video-on-phone-on-ring-lamp-6347607/",
+      "query": "woman filming outfit video mirror",
+      "width": 6000,
+      "credit": {
+        "url": "https://www.pexels.com/@liza-summer",
+        "name": "Liza Summer"
+      },
+      "height": 4000,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/6347607/pexels-photo-6347607.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/6347607/pexels-photo-6347607.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/creator-marketing-fashion-activewear-brands-6347607-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/creator-marketing-fashion-activewear-brands-6347607-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "creator-marketing-fashion-activewear-brands",
+    "title": "Creator marketing for fashion and activewear brands that sells",
+    "description": "Creator marketing for fashion and activewear brands means fit content, styling videos and clear returns data, not just outfit posts.",
+    "excerpt": "Apparel buyers hesitate over fit, not just style. Here's how fashion and activewear brands use creators to answer sizing questions, cut returns and find the people who actually move product.",
+    "date": "2026-09-27",
+    "updated": "2026-09-27",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "Smiling young ethnic female blogger standing in room near wardrobe and mirror while demonstrating blouse on hanger and filming vlog on mobile with ring lamp",
+    "words": 790,
+    "source": "generated",
+    "keyword": "creator marketing for fashion and activewear brands",
+    "category": "By category",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 577195,
       "alt": "Overhead view of a laptop showing data visualizations and charts on its screen.",
       "src": "https://images.pexels.com/photos/577195/pexels-photo-577195.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
