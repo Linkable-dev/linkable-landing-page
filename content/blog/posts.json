@@ -67,6 +67,56 @@
   },
   {
     "heroImage": {
+      "id": 17610707,
+      "alt": "Close-up of a person filming a concert with a smartphone, capturing vibrant stage lights and atmosphere.",
+      "src": "https://images.pexels.com/photos/17610707/pexels-photo-17610707.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/man-using-a-smartphone-to-record-a-film-17610707/",
+      "query": "phone showing social video ad",
+      "width": 7728,
+      "credit": {
+        "url": "https://www.pexels.com/@gorkemraw",
+        "name": "Görkem Cetinkaya"
+      },
+      "height": 5152,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/17610707/pexels-photo-17610707.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/17610707/pexels-photo-17610707.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/creator-whitelisting-spark-ads-explained-17610707-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/creator-whitelisting-spark-ads-explained-17610707-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "creator-whitelisting-spark-ads-explained",
+    "title": "Creator whitelisting and Spark Ads explained for DTC brands",
+    "description": "What creator whitelisting and Spark Ads are, what to agree with creators upfront, and when running ads through their handle beats brand ads.",
+    "excerpt": "Running ads through a creator's own handle can outperform brand-page ads, but only if you've agreed access, usage and payment before the content goes live.",
+    "date": "2026-09-28",
+    "updated": "2026-09-28",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "Close-up of a person filming a concert with a smartphone, capturing vibrant stage lights and atmosphere.",
+    "words": 874,
+    "source": "generated",
+    "keyword": "creator whitelisting and spark ads explained",
+    "category": "Strategy",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 6347607,
       "alt": "Smiling young ethnic female blogger standing in room near wardrobe and mirror while demonstrating blouse on hanger and filming vlog on mobile with ring lamp",
       "src": "https://images.pexels.com/photos/6347607/pexels-photo-6347607.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",

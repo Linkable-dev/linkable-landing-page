@@ -1,0 +1,108 @@
+{
+  "blocks": [
+    {
+      "text": "You've got a piece of creator content that's doing well organically, and someone on your team suggests turning it into a paid ad. The obvious move is to download it and run it from your brand's own account. The better move, on TikTok at least, is often to run it from the creator's account instead. That's what creator whitelisting and Spark Ads are for, and most brands find out about them too late, after they've already annoyed a creator by reposting content without asking.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What are creator whitelisting and Spark Ads",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Whitelisting on Meta",
+      "type": "h3",
+      "items": null
+    },
+    {
+      "text": "On Meta, whitelisting (sometimes called partnership ads) means the creator grants your ad account permission to run ads that appear to come from their profile, using their handle and profile picture, while your business pays for and controls the media spend. Comments, likes and shares land on the ad itself, not on the creator's organic feed, so their account isn't cluttered with your ad's engagement.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Spark Ads on TikTok",
+      "type": "h3",
+      "items": null
+    },
+    {
+      "text": "Spark Ads is TikTok's version of the same idea. The creator generates a code from their own post that authorises your ad account to boost that specific video as a paid ad. It keeps the original post's likes, comments and view count attached, which is part of why Spark Ads often outperform a brand uploading the same clip as a fresh, view-count-zero ad.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What to agree with the creator before you touch the ad account",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Whitelisting is an access grant, not a footnote in a content brief. Before you ask for a code or an authorisation, put three things in writing: how long the authorisation lasts, which platforms and placements you can use it on, and what the creator is paid for the ad usage on top of whatever they were paid for the original content. Authorisation length matters more than brands expect. A creator who grants a code for a fixed period and then finds an ad still running from their handle months later, with money still coming out of their name and nothing extra to show for it, will not work with you again.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Treat this the same way you'd treat any other term in the collaboration, spelled out before content is even filmed. Our [creator brief template for ecommerce](/blog/creator-brief-template-for-ecommerce) is a reasonable place to add an ads-usage clause, and our [creator contract essentials for small brands](/blog/creator-contract-essentials-small-brands) post covers the kind of usage-rights language that should sit alongside it. If a creator is on an affiliate arrangement already, make sure the whitelisted ad still links to their tracked code or link, not a generic one, so their commission keeps counting.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "When ads through a creator's handle beat brand-page ads",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Whitelisted or Spark ads tend to beat brand-page ads when the content itself reads as a recommendation rather than a promotion. A skincare brand testing a routine video from a creator whose face and voice viewers already recognise from organic content will usually hold attention longer than the same script delivered from a logo-avatar brand account. The effect is strongest with content that already has some organic traction: comments, saves, a following that trusts that creator's opinion. Boosting that through their handle keeps the social proof intact instead of resetting it to zero.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Brand-page ads still make sense for anything transactional, a straightforward discount announcement, a restock notice, a catalogue ad showing several products at once. Those don't need a face attached to feel credible. Save whitelisting for the content that's doing the work of persuasion, product demos, before-and-afters, unboxings, the kind of video a shopper watches because it feels like a friend's recommendation rather than an ad.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How this fits into a creator campaign on Linkable",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "If you're running gifted, paid or affiliate campaigns through Linkable, the whitelisting conversation happens after content delivery, not instead of it. A creator posts their content, it gets reported in your campaign insights alongside reach and engagement, and if a piece is clearly outperforming the rest, that's your signal to reach out about a whitelisting or Spark Ads authorisation and a separate fee for it. Keep that request specific: which video, which platforms, how long. Creators say yes far more often to a narrow, time-boxed ask than an open-ended one.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "If you haven't run a creator campaign before, our [launch your first creator campaign](/blog/launch-campaign-linkable) post walks through getting content in the door in the first place. Whitelisting only becomes a decision once you have organic content worth boosting.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What this costs and what to budget for it",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Whitelisting fees are a separate line item from the original collaboration fee or product gift, and they should scale with how long the authorisation runs and how much spend you plan behind the ad. Some brands negotiate a flat fee per authorisation period, others tie it to a share of spend. Either way, budget for it as ad-adjacent cost, not creator-collaboration cost, so your [ROI reporting](/blog/how-to-measure-creator-marketing-roi) isn't distorted by mixing content fees with media spend.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This week, look back at your last few campaigns for the organic post with the strongest comments and saves, and message that creator about a time-boxed whitelisting or Spark Ads authorisation before you build the ad. Getting the written terms sorted first is what makes the second and third asks easier.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Yes. Whitelisting requires the creator to grant access from their account settings, and Spark Ads requires a code the creator generates from their own post, so you cannot run either without their direct authorisation.",
+      "q": "Do I need a creator's permission to run their content as a whitelisted or Spark ad"
+    },
+    {
+      "a": "You can, but the ad usage is a separate ask from the gifted collaboration and should come with its own fee, since running paid media behind someone's name is a different commitment than posting organic content.",
+      "q": "Can I whitelist content from a creator I paid only in free product"
+    },
+    {
+      "a": "Only if the ad still routes through that creator's tracked link or discount code. Check the link before the ad goes live, since a generic brand link would strip out their attribution entirely.",
+      "q": "Does whitelisted or Spark ad spend count towards a creator's affiliate commission"
+    }
+  ]
+}
