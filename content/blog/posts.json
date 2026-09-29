@@ -67,6 +67,56 @@
   },
   {
     "heroImage": {
+      "id": 8284724,
+      "alt": "A woman types on a laptop using a messaging app in a modern office setting.",
+      "src": "https://images.pexels.com/photos/8284724/pexels-photo-8284724.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/person-using-laptop-8284724/",
+      "query": "person typing message laptop",
+      "width": 6016,
+      "credit": {
+        "url": "https://www.pexels.com/@mikhail-nilov",
+        "name": "Mikhail Nilov"
+      },
+      "height": 4016,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/8284724/pexels-photo-8284724.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/8284724/pexels-photo-8284724.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/creator-outreach-message-that-works-8284724-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/creator-outreach-message-that-works-8284724-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "creator-outreach-message-that-works",
+    "title": "How to write a creator outreach message that gets replies",
+    "description": "Learn how to write a creator outreach message that gets replies, with what to include, what to cut, and templates you can adapt today.",
+    "excerpt": "Most outreach messages get ignored because they read like a form letter. Here is what to include, what to leave out, and templates that sound like a person wrote them.",
+    "date": "2026-09-29",
+    "updated": "2026-09-29",
+    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
+    "imageAlt": "A woman types on a laptop using a messaging app in a modern office setting.",
+    "words": 848,
+    "source": "generated",
+    "keyword": "how to write a creator outreach message",
+    "category": "Playbook",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 17610707,
       "alt": "Close-up of a person filming a concert with a smartphone, capturing vibrant stage lights and atmosphere.",
       "src": "https://images.pexels.com/photos/17610707/pexels-photo-17610707.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
