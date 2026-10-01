@@ -67,6 +67,56 @@
   },
   {
     "heroImage": {
+      "id": 7779772,
+      "alt": "Two women reviewing photos and working together at a cozy indoor setting.",
+      "src": "https://images.pexels.com/photos/7779772/pexels-photo-7779772.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/women-looking-at-photos-7779772/",
+      "query": "marketing team reviewing video laptop",
+      "width": 6268,
+      "credit": {
+        "url": "https://www.pexels.com/@ron-lach",
+        "name": "Ron Lach"
+      },
+      "height": 4179,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/7779772/pexels-photo-7779772.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/7779772/pexels-photo-7779772.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/repurposing-creator-content-across-channels-7779772-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/repurposing-creator-content-across-channels-7779772-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "repurposing-creator-content-across-channels",
+    "title": "Repurposing creator content across channels, properly",
+    "description": "A practical guide to repurposing creator content across channels: product pages, email, ads and social, plus the rights and etiquette to get right.",
+    "excerpt": "One creator collaboration can fill your product page, your next email and your ad account, if you ask for the right usage rights upfront.",
+    "date": "2026-10-01",
+    "updated": "2026-10-01",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "Two women reviewing photos and working together at a cozy indoor setting.",
+    "words": 1073,
+    "source": "generated",
+    "keyword": "repurposing creator content across channels",
+    "category": "Playbook",
+    "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 8284724,
       "alt": "A woman types on a laptop using a messaging app in a modern office setting.",
       "src": "https://images.pexels.com/photos/8284724/pexels-photo-8284724.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
