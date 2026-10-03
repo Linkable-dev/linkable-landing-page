@@ -67,6 +67,56 @@
   },
   {
     "heroImage": {
+      "id": 33899243,
+      "alt": "A vintage Contax camera captured in a contemporary photography studio setup with monitors and editing gear.",
+      "src": "https://images.pexels.com/photos/33899243/pexels-photo-33899243.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/vintage-contax-camera-in-modern-studio-setup-33899243/",
+      "query": "creator filming product unboxing desk",
+      "width": 7952,
+      "credit": {
+        "url": "https://www.pexels.com/@jakubzerdzicki",
+        "name": "Jakub Zerdzicki"
+      },
+      "height": 5304,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/33899243/pexels-photo-33899243.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/33899243/pexels-photo-33899243.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/long-term-creator-partnerships-vs-one-off-posts-33899243-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/long-term-creator-partnerships-vs-one-off-posts-33899243-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "long-term-creator-partnerships-vs-one-off-posts",
+    "title": "Long term creator partnerships vs one off posts",
+    "description": "Compare long term creator partnerships vs one off posts, how ambassador deals compound, and when a single collaboration is the right call.",
+    "excerpt": "One-off posts get you content fast. Repeated collaborations with the same creators get you content that performs. Here's how to decide which to run and when.",
+    "date": "2026-10-03",
+    "updated": "2026-10-03",
+    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
+    "imageAlt": "A vintage Contax camera captured in a contemporary photography studio setup with monitors and editing gear.",
+    "words": 957,
+    "source": "generated",
+    "keyword": "long term creator partnerships vs one off posts",
+    "category": "Strategy",
+    "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 7779772,
       "alt": "Two women reviewing photos and working together at a cozy indoor setting.",
       "src": "https://images.pexels.com/photos/7779772/pexels-photo-7779772.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
