@@ -67,6 +67,56 @@
   },
   {
     "heroImage": {
+      "id": 30878456,
+      "alt": "Cozy home film set featuring a camera and crew during a shoot in Rengo, Chile.",
+      "src": "https://images.pexels.com/photos/30878456/pexels-photo-30878456.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/indoor-film-set-with-camera-and-crew-in-chile-30878456/",
+      "query": "woman filming cosy living room",
+      "width": 6000,
+      "credit": {
+        "url": "https://www.pexels.com/@javo-films-1110431",
+        "name": "Javo  Films"
+      },
+      "height": 4000,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/30878456/pexels-photo-30878456.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/30878456/pexels-photo-30878456.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/creator-marketing-home-lifestyle-brands-30878456-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/creator-marketing-home-lifestyle-brands-30878456-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "creator-marketing-home-lifestyle-brands",
+    "title": "Creator marketing for home and lifestyle brands, done right",
+    "description": "Creator marketing for home and lifestyle brands works best through unboxing, room tours and seasonal timing, not quick product demos.",
+    "excerpt": "Home and lifestyle products sell on atmosphere and timing, not a ten-second demo. Here is how to brief creators for unboxing, room tours and the seasonal moments that actually move inventory.",
+    "date": "2026-10-04",
+    "updated": "2026-10-04",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "Cozy home film set featuring a camera and crew during a shoot in Rengo, Chile.",
+    "words": 876,
+    "source": "generated",
+    "keyword": "creator marketing for home and lifestyle brands",
+    "category": "By category",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 33899243,
       "alt": "A vintage Contax camera captured in a contemporary photography studio setup with monitors and editing gear.",
       "src": "https://images.pexels.com/photos/33899243/pexels-photo-33899243.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
