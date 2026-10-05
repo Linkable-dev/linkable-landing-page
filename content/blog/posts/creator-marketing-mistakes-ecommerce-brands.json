@@ -1,0 +1,102 @@
+{
+  "blocks": [
+    {
+      "text": "You send product to a batch of creators, half never post, the ones who do post get buried, and nobody can tell you whether a single sale came from the campaign. Three months later the spreadsheet shows a cost you can't explain to your co-founder. That isn't bad luck. It's a handful of mistakes we see on repeat, across skincare, coffee, activewear and supplements alike.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What are the most common creator marketing mistakes ecommerce brands make?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "The five we see most often are vague briefs that leave creators guessing, choosing creators by follower count instead of fit, running campaigns with no way to track sales, fulfilling gifted orders so slowly that interest cools, and ghosting creators after a campaign ends instead of building a relationship. Each one looks small on its own. Together they explain most of the creator budgets that get cut after one bad quarter.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Why do vague briefs cause reshoots and wasted product?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "A brief that says \"show the product in a natural way, be authentic\" gives a creator nothing to work with. They guess, you reject the content, they reshoot or disappear, and the product you sent them is gone either way. The creator did their job as they understood it. The brief failed them.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Say you run a coffee brand and send a brief with no shot list, no key message and no example of tone. You'll get back everything from a kitchen countertop clip to a full sit-down review, and none of it will match the ad angle you actually needed. A brief that specifies the hook, the one claim to make, the shots required and the length saves a reshoot every time. We cover the exact structure in our [creator brief template for ecommerce](/blog/creator-brief-template-for-ecommerce).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Why is chasing follower count a mistake?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Follower count tells you reach. It tells you almost nothing about whether that audience buys, and brands that filter creators by follower count alone end up paying for impressions with no conversion behind them. A smaller creator whose audience trusts their recommendations on skincare or supplements will often outsell a bigger account that posts about everything.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "The fix is to evaluate creators on fit and engagement quality before you look at the number on their profile. That means checking what they've posted before, how their audience comments, and whether their content style matches how your product actually gets used. We go through this in detail in [how to evaluate a creator before working with them](/blog/how-to-evaluate-a-creator-before-working-with-them).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What happens when brands skip tracking?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Without a unique link or discount code per creator, you can't tell which collaborations drove sales and which just made noise. That means next quarter's budget gets allocated on gut feeling, which usually means more money to the creator who posted most recently rather than the one who actually sold product.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This is the mistake that compounds the most, because it hides the other four. A vague brief or a mismatched creator looks fine on a spreadsheet that only counts posts delivered. Tracked sales per creator is the number that tells you the truth. On [Linkable](/pricing), affiliate sales are tracked through unique creator links and discount codes, so you can see tracked sales per campaign and per creator rather than guessing from vanity metrics. If you want the full picture on separating signal from noise, read [how to measure creator marketing ROI without guessing](/blog/how-to-measure-creator-marketing-roi).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Why do slow fulfilment and ghosting creators kill repeat campaigns?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "A creator applies to a gifted campaign while they're excited about your product. If the order takes weeks to arrive, that excitement is gone by the time the box shows up, and the content reflects it. Fast fulfilment is part of the brief, not an afterthought.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "The second half of this mistake happens after the content is delivered. Brands pay the creator, post the content to ads, and never speak to them again, even when the creator drove real sales. Creators compare notes. A brand that pays late, gives no feedback and never reaches out again builds a reputation, and the best creators stop applying to that brand's campaigns. Treating creators as a one-off transaction instead of a relationship is why so many brands have to find a fresh batch of creators every single launch instead of working with people who already know the product. If you'd rather have a team run outreach and relationship management for you, that's one of the things [Linkable's managed service](/contact) handles.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "None of these five mistakes requires a bigger budget to fix. They require a brief that says exactly what you need, a creator shortlist built on fit rather than follower count, a tracking link on every collaboration, fast order fulfilment, and a habit of replying to the creators who sold for you. Pick the one on this list that's costing you the most right now and fix that one this week before you plan the next campaign.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Start smaller than you think, with a short list you can brief properly and follow up with individually. Our guide on [how many creators a brand should work with each month](/blog/how-many-creators-brand-work-with) walks through sizing a programme to your order volume.",
+      "q": "How many creators should a brand start with to avoid these mistakes early on?"
+    },
+    {
+      "a": "Either can work if the brief, tracking and fulfilment are solid. The choice between them depends on your margin and how proven the creator is, which we cover in [gifted vs paid creator collaborations](/blog/gifted-vs-paid-creator-collaborations).",
+      "q": "Should gifted or paid collaborations be used to avoid these mistakes?"
+    },
+    {
+      "a": "Add a unique discount code or affiliate link to every creator before the next campaign goes out, even a basic one. Platforms like Linkable sync this through Shopify automatically, so sales get attributed without manual spreadsheet work.",
+      "q": "What's the fastest way to fix a creator programme with no tracking in place?"
+    },
+    {
+      "a": "It's a close cousin to the tracking mistake and worth checking separately, since a leaked code can quietly erase margin even when attribution looks fine. See [the hidden cost of uncontrolled discount codes](/blog/leaked-discount-codes) for how it happens.",
+      "q": "Does discount code leakage count as one of these mistakes?"
+    }
+  ]
+}

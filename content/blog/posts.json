@@ -67,6 +67,56 @@
   },
   {
     "heroImage": {
+      "id": 19929601,
+      "alt": "Cheerful man using laptop outdoors at night under festive lights.",
+      "src": "https://images.pexels.com/photos/19929601/pexels-photo-19929601.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/smiling-geek-man-with-computer-on-laps-19929601/",
+      "query": "founder reviewing creator content laptop",
+      "width": 7923,
+      "credit": {
+        "url": "https://www.pexels.com/@aathif",
+        "name": "Aathif Aarifeen"
+      },
+      "height": 5285,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/19929601/pexels-photo-19929601.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/19929601/pexels-photo-19929601.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/creator-marketing-mistakes-ecommerce-brands-19929601-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/creator-marketing-mistakes-ecommerce-brands-19929601-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "creator-marketing-mistakes-ecommerce-brands",
+    "title": "Creator marketing mistakes ecommerce brands keep making",
+    "description": "The creator marketing mistakes ecommerce brands make again and again, from vague briefs to no tracking, and how to fix each one.",
+    "excerpt": "Vague briefs, follower obsession, no tracking, slow fulfilment and ghosting creators. These five failures show up in almost every struggling creator programme, and all of them are fixable.",
+    "date": "2026-10-05",
+    "updated": "2026-10-05",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "Cheerful man using laptop outdoors at night under festive lights.",
+    "words": 817,
+    "source": "generated",
+    "keyword": "creator marketing mistakes ecommerce brands make",
+    "category": "Strategy",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 30878456,
       "alt": "Cozy home film set featuring a camera and crew during a shoot in Rengo, Chile.",
       "src": "https://images.pexels.com/photos/30878456/pexels-photo-30878456.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
