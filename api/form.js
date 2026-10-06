@@ -2,7 +2,7 @@
 // submissions and emails them through Resend (RESEND_API_KEY in the
 // Vercel project; the linkable.link domain is verified there).
 const TO = process.env.FORM_TO || 'federico@linkable.link';
-const FROM = process.env.FORM_FROM || 'Linkable website <noreply@linkable.link>';
+const FROM = process.env.FORM_FROM || 'Linkable <noreply@linkable.link>';
 const HONEYPOT = ['website', 'company', 'message', 'subject', 'title', 'description', 'feedback', 'notes'];
 
 export default async function handler(req, res) {
