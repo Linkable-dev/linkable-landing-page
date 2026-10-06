@@ -67,6 +67,56 @@
   },
   {
     "heroImage": {
+      "id": 7857532,
+      "alt": "Two people packing online orders in a small business setting with a laptop.",
+      "src": "https://images.pexels.com/photos/7857532/pexels-photo-7857532.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/woman-sitting-at-the-table-and-packing-orders-7857532/",
+      "query": "woman packing product box shipping",
+      "width": 6016,
+      "credit": {
+        "url": "https://www.pexels.com/@kampus",
+        "name": "Kampus Production"
+      },
+      "height": 4016,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/7857532/pexels-photo-7857532.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/7857532/pexels-photo-7857532.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/run-creator-campaign-shopify-store-7857532-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/run-creator-campaign-shopify-store-7857532-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "run-creator-campaign-shopify-store",
+    "title": "How to run a creator campaign on a Shopify store",
+    "description": "A step-by-step guide to running a creator campaign on a Shopify store, from picking the product to recruiting, shipping, approving and paying creators.",
+    "excerpt": "A first-timer's walkthrough of running a creator campaign on a Shopify store: the product, the offer, recruiting, shipping, approving content and paying out.",
+    "date": "2026-10-06",
+    "updated": "2026-10-06",
+    "image": "UHBbpALD52HI4ZQ8v0zXmnhdJjg",
+    "imageAlt": "Two people packing online orders in a small business setting with a laptop.",
+    "words": 985,
+    "source": "generated",
+    "keyword": "how to run a creator campaign on a shopify store",
+    "category": "Playbook",
+    "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 19929601,
       "alt": "Cheerful man using laptop outdoors at night under festive lights.",
       "src": "https://images.pexels.com/photos/19929601/pexels-photo-19929601.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
