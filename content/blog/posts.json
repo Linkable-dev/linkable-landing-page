@@ -67,6 +67,56 @@
   },
   {
     "heroImage": {
+      "id": 39934683,
+      "alt": "Close-up of Hollyland Lark M1 microphone in hands with packaging, outdoors.",
+      "src": "https://images.pexels.com/photos/39934683/pexels-photo-39934683.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/hollyland-lark-m1-microphone-product-display-39934683/",
+      "query": "creator unboxing product package desk",
+      "width": 6138,
+      "credit": {
+        "url": "https://www.pexels.com/@sinan-kriya-2162662325",
+        "name": "Sinan KRIYA"
+      },
+      "height": 4092,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/39934683/pexels-photo-39934683.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/39934683/pexels-photo-39934683.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/creator-gifting-etiquette-for-brands-39934683-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/creator-gifting-etiquette-for-brands-39934683-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "creator-gifting-etiquette-for-brands",
+    "title": "Creator gifting etiquette for brands that creators respect",
+    "description": "Learn creator gifting etiquette for brands: what makes creators say yes, what makes them decline, and how to make gifted product feel fair.",
+    "excerpt": "Gifted product only works when it feels like an offer, not a demand. Here's what respectful creator gifting actually looks like, and where most brands get it wrong.",
+    "date": "2026-10-08",
+    "updated": "2026-10-08",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "Close-up of Hollyland Lark M1 microphone in hands with packaging, outdoors.",
+    "words": 837,
+    "source": "generated",
+    "keyword": "creator gifting etiquette for brands",
+    "category": "Playbook",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 7857532,
       "alt": "Two people packing online orders in a small business setting with a laptop.",
       "src": "https://images.pexels.com/photos/7857532/pexels-photo-7857532.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
