@@ -31,24 +31,27 @@ function cleanUrls() {
   };
 }
 
-// Link previews need absolute image URLs, and they must load from the domain
-// that actually serves this build. The pages are written for
-// https://www.linkable.link, which still serves the Framer site, so its
-// /assets/... paths 404 there. On Vercel, rewrite asset URLs and og:url to the
-// project's production domain (VERCEL_PROJECT_PRODUCTION_URL, the shortest
-// production domain, which becomes www.linkable.link by itself once that domain
-// points here). SITE_ORIGIN overrides it. Canonical links stay on
-// www.linkable.link on purpose: that is the address search engines should keep.
+// Link previews need absolute image URLs, and they must load from a domain
+// that serves this build. The pages are written for https://www.linkable.link,
+// which still serves the Framer site, so its /assets/... paths 404 there and
+// previews show an empty box. Asset URLs and og:url are therefore rewritten at
+// build time to ORIGIN: SITE_ORIGIN if set, else the project's vercel.app
+// domain, which keeps serving this site before and after the domain switch.
+// (Vercel's VERCEL_PROJECT_PRODUCTION_URL was tried first; on this project it
+// did not produce a working origin.) Once www.linkable.link points here, set
+// SITE_ORIGIN=https://www.linkable.link on the Vercel project to switch the
+// rewrite off. Canonical links stay on www.linkable.link throughout: that is
+// the address search engines should keep.
+const ORIGIN = (process.env.SITE_ORIGIN || 'https://linkable-landing-page.vercel.app').replace(/\/$/, '');
+
 function assetOrigin() {
-  const env = process.env.SITE_ORIGIN || (process.env.VERCEL_PROJECT_PRODUCTION_URL && `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`);
-  const origin = env && env.replace(/\/$/, '');
   return {
     name: 'asset-origin',
     transformIndexHtml(html) {
-      if (!origin || origin === 'https://www.linkable.link') return html;
+      if (ORIGIN === 'https://www.linkable.link') return html;
       return html
-        .replaceAll('https://www.linkable.link/assets/', origin + '/assets/')
-        .replace(/(<meta property="og:url" content=")https:\/\/www\.linkable\.link/, '$1' + origin);
+        .replaceAll('https://www.linkable.link/assets/', ORIGIN + '/assets/')
+        .replace(/(<meta property="og:url" content=")https:\/\/www\.linkable\.link/, '$1' + ORIGIN);
     },
   };
 }

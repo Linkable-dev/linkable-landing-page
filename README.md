@@ -56,8 +56,9 @@ node tools/design/build.mjs                                    # templates + con
   rendered from the built pages by `node tools/design/og.mjs` (needs Playwright and Chrome, run it by hand when a
   hero changes). Articles use their own hero photo. Absolute URLs are written for `https://www.linkable.link`;
   while that domain still serves Framer, `vite.config.js` rewrites image URLs and `og:url` at build time to
-  Vercel's production domain (`VERCEL_PROJECT_PRODUCTION_URL`, or `SITE_ORIGIN` if set), so previews never fetch
-  images from the wrong site. Canonical links keep pointing at www.linkable.link.
+  `https://linkable-landing-page.vercel.app` (or `SITE_ORIGIN` if set), so previews never fetch images from the
+  wrong site. When www.linkable.link points at Vercel, set `SITE_ORIGIN=https://www.linkable.link` on the Vercel
+  project. Canonical links keep pointing at www.linkable.link.
 - **Fonts** are self-hosted (`manrope-*.woff2`, `fraunces-*.woff2`), so no request goes to Google before consent.
 - **Cookies.** Pages draw the design's cookie bar; `src/consent.js` keeps the tracking tags parked until the
   visitor accepts, and the footer's "Cookie settings" link (added by the importer) reopens the preferences dialog.
