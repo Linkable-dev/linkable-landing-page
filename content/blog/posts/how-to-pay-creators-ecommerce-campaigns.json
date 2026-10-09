@@ -1,0 +1,122 @@
+{
+  "blocks": [
+    {
+      "text": "You've agreed terms with a creator, the content is shot and posted, and now you're deciding whether to pay today or wait until the sales come in. Get this wrong and you either burn cash on content that never converts, or you build a reputation for being slow to pay, which makes your next campaign harder to staff.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How should you pay creators for ecommerce campaigns?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Pay creators using the structure that matches what you're asking them to do. Free product suits a review or a UGC clip, a fixed fee suits work where you need guaranteed deliverables by a set date, and a commission on tracked sales suits creators driving traffic you can actually measure. Most brands end up running a mix of all three, and the right split for each creator depends on their audience size, your margin, and how much certainty you need around timing.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "If you're still deciding which model fits a given creator or campaign, [gifted vs paid creator collaborations](/blog/gifted-vs-paid-creator-collaborations) walks through the trade-offs in more detail.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What's the difference between gifted, paid and affiliate deals?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Gifted collaborations exchange free product for content. No cash changes hands, so this suits lower-cost items such as a coffee subscription or a skincare serum, where the product itself is the fee. It's the cheapest way to build a library of content, but you have no real way to force whether a creator posts, or when.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Paid collaborations add a fixed fee on top of, or instead of, product. You're paying for guaranteed deliverables: a set number of posts, usage rights, a deadline. Use this model when you need content ready for a launch or a paid ad campaign, not just organic reach over time.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Affiliate commission pays a percentage of sales the creator's link or code actually drives. It costs you nothing until a sale happens, which looks attractive, but it only works if the creator has an audience that buys, not just watches. For how to set commission rates that protect your margin, see [affiliate commission rates for creators](/blog/affiliate-commission-rates-for-creators).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "When should you actually pay creators, before or after they post?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "For gifted and paid work, pay or send product on approval of the brief, not after the content goes live. Creators notice who pays up front and who makes them chase an invoice for weeks, and that shapes whether they bother applying to your next campaign. For affiliate commission, payment naturally happens after the sale is tracked, which is part of why it's the lowest-risk model for your cash flow.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "If you're paying a larger fixed fee for a multi-post package, split it. A portion on approval, the rest on delivery of the final asset, protects you if a creator goes quiet partway through, without making them wait weeks for any money at all.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "On Linkable, gifted product orders can be created automatically once you approve a creator's application, and affiliate sales are tracked through unique links and codes with payouts handled through the platform, so you're not reconciling a spreadsheet to work out who's owed what.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What do creators expect from a brand that pays well?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Creators expect clarity before they start, and speed once the work is done. A brief should state the payment model, the amount or rate, and the deadline, agreed before filming starts, not negotiated after delivery. See [creator contract essentials for small brands](/blog/creator-contract-essentials-small-brands) for what to put in writing.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Creators also expect reporting they can see. One who can't tell whether their code actually sold anything has no reason to work with you again, and affiliate deals in particular depend on the creator trusting your tracking as much as you trust it.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you keep payouts painless as you scale?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Payouts get painful the moment you're running more than a handful of creators manually, because you're tracking who's owed what, by which method, across your own spreadsheet and bank transfers. The fix is to centralise applications, approvals and payouts in one place before volume forces you into chaos.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Say you run a coffee subscription brand working with a dozen creators a month across gifted and affiliate deals. Without a system, you're manually checking which discount codes were used, chasing creators for payment details, and losing track of who still needs paying from last month. That's the kind of mess that makes founders quietly stop running creator campaigns, not because the model fails, but because the admin got out of hand.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "[Plans on Linkable](/pricing) include affiliate tracking and payouts handled through the platform, so collaborations, approvals and payment sit in one place rather than spread across email threads and spreadsheets. If you'd rather hand the whole process to someone else, [get in touch](/contact) about a managed approach.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This week, go through your current creator list and tag each one by payment model: gifted, paid or affiliate. If more than a few gifted deals never turned into anything measurable, that's your cue to renegotiate with affiliate terms or a small fixed fee on your next campaign.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Yes, even for a gifted collaboration. A short agreement covering deliverables, deadline, usage rights and payment terms protects both sides and avoids disputes once content is live.",
+      "q": "Do I need a contract before paying a creator?"
+    },
+    {
+      "a": "Per post works well for one-off content, while a campaign fee suits a bundle of deliverables such as a video plus two stories. Pick whichever is easier for the creator to plan around and for you to track.",
+      "q": "Should I pay creators per post or per campaign?"
+    },
+    {
+      "a": "This is why milestone payments matter: pay a portion on approval and the rest on delivery, and state in writing what happens if deadlines are missed, including refund or replacement terms.",
+      "q": "What happens if a creator doesn't deliver after being paid?"
+    },
+    {
+      "a": "Yes, and many brands do. New or smaller creators might work on a gifted basis while established ones get a fixed fee plus a commission, as long as the terms for each are clear from the start.",
+      "q": "Can I mix gifted, paid and affiliate in the same campaign?"
+    }
+  ]
+}

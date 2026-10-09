@@ -67,6 +67,56 @@
   },
   {
     "heroImage": {
+      "id": 10376251,
+      "alt": "A professional businessman working at his desk, reviewing documents in a modern office environment.",
+      "src": "https://images.pexels.com/photos/10376251/pexels-photo-10376251.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/businessman-signing-documents-in-his-office-10376251/",
+      "query": "small business owner reviewing invoice laptop",
+      "width": 6455,
+      "credit": {
+        "url": "https://www.pexels.com/@rdne",
+        "name": "RDNE Stock project"
+      },
+      "height": 4303,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/10376251/pexels-photo-10376251.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/10376251/pexels-photo-10376251.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/how-to-pay-creators-ecommerce-campaigns-10376251-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/how-to-pay-creators-ecommerce-campaigns-10376251-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "how-to-pay-creators-ecommerce-campaigns",
+    "title": "How to pay creators for your ecommerce campaigns",
+    "description": "A clear guide to how to pay creators for ecommerce campaigns: gifted, paid and affiliate models, timing, and keeping payouts painless as you scale.",
+    "excerpt": "Gifted product, a fixed fee, or a cut of sales: here's how to choose the right payment model for each creator, when to actually pay, and how to stop payouts turning into admin chaos.",
+    "date": "2026-10-09",
+    "updated": "2026-10-09",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "A professional businessman working at his desk, reviewing documents in a modern office environment.",
+    "words": 834,
+    "source": "generated",
+    "keyword": "how to pay creators for ecommerce campaigns",
+    "category": "Strategy",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 39934683,
       "alt": "Close-up of Hollyland Lark M1 microphone in hands with packaging, outdoors.",
       "src": "https://images.pexels.com/photos/39934683/pexels-photo-39934683.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -1367,56 +1417,6 @@
   },
   {
     "heroImage": {
-      "id": 6593779,
-      "alt": "An Asian woman vlogs at home using a smartphone and ring light, perfect setup for influencers.",
-      "src": "https://images.pexels.com/photos/6593779/pexels-photo-6593779.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "page": "https://www.pexels.com/photo/woman-filming-vlog-on-smartphone-camera-6593779/",
-      "query": "content creator filming smartphone ring light",
-      "width": 6027,
-      "credit": {
-        "url": "https://www.pexels.com/@shvetsa",
-        "name": "Anna Shvets"
-      },
-      "height": 4018,
-      "srcset": [
-        {
-          "w": 940,
-          "url": "https://images.pexels.com/photos/6593779/pexels-photo-6593779.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-        },
-        {
-          "w": 1880,
-          "url": "https://images.pexels.com/photos/6593779/pexels-photo-6593779.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-        }
-      ],
-      "provider": "pexels",
-      "files": [
-        {
-          "path": "/assets/blog/how-to-find-creators-shopify-brand-6593779-940.jpg",
-          "w": 940
-        },
-        {
-          "path": "/assets/blog/how-to-find-creators-shopify-brand-6593779-1880.jpg",
-          "w": 1880
-        }
-      ]
-    },
-    "slug": "how-to-find-creators-shopify-brand",
-    "title": "How to find creators for your Shopify brand every month",
-    "description": "How to find creators for your Shopify brand with a repeatable process: applications first, then targeted discovery, then hand-picked invitations.",
-    "excerpt": "A repeatable sourcing process for Shopify brands: let creators apply, use discovery to fill the gaps, then invite by hand. Plus the signals that matter more than follower count.",
-    "date": "2026-09-08",
-    "updated": "2026-09-08",
-    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
-    "imageAlt": "An Asian woman vlogs at home using a smartphone and ring light, perfect setup for influencers.",
-    "words": 1348,
-    "source": "generated",
-    "keyword": "how to find creators for your shopify brand",
-    "category": "Sourcing",
-    "readMinutes": 7,
-    "author": "Linkable Team"
-  },
-  {
-    "heroImage": {
       "id": 6958455,
       "alt": "A person unboxes a small item from a cardboard package filled with crinkle paper, indoors.",
       "src": "https://images.pexels.com/photos/6958455/pexels-photo-6958455.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -1463,6 +1463,56 @@
     "keyword": "gifted vs paid creator collaborations",
     "category": "Strategy",
     "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
+      "id": 6593779,
+      "alt": "An Asian woman vlogs at home using a smartphone and ring light, perfect setup for influencers.",
+      "src": "https://images.pexels.com/photos/6593779/pexels-photo-6593779.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/woman-filming-vlog-on-smartphone-camera-6593779/",
+      "query": "content creator filming smartphone ring light",
+      "width": 6027,
+      "credit": {
+        "url": "https://www.pexels.com/@shvetsa",
+        "name": "Anna Shvets"
+      },
+      "height": 4018,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/6593779/pexels-photo-6593779.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/6593779/pexels-photo-6593779.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/how-to-find-creators-shopify-brand-6593779-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/how-to-find-creators-shopify-brand-6593779-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "how-to-find-creators-shopify-brand",
+    "title": "How to find creators for your Shopify brand every month",
+    "description": "How to find creators for your Shopify brand with a repeatable process: applications first, then targeted discovery, then hand-picked invitations.",
+    "excerpt": "A repeatable sourcing process for Shopify brands: let creators apply, use discovery to fill the gaps, then invite by hand. Plus the signals that matter more than follower count.",
+    "date": "2026-09-08",
+    "updated": "2026-09-08",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "An Asian woman vlogs at home using a smartphone and ring light, perfect setup for influencers.",
+    "words": 1348,
+    "source": "generated",
+    "keyword": "how to find creators for your shopify brand",
+    "category": "Sourcing",
+    "readMinutes": 7,
     "author": "Linkable Team"
   }
 ]
