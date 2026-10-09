@@ -60,10 +60,15 @@ export function compile(src) {
 const escText = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const escAttr = (s) => escText(s).replace(/"/g, '&quot;');
 
+// A rendered page is a light tree of plain objects, so the browser runtime can
+// compare one render with the next and touch only what changed:
+//   { t: 'escaped text' }                       text
+//   { tag, attrs: [[name, escapedValue]], kids } element
+//   { raw: 'html' }                             <sc-html> output
+// toHtml() serialises it; the static pages are that string.
 export function render(tree, vals) {
   const handlers = [];
   const scopes = [vals];
-  const out = [];
 
   const lookup = (path) => {
     if (path === 'true') return true;
@@ -81,48 +86,81 @@ export function render(tree, vals) {
   };
   const str = (v) => (v === null || v === undefined ? '' : String(v));
 
+  // [name, escaped value] or null when the attribute is left out.
   const attr = (name, raw) => {
     const single = raw.match(SINGLE);
     if (single) {
       const v = lookup(single[1]);
       if (typeof v === 'function') {
         if (!/^on/i.test(name)) throw new Error(`function bound to ${name}`);
-        return ` data-on="${handlers.push(v) - 1}"`;
+        return ['data-on', String(handlers.push(v) - 1)];
       }
-      if (v === null || v === undefined) return '';
-      if (typeof v === 'boolean') return ` ${name}="${v}"`;
-      return ` ${name}="${escAttr(String(v))}"`;
+      if (v === null || v === undefined) return null;
+      if (typeof v === 'boolean') return [name, String(v)];
+      return [name, escAttr(String(v))];
     }
-    if (!raw.includes('{{')) return ` ${name}="${raw}"`;
-    return ` ${name}="${raw.replace(INLINE, (_, p) => escAttr(str(lookup(p))))}"`;
+    if (!raw.includes('{{')) return [name, raw];
+    return [name, raw.replace(INLINE, (_, p) => escAttr(str(lookup(p))))];
   };
 
-  const walk = (nodes) => {
+  // Adjacent text (static text next to a loop's output, say) is one DOM text
+  // node, so it is one node here too; empty text makes no node at all.
+  const pushText = (kids, t) => {
+    if (!t) return;
+    const last = kids[kids.length - 1];
+    if (last && last.t !== undefined) last.t += t;
+    else kids.push({ t });
+  };
+
+  const walk = (nodes, kids) => {
     for (const n of nodes) {
       if (n.text !== undefined) {
-        out.push(n.text.includes('{{') ? n.text.replace(INLINE, (_, p) => escText(str(lookup(p)))) : n.text);
+        pushText(kids, n.text.includes('{{') ? n.text.replace(INLINE, (_, p) => escText(str(lookup(p)))) : n.text);
       } else if (n.tag === 'sc-for') {
         const list = lookup(n.list) || [];
         for (const item of list) {
           scopes.push({ [n.as]: item });
-          walk(n.children);
+          walk(n.children, kids);
           scopes.pop();
         }
       } else if (n.tag === 'sc-if') {
-        if (lookup(n.test)) walk(n.children);
+        if (lookup(n.test)) walk(n.children, kids);
       } else if (n.tag === 'sc-html') {
-        out.push(str(lookup(n.value)));
+        const html = str(lookup(n.value));
+        if (html) kids.push({ raw: html });
       } else {
+        const el = { tag: n.tag, attrs: [], kids: [] };
+        for (const [name, raw] of n.attrs) {
+          const a = attr(name, raw);
+          if (a) el.attrs.push(a);
+        }
+        if (!VOID.has(n.tag)) walk(n.children, el.kids);
+        kids.push(el);
+      }
+    }
+  };
+  const nodes = [];
+  walk(tree.children, nodes);
+  return { nodes, handlers, get html() { return toHtml(nodes); } };
+}
+
+export function toHtml(nodes) {
+  const out = [];
+  const ser = (list) => {
+    for (const n of list) {
+      if (n.t !== undefined) out.push(n.t);
+      else if (n.raw !== undefined) out.push(n.raw);
+      else {
         out.push('<' + n.tag);
-        for (const [name, raw] of n.attrs) out.push(attr(name, raw));
+        for (const [name, v] of n.attrs) out.push(` ${name}="${v}"`);
         out.push('>');
         if (!VOID.has(n.tag)) {
-          walk(n.children);
+          ser(n.kids);
           out.push('</' + n.tag + '>');
         }
       }
     }
   };
-  walk(tree.children);
-  return { html: out.join(''), handlers };
+  ser(nodes);
+  return out.join('');
 }

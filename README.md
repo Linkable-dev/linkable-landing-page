@@ -52,6 +52,12 @@ node tools/design/build.mjs                                    # templates + con
 - **Runtime.** `src/design/entry.js` loads the page's template and logic class, and `src/design/runtime.js`
   re-renders on every state change, patching the live DOM in place so the demo video keeps playing and entry
   animations do not replay. `src/design/actions.js` holds the contact form, the newsletter box and "copy link".
+- **Link previews.** Each page has Open Graph and Twitter tags with a 1200x630 card from `public/assets/og/`,
+  rendered from the built pages by `node tools/design/og.mjs` (needs Playwright and Chrome, run it by hand when a
+  hero changes). Articles use their own hero photo. Absolute URLs are written for `https://www.linkable.link`;
+  while that domain still serves Framer, `vite.config.js` rewrites image URLs and `og:url` at build time to
+  Vercel's production domain (`VERCEL_PROJECT_PRODUCTION_URL`, or `SITE_ORIGIN` if set), so previews never fetch
+  images from the wrong site. Canonical links keep pointing at www.linkable.link.
 - **Fonts** are self-hosted (`manrope-*.woff2`, `fraunces-*.woff2`), so no request goes to Google before consent.
 - **Cookies.** Pages draw the design's cookie bar; `src/consent.js` keeps the tracking tags parked until the
   visitor accepts, and the footer's "Cookie settings" link (added by the importer) reopens the preferences dialog.

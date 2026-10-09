@@ -19,20 +19,25 @@ import { AUTHOR, CONTENT, SITE, esc, fmtDate, heroInfo, readJson, renderArticle,
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const TRACKING = fs.readFileSync(path.join(ROOT, 'tools/design/tracking.html'), 'utf8');
-const OG_DEFAULT = '/assets/images/4pHwprCnjdlRtvgTYMU4ny2tt4.png';
+// Link-preview cards rendered by tools/design/og.mjs (1200x630).
+const OG = (name) => ({ image: `/assets/og/${name}.jpg`, imageW: 1200, imageH: 630 });
 
 // Titles and descriptions carried over from the Framer pages these replace.
 const STATIC = [
-  { key: 'home', file: 'index.html', url: '/', title: 'Creator Marketing for Ecommerce Brands | Linkable', description: 'Run gifted, paid and affiliate creator campaigns in one place. Find relevant creators, manage collaborations, get content and track performance with Linkable.' },
-  { key: 'creators', file: 'creators/index.html', url: '/creators', title: 'Brand Collaborations for Creators | Linkable', description: 'Discover gifted, paid and affiliate collaborations with ecommerce brands. Create content, promote products you love and earn through Linkable.', image: '/assets/images/9XbOFM8Q37VBjuVNfc5B9HCGn8.png' },
-  { key: 'pricing', file: 'pricing/index.html', url: '/pricing', title: 'Creator Marketing Pricing for Ecommerce Brands | Linkable', description: 'Explore Linkable pricing for ecommerce brands. Find creators and run gifted, paid and affiliate campaigns, with everything managed in one place.' },
-  { key: 'autopilot', file: 'autopilot/index.html', url: '/autopilot', title: 'Autopilot: Creator Campaigns That Run Themselves | Linkable', description: 'Autopilot sets up your creator campaigns, sources and matches creators and keeps every collaboration moving, so your team doesn’t have to.' },
-  { key: 'contact', file: 'contact/index.html', url: '/contact', title: 'Contact Linkable – Speak With the Team', description: 'Get in touch with the Linkable team for support, partnerships, or press inquiries. We usually reply within 24 hours.' },
-  { key: 'notfound', file: '404.html', url: '/404', title: 'Linkable – Page Not Found', description: 'The page you’re looking for doesn’t exist. Visit Linkable to discover creator campaigns for ecommerce brands.', robots: 'noindex' },
+  { key: 'home', file: 'index.html', url: '/', title: 'Creator Marketing for Ecommerce Brands | Linkable', description: 'Run gifted, paid and affiliate creator campaigns in one place. Find relevant creators, manage collaborations, get content and track performance with Linkable.', ...OG('home') },
+  { key: 'creators', file: 'creators/index.html', url: '/creators', title: 'Brand Collaborations for Creators | Linkable', description: 'Discover gifted, paid and affiliate collaborations with ecommerce brands. Create content, promote products you love and earn through Linkable.', ...OG('creators') },
+  { key: 'pricing', file: 'pricing/index.html', url: '/pricing', title: 'Creator Marketing Pricing for Ecommerce Brands | Linkable', description: 'Explore Linkable pricing for ecommerce brands. Find creators and run gifted, paid and affiliate campaigns, with everything managed in one place.', ...OG('pricing') },
+  { key: 'autopilot', file: 'autopilot/index.html', url: '/autopilot', title: 'Autopilot: Creator Campaigns That Run Themselves | Linkable', description: 'Autopilot sets up your creator campaigns, sources and matches creators and keeps every collaboration moving, so your team doesn’t have to.', ...OG('autopilot') },
+  { key: 'contact', file: 'contact/index.html', url: '/contact', title: 'Contact Linkable – Speak With the Team', description: 'Get in touch with the Linkable team for support, partnerships, or press inquiries. We usually reply within 24 hours.', ...OG('contact') },
+  { key: 'notfound', file: '404.html', url: '/404', title: 'Linkable – Page Not Found', description: 'The page you’re looking for doesn’t exist. Visit Linkable to discover creator campaigns for ecommerce brands.', robots: 'noindex', ...OG('home') },
 ];
 
-function head({ key, url, title, description, image = OG_DEFAULT, type = 'website', robots = 'max-image-preview:large', extra = '' }) {
+// Absolute URLs use SITE (www.linkable.link). Until that domain serves this site,
+// vite.config.js rewrites asset and og:url origins to the deploying domain at
+// build time, or link previews would fetch images from Framer and get a 404.
+function head({ key, url, title, description, image, imageW, imageH, imageAlt = title, type = 'website', robots = 'max-image-preview:large', extra = '' }) {
   const canonical = SITE + url;
+  const img = SITE + image;
   // A page whose design has no styles of its own (the home page) gets no page.css link.
   const own = fs.readFileSync(path.join(ROOT, `src/design/pages/${key}/page.css`), 'utf8').replace(/\/\*[\s\S]*?\*\//g, '').trim();
   const css = ['/src/design/site.css', ...(own ? [`/src/design/pages/${key}/page.css`] : []), '/src/consent.css'];
@@ -48,15 +53,19 @@ function head({ key, url, title, description, image = OG_DEFAULT, type = 'websit
 <link href="/assets/images/ReeNovPL1vL307q6rSUWiwC9Qno.png" rel="icon" media="(prefers-color-scheme: light)">
 <link href="/assets/images/UPomnZoVcDYorrnvJxuqQ9Vkv2E.png" rel="icon" media="(prefers-color-scheme: dark)">
 <link rel="apple-touch-icon" href="/assets/images/6BpXFGzNfTrLv3wAkMxbUP93Ezc.png">
+<meta property="og:site_name" content="Linkable">
+<meta property="og:locale" content="en_GB">
 <meta property="og:type" content="${type}">
 <meta property="og:url" content="${canonical}">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
-<meta property="og:image" content="${image.startsWith('http') ? image : SITE + image}">
+<meta property="og:image" content="${img}">
+${imageW ? `<meta property="og:image:width" content="${imageW}">\n<meta property="og:image:height" content="${imageH}">\n` : ''}<meta property="og:image:alt" content="${esc(imageAlt)}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${esc(title)}">
 <meta name="twitter:description" content="${esc(description)}">
-<meta name="twitter:image" content="${image.startsWith('http') ? image : SITE + image}">
+<meta name="twitter:image" content="${img}">
+<meta name="twitter:image:alt" content="${esc(imageAlt)}">
 ${extra}<link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
 ${TRACKING}${css.map((h) => `<link rel="stylesheet" href="${h}">`).join('\n')}
 <script type="module" src="/src/design/entry.js"></script>
@@ -108,6 +117,8 @@ function card(p) {
     href: `/blog/${p.slug}`,
     src: img.src,
     srcset: img.srcset || null,
+    imgW: img.width,
+    imgH: img.height,
     alt: p.imageAlt || p.heroImage?.alt || p.title,
     cat: p.category || 'Playbook',
     date: fmtDate(p.date),
@@ -137,7 +148,7 @@ export async function buildBlog() {
   const cats = [...counts.keys()].sort((a, b) => counts.get(b) - counts.get(a) || a.localeCompare(b));
 
   await writePage(
-    { key: 'blog', file: 'blog/index.html', url: '/blog', title: 'Linkable Blog – Creator Marketing Insights & Ecommerce Growth', description: 'Read the latest insights on creator marketing, affiliate campaigns, ecommerce strategy and product-led partnerships.' },
+    { key: 'blog', file: 'blog/index.html', url: '/blog', title: 'Linkable Blog – Creator Marketing Insights & Ecommerce Growth', description: 'Read the latest insights on creator marketing, affiliate campaigns, ecommerce strategy and product-led partnerships.', ...OG('blog') },
     { feat: { ...cards[0], author: posts[0].author || AUTHOR.name }, posts: cards.slice(1), cats },
   );
 
@@ -177,7 +188,7 @@ export async function buildBlog() {
     ];
     if (faqs.length) ld.push({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) });
     const extra = `<meta property="article:published_time" content="${p.date}T08:00:00Z">\n<meta property="article:modified_time" content="${p.updated || p.date}T08:00:00Z">\n<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n`;
-    await writePage({ key: 'post', file: `blog/${p.slug}/index.html`, url: `/blog/${p.slug}`, title: p.title, description: p.description || p.excerpt, image: c.src, type: 'article', extra }, data);
+    await writePage({ key: 'post', file: `blog/${p.slug}/index.html`, url: `/blog/${p.slug}`, title: p.title, description: p.description || p.excerpt, image: c.src, imageW: c.imgW, imageH: c.imgH, imageAlt: c.alt, type: 'article', extra }, data);
     n++;
   }
   return n;
@@ -187,7 +198,7 @@ export async function buildBlog() {
 export async function buildLegal() {
   const docs = readJson(path.join(ROOT, 'content/legal/documents.json'), []);
   for (const doc of docs) {
-    await writePage({ key: 'legal', file: `legal/${doc.slug}/index.html`, url: `/legal/${doc.slug}`, title: `${doc.title} - Linkable`, description: doc.meta }, { doc });
+    await writePage({ key: 'legal', file: `legal/${doc.slug}/index.html`, url: `/legal/${doc.slug}`, title: `${doc.title} - Linkable`, description: doc.meta, ...OG(doc.slug) }, { doc });
   }
   return docs.length;
 }
