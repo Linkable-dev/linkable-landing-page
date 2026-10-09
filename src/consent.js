@@ -1,11 +1,11 @@
-// Cookie consent: the banner, the preferences dialog, and the gate that decides
-// whether Google Tag Manager and the Meta pixel are allowed to run at all.
+// Cookie consent: the preferences dialog, the stored choice, and the gate that
+// decides whether Google Tag Manager and the Meta pixel are allowed to run at all.
 //
-// The gate is the part that matters. Framer hard-codes both tags as inline
-// <script> in the <head>, where they execute during parse, long before this
-// module (a deferred ES module) gets a turn. A banner alone would therefore be
-// decorative: the cookies would already be set. So import-framer.py rewrites
-// those tags to type="text/plain" with a data-consent attribute, which browsers
+// The gate is the part that matters. Both tags sit in every page's <head>
+// (tools/design/tracking.html), where an ordinary <script> would execute during
+// parse, long before this module (a deferred ES module) gets a turn. A banner
+// alone would therefore be decorative: the cookies would already be set. So the
+// tags ship as type="text/plain" with a data-consent attribute, which browsers
 // refuse to execute, and activate() below revives the ones the visitor allows by
 // copying them into a fresh <script>. Nothing tracking-related runs until then.
 //
@@ -14,6 +14,10 @@
 // no toggle. Denial is the default for both, including for a visitor who dismisses
 // the banner without choosing, and "Reject all" is given the same weight as
 // "Accept all" rather than being hidden behind the preferences dialog.
+//
+// The pages draw the design's own cookie bar, whose buttons call acceptAll() and
+// rejectAll() here. The banner this module can draw itself stays for any page
+// that has no bar of its own (initConsent's `banner` option).
 
 const KEY = 'lk-consent';
 const VERSION = 1;
@@ -209,8 +213,12 @@ function finish(choices) {
 const ALL_ON = { analytics: true, marketing: true };
 const ALL_OFF = { analytics: false, marketing: false };
 
+// The home page renders its own cookie bar from the design template, so it
+// turns this one off; the gate, the dialog and the stored choice stay shared.
+let useBanner = true;
+
 function showBanner() {
-  if (document.getElementById(ids.banner)) return;
+  if (!useBanner || document.getElementById(ids.banner)) return;
   const el = document.createElement('div');
   el.id = ids.banner;
   el.className = 'lk-cc-banner';
@@ -291,88 +299,23 @@ function onClick(e) {
   }
 }
 
-// The footer is Framer's, so the way back to this dialog has to be added here.
-// Matching the existing legal link by href keeps it working across re-imports,
-// which regenerate every class name.
-//
-// The href alone is not specific enough: the same link also appears in the
-// Policies sidebar on the legal pages and inline in the privacy policy prose.
-// Cloning those produced a sidebar row labelled "Cookie settingsPrivacy Policy",
-// so the search is scoped to <footer> and to one link per footer. Framer ships
-// several footers for its breakpoints and hides all but one, which is why the
-// count is per element rather than per document.
-function addFooterLink() {
-  for (const footer of document.querySelectorAll('footer')) {
-    if (footer.querySelector('[data-cc="manage-footer"]')) continue;
-    const legal = footer.querySelector('a[href="/legal/privacy-policy"]');
-    if (!legal) continue;
-
-    // Each footer link sits in its own single-child wrapper, and those wrappers
-    // are what the row lays out. Inserting beside the <a> therefore drops the
-    // clone inside the privacy link's own wrapper, where it stacks underneath
-    // instead of joining the row. Climb to the wrapper whose parent also holds
-    // the terms link, which is the row itself, and clone at that level. Found by
-    // structure rather than by class, because the hashed names are regenerated
-    // on every re-import.
-    let wrapper = legal;
-    while (
-      wrapper.parentElement &&
-      wrapper.parentElement !== footer &&
-      !wrapper.parentElement.querySelector('a[href="/legal/terms-of-service"]')
-    ) {
-      wrapper = wrapper.parentElement;
-    }
-    const row = wrapper.parentElement;
-    if (!row) continue;
-    // Sit after the last legal link rather than beside the privacy one, so the
-    // footer reads Privacy, Terms, Cookie settings in the same order as the
-    // Policies sidebar.
-    const last = [...row.children].filter((el) => el.querySelector?.('a[href^="/legal/"]')).pop()
-      ?? wrapper;
-
-    const clone = wrapper.cloneNode(true);
-    const link = clone.matches('a') ? clone : clone.querySelector('a');
-    if (!link) continue;
-    link.setAttribute('href', '#cookie-settings');
-    link.setAttribute('data-cc', 'manage-footer');
-    link.removeAttribute('data-framer-page-link-current');
-    // Framer wraps the label in its own rich-text <p>; replace only that text so
-    // the link keeps the footer's type styles.
-    const label = link.querySelector('p') ?? link;
-    label.textContent = 'Cookie settings';
-    last.insertAdjacentElement('afterend', clone);
-  }
-}
-
-// The privacy policy and terms pages come from Framer, so their Policies sidebar
-// lists only those two. Someone reading the privacy policy should be able to
-// reach the cookie policy from there, and editing those files would not survive
-// the next import, so the entry is cloned in here. legal/cookie-policy already
-// ships the link in its own markup, hence the guard.
-function addSidebarEntry() {
-  for (const legal of document.querySelectorAll('a[href="/legal/privacy-policy"]')) {
-    // Each sidebar row is one framer-bnyjcf block; the footer and the inline
-    // prose link have no such ancestor, which is what keeps them out of here.
-    const entry = legal.closest('.framer-bnyjcf');
-    const list = entry?.parentElement;
-    if (!entry || !list) continue;
-    // Guard on the list itself, so the generated cookie policy page, which
-    // already ships this row, does not gain a second one.
-    if (list.querySelector('a[href="/legal/cookie-policy"]')) continue;
-    const clone = entry.cloneNode(true);
-    const link = clone.querySelector('a[href="/legal/privacy-policy"]');
-    if (!link) continue;
-    link.setAttribute('href', '/legal/cookie-policy');
-    link.removeAttribute('data-framer-page-link-current');
-    const label = link.querySelector('p');
-    if (label) label.textContent = 'Cookie Policy';
-    entry.insertAdjacentElement('afterend', clone);
-  }
-}
-
 /* ---------------------------------------------------------------- public */
 
-export function initConsent() {
+export function consentChoice() {
+  return read();
+}
+
+export function acceptAll() {
+  finish({ ...ALL_ON });
+}
+
+export function rejectAll() {
+  finish({ ...ALL_OFF });
+}
+
+// `banner: false` leaves asking the question to the page.
+export function initConsent({ banner = true } = {}) {
+  useBanner = banner;
   // Deny before anything is revived, so a tag that slips through Consent Mode
   // still finds a denied state rather than an absent one.
   gtagConsent('default');
@@ -381,10 +324,8 @@ export function initConsent() {
   if (saved) apply(saved);
   else showBanner();
 
-  addFooterLink();
-  addSidebarEntry();
   document.addEventListener('click', (e) => {
-    const el = e.target.closest('[data-cc="manage-footer"], a[href="#cookie-settings"]');
+    const el = e.target.closest('a[href="#cookie-settings"]');
     if (el) {
       e.preventDefault();
       removeBanner();

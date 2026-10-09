@@ -1,0 +1,403 @@
+{
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Creator partnerships *should* be one of the most profitable acquisition channels for ecommerce brands. Yet most brands will tell you a different story: they gifted products, ran campaigns, spent hours coordinating creators… and saw almost **no measurable sales**."
+    },
+    {
+      "type": "p",
+      "text": "The truth is uncomfortable but backed by data:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Only **20% of creators drive 80% of affiliate sales** (Partnerize, 2024).",
+        "**67% of brands struggle to track performance** from creators (Shopify).",
+        "**60% of coupon codes leak** onto third-party websites, killing attribution (Awin)."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Creator marketing isn’t broken, the *system* most brands use is."
+    },
+    {
+      "type": "p",
+      "text": "Let’s break down why creator partnerships fail, with real examples from ecommerce brands, and what you can do to turn the channel into a reliable revenue engine."
+    },
+    {
+      "type": "h2",
+      "text": "The painful example every brand knows"
+    },
+    {
+      "type": "p",
+      "text": "A beauty brand recently seeded 40 creators. The content was beautiful, high-quality videos, product routines, unboxings."
+    },
+    {
+      "type": "p",
+      "text": "After four weeks, the result?"
+    },
+    {
+      "type": "quote",
+      "text": "**One sale.**"
+    },
+    {
+      "type": "p",
+      "text": "Here’s what went wrong:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "They chose creators based on *aesthetic*, not buying intent.",
+        "They tracked performance manually in a spreadsheet.",
+        "Discount codes leaked to coupon sites within days.",
+        "Creators posted… but none actually drove buyers."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "This isn’t unusual. This is the story of **hundreds of brands** trying to navigate creator marketing without the right infrastructure."
+    },
+    {
+      "type": "h2",
+      "text": "5 Reasons Why Creator Partnerships Fail"
+    },
+    {
+      "type": "h3",
+      "text": "1. Brands choose creators based on reach not revenue behaviour"
+    },
+    {
+      "type": "p",
+      "text": "The biggest misconception in creator marketing is that follower count equals sales potential."
+    },
+    {
+      "type": "p",
+      "text": "In reality:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "A creator with **8,000 followers** can outsell a creator with **100,000 followers** by *10–15×*.",
+        "Mid-sized creators (50k – 200k) often generate **great content** but **poor conversion**.",
+        "The creators who drive revenue are usually micro-performers with *deep trust* in a specific niche."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "**Real example:** A UK wellness brand recently shared that a lifestyle creator with just 8.5k followers generated over 14× more sales than a “top creator” with 120k."
+    },
+    {
+      "type": "p",
+      "text": "**Lesson:** Pick creators based on *behaviour*, who actually sells, not vanity metrics."
+    },
+    {
+      "type": "h3",
+      "text": "2. Campaigns take too long to launch"
+    },
+    {
+      "type": "p",
+      "text": "The average influencer campaign takes **21 days** from first message to posting:"
+    },
+    {
+      "type": "p",
+      "text": "DM → negotiation → email → shipping → brief → reminders → posting → tracking."
+    },
+    {
+      "type": "p",
+      "text": "By the time everything is aligned:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "creators lose interest",
+        "momentum dies",
+        "brands lose control of timing"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Fast paced ecommerce brands need something closer to **21 minutes**, not 21 days."
+    },
+    {
+      "type": "h3",
+      "text": "3. Attribution is a mess, codes leak everywhere"
+    },
+    {
+      "type": "p",
+      "text": "Awin’s enterprise data shows:"
+    },
+    {
+      "type": "quote",
+      "text": "**40–60% of coupon codes leak within 48 hours.**"
+    },
+    {
+      "type": "p",
+      "text": "Once a code leaks:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "the *wrong person* gets credit",
+        "your real creators lose trust",
+        "your marketing team loses visibility",
+        "your ROI becomes meaningless"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "This is the #1 complaint you hear from D2C founders:"
+    },
+    {
+      "type": "quote",
+      "text": "“We don’t know who actually drove the sale.”"
+    },
+    {
+      "type": "p",
+      "text": "Without reliable attribution, you’re flying blind."
+    },
+    {
+      "type": "h3",
+      "text": "4. Too much admin everything is done manually"
+    },
+    {
+      "type": "p",
+      "text": "Most brands run creator programmes with:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "DMs",
+        "screenshots",
+        "Google Sheets",
+        "tracking links scattered everywhere",
+        "manual bank transfers for payouts"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "One apparel brand told us:"
+    },
+    {
+      "type": "quote",
+      "text": "“We were spending more time managing creators than actually running our store.”"
+    },
+    {
+      "type": "p",
+      "text": "When ops are this manual, scaling is impossible. And the people managing the partnerships quickly burn out."
+    },
+    {
+      "type": "h3",
+      "text": "5. Brands run one off posts instead of building a system"
+    },
+    {
+      "type": "p",
+      "text": "This is why creators “don’t work” for most brands."
+    },
+    {
+      "type": "p",
+      "text": "One off posts ="
+    },
+    {
+      "type": "ul",
+      "items": [
+        "nice content",
+        "no consistent revenue"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Top-performing brands do the opposite. They build a **creator engine** by:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "testing many creators",
+        "doubling down on the ones who sell",
+        "keeping those creators active for months",
+        "reinvesting performance fees into the winners"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Evergreen creator relationships are where 90% of the revenue comes from."
+    },
+    {
+      "type": "h3",
+      "text": "Real Example: What a Winning Creator Programme Looks Like"
+    },
+    {
+      "type": "p",
+      "text": "One activewear brand on Shopify built a simple but powerful system:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "They seeded products consistently over 90 days.",
+        "They worked with 60 creators.",
+        "After three months, they identified **12 top performers**."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Those 12 creators now drive:"
+    },
+    {
+      "type": "quote",
+      "text": "**36% of all affiliate revenue** (more than their Facebook ads at this point)"
+    },
+    {
+      "type": "p",
+      "text": "Their cost to acquire those creators? Free product + performance fees."
+    },
+    {
+      "type": "p",
+      "text": "Their secret? Not reach, not aesthetics, **behavioural performance**."
+    },
+    {
+      "type": "p",
+      "text": "This framework works across beauty, fashion, wellness, homeware, accessories, any category where creators influence purchasing decisions."
+    },
+    {
+      "type": "h2",
+      "text": "The Revenue-First Creator Framework"
+    },
+    {
+      "type": "p",
+      "text": "*(How to Fix All 5 Problems Above)*"
+    },
+    {
+      "type": "p",
+      "text": "This is the system the most successful brands adopt."
+    },
+    {
+      "type": "h3",
+      "text": "1. Match with creators who actually sell"
+    },
+    {
+      "type": "p",
+      "text": "Using behavioural signals > follower count."
+    },
+    {
+      "type": "p",
+      "text": "Look for creators who:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "have sold similar products before",
+        "operate in the same niche",
+        "have audiences that actually buy (reviews, product routines, “favourites” content)",
+        "use formats that convert: demos, routines, mini-reviews"
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "2. Make it effortless for creators to try your product"
+    },
+    {
+      "type": "p",
+      "text": "Creators can’t sell what they haven’t used."
+    },
+    {
+      "type": "p",
+      "text": "Ship fast, keep briefs simple, avoid heavy-handed brand rules."
+    },
+    {
+      "type": "h3",
+      "text": "3. Track everything inside one platform"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "No spreadsheets.",
+        "No manual code tracking.",
+        "No guessing."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "You need click → add to cart → sale → commission in **one dashboard**."
+    },
+    {
+      "type": "p",
+      "text": "This is the difference between: “We think this creator worked” and “These 12 creators drove £9,200 in sales last month.”"
+    },
+    {
+      "type": "h3",
+      "text": "4. Scale the winners"
+    },
+    {
+      "type": "p",
+      "text": "Once you find your performers:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "send more product",
+        "increase commissions",
+        "give early access to launches",
+        "turn them into ambassadors"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "This is how you build a **predictable, profitable creator channel**."
+    },
+    {
+      "type": "h3",
+      "text": "The Instant Value Moment Brands Really Want"
+    },
+    {
+      "type": "p",
+      "text": "Here’s what “creator marketing done right” feels like:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "creators request to promote your products",
+        "you approve with one click",
+        "they receive their product",
+        "your dashboard shows real time clicks and sales",
+        "payouts run automatically",
+        "you scale the winners in two taps"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "It feels less like influencer marketing… and more like Shopify, but for creators."
+    },
+    {
+      "type": "h2",
+      "text": "Final Thoughts: Creator Partnerships Don’t Fail Systems Do"
+    },
+    {
+      "type": "p",
+      "text": "When brands rely on one-off influencer posts, failure is almost inevitable. But when they build a performance-first system, creator partnerships become a predictable growth channel: lower CAC, consistent content, and measurable revenue:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "lower CAC",
+        "predictable revenue",
+        "consistent content",
+        "an always-on acquisition channel"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Data shows:"
+    },
+    {
+      "type": "quote",
+      "text": "Brands that adopt performance-led creator programmes achieve **3–7× higher ROAS** than traditional influencer campaigns (Impact.com, 2024)."
+    },
+    {
+      "type": "p",
+      "text": "And that’s exactly what Linkable was built for, giving ecommerce brands one place to match with the right creators, track every click and sale in real time, and scale the partners who actually sell."
+    },
+    {
+      "type": "p",
+      "text": "If you’re ready to build a revenue-first creator engine, we’re offering an extended trial for early brands joining Linkable."
+    }
+  ],
+  "faqs": []
+}

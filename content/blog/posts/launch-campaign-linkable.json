@@ -1,0 +1,514 @@
+{
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Creator marketing only works when it’s structured, measurable, and tied to revenue. This guide walks you through **exactly how to set up your first campaign on Linkable**, field by field, so creators know what to do and you know what’s working."
+    },
+    {
+      "type": "h2",
+      "text": "Select the product creators will promote"
+    },
+    {
+      "type": "p",
+      "text": "**Start with one hero product, something that already sells well, has great reviews, or represents your brand clearly. ** Picking a single product keeps the campaign focused and helps creators understand exactly what they’re promoting. When selecting the product, think about whether it is visually appealing, easy to explain, and relevant to your ideal creator audience. Simpler products with clear benefits tend to work best for your first campaign. ** Tips:**"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Pick a product with a clear value proposition.",
+        "Avoid bundles and complex variants for the first test.",
+        "Ensure you have healthy inventory to avoid delays."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Step 1: Review your product details (auto-synced)"
+    },
+    {
+      "type": "h3",
+      "text": "Product title & description"
+    },
+    {
+      "type": "p",
+      "text": "Your product title and description are **automatically synced from Shopify** and cannot be edited here."
+    },
+    {
+      "type": "p",
+      "text": "**What to check**"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "The product name is clear and recognisable",
+        "The description focuses on *outcomes*, not features",
+        "No outdated claims or formatting issues"
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "**Tip: **Creators often reuse this copy directly. Make sure it sells."
+    },
+    {
+      "type": "h2",
+      "text": "Step 2: Add product highlights (what creators should talk about)"
+    },
+    {
+      "type": "h3",
+      "text": "Product highlights"
+    },
+    {
+      "type": "p",
+      "text": "This is where you tell creators **what actually matters** when promoting the product."
+    },
+    {
+      "type": "p",
+      "text": "Use short, punchy points such as:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Key benefit or outcome",
+        "Who the product is for",
+        "Why it’s different"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Example:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Improves focus and mental clarity",
+        "Designed for daily performance",
+        "Backed by clinically studied ingredients"
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "**Tip:** Keep it concise. Avoid long paragraphs creators scan, they don’t read."
+    },
+    {
+      "type": "h2",
+      "text": "Step 3: Choose a strong preview image"
+    },
+    {
+      "type": "h3",
+      "text": "Preview image"
+    },
+    {
+      "type": "p",
+      "text": "This image will be used as the **campaign thumbnail** across Linkable."
+    },
+    {
+      "type": "p",
+      "text": "**Best practices**"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Clean product shot",
+        "No small text",
+        "Square format",
+        "Looks good at small sizes"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "This image often determines whether creators click into your campaign or ignore it."
+    },
+    {
+      "type": "h2",
+      "text": "Step 4: Define the Right Creator Fit"
+    },
+    {
+      "type": "p",
+      "text": "Before promoting your campaign widely, get clear on who it’s genuinely for."
+    },
+    {
+      "type": "p",
+      "text": "What type of creator is this product a strong fit for?"
+    },
+    {
+      "type": "p",
+      "text": "Be specific about:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "The niche they operate in",
+        "The type of audience they reach",
+        "The content style they produce",
+        "Whether they’re comfortable with performance-based partnerships"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "For example:"
+    },
+    {
+      "type": "p",
+      "text": "*“This campaign is best suited for wellness creators focused on mental clarity, productivity, and daily performance routines. We’re looking for creators who integrate products naturally into educational or routine-based content and are comfortable sharing trackable links.”*"
+    },
+    {
+      "type": "p",
+      "text": "Clarity sets expectations. Specificity improves application quality."
+    },
+    {
+      "type": "p",
+      "text": "Early on, quality matters more than volume."
+    },
+    {
+      "type": "h2",
+      "text": "Step 5: Set your commission rate and audience discount"
+    },
+    {
+      "type": "h3",
+      "text": "Sale Commission"
+    },
+    {
+      "type": "p",
+      "text": "Choose how much creators earn per sale generated."
+    },
+    {
+      "type": "p",
+      "text": "Commission is calculated on the final price after any audience discount."
+    },
+    {
+      "type": "p",
+      "text": "Commission cannot be changed once the campaign is active."
+    },
+    {
+      "type": "p",
+      "text": "Linkable handles tracking and payouts (2–3% platform fee)."
+    },
+    {
+      "type": "h3",
+      "text": "Suggested Starting Range"
+    },
+    {
+      "type": "p",
+      "text": "For most DTC brands launching their first campaign:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "**Commission:** 20–35%",
+        "**Audience discount:** 10–15%"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Higher-margin products (supplements, skincare, digital) can test **30–40% commission** to attract stronger partners early."
+    },
+    {
+      "type": "p",
+      "text": "Lower-margin categories (apparel, hardware) may start closer to **15–25%**."
+    },
+    {
+      "type": "p",
+      "text": "Early on, it’s often better to be slightly generous and optimise once performance data comes in."
+    },
+    {
+      "type": "p",
+      "text": "Strong creator programmes reward performance not just content output."
+    },
+    {
+      "type": "h3",
+      "text": "Audience discount"
+    },
+    {
+      "type": "p",
+      "text": "Offer customers a discount when they buy through a creator’s link."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Discount codes are generated automatically",
+        "Applied at checkout",
+        "Tracked cleanly per creator"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "**Best practice**"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "10–15% works well for first campaigns",
+        "Avoid excessive discounts, they reduce margin and distort attribution"
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "**How Linkable handles audience discounts:**"
+    },
+    {
+      "type": "quote",
+      "text": "Uncontrolled discount sharing leads to margin loss and unreliable attribution. By tying discount codes to a creator’s unique link, Linkable ensures sales are only attributed when real influence occurs giving you accurate performance data and protecting revenue."
+    },
+    {
+      "type": "h3",
+      "text": "Earnings summary"
+    },
+    {
+      "type": "h3",
+      "text": "This section shows how:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Original price",
+        "Discounted price",
+        "Commission affect both **creator earnings** and **your net revenue**."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Use this to check margins before going live."
+    },
+    {
+      "type": "h2",
+      "text": "Step 6: Decide whether to offer product samples"
+    },
+    {
+      "type": "h3",
+      "text": "Offer a product sample?"
+    },
+    {
+      "type": "p",
+      "text": "Creators can request a free sample, and **you approve each request**."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Yes → good for higher-consideration products",
+        "No → better for low-cost or high-volume items"
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "**Tip: **Use performance data to decide which creators are worth continuing with."
+    },
+    {
+      "type": "quote",
+      "text": "**How Linkable handles samples:**"
+    },
+    {
+      "type": "quote",
+      "text": "Sample requests are managed directly through the platform."
+    },
+    {
+      "type": "quote",
+      "text": "You review each request, approve or decline it, and keep full visibility over which creators received products and how they performed afterwards."
+    },
+    {
+      "type": "quote",
+      "text": "Once approved, the product is shipped automatically to the creator using your integrated fulfilment setup, removing manual coordination and reducing operational friction."
+    },
+    {
+      "type": "h2",
+      "text": "Step 7: Content usage (optional)"
+    },
+    {
+      "type": "h3",
+      "text": "Are you open to buying creator content?"
+    },
+    {
+      "type": "p",
+      "text": "Let creators know if you’re open to purchasing their content **after they generate sales**."
+    },
+    {
+      "type": "p",
+      "text": "Recommended setting for first campaigns:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "**No**, or",
+        "**Yes, unlock after sales**"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "This keeps incentives aligned with performance."
+    },
+    {
+      "type": "quote",
+      "text": "**Tip:** You can purchase creator content that has already converted and repurpose it for paid ads, reducing creative risk and improving return on ad spend."
+    },
+    {
+      "type": "h2",
+      "text": "Step 8: Set attribution, limits, and duration"
+    },
+    {
+      "type": "h3",
+      "text": "Attribution window"
+    },
+    {
+      "type": "h3",
+      "text": "Choose how long sales are attributed after a click."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Recommended: **30+ days**",
+        "Longer windows support considered purchases"
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Sales limit (optional)"
+    },
+    {
+      "type": "p",
+      "text": "Automatically stop the campaign after a set number of sales."
+    },
+    {
+      "type": "p",
+      "text": "Useful for:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Limited stock",
+        "Controlled testing"
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "End date (optional)"
+    },
+    {
+      "type": "p",
+      "text": "End the campaign on a specific date if needed. Otherwise, leave it open."
+    },
+    {
+      "type": "h2",
+      "text": "Step 9: Choose campaign visibility"
+    },
+    {
+      "type": "h3",
+      "text": "Who should see this campaign?"
+    },
+    {
+      "type": "p",
+      "text": "**Public** All verified creators on Linkable can request to promote your product."
+    },
+    {
+      "type": "p",
+      "text": "**Best for:**"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "First campaigns",
+        "Testing creator demand",
+        "Discovering new, high-performing creators"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "**Private** Only creators you invite can access the campaign."
+    },
+    {
+      "type": "p",
+      "text": "**Best for:**"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Working with existing partners or ambassadors",
+        "Running controlled tests with a small group",
+        "Offering custom terms to selected creators"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "For first campaigns, **Public** is usually best to validate demand and identify top-performing creators before narrowing access."
+    },
+    {
+      "type": "quote",
+      "text": "**How Linkable handles visibility:**"
+    },
+    {
+      "type": "quote",
+      "text": "Campaign visibility can be changed at any time, allowing you to start public and later switch to private as you refine your creator strategy."
+    },
+    {
+      "type": "h2",
+      "text": "Step 10: Upload promotion assets (optional)"
+    },
+    {
+      "type": "h3",
+      "text": "Promotion assets"
+    },
+    {
+      "type": "p",
+      "text": "Add:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Brand guidelines",
+        "Visual references",
+        "Messaging notes"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Keep it light one or two files max."
+    },
+    {
+      "type": "p",
+      "text": "Creators perform better with clarity, not over-briefing."
+    },
+    {
+      "type": "h2",
+      "text": "Step 11: Publish your campaign"
+    },
+    {
+      "type": "p",
+      "text": "Publishing your campaign activates Linkable’s tracking, attribution, and payout infrastructure."
+    },
+    {
+      "type": "p",
+      "text": "From this point on:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Sales are tracked per creator and per product",
+        "Discount codes are generated and attributed cleanly",
+        "Commissions and payouts are handled automatically",
+        "Performance data becomes visible in real time"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "This is the moment your creator partnerships become a **structured, measurable revenue channel**."
+    },
+    {
+      "type": "h2",
+      "text": "Step 12: Add Creators to Your Campaign"
+    },
+    {
+      "type": "p",
+      "text": "Once your campaign is live, you can start adding creators in two ways:"
+    },
+    {
+      "type": "p",
+      "text": "**1. Invite creators you already work with** Bring existing partnerships into a structured system, track performance cleanly, and manage commissions in one place."
+    },
+    {
+      "type": "p",
+      "text": "**2. Discover new creators through Linkable** Relevant creators can discover your campaign, request to join, and you approve the ones you want to work with."
+    },
+    {
+      "type": "p",
+      "text": "If you’d like a practical walkthrough on activating your first 5–10 creators, read the full guide below 👇 [**How to Onboard Your First 10 Creators on Linkable**](https://www.linkable.link/blog/onboard-first-creators)"
+    }
+  ],
+  "faqs": []
+}

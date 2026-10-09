@@ -1,0 +1,291 @@
+{
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Discount codes are a core part of ecommerce growth."
+    },
+    {
+      "type": "p",
+      "text": "They’re used to:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Incentivise creators",
+        "Close conversions",
+        "Reward loyalty",
+        "Support affiliate partnerships"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "But when left unmanaged, they quietly turn into one of the most **expensive and invisible problems** in ecommerce."
+    },
+    {
+      "type": "p",
+      "text": "This is known as **coupon leakage** and it affects far more brands than most realise."
+    },
+    {
+      "type": "h2",
+      "text": "What Is Coupon Leakage?"
+    },
+    {
+      "type": "p",
+      "text": "Coupon leakage happens when a discount code meant for a **specific audience or partnership** becomes publicly available and reused beyond its original intent."
+    },
+    {
+      "type": "p",
+      "text": "This commonly includes:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Creator or influencer-specific codes",
+        "Affiliate welcome discounts",
+        "Retention or abandoned cart offers"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Once leaked, these codes are quickly picked up by coupon websites, browser extensions, and deal-sharing communities, often within days."
+    },
+    {
+      "type": "h2",
+      "text": "Why Coupon Leakage Is a Bigger Problem Than It Looks"
+    },
+    {
+      "type": "p",
+      "text": "At first glance, a discounted sale still feels like a win."
+    },
+    {
+      "type": "p",
+      "text": "But over time, coupon leakage creates three compounding issues."
+    },
+    {
+      "type": "h3",
+      "text": "1. Margin Erosion Without Incremental Growth"
+    },
+    {
+      "type": "p",
+      "text": "Most shoppers now expect a discount."
+    },
+    {
+      "type": "p",
+      "text": "In fact, **over 60% of online shoppers actively search for a promo code before checking out**, even if they were already ready to buy."
+    },
+    {
+      "type": "p",
+      "text": "When leaked codes are applied:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "You’re discounting customers who would have converted anyway",
+        "Discounts stop being an incentive and become an expectation",
+        "Average order value quietly declines"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "What was meant to drive growth becomes a permanent margin leak."
+    },
+    {
+      "type": "h3",
+      "text": "2. Broken Attribution and Misleading Performance Data"
+    },
+    {
+      "type": "p",
+      "text": "Leaked codes don’t just affect margins they distort reporting."
+    },
+    {
+      "type": "p",
+      "text": "When a discount code appears on:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Coupon aggregator sites",
+        "Browser extensions",
+        "Generic affiliate pages"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Those platforms often receive **last-click attribution**, even if they had no role in influencing the customer."
+    },
+    {
+      "type": "p",
+      "text": "The result?"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Coupon sites look “high performing”",
+        "Genuine creators appear underwhelming",
+        "Budget decisions are made on the wrong signals"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "This is one of the most common reasons brands struggle to identify which creator partnerships are actually working."
+    },
+    {
+      "type": "h3",
+      "text": "3. Eroded Trust With Creators"
+    },
+    {
+      "type": "p",
+      "text": "Creators are told:"
+    },
+    {
+      "type": "quote",
+      "text": "“Your code is driving sales.”"
+    },
+    {
+      "type": "p",
+      "text": "But in reality:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Their code may be used by people who never saw their content",
+        "Performance can spike or drop unpredictably due to leakage",
+        "Commissions may later be questioned or adjusted"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "This creates confusion and mistrust and weakens long-term creator relationships."
+    },
+    {
+      "type": "h2",
+      "text": "How Coupon Leakage Usually Happens"
+    },
+    {
+      "type": "p",
+      "text": "Most brands don’t leak codes intentionally. It’s typically caused by:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Static, reusable discount codes",
+        "Long expiry windows or unlimited usage",
+        "Affiliate platforms optimised for last-click attribution",
+        "Limited visibility into where codes are actually being used"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Once a code is indexed or shared externally, control is effectively lost."
+    },
+    {
+      "type": "h2",
+      "text": "A Real-World Example: When Discounts Escape Their Channel"
+    },
+    {
+      "type": "p",
+      "text": "A common pattern across DTC brands looks like this: A brand gives a creator a **15% discount code** as part of a partnership. The creator shares it with their audience, driving genuine early traffic and sales."
+    },
+    {
+      "type": "p",
+      "text": "Within days, that same code appears on coupon sites, gets indexed by Google, and is auto-applied at checkout by browser extensions."
+    },
+    {
+      "type": "p",
+      "text": "Soon, shoppers who never saw the creator’s content — and were already ready to buy — receive the discount anyway."
+    },
+    {
+      "type": "p",
+      "text": "The result:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Orders are discounted unnecessarily",
+        "Attribution is often assigned to coupon sites via last-click logic",
+        "Creator performance data becomes inflated or misleading"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "The takeaway isn’t that these tools are “bad” it’s that **once discount codes are exposed and reusable, control is effectively lost**. What starts as a targeted incentive quietly becomes a sitewide discount."
+    },
+    {
+      "type": "h2",
+      "text": "What Smarter Brands Do Instead"
+    },
+    {
+      "type": "p",
+      "text": "Smarter brands are rethinking how incentives are applied and tracked."
+    },
+    {
+      "type": "p",
+      "text": "Rather than relying on exposed, reusable discount codes, they’re moving towards systems that align discounts with real influence and keep attribution clean."
+    },
+    {
+      "type": "p",
+      "text": "Leading brands are shifting towards:"
+    },
+    {
+      "type": "h3",
+      "text": "Performance-Linked Discounts"
+    },
+    {
+      "type": "p",
+      "text": "Instead of relying on static, shareable coupon codes, modern platforms now allow creators to share discounts **directly through their affiliate link**."
+    },
+    {
+      "type": "p",
+      "text": "When a customer clicks the link:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "The discount is applied automatically at checkout",
+        "A **unique coupon is generated for that customer**",
+        "The coupon can’t be reused, scraped, or shared elsewhere"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "This ensures discounts are only applied when **real creator influence** occurs, eliminating coupon leakage by design while keeping attribution accurate."
+    },
+    {
+      "type": "h3",
+      "text": "Controlled Incentives"
+    },
+    {
+      "type": "p",
+      "text": "Product gifting, limited-use rewards, or campaign-specific incentives rather than blanket public discounts."
+    },
+    {
+      "type": "h3",
+      "text": "Transparent Attribution"
+    },
+    {
+      "type": "p",
+      "text": "Rewarding creators based on genuine engagement and conversion impact not who happens to appear last at checkout."
+    },
+    {
+      "type": "p",
+      "text": "This protects margins *and* builds stronger partnerships."
+    },
+    {
+      "type": "h2",
+      "text": "The Bigger Picture"
+    },
+    {
+      "type": "p",
+      "text": "Outdated discount mechanics weren’t designed for today’s creator-driven ecommerce."
+    },
+    {
+      "type": "p",
+      "text": "Brands that scale sustainably don’t eliminate discounts they **engineer them properly**. They control how incentives are distributed, attribute performance accurately, and build creator partnerships on transparency rather than loopholes."
+    },
+    {
+      "type": "p",
+      "text": "In a mature ecosystem, discounts should be **earned through influence**, not triggered by habit."
+    }
+  ],
+  "faqs": []
+}

@@ -1,0 +1,395 @@
+{
+  "blocks": [
+    {
+      "type": "p",
+      "text": "TikTok has become one of the most powerful discovery engines in ecommerce."
+    },
+    {
+      "type": "p",
+      "text": "For Shopify brands, the opportunity is obvious:"
+    },
+    {
+      "type": "p",
+      "text": "Creators influence buying decisions at scale."
+    },
+    {
+      "type": "p",
+      "text": "But discovery isn’t the strategy."
+    },
+    {
+      "type": "p",
+      "text": "The real question is where the transaction and the performance infrastructure should live."
+    },
+    {
+      "type": "p",
+      "text": "Some brands sell directly through TikTok Shop. Others use TikTok as a distribution layer while driving traffic back to their own store."
+    },
+    {
+      "type": "p",
+      "text": "Both approaches can work."
+    },
+    {
+      "type": "p",
+      "text": "The smarter choice depends on what you’re optimising for."
+    },
+    {
+      "type": "h2",
+      "text": "What TikTok Shop Does Well"
+    },
+    {
+      "type": "p",
+      "text": "TikTok Shop keeps the entire purchase journey inside the platform."
+    },
+    {
+      "type": "p",
+      "text": "Customers can:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Discover a product",
+        "Add to cart",
+        "Complete checkout"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Without leaving TikTok."
+    },
+    {
+      "type": "p",
+      "text": "This reduces friction and works especially well for:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Impulse-driven purchases",
+        "High-volume Live selling",
+        "Trend-based products",
+        "Flash sales and limited drops"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "If your priority is speed and in-app conversion, TikTok Shop can be powerful."
+    },
+    {
+      "type": "h2",
+      "text": "What Driving Traffic to Shopify Does Well"
+    },
+    {
+      "type": "p",
+      "text": "Instead of selling in-app, some brands treat TikTok as a distribution channel."
+    },
+    {
+      "type": "p",
+      "text": "Creators:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Share a unique tracking link",
+        "Offer an audience-specific discount",
+        "Drive traffic back to the brand’s Shopify store"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "In this model, the brand retains:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Full ownership of customer data",
+        "Control over checkout experience",
+        "Flexible margin and commission structure",
+        "Long-term retention capability"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "This approach is less about short-term friction reduction and more about long-term infrastructure control."
+    },
+    {
+      "type": "h2",
+      "text": "The Real Trade-Off"
+    },
+    {
+      "type": "p",
+      "text": "This isn’t about which tool is better."
+    },
+    {
+      "type": "p",
+      "text": "It’s about what you’re building."
+    },
+    {
+      "type": "h3",
+      "text": "1. Customer Data"
+    },
+    {
+      "type": "p",
+      "text": "Are you building for retention and lifetime value?"
+    },
+    {
+      "type": "p",
+      "text": "If first-party data matters to your growth strategy, driving traffic to your own store gives you more control."
+    },
+    {
+      "type": "h3",
+      "text": "2. Margin & Commission Structure"
+    },
+    {
+      "type": "p",
+      "text": "Inside platform ecosystems, fee structures and payout logic are often predefined."
+    },
+    {
+      "type": "p",
+      "text": "Driving traffic to Shopify allows you to:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Set your own commission rates",
+        "Control discount levels",
+        "Protect contribution margin",
+        "Automate performance-based payouts"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "This becomes increasingly important as you scale beyond one creator."
+    },
+    {
+      "type": "h3",
+      "text": "3. Long-Term Creator Strategy"
+    },
+    {
+      "type": "p",
+      "text": "Are you running one-off viral moments?"
+    },
+    {
+      "type": "p",
+      "text": "Or building a structured creator revenue engine that works across:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "TikTok",
+        "Instagram",
+        "YouTube",
+        "Email",
+        "Community"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "A platform-native strategy prioritises velocity."
+    },
+    {
+      "type": "p",
+      "text": "A distribution-agnostic strategy prioritises resilience."
+    },
+    {
+      "type": "h2",
+      "text": "Where Linkable Fits"
+    },
+    {
+      "type": "p",
+      "text": "If you choose to drive traffic to Shopify, you need infrastructure."
+    },
+    {
+      "type": "p",
+      "text": "That means:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Unique tracking per creator",
+        "Clean attribution",
+        "Controlled discount logic",
+        "Automated commission payouts",
+        "Performance visibility beyond “views”"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "TikTok drives attention. Linkable turns attention into measurable revenue."
+    },
+    {
+      "type": "h2",
+      "text": "Practical Applications: Using Linkable with TikTok"
+    },
+    {
+      "type": "p",
+      "text": "TikTok is one of the strongest distribution engines in ecommerce."
+    },
+    {
+      "type": "p",
+      "text": "The key is structuring it properly."
+    },
+    {
+      "type": "p",
+      "text": "Here’s how brands use Linkable to turn TikTok attention into measurable revenue."
+    },
+    {
+      "type": "h3",
+      "text": "Creator-Led Organic Videos"
+    },
+    {
+      "type": "p",
+      "text": "Creators publish product content as usual."
+    },
+    {
+      "type": "p",
+      "text": "Instead of using shared discount codes, each creator:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Generates a unique Linkable tracking link",
+        "Adds it to their bio",
+        "Shares a clear audience discount"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "This allows brands to:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Track revenue per creator",
+        "Compare performance cleanly",
+        "Automate commission payouts",
+        "Eliminate code leakage"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "TikTok drives discovery. Linkable tracks the revenue."
+    },
+    {
+      "type": "h3",
+      "text": "High-Impact TikTok Lives"
+    },
+    {
+      "type": "p",
+      "text": "Lives are powerful conversion moments."
+    },
+    {
+      "type": "p",
+      "text": "With Linkable, brands can structure them intentionally:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Set a Live-specific discount",
+        "Assign a unique tracking link",
+        "Create urgency around a time-limited offer"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "After the Live, you don’t just have views."
+    },
+    {
+      "type": "p",
+      "text": "You have:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Revenue generated",
+        "Conversion performance",
+        "Commission owed",
+        "Clear ROI"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "That’s the difference between content and commerce."
+    },
+    {
+      "type": "h3",
+      "text": "Scaling Multiple Creators"
+    },
+    {
+      "type": "p",
+      "text": "When activating multiple TikTok creators, complexity increases fast."
+    },
+    {
+      "type": "p",
+      "text": "Linkable allows brands to:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Assign individual tracking per creator",
+        "Monitor conversion rates",
+        "Adjust commission tiers",
+        "Identify top performers"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "TikTok becomes a scalable acquisition channel, not a guessing game."
+    },
+    {
+      "type": "h3",
+      "text": "Organic → Paid Acceleration"
+    },
+    {
+      "type": "p",
+      "text": "Top-performing TikTok content can be amplified via paid ads."
+    },
+    {
+      "type": "p",
+      "text": "Linkable continues to:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Attribute sales to the correct creator",
+        "Track campaign-level revenue",
+        "Maintain structured payouts"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "This connects organic discovery with structured performance growth."
+    },
+    {
+      "type": "h2",
+      "text": "Why This Works"
+    },
+    {
+      "type": "p",
+      "text": "TikTok is built for attention."
+    },
+    {
+      "type": "p",
+      "text": "Linkable is built for attribution, commission management, and margin control."
+    },
+    {
+      "type": "p",
+      "text": "Together, they allow brands to:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Maintain first-party data",
+        "Protect contribution margin",
+        "Scale creator partnerships intentionally"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "You don’t replace TikTok."
+    },
+    {
+      "type": "p",
+      "text": "You build infrastructure around it."
+    }
+  ],
+  "faqs": []
+}

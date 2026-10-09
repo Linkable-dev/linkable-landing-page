@@ -1,17 +1,10 @@
-// Re-render every generated post from its JSON and refresh the blog index
-// cards and sitemap. Run after a Framer re-import (the importer calls it).
-import fs from 'node:fs';
+// Re-render the blog (index and every post) from the committed content cache
+// and refresh the sitemap. No database access; sync.mjs is the online version.
 import path from 'node:path';
-import { CONTENT, readJson, writePost, injectIndexCards, updateSitemap } from './lib.mjs';
+import { CONTENT, readJson, updateSitemap } from './lib.mjs';
+import { buildBlog } from '../design/build.mjs';
 
 const posts = readJson(path.join(CONTENT, 'posts.json'), []);
-let n = 0;
-for (const meta of posts.filter((p) => p.source === 'generated')) {
-  const file = path.join(CONTENT, 'posts', meta.slug + '.json');
-  if (!fs.existsSync(file)) continue;
-  writePost({ ...meta, ...readJson(file) });
-  n++;
-}
-injectIndexCards(posts);
+const n = await buildBlog();
 updateSitemap(posts);
-console.log(`rendered ${n} generated post(s), index and sitemap updated`);
+console.log(`rendered the blog index and ${n} post(s), sitemap updated`);

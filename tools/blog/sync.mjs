@@ -1,10 +1,12 @@
-// Pulls every published article from the blog database (Supabase) and renders
-// it into the site: blog/<slug>/index.html, a card on the blog index, and the
-// sitemap. Removes pages for articles that are no longer published.
+// Pulls every published article from the blog database (Supabase) into the
+// content cache, then renders the blog (tools/design/build.mjs): every post at
+// blog/<slug>/index.html, the blog index and the sitemap. Removes pages for
+// articles that are no longer published.
 //   SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY  required
 import fs from 'node:fs';
 import path from 'node:path';
-import { ROOT, CONTENT, readJson, writeJson, writePost, injectIndexCards, updateSitemap } from './lib.mjs';
+import { ROOT, CONTENT, readJson, writeJson, updateSitemap } from './lib.mjs';
+import { buildBlog } from '../design/build.mjs';
 
 const url = process.env.SUPABASE_URL, key = process.env.SUPABASE_SERVICE_ROLE_KEY;
 if (!url || !key) { console.error('SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are required'); process.exit(1); }
@@ -57,7 +59,6 @@ function rowMeta(r) { return ({
 fs.mkdirSync(path.join(CONTENT, 'posts'), { recursive: true });
 for (const post of generated) {
   writeJson(path.join(CONTENT, 'posts', post.slug + '.json'), { blocks: post.blocks, faqs: post.faqs });
-  writePost(post);
 }
 // Unpublished or deleted since last run: remove their pages.
 const now = new Set(generated.map((p) => p.slug));
@@ -69,7 +70,7 @@ for (const slug of before) {
 }
 const posts = [...framer, ...generated.map(({ blocks, faqs, ...meta }) => meta)];
 writeJson(path.join(CONTENT, 'posts.json'), posts);
-injectIndexCards(posts);
+await buildBlog();
 updateSitemap(posts);
 // Sitemap entries for removed posts
 const sm = path.join(ROOT, 'public', 'sitemap.xml');

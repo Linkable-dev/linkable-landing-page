@@ -1,0 +1,37 @@
+/* Pricing.dc.html: styles of this page only (shared ones are in ../../site.css). */
+@media (min-width: 601px){section[aria-label="Brands working with Linkable"]{padding-top:120px!important}#compare{padding-top:144px!important}#fee{padding-top:96px!important}#help{padding-top:80px!important}#faq{padding-top:96px!important}}
+@media (max-width: 600px){#top{padding-top:32px!important}section[aria-label="Brands working with Linkable"]{padding-top:28px!important}#compare{padding-top:80px!important;padding-bottom:40px!important}#fee{padding-top:24px!important;padding-bottom:40px!important}#help{padding-top:24px!important;padding-bottom:40px!important}#faq{padding-top:40px!important}}
+.pc-scroll{margin-top:56px}
+@media (max-width: 860px){.pc-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}}
+.pc{min-width:760px}
+.pc-r,.pc-g{display:grid;grid-template-columns:minmax(220px,1.4fr) repeat(3,minmax(140px,1fr))}
+.pc-r{border-bottom:1px solid #ECEAE5}
+.pc-l{padding:18px 24px 18px 0;font-size:16px;color:#232323;text-align:left}
+.pc-c{padding:18px 12px;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:500;color:#232323;text-align:center}
+.pc-h{flex-direction:column;align-items:flex-start;justify-content:flex-end;padding:20px 20px 18px;text-align:left}
+.pc-head{border-bottom:1px solid #232323;position:sticky;top:var(--hdr,68px);background:#FFFEFB;z-index:5}
+.pc-head .pc-hl{background:#F6F4EF}
+.pc-hl{background:#F6F4EF}
+.pc-top{border-radius:20px 20px 0 0}
+.pc-bot{border-radius:0 0 20px 20px;padding:12px}
+.pc-end{border-bottom:0}
+.pc-g .pc-l{padding:36px 0 10px;font-size:13px;font-weight:600;letter-spacing:.14em;color:#666563}
+.pc-yes{width:22px;height:22px;border-radius:50%;background:#232323;display:inline-flex;align-items:center;justify-content:center}
+.fee-panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:center;padding:56px;border-radius:28px;background:#F6F4EF;border:1px solid #ECEAE5}
+.fee-card{background:#FFFFFF;border:1px solid #ECEAE5;border-radius:20px;padding:24px;box-shadow:0 18px 44px rgba(35,35,35,.08)}
+.fee-line{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:14px 0;border-top:1px solid #F0EEEA;margin-top:14px;font-size:15px;color:#232323}
+.fee-line + .fee-line{margin-top:0}
+.fee-line small{font-size:13px;color:#666563}
+.fee-line b{font-weight:600;white-space:nowrap}
+.fee-total{border-top:1px solid #232323;font-weight:600}
+.fee-total b{font-size:22px;font-weight:500;letter-spacing:-0.02em}
+@media (max-width: 860px){.pc-scroll{overflow:visible!important;margin:40px 0 0!important;padding:0!important}.pc{min-width:0}
+.pc-r,.pc-g{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+.pc-r .pc-l{grid-column:1 / -1;padding:18px 0 2px!important;font-size:15px;font-weight:500}
+.pc-head .pc-l,.pc-end{display:none!important}
+.pc-g > div:not(.pc-l){display:none}.pc-g .pc-l{grid-column:1 / -1;padding:28px 0 4px!important}
+.pc-c{padding:8px 4px 16px!important;font-size:14px}
+.pc-r .pc-hl:not(.pc-h){background:transparent}
+.pc-h{padding:14px 6px 12px!important;align-items:center!important;text-align:center!important}.pc-h a{padding:0 12px!important;font-size:13px!important;min-height:34px!important}
+.pc-h b{font-size:19px!important}}
+@media (max-width: 960px){.fee-panel{grid-template-columns:minmax(0,1fr);gap:32px;padding:32px 22px}}

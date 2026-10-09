@@ -1,0 +1,162 @@
+[
+  {
+    "slug": "privacy-policy",
+    "title": "Privacy Policy",
+    "lede": "How we collect, use and protect personal data when you use Linkable.",
+    "meta": "How Linkable collects, uses and shares personal information, both on this website and in the Linkable app for Shopify.",
+    "updated": "12 September 2026",
+    "toc": [
+      {
+        "id": "the-website",
+        "label": "The website"
+      },
+      {
+        "id": "the-linkable-app",
+        "label": "The Linkable app"
+      },
+      {
+        "id": "who-we-share-it-with",
+        "label": "Who we share it with"
+      },
+      {
+        "id": "transfers-outside-the-uk-and-eea",
+        "label": "Transfers outside the UK and EEA"
+      },
+      {
+        "id": "how-long-we-keep-it",
+        "label": "How long we keep it"
+      },
+      {
+        "id": "your-rights",
+        "label": "Your rights"
+      },
+      {
+        "id": "children",
+        "label": "Children"
+      },
+      {
+        "id": "changes",
+        "label": "Changes"
+      },
+      {
+        "id": "contact",
+        "label": "Contact"
+      }
+    ],
+    "body": "<p>This policy covers two things: the linkable.link website you are reading, and the Linkable app that merchants install in Shopify. Where a section applies to only one of them it says so.</p><p>Linkable Ltd is the data controller for the information described here. We are a company registered in England and Wales, number 14658892, with our registered office at 10 Esprit Court, 21 Brune Street, London, England E1 7ND. You can reach us at <strong>support@linkable.link</strong>.</p><h2 id=\"the-website\">The website</h2><h3>What we collect when you visit</h3><p>Our hosting provider records the usual technical information needed to serve and protect the site: IP address, browser and device type, the pages requested and when. This happens for every visitor because a web server cannot deliver a page without it, and we use it only to run the site and investigate abuse.</p><p>Beyond that, nothing is measured unless you allow it. We ask on your first visit and load no analytics or advertising until you answer. Refusing means no third-party request is made at all, and ignoring the banner counts as refusing. The detail of each cookie, and how to change your mind, is in our <a href=\"/legal/cookie-policy\">Cookie Policy</a>.</p><h3>If you contact us</h3><p>The contact form and the newsletter box send us the details you type, which reach us by email through Resend, our email provider. We use them to answer you and, for the newsletter, to send what you asked for until you unsubscribe.</p><h3>Legal basis</h3><p>Serving and securing the site, and replying to you, rest on our legitimate interest in operating a business and responding to the people who approach us. Analytics and advertising cookies rest on your consent, which you can withdraw at any time without affecting anything that happened before.</p><h2 id=\"the-linkable-app\">The Linkable app</h2><h3>Information from Shopify</h3><p>When a merchant installs the app we receive, through Shopify’s APIs and limited to the permissions granted:</p><ul><li><strong>Store information</strong>: name, URL, currency and time zone.</li><li><strong>Products</strong>: titles, descriptions, images, variants and inventory, to build campaigns from.</li><li><strong>Orders</strong>: order IDs, timestamps, SKUs, fulfilment status, shipping country and order value, used to attribute and validate creator-driven sales. We do not request full buyer names, email addresses, phone numbers or street addresses unless a commission dispute requires it and the merchant grants it.</li><li><strong>Discount codes</strong>, to run and attribute affiliate campaigns.</li><li><strong>Installation data</strong>, to keep the app synchronised with the store.</li></ul><h3>Information merchants and creators give us</h3><ul><li><strong>Merchants</strong>: name, business email, store address, billing details for the subscription, and the details of any colleague given access.</li><li><strong>Creators</strong>: name, email, social media handles, links to content, audience figures, country of residence, and payout details, which are collected and held by Stripe rather than by us.</li></ul><h3>What we do with it</h3><ul><li>Run the service: sync products, track clicks and conversions, validate commissions.</li><li>Process creator payouts through Stripe Connect.</li><li>Send transactional and support messages about your account and campaigns.</li><li>Diagnose faults and improve how the product works.</li><li>Detect and prevent fraud and misuse.</li></ul><p>We do not sell, rent or otherwise monetise merchant, creator or shopper data.</p><h3>Legal basis</h3><p>Providing the service to a merchant or creator is performance of our contract with them. Fraud prevention and product improvement rest on our legitimate interests. Marketing email to people who are not customers rests on consent. Some retention is a legal obligation, described below.</p><h2 id=\"who-we-share-it-with\">Who we share it with</h2><ul><li><strong>Stripe</strong>, to process creator payouts through Stripe Connect.</li><li><strong>Suppliers who run our infrastructure</strong>: cloud hosting, databases, error reporting and the email provider that delivers our messages. They act on our instructions and may not use the data for their own purposes.</li><li><strong>The other side of a collaboration</strong>: when a merchant accepts a creator, each sees what the collaboration requires, such as the product and the shipping details needed to send a sample.</li><li><strong>Google and Meta</strong>, but only for website visitors who allowed analytics or marketing cookies, and only what those tags collect. They are separate controllers for that data. See the <a href=\"/legal/cookie-policy\">Cookie Policy</a>.</li><li><strong>Authorities</strong>, where we are obliged to respond to a lawful request, or where disclosure is necessary to establish or defend a legal claim.</li></ul><h2 id=\"transfers-outside-the-uk-and-eea\">Transfers outside the UK and EEA</h2><p>Some of our suppliers operate outside the UK and the EEA, including in the United States. Where personal data goes to a country without an adequacy decision, it is covered by the International Data Transfer Agreement, the UK Addendum to the EU Standard Contractual Clauses, or the Standard Contractual Clauses, as applicable.</p><h2 id=\"how-long-we-keep-it\">How long we keep it</h2><ul><li>Merchant and campaign data: for as long as the store uses Linkable.</li><li>Commission and payout records: six years after the transaction, to meet UK tax and accounting requirements.</li><li>Contact and newsletter messages: two years from our last exchange, or until you unsubscribe.</li><li>Website server logs: kept short-term by our host for security and diagnostics.</li></ul><p>If a merchant uninstalls the app, their store data is deleted or anonymised within 90 days, except records we are required to keep for longer. You may ask us to delete your data sooner.</p><h2 id=\"your-rights\">Your rights</h2><p>If you are in the UK or the EEA you have the right to access the personal data we hold about you, to have it corrected or erased, to restrict or object to how we use it, to receive it in a portable form, and to withdraw consent where our use rests on consent. Where a decision rests on legitimate interests you may object to it.</p><p>Write to <strong>support@linkable.link</strong> and we will respond within one month. If you are unhappy with the outcome you can complain to a data protection authority. In the UK that is the Information Commissioner’s Office, ico.org.uk or 0303 123 1113; in the EEA it is the authority for the country you live in.</p><h2 id=\"children\">Children</h2><p>Linkable is not intended for anyone under 18 and we do not knowingly collect data from children. If you believe a child has given us personal data, contact us and we will delete it.</p><h2 id=\"changes\">Changes</h2><p>When this policy changes we update the date at the top. If a change materially affects how we use personal data we will tell affected merchants and creators directly rather than relying on you to notice.</p><h2 id=\"contact\">Contact</h2><p><strong>support@linkable.link</strong></p><p>Linkable Ltd<br>10 Esprit Court<br>21 Brune Street<br>London, England<br>E1 7ND</p>",
+    "others": [
+      {
+        "href": "/legal/terms-of-service",
+        "label": "Terms of Service"
+      },
+      {
+        "href": "/legal/cookie-policy",
+        "label": "Cookie Policy"
+      }
+    ]
+  },
+  {
+    "slug": "terms-of-service",
+    "title": "Terms of Service",
+    "lede": "The terms that apply when brands and creators use Linkable.",
+    "meta": "The terms on which you may use the Linkable website and the Linkable app for Shopify.",
+    "updated": "12 September 2026",
+    "toc": [
+      {
+        "id": "1-accepting-these-terms",
+        "label": "1. Accepting these terms"
+      },
+      {
+        "id": "2-changes",
+        "label": "2. Changes"
+      },
+      {
+        "id": "3-using-the-site",
+        "label": "3. Using the site"
+      },
+      {
+        "id": "4-content",
+        "label": "4. Content"
+      },
+      {
+        "id": "5-collaborations-between-merchants-and-creators",
+        "label": "5. Collaborations between merchants and creators"
+      },
+      {
+        "id": "6-privacy",
+        "label": "6. Privacy"
+      },
+      {
+        "id": "7-suspension-and-termination",
+        "label": "7. Suspension and termination"
+      },
+      {
+        "id": "8-availability-and-disclaimers",
+        "label": "8. Availability and disclaimers"
+      },
+      {
+        "id": "9-liability",
+        "label": "9. Liability"
+      },
+      {
+        "id": "10-governing-law",
+        "label": "10. Governing law"
+      },
+      {
+        "id": "11-contact",
+        "label": "11. Contact"
+      }
+    ],
+    "body": "<p>These terms are between you and Linkable Ltd, a company registered in England and Wales under number 14658892, whose registered office is at 10 Esprit Court, 21 Brune Street, London, England E1 7ND. They cover the linkable.link website. Where you subscribe to a paid plan or run collaborations through the Linkable app, the plan terms presented at the point of purchase apply as well, and prevail over these terms if the two conflict.</p><h2 id=\"1-accepting-these-terms\">1. Accepting these terms</h2><p>Using the site means accepting these terms. If you do not accept them, do not use the site.</p><h2 id=\"2-changes\">2. Changes</h2><p>We may change these terms. When we do we update the date above, and material changes affecting an existing subscription will be notified to the account holder rather than left for you to discover. Continuing to use the site after a change means accepting the revised terms.</p><h2 id=\"3-using-the-site\">3. Using the site</h2><p><strong>Eligibility.</strong> You must be at least 18 to use Linkable, and if you act for a company you confirm you are authorised to bind it.</p><p><strong>Accounts.</strong> Where a feature needs an account, give accurate details and keep them current. You are responsible for what happens under your account and for keeping your credentials to yourself.</p><p><strong>Acceptable use.</strong> Do not attempt to disrupt or gain unauthorised access to the site, scrape it at a scale that degrades it for others, upload malware, or use it to break the law or infringe anyone’s rights.</p><h2 id=\"4-content\">4. Content</h2><p><strong>Your content.</strong> You keep ownership of what you submit. You grant us a non-exclusive, worldwide, royalty-free licence to host, store, reproduce and display it for as long as is necessary to operate and promote the service, including the right to have our suppliers do so on our behalf. The licence ends when you remove the content, except where we must retain a copy to meet a legal obligation or where it has already been shared with a collaboration partner.</p><p><strong>Our content.</strong> The site, its text, design, and the Linkable name and logo are ours or our licensors’ and are protected by copyright and trade mark law. You may not copy or reuse them beyond what these terms allow without our written permission.</p><h2 id=\"5-collaborations-between-merchants-and-creators\">5. Collaborations between merchants and creators</h2><p>Linkable introduces merchants and creators and provides the tools to run and measure a collaboration. The agreement about what is delivered and what is paid is between the merchant and the creator. We are not a party to it, we do not guarantee that either side will perform, and we do not guarantee any level of sales, reach or return. Where a campaign includes a gifted product, sending it is the merchant’s responsibility. Affiliate commission tracked through Linkable is paid out after the applicable returns window.</p><h2 id=\"6-privacy\">6. Privacy</h2><p>Our handling of personal data is described in the <a href=\"/legal/privacy-policy\">Privacy Policy</a>, and the cookies this site uses in the <a href=\"/legal/cookie-policy\">Cookie Policy</a>.</p><h2 id=\"7-suspension-and-termination\">7. Suspension and termination</h2><p>You may stop using the site at any time. We may suspend or end your access if you break these terms, if we are required to by law, or if your use threatens the security or availability of the service. Except where a breach or a legal obligation makes it impractical, we will give you notice and an opportunity to put things right first. Sections that by their nature should outlive termination, including the licence granted above, the disclaimers and the liability limits, continue to apply.</p><h2 id=\"8-availability-and-disclaimers\">8. Availability and disclaimers</h2><p>We work to keep the site available but do not promise it will be uninterrupted or error-free, and it is provided as is. To the extent the law allows, we exclude implied warranties. Nothing here limits any right you have as a consumer that cannot lawfully be excluded.</p><h2 id=\"9-liability\">9. Liability</h2><p>We do not exclude or limit liability for death or personal injury caused by our negligence, for fraud or fraudulent misrepresentation, or for anything else that cannot lawfully be limited. Subject to that, we are not liable for indirect or consequential loss, or for lost profits, revenue, goodwill or data, and our total liability arising from your use of the site is limited to the greater of the amount you paid us in the twelve months before the claim, or one hundred pounds.</p><h2 id=\"10-governing-law\">10. Governing law</h2><p>These terms are governed by the laws of England and Wales, and the courts of England and Wales have exclusive jurisdiction, except that if you are a consumer resident elsewhere in the UK or the EEA you keep the right to bring proceedings in your own country.</p><h2 id=\"11-contact\">11. Contact</h2><p><strong>support@linkable.link</strong></p><p>Linkable Ltd<br>10 Esprit Court<br>21 Brune Street<br>London, England<br>E1 7ND</p>",
+    "others": [
+      {
+        "href": "/legal/privacy-policy",
+        "label": "Privacy Policy"
+      },
+      {
+        "href": "/legal/cookie-policy",
+        "label": "Cookie Policy"
+      }
+    ]
+  },
+  {
+    "slug": "cookie-policy",
+    "title": "Cookie Policy",
+    "lede": "The cookies this website uses, what each one does and how to change your choice.",
+    "meta": "The cookies and browser storage used on linkable.link, what each one does, and how to change what you allow.",
+    "updated": "12 September 2026",
+    "toc": [
+      {
+        "id": "your-choice",
+        "label": "Your choice"
+      },
+      {
+        "id": "what-we-use",
+        "label": "What we use"
+      },
+      {
+        "id": "third-parties",
+        "label": "Third parties"
+      },
+      {
+        "id": "changes",
+        "label": "Changes"
+      },
+      {
+        "id": "contact",
+        "label": "Contact"
+      }
+    ],
+    "body": "<p>This policy explains the cookies and similar storage used on <strong>linkable.link</strong>, this website. It does not cover the Linkable app inside Shopify, which is described in our <a href=\"/legal/privacy-policy\">Privacy Policy</a>.</p><p>Cookies are small files a site asks your browser to keep. Some are needed for the site to function; the rest are optional and we only set them if you say yes. We also use your browser’s local storage, which works the same way and is covered here too.</p><h2 id=\"your-choice\">Your choice</h2><p>When you first arrive we ask what you are willing to allow. Nothing optional is loaded before you answer, and choosing to refuse is one click, exactly like accepting. If you refuse, or simply ignore the banner, no analytics or advertising request leaves your browser at all.</p><p>You can change your mind whenever you like using the <a href=\"#cookie-settings\">Cookie settings</a> link in the footer of every page. Clearing your browser storage also resets the question. We ask again after six months in any case.</p><h2 id=\"what-we-use\">What we use</h2><h3>Strictly necessary — always on</h3><p>One entry, set by us, recording the choice you made so we do not ask on every page. It is kept in your browser’s local storage rather than sent to us, contains only the categories you allowed and the date you chose, and is never used to identify or track you. There is no opt-out because without it we cannot honour your decision.</p><ul><li><strong>lk-consent</strong> — local storage, set by linkable.link, holds your consent categories and the date. Treated as expired after six months.</li></ul><h3>Analytics — off unless you allow it</h3><p>Google Tag Manager, which loads our measurement tags, so we can see which pages are read, which are ignored, and where people give up. We look at this in aggregate to decide what to write and what to fix.</p><ul><li><strong>Google Tag Manager</strong> (container GTM-535WR8K4), loaded from googletagmanager.com. The container itself set no cookies when we last checked, but it is the mechanism through which measurement tags are added, and those can set their own. Anything loaded through it inherits the consent you gave here.</li></ul><h3>Marketing — off unless you allow it</h3><p>The Meta pixel, which tells us whether our advertising on Facebook and Instagram brings anyone to the site, and allows Meta to show our ads to people who have visited before.</p><ul><li><strong>_fbp</strong> — cookie set by linkable.link for Meta, identifying a browser across visits so a visit can be matched to an ad. Expires after about three months.</li><li><strong>lastExternalReferrer</strong> and <strong>lastExternalReferrerTime</strong> — local storage written by the Meta pixel, recording which site you arrived from and when.</li></ul><p>Allowing this category means data about your visit is shared with Meta Platforms, which processes it as described in its own privacy policy. Refusing it means the pixel is never loaded, so nothing is sent.</p><h2 id=\"third-parties\">Third parties</h2><p>The optional cookies above are set on behalf of Google and Meta, who act as separate controllers for what they receive. Their handling of it is governed by their own policies, not ours. Our other suppliers, such as the hosting that serves these pages and the service that delivers form submissions to us, do not set cookies for advertising or analytics.</p><h2 id=\"changes\">Changes</h2><p>If we add, remove or repurpose a cookie we will update this page and, where the change needs your permission, ask for it again rather than assume your previous answer still applies.</p><h2 id=\"contact\">Contact</h2><p>Questions about this policy, or about the data behind it, can go to <strong>support@linkable.link</strong>. If you are in the UK or the EU you also have the right to complain to a data protection authority; in the UK that is the Information Commissioner’s Office at ico.org.uk.</p><p>Linkable Ltd<br>10 Esprit Court<br>21 Brune Street<br>London, England<br>E1 7ND</p>",
+    "others": [
+      {
+        "href": "/legal/privacy-policy",
+        "label": "Privacy Policy"
+      },
+      {
+        "href": "/legal/terms-of-service",
+        "label": "Terms of Service"
+      }
+    ]
+  }
+]

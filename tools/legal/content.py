@@ -1,8 +1,9 @@
 """The text of the legal pages, owned here rather than in Framer.
 
 Framer used to hold the privacy policy and the terms, which meant every re-import
-overwrote them and no correction could survive a sync. They are authored here now
-and import-framer.py no longer fetches them, so this file is the source of truth.
+overwrote them and no correction could survive a sync. They are authored here, so
+this file is the source of truth; tools/build-legal.py renders them into the
+design's legal page layout.
 
 Facts stated below that are not derivable from the code are limited to ones the
 site already asserted before this change: the company name, the Brune Street
@@ -54,6 +55,7 @@ PRIVACY = {
     'slug': 'privacy-policy',
     'nav': 'Privacy Policy',
     'title': 'Privacy Policy',
+    'lede': 'How we collect, use and protect personal data when you use Linkable.',
     'meta': 'How Linkable collects, uses and shares personal information, both on this '
             'website and in the Linkable app for Shopify.',
     'blocks': [
@@ -196,6 +198,7 @@ TERMS = {
     'slug': 'terms-of-service',
     'nav': 'Terms of Service',
     'title': 'Terms of Service',
+    'lede': 'The terms that apply when brands and creators use Linkable.',
     'meta': 'The terms on which you may use the Linkable website and the Linkable app '
             'for Shopify.',
     'blocks': [
@@ -297,6 +300,7 @@ COOKIES = {
     'slug': 'cookie-policy',
     'nav': 'Cookie Policy',
     'title': 'Cookie Policy',
+    'lede': 'The cookies this website uses, what each one does and how to change your choice.',
     'meta': 'The cookies and browser storage used on linkable.link, what each one does, '
             'and how to change what you allow.',
     'blocks': [

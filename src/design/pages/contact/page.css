@@ -1,0 +1,14 @@
+/* Contact.dc.html: styles of this page only (shared ones are in ../../site.css). */
+.ct-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:start}
+.ct-opt{display:flex;gap:16px;align-items:flex-start;padding:20px;border-radius:20px;background:#F6F4EF;border:1px solid #ECEAE5;text-decoration:none;transition:transform .25s ease,box-shadow .25s ease,background .25s ease}
+.ct-opt:hover{background:#FFFFFF;transform:translateY(-2px);box-shadow:0 14px 34px rgba(35,35,35,.08)}
+.ct-card{padding:32px;border-radius:28px;background:#FFFFFF;border:1px solid #ECEAE5;box-shadow:0 24px 60px rgba(35,35,35,.08)}
+.ct-two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
+.ct-f{display:flex;flex-direction:column;gap:6px}
+.ct-f span{font-size:14px;font-weight:600;color:#232323}
+.ct-f input,.ct-f textarea{width:100%;box-sizing:border-box;padding:12px 14px;border-radius:12px;border:1px solid #E3E0DA;background:#FFFEFB;font:400 15px 'Manrope',system-ui,sans-serif;color:#232323;outline:none;transition:border-color .2s,box-shadow .2s}
+.ct-f textarea{resize:vertical;min-height:120px;line-height:1.5}
+.ct-f input::placeholder,.ct-f textarea::placeholder{color:#9C9A95}
+.ct-f input:focus,.ct-f textarea:focus{border-color:#232323;box-shadow:0 0 0 3px rgba(35,35,35,.08)}
+@media (max-width: 960px){.ct-grid{grid-template-columns:minmax(0,1fr);gap:40px}}
+@media (max-width: 520px){.ct-two{grid-template-columns:minmax(0,1fr)}.ct-card{padding:22px}}

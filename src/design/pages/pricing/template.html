@@ -1,0 +1,228 @@
+<div style="font-family: 'Manrope', system-ui, sans-serif; color: #232323; background: #FFFEFB; width: 100%">
+
+<header style="position: sticky; top: 0; z-index: 10; background: rgba(255,254,251,.9); backdrop-filter: blur(12px)">
+<div class="wrap nav" style="max-width: 1360px; padding-top: 14px; padding-bottom: 14px; position: relative">
+<a href="/" style="display: flex; align-items: center; text-decoration: none">
+<img src="/assets/site/80b30529819b26dcb496aacb1e20a743.png" alt="Linkable" style="height: 20px; width: auto; display: block">
+</a>
+<nav class="hide-sm" aria-label="Main" style="position: absolute; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 32px">
+<a class="navlink" href="/" style="font-size: 15px; color: #232323">Brands</a>
+<a class="navlink" href="/creators" style="font-size: 15px; color: #232323">Creators</a>
+<a class="navlink" href="#top" style="font-size: 15px; color: #232323; font-weight: 600">Pricing</a>
+<a class="navlink" href="/blog" style="font-size: 15px; color: #232323">Blog</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 24px">
+<a class="navlink hide-sm" href="https://app.linkable.link/auth/login" style="font-size: 15px; color: #666563">Log in</a>
+<a class="btn btn-primary" href="https://apps.shopify.com/linkable-1" style="min-height: 40px; font-size: 15px; font-weight: 500; padding: 0 20px">Start your free trial</a>
+<details class="m-menu show-sm">
+<summary aria-label="Open menu"><span></span><span></span></summary>
+<div class="m-panel">
+<div class="m-head"><img src="/assets/site/80b30529819b26dcb496aacb1e20a743.png" alt="Linkable"><span class="m-x" aria-hidden="true"></span></div>
+<a href="/">Brands</a>
+<a href="/creators">Creators</a>
+<a href="/autopilot">Autopilot</a>
+<a href="/pricing">Pricing</a>
+<a href="/blog">Blog</a>
+<a href="/contact">Contact</a>
+<div class="m-sep"></div>
+<a href="https://app.linkable.link/auth/login">Log in</a>
+<a class="m-cta" href="https://apps.shopify.com/linkable-1">Start your free trial</a>
+</div>
+</details>
+</div>
+</div>
+</header>
+
+<section id="top" style="padding: 72px 0 24px">
+<div class="wrap" style="text-align: center">
+<div style="font-size: 14px; font-weight: 600; letter-spacing: .2em; color: #666563">PRICING</div>
+<h1 class="h1" style="margin: 18px auto 0; max-width: 820px; font-size: clamp(40px, 4vw, 58px); line-height: 1.08; letter-spacing: -0.045em; font-weight: 500; color: #232323; text-wrap: balance">Pricing that grows with your creator program.</h1>
+<p style="margin: 16px auto 0; max-width: 680px; font-size: 19px; line-height: 1.55; color: #666563; text-wrap: balance">Every plan includes the full platform. Choose how many creators and campaigns you need, and start free for 30 days.</p>
+<div style="margin-top: 28px; display: inline-flex; padding: 4px; border-radius: 999px; background: #F3F2EE; border: 1px solid #ECEAE5">
+<button type="button" onClick="{{setMonthly}}" style="border: 0; cursor: pointer; height: 38px; padding: 0 18px; border-radius: 999px; font: 500 15px 'Manrope', system-ui, sans-serif; background: {{mBg}}; color: {{mFg}}; box-shadow: {{mSh}}">Monthly</button>
+<button type="button" onClick="{{setYearly}}" style="border: 0; cursor: pointer; height: 38px; padding: 0 8px 0 18px; border-radius: 999px; font: 500 15px 'Manrope', system-ui, sans-serif; background: {{yBg}}; color: {{yFg}}; box-shadow: {{ySh}}; display: inline-flex; align-items: center; gap: 8px">Yearly <span style="padding: 3px 8px; border-radius: 999px; background: #232323; color: #FFFFFF; font-size: 12px; font-weight: 600">Save 17%</span></button>
+</div>
+</div>
+<div class="wrap" style="max-width: 1240px">
+<div class="three" style="margin-top: 48px; gap: 16px; align-items: stretch">
+<sc-for list="{{plans}}" as="p" hint-placeholder-count="3">
+<div class="card price-card" style="padding: 32px; display: flex; flex-direction: column; border-radius: 24px; background: {{p.bg}}; border: 1px solid {{p.line}}; color: {{p.fg}}; text-align: left; box-shadow: none">
+<div style="display: flex; align-items: center; justify-content: space-between"><span style="font-size: 22px; font-weight: 500; letter-spacing: -0.02em">{{p.name}}</span><sc-if value="{{p.popular}}" hint-placeholder-val="{{ false }}"><span style="padding: 4px 10px; border-radius: 999px; background: #FFFFFF; color: #232323; font-size: 12px; font-weight: 600">Most popular</span></sc-if></div>
+<p style="margin: 6px 0 0; font-size: 16px; line-height: 1.6; color: {{p.sub}}">{{p.blurb}}</p>
+<div style="margin-top: 28px; display: flex; align-items: baseline; gap: 6px"><span style="font-size: 52px; font-weight: 500; letter-spacing: -0.04em; line-height: 1">{{p.shown}}</span><span style="color: {{p.sub}}">/month</span></div>
+<div style="margin-top: 10px; font-size: 14px; line-height: 1.5; color: {{p.sub}}"><span style="color: {{p.fg}}; font-weight: 500">+ 2.5%</span> of creator driven sales</div>
+<div style="margin-top: 2px; font-size: 14px; line-height: 1.5; color: {{p.sub}}">{{p.note}}</div>
+<a class="{{p.btnClass}}" href="https://apps.shopify.com/linkable-1" style="margin-top: 24px; min-height: 44px; font-size: 15px; padding: 0 6px 0 20px; gap: 14px; justify-content: space-between">Start your free trial<span class="dot" style="width: 32px; height: 32px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></span></a>
+<ul style="list-style: none; padding: 24px 0 0; margin: 24px 0 0; border-top: 1px solid {{p.line}}; display: flex; flex-direction: column; gap: 12px; font-size: 15px">
+<sc-for list="{{p.features}}" as="f" hint-placeholder-count="3">
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg>{{f}}</li>
+</sc-for>
+<li style="display: flex; gap: 10px; font-weight: 600"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M12 5v14M5 12h14"></path></svg>Everything in the full platform</li>
+</ul>
+</div>
+</sc-for>
+</div>
+
+<p style="margin: 20px 0 0; text-align: center; font-size: 14px; color: #666563">Prices in USD. Change plan or cancel any time.</p>
+</div>
+</section>
+
+<section aria-label="Brands working with Linkable" style="padding: 48px 0 0">
+<div class="marquee" style="margin-top: 0">
+<div class="marquee-track">
+<sc-for list="{{brands}}" as="b" hint-placeholder-count="8">
+<sc-if value="{{b.logo}}" hint-placeholder-val="{{ false }}"><img src="{{b.logo}}" alt="{{b.name}}" style="height: {{b.h}}; width: auto; display: block; opacity: 0.7"></sc-if>
+<sc-if value="{{b.isText}}" hint-placeholder-val="{{ true }}"><span style="font-family: {{b.font}}; font-size: 34px; font-weight: {{b.weight}}; letter-spacing: {{b.ls}}; font-style: {{b.style}}; color: #232323; white-space: nowrap">{{b.name}}</span></sc-if>
+</sc-for>
+</div>
+</div>
+<div class="wrap">
+<div style="border-top: 1px solid #E8E6E1; margin-top: 48px"></div>
+<div class="stats" style="padding: 56px 0 24px">
+<sc-for list="{{stats}}" as="s" hint-placeholder-count="4">
+<div class="stat">
+<div style="font-size: 44px; font-weight: 600; letter-spacing: -0.03em; color: #232323">{{s.value}}</div>
+<div style="font-size: 18px; line-height: 1.5; color: #666563; margin: 8px auto 0; max-width: 200px">{{s.label}}</div>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+<section id="compare" aria-label="Compare plans" style="padding: 96px 0 48px">
+<div class="wrap" style="text-align: center">
+<div style="font-size: 14px; font-weight: 600; letter-spacing: .2em; color: #666563">COMPARE PLANS</div>
+<h2 class="h2" style="margin: 14px 0 0; font-size: 44px; line-height: 1.1; letter-spacing: -0.035em; font-weight: 500; color: #232323">Everything in every plan.</h2>
+<p style="margin: 16px auto 0; max-width: 640px; font-size: 19px; line-height: 1.55; color: #666563; text-wrap: balance">Plans only differ in how many creators and campaigns you run, plus the level of insight and support.</p>
+</div>
+<div class="wrap" style="max-width: 1240px">
+<div class="pc-scroll">
+<div class="pc">
+<div class="pc-r pc-head"><div class="pc-l"></div><div class="pc-c pc-h"><div style="font-size: 18px; font-weight: 600; color: #232323">Starter</div><div style="margin-top: 4px; font-size: 14px; color: #666563"><b style="font-size: 22px; font-weight: 500; letter-spacing: -0.02em; color: #232323">{{cmp0}}</b> /month</div><a class="btn btn-primary" href="https://apps.shopify.com/linkable-1" style="margin-top: 14px; min-height: 38px; font-size: 14px; padding: 0 16px">Start free</a></div><div class="pc-c pc-h pc-hl pc-top"><div style="font-size: 18px; font-weight: 600; color: #232323">Growth</div><div style="margin-top: 4px; font-size: 14px; color: #666563"><b style="font-size: 22px; font-weight: 500; letter-spacing: -0.02em; color: #232323">{{cmp1}}</b> /month</div><a class="btn btn-primary" href="https://apps.shopify.com/linkable-1" style="margin-top: 14px; min-height: 38px; font-size: 14px; padding: 0 16px">Start free</a></div><div class="pc-c pc-h"><div style="font-size: 18px; font-weight: 600; color: #232323">Scale</div><div style="margin-top: 4px; font-size: 14px; color: #666563"><b style="font-size: 22px; font-weight: 500; letter-spacing: -0.02em; color: #232323">{{cmp2}}</b> /month</div><a class="btn btn-primary" href="https://apps.shopify.com/linkable-1" style="margin-top: 14px; min-height: 38px; font-size: 14px; padding: 0 16px">Start free</a></div></div>
+<div class="pc-g"><div class="pc-l">USAGE</div><div></div><div class="pc-hl"></div><div></div></div><div class="pc-r"><div class="pc-l"><div>New creators a month</div><div style="margin-top: 2px; font-size: 13px; color: #666563">Each new creator counts once</div></div><div class="pc-c"><span>10</span></div><div class="pc-c pc-hl"><span>50</span></div><div class="pc-c"><span>100</span></div></div><div class="pc-r"><div class="pc-l"><div>Campaigns at once</div></div><div class="pc-c"><span>2</span></div><div class="pc-c pc-hl"><span>10</span></div><div class="pc-c"><span>20</span></div></div><div class="pc-r"><div class="pc-l"><div>Applications and invitations</div></div><div class="pc-c"><span>Unlimited</span></div><div class="pc-c pc-hl"><span>Unlimited</span></div><div class="pc-c"><span>Unlimited</span></div></div><div class="pc-r"><div class="pc-l"><div>Full platform</div><div style="margin-top: 2px; font-size: 13px; color: #666563">Gifted, paid and affiliate campaigns, AI matching, messaging, shipping, content library, payouts and Shopify sync</div></div><div class="pc-c"><span class="pc-yes"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span></div><div class="pc-c pc-hl"><span class="pc-yes"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span></div><div class="pc-c"><span class="pc-yes"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span></div></div><div class="pc-g"><div class="pc-l">INSIGHTS AND SUPPORT</div><div></div><div class="pc-hl"></div><div></div></div><div class="pc-r"><div class="pc-l"><div>Campaign and creator insights</div></div><div class="pc-c"><span class="pc-yes"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span></div><div class="pc-c pc-hl"><span class="pc-yes"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span></div><div class="pc-c"><span>Advanced</span></div></div><div class="pc-r"><div class="pc-l"><div>Onboarding and support</div></div><div class="pc-c"><span>Dedicated</span></div><div class="pc-c pc-hl"><span>Dedicated</span></div><div class="pc-c"><span>Priority</span></div></div><div class="pc-g"><div class="pc-l">BILLING</div><div></div><div class="pc-hl"></div><div></div></div><div class="pc-r"><div class="pc-l"><div>Billed yearly</div><div style="margin-top: 2px; font-size: 13px; color: #666563">Save 17% a year</div></div><div class="pc-c"><span>$990</span></div><div class="pc-c pc-hl"><span>$1,990</span></div><div class="pc-c"><span>$4,990</span></div></div><div class="pc-r"><div class="pc-l"><div>Fee on creator driven sales</div></div><div class="pc-c"><span>2.5%</span></div><div class="pc-c pc-hl"><span>2.5%</span></div><div class="pc-c"><span>2.5%</span></div></div><div class="pc-r"><div class="pc-l"><div>Free trial</div></div><div class="pc-c"><span>30 days</span></div><div class="pc-c pc-hl"><span>30 days</span></div><div class="pc-c"><span>30 days</span></div></div>
+<div class="pc-r pc-end"><div class="pc-l"></div><div class="pc-c"></div><div class="pc-c pc-hl pc-bot"></div><div class="pc-c"></div></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="fee" aria-label="How the fee works" style="padding: 48px 0">
+<div class="wrap" style="max-width: 1240px">
+<div class="fee-panel">
+<div>
+<div style="font-size: 14px; font-weight: 600; letter-spacing: .2em; color: #666563">THE 2.5% FEE</div>
+<h2 class="h2" style="margin: 14px 0 0; font-size: 44px; line-height: 1.1; letter-spacing: -0.035em; font-weight: 500; color: #232323">You only pay more when creators sell.</h2>
+<p style="margin: 16px 0 0; max-width: 460px; font-size: 19px; line-height: 1.55; color: #666563">The 2.5% applies only to sales tracked through creator links and codes. Every other sale in your store carries no fee.</p>
+</div>
+<div class="fee-card">
+<div style="display: flex; justify-content: space-between; align-items: center"><span style="font-size: 14px; font-weight: 600; color: #232323">Example month</span><span style="padding: 3px 9px; border-radius: 999px; background: #F3F2EE; font-size: 12px; font-weight: 500; color: #232323">Growth plan</span></div>
+<div class="fee-line"><span>Plan</span><b>$199</b></div>
+<div class="fee-line"><span>Sales through creator links and codes <br><small>$4,000 × 2.5%</small></span><b>$100</b></div>
+<div class="fee-line"><span>All other sales in your store</span><b>$0</b></div>
+<div class="fee-line fee-total"><span>Total for the month</span><b>$299</b></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="help" aria-label="Demo and managed service" style="padding: 48px 0">
+<div class="wrap" style="max-width: 1240px">
+<div class="two-cta" style="margin-top: 16px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; text-align: left">
+<div style="padding: 32px; border-radius: 24px; background: #F6F4EF; border: 1px solid #ECEAE5; display: flex; flex-direction: column">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: .14em; color: #666563">NOT SURE YET?</div>
+<h3 style="margin: 10px 0 0; font-size: 26px; line-height: 1.2; letter-spacing: -0.02em; font-weight: 500; color: #232323">See it on your own brand.</h3>
+<p style="margin: 10px 0 0; font-size: 16px; line-height: 1.55; color: #666563; max-width: 460px">Book a 20 minute demo. We’ll show you the creators who fit your products and how a campaign runs from launch to payout.</p>
+<a class="btn btn-primary btn-arrow" href="https://calendly.com/federico-linkable/linkable-demo" target="_blank" rel="noopener" style="margin-top: 24px; align-self: flex-start; min-height: 44px; font-size: 15px; padding: 0 6px 0 20px; gap: 14px">Book a demo<span class="dot" style="width: 32px; height: 32px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></span></a>
+</div>
+<div style="padding: 32px; border-radius: 24px; background: #232323; color: #FFFFFF; display: flex; flex-direction: column">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: .14em; color: #B5B3AE">MANAGED SERVICE</div>
+<h3 style="margin: 10px 0 0; font-size: 26px; line-height: 1.2; letter-spacing: -0.02em; font-weight: 500">Want us to run it for you?</h3>
+<p style="margin: 10px 0 0; font-size: 16px; line-height: 1.55; color: #B5B3AE; max-width: 460px">Our team plans your campaigns, finds the right creators and manages every collaboration from start to finish.</p>
+<a class="btn btn-ghost btn-arrow" href="https://calendly.com/federico-linkable/linkable-demo" target="_blank" rel="noopener" style="margin-top: 24px; align-self: flex-start; min-height: 44px; font-size: 15px; padding: 0 6px 0 20px; gap: 14px">Talk to our team<span class="dot" style="width: 32px; height: 32px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></span></a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="faq" aria-label="Frequently asked questions" style="padding: 48px 0 96px">
+<div class="wrap" style="max-width: 1240px">
+<div class="faq-grid">
+<div>
+<div style="font-size: 14px; font-weight: 600; letter-spacing: .2em; color: #666563">FAQ</div>
+<h2 class="h2" style="margin: 14px 0 0; font-size: 44px; line-height: 1.1; letter-spacing: -0.035em; font-weight: 500; color: #232323">Questions, answered.</h2>
+<p style="margin: 16px 0 0; font-size: 19px; line-height: 1.55; color: #666563; max-width: 400px">Can’t find what you’re looking for? Talk to our team and we’ll get back to you the same day.</p>
+<a class="btn btn-ghost btn-arrow" href="/contact" style="margin-top: 24px; min-height: 44px; font-size: 15px; padding: 0 6px 0 20px; gap: 14px">Contact us<span class="dot" style="width: 32px; height: 32px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></span></a>
+</div>
+<div style="border-top: 1px solid #E8E6E1">
+<sc-for list="{{faqs}}" as="f" hint-placeholder-count="8">
+<div style="border-bottom: 1px solid #E8E6E1">
+<button type="button" onClick="{{f.toggle}}" aria-expanded="{{f.open}}" style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 22px 0; background: none; border: 0; cursor: pointer; text-align: left; font: 500 18px 'Manrope', system-ui, sans-serif; letter-spacing: -0.01em; color: #232323">{{f.q}}<span style="width: 32px; height: 32px; border-radius: 50%; background: {{f.iconBg}}; color: {{f.iconFg}}; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; transition: transform .25s ease, background .25s ease; transform: rotate({{f.rot}})"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></span></button>
+<sc-if value="{{f.open}}" hint-placeholder-val="{{ false }}"><p style="margin: 0; padding: 0 56px 24px 0; font-size: 16px; line-height: 1.65; color: #666563">{{f.a}}</p></sc-if>
+</div>
+</sc-for>
+</div>
+</div>
+</div>
+</section>
+<section id="start" style="padding: 0 0 96px">
+<div class="wrap">
+<div class="cta-panel">
+<div style="position: relative">
+<div style="display: inline-flex; align-items: center; gap: 12px"><span style="display: inline-flex; align-items: center; gap: 7px; font-size: 14px; color: #D9D7D2"><span class="pulse" style="width: 7px; height: 7px; border-radius: 50%; background: #22B566"></span>Creators ready to collaborate today</span></div>
+<h2 class="h2" style="margin: 28px auto 0; max-width: 680px; font-size: 44px; line-height: 1.1; letter-spacing: -0.035em; font-weight: 500; color: #FFFFFF">Your next creators are already looking for brands.</h2>
+<p style="margin: 16px auto 0; max-width: 560px; font-size: 19px; line-height: 1.55; color: #B5B3AE">Launch your first campaign today and start getting applications from creators who fit your brand.</p>
+<div style="margin-top: 36px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap">
+<a class="btn btn-arrow" href="https://apps.shopify.com/linkable-1" style="min-height: 52px; font-size: 16px; padding-left: 24px; gap: 16px; background: #FFFFFF; color: #232323">Start your free trial
+<span class="dot" style="width: 38px; height: 38px; background: #232323"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></span>
+</a>
+</div>
+<div style="margin-top: 28px; display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; font-size: 14px; color: #B5B3AE">
+<span style="display: inline-flex; align-items: center; gap: 7px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>30 days free</span>
+<span style="display: inline-flex; align-items: center; gap: 7px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Cancel any time</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer style="padding: 24px 0 40px; overflow: hidden">
+<div class="wrap" style="max-width: 1240px">
+<div aria-hidden="true" class="foot-mark">Linkable</div>
+<div class="foot-grid">
+<div>
+<img src="/assets/site/80b30529819b26dcb496aacb1e20a743.png" alt="Linkable" style="height: 22px; width: auto; display: block">
+<p style="margin: 14px 0 0; font-size: 16px; color: #666563">Creator marketing, built for ecommerce.</p>
+</div>
+<div>
+<div class="foot-h">Company</div>
+<a class="foot-a" href="/">For Brands</a>
+<a class="foot-a" href="/creators">For Creators</a>
+<a class="foot-a" href="/autopilot">Autopilot</a>
+<a class="foot-a" href="#top">Pricing</a>
+<a class="foot-a" href="/contact">Contact Us</a>
+<a class="foot-a" href="/blog">Blog</a>
+</div>
+<div>
+<div class="foot-h">Socials</div>
+<a class="foot-a" href="https://www.facebook.com/profile.php?id=61571103328154" target="_blank" rel="noopener">Facebook <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></a>
+<a class="foot-a" href="https://www.instagram.com/linkable.link/" target="_blank" rel="noopener">Instagram <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></a>
+<a class="foot-a" href="https://www.linkedin.com/company/joinlinkable/" target="_blank" rel="noopener">LinkedIn <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></a>
+</div>
+</div>
+<div class="foot-bar">
+<span>© 2026 Linkable Ltd.</span>
+<span style="display: flex; gap: 24px"><a class="foot-a" href="/legal/privacy-policy" style="margin: 0">Privacy Policy</a><a class="foot-a" href="/legal/terms-of-service" style="margin: 0">Terms of Service</a><a class="foot-a" href="#cookie-settings" style="margin: 0">Cookie settings</a></span>
+</div>
+</div>
+</footer>
+
+<sc-if value="{{cookieShow}}" hint-placeholder-val="{{ true }}">
+<div class="cookie-bar rise" role="dialog" aria-label="Cookie preferences">
+<div style="font-size: 15px; font-weight: 600; color: #232323">We use cookies</div>
+<p style="margin: 6px 0 0; font-size: 14px; line-height: 1.55; color: #666563">We use cookies to keep the site working, understand how it is used and improve your experience. Read our <a href="/legal/cookie-policy" style="color: #232323; text-decoration: underline">cookie policy</a>.</p>
+<div style="margin-top: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px">
+<button type="button" onClick="{{cookieReject}}" class="cookie-btn" style="background: #FFFFFF; color: #232323; border: 1px solid #DCDAD4">Reject all</button>
+<button type="button" onClick="{{cookieAccept}}" class="cookie-btn" style="background: #232323; color: #FFFFFF; border: 1px solid #232323">Accept all</button>
+</div>
+</div>
+</sc-if>
+</div>

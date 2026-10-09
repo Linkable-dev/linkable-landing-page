@@ -1,0 +1,24 @@
+/* Privacy.dc.html: styles of this page only (shared ones are in ../../site.css). */
+.lg-layout{display:grid;grid-template-columns:240px minmax(0,720px);gap:80px;justify-content:center;margin-top:56px}
+.lg-side{position:sticky;top:100px;align-self:start}
+.lg-toc{margin-top:14px;display:flex;flex-direction:column;border-left:1px solid #ECEAE5}
+.lg-toc a{padding:6px 0 6px 16px;margin-left:-1px;border-left:1px solid transparent;font-size:14.5px;line-height:1.4;color:#666563;text-decoration:none;transition:color .2s,border-color .2s}
+.lg-toc a:hover{color:#232323;border-left-color:#232323}
+.lg-body{font-size:17px;line-height:1.75;color:#3A3A38}
+.lg-body h2{margin:48px 0 0;font-size:24px;line-height:1.25;letter-spacing:-0.02em;font-weight:500;color:#232323;scroll-margin-top:96px}
+.lg-body h2:first-of-type{margin-top:0}
+.lg-body p{margin:12px 0 0}
+.lg-body ul{margin:12px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.lg-body li{position:relative;padding-left:24px}
+.lg-body li::before{content:"";position:absolute;left:4px;top:.72em;width:6px;height:6px;border-radius:50%;background:#232323}
+.lg-body b{font-weight:600;color:#232323}
+.lg-body a{color:#232323;text-decoration:underline;text-underline-offset:3px}
+.lg-note{margin-top:28px;display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:12px;background:#F6F4EF;border:1px solid #ECEAE5;font-size:14px;color:#666563}
+@media (max-width: 1000px){.lg-layout{grid-template-columns:minmax(0,1fr);gap:32px}.lg-side{position:static}}
+
+/* --- added for the real legal text (h3 subsections, numbered lists, an intro before the first h2) --- */
+.lg-body > :first-child{margin-top:0}
+.lg-body > p + h2:first-of-type{margin-top:48px}
+.lg-body h3{margin:32px 0 0;font-size:19px;line-height:1.35;letter-spacing:-0.01em;font-weight:600;color:#232323}
+.lg-body ol{margin:12px 0 0;padding:0 0 0 22px;display:flex;flex-direction:column;gap:8px}
+.lg-body strong{font-weight:600;color:#232323}

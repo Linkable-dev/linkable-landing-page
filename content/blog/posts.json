@@ -7,8 +7,32 @@
     "date": "2025-02-27",
     "image": "",
     "imageAlt": "",
-    "words": 706,
-    "source": "framer"
+    "words": 673,
+    "source": "framer",
+    "heroImage": {
+      "files": [
+        {
+          "path": "/assets/images/DE7pXqteJInItrbayRCcNZEKZ4-scale-down-to-1024-width-3079-height-4618.jpg",
+          "w": 682
+        },
+        {
+          "path": "/assets/images/DE7pXqteJInItrbayRCcNZEKZ4-scale-down-to-2048-width-3079-height-4618.jpg",
+          "w": 1365
+        },
+        {
+          "path": "/assets/images/DE7pXqteJInItrbayRCcNZEKZ4-scale-down-to-4096-width-3079-height-4618.jpg",
+          "w": 2730
+        },
+        {
+          "path": "/assets/images/DE7pXqteJInItrbayRCcNZEKZ4-width-3079-height-4618.jpg",
+          "w": 3079
+        }
+      ],
+      "width": 3079,
+      "height": 4618,
+      "alt": "How to activate creators and drive your first sales on Linkable"
+    },
+    "category": "Playbook"
   },
   {
     "slug": "creator-partnerships-that-sell",
@@ -18,8 +42,32 @@
     "date": "2025-11-28",
     "image": "",
     "imageAlt": "",
-    "words": 1063,
-    "source": "framer"
+    "words": 1020,
+    "source": "framer",
+    "heroImage": {
+      "files": [
+        {
+          "path": "/assets/images/UHBbpALD52HI4ZQ8v0zXmnhdJjg-scale-down-to-512-width-4024-height-3173.jpg",
+          "w": 512
+        },
+        {
+          "path": "/assets/images/UHBbpALD52HI4ZQ8v0zXmnhdJjg-scale-down-to-1024-width-4024-height-3173.jpg",
+          "w": 1024
+        },
+        {
+          "path": "/assets/images/UHBbpALD52HI4ZQ8v0zXmnhdJjg-scale-down-to-2048-width-4024-height-3173.jpg",
+          "w": 2048
+        },
+        {
+          "path": "/assets/images/UHBbpALD52HI4ZQ8v0zXmnhdJjg-width-4024-height-3173.jpg",
+          "w": 4024
+        }
+      ],
+      "width": 4024,
+      "height": 3173,
+      "alt": "How Ecommerce Brands Can Build Creator Partnerships That Actually Drive Revenue"
+    },
+    "category": "Strategy"
   },
   {
     "slug": "launch-campaign-linkable",
@@ -29,8 +77,32 @@
     "date": "2025-12-05",
     "image": "",
     "imageAlt": "",
-    "words": 1212,
-    "source": "framer"
+    "words": 1177,
+    "source": "framer",
+    "heroImage": {
+      "files": [
+        {
+          "path": "/assets/images/2TipmZmknBOH4dL64xa6Zuph9E-scale-down-to-1024-width-4480-height-6720.jpg",
+          "w": 682
+        },
+        {
+          "path": "/assets/images/2TipmZmknBOH4dL64xa6Zuph9E-scale-down-to-2048-width-4480-height-6720.jpg",
+          "w": 1365
+        },
+        {
+          "path": "/assets/images/2TipmZmknBOH4dL64xa6Zuph9E-scale-down-to-4096-width-4480-height-6720.jpg",
+          "w": 2730
+        },
+        {
+          "path": "/assets/images/2TipmZmknBOH4dL64xa6Zuph9E-width-4480-height-6720.jpg",
+          "w": 4480
+        }
+      ],
+      "width": 4480,
+      "height": 6720,
+      "alt": "How to Launch Your First Creator Campaign on Linkable"
+    },
+    "category": "Playbook"
   },
   {
     "slug": "leaked-discount-codes",
@@ -40,8 +112,32 @@
     "date": "2025-01-15",
     "image": "",
     "imageAlt": "",
-    "words": 797,
-    "source": "framer"
+    "words": 758,
+    "source": "framer",
+    "heroImage": {
+      "files": [
+        {
+          "path": "/assets/images/A2DcfbWBq9hWya0rskEfsb54nc-scale-down-to-1024-width-3333-height-5000.jpg",
+          "w": 682
+        },
+        {
+          "path": "/assets/images/A2DcfbWBq9hWya0rskEfsb54nc-scale-down-to-2048-width-3333-height-5000.jpg",
+          "w": 1365
+        },
+        {
+          "path": "/assets/images/A2DcfbWBq9hWya0rskEfsb54nc-scale-down-to-4096-width-3333-height-5000.jpg",
+          "w": 2730
+        },
+        {
+          "path": "/assets/images/A2DcfbWBq9hWya0rskEfsb54nc-width-3333-height-5000.jpg",
+          "w": 3333
+        }
+      ],
+      "width": 3333,
+      "height": 5000,
+      "alt": "The Hidden Cost of Uncontrolled Discount Codes"
+    },
+    "category": "Strategy"
   },
   {
     "slug": "onboard-first-creators",
@@ -51,8 +147,36 @@
     "date": "2026-02-06",
     "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
     "imageAlt": "Creator filming content at home while holding a water bottle",
-    "words": 758,
-    "source": "framer"
+    "words": 730,
+    "source": "framer",
+    "heroImage": {
+      "files": [
+        {
+          "path": "/assets/images/ZnqzigwxjMB49H2WwyNeBgiGM-scale-down-to-512-width-6720-height-4480.jpg",
+          "w": 512
+        },
+        {
+          "path": "/assets/images/ZnqzigwxjMB49H2WwyNeBgiGM-scale-down-to-1024-width-6720-height-4480.jpg",
+          "w": 1024
+        },
+        {
+          "path": "/assets/images/ZnqzigwxjMB49H2WwyNeBgiGM-scale-down-to-2048-width-6720-height-4480.jpg",
+          "w": 2048
+        },
+        {
+          "path": "/assets/images/ZnqzigwxjMB49H2WwyNeBgiGM-scale-down-to-4096-width-6720-height-4480.jpg",
+          "w": 4096
+        },
+        {
+          "path": "/assets/images/ZnqzigwxjMB49H2WwyNeBgiGM-width-6720-height-4480.jpg",
+          "w": 6720
+        }
+      ],
+      "width": 6720,
+      "height": 4480,
+      "alt": "Creator filming content at home while holding a water bottle"
+    },
+    "category": "Playbook"
   },
   {
     "slug": "tiktok-shop-vs-driving-traffic-to-shopify",
@@ -62,8 +186,36 @@
     "date": "2025-01-18",
     "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
     "imageAlt": "Creator live on TikTok",
-    "words": 676,
-    "source": "framer"
+    "words": 643,
+    "source": "framer",
+    "heroImage": {
+      "files": [
+        {
+          "path": "/assets/images/oKC7eyfhhTpy1BKnKx3AXAE53iE-scale-down-to-512-width-5606-height-3737.jpg",
+          "w": 512
+        },
+        {
+          "path": "/assets/images/oKC7eyfhhTpy1BKnKx3AXAE53iE-scale-down-to-1024-width-5606-height-3737.jpg",
+          "w": 1024
+        },
+        {
+          "path": "/assets/images/oKC7eyfhhTpy1BKnKx3AXAE53iE-scale-down-to-2048-width-5606-height-3737.jpg",
+          "w": 2048
+        },
+        {
+          "path": "/assets/images/oKC7eyfhhTpy1BKnKx3AXAE53iE-scale-down-to-4096-width-5606-height-3737.jpg",
+          "w": 4096
+        },
+        {
+          "path": "/assets/images/oKC7eyfhhTpy1BKnKx3AXAE53iE-width-5606-height-3737.jpg",
+          "w": 5606
+        }
+      ],
+      "width": 5606,
+      "height": 3737,
+      "alt": "Creator live on TikTok"
+    },
+    "category": "Strategy"
   },
   {
     "heroImage": {

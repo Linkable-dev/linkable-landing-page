@@ -1,0 +1,8 @@
+/* NotFound.dc.html: styles of this page only (shared ones are in ../../site.css). */
+.nf-num{font-size:clamp(140px,18vw,240px);line-height:1;font-weight:600;letter-spacing:-0.06em;color:#F1EFEA;user-select:none}
+.nf-grid{margin-top:64px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;text-align:left}
+.nf-link{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 24px;border-radius:20px;background:#F6F4EF;border:1px solid #ECEAE5;text-decoration:none;transition:background .25s,transform .25s,box-shadow .25s}
+.nf-link:hover{background:#FFFFFF;transform:translateY(-2px);box-shadow:0 14px 34px rgba(35,35,35,.08)}
+.nf-arw{width:36px;height:36px;border-radius:50%;background:#232323;color:#FFFFFF;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;transition:transform .25s}
+.nf-link:hover .nf-arw{transform:translateX(3px)}
+@media (max-width: 640px){.nf-grid{grid-template-columns:minmax(0,1fr)}}
