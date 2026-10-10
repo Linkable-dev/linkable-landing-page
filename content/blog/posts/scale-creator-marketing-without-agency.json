@@ -1,0 +1,102 @@
+{
+  "blocks": [
+    {
+      "text": "You ran your first few creator campaigns yourself. They worked well enough that you want more of them, more often, with more creators. Then you look at the hours it takes to find people, brief them, chase content and chase payments, and an agency retainer starts to look tempting. Before you sign one, it is worth knowing that most of what an agency does for you is process, not magic.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you scale creator marketing without an agency?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "You scale it by replacing your own judgement calls with repeatable systems: a brief template you reuse for every creator, a tier structure that tells you who gets gifted product versus a fee versus affiliate commission, and automation that handles the admin an agency would otherwise bill you for. The work doesn't disappear. It just stops needing you personally for every step.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "An agency is essentially a team applying a process on your behalf, at a markup. If you can build the process yourself once, a platform plus a few hours a week does the same job for a fraction of the ongoing cost. The trade-off is that you have to build the process, rather than paying someone who already has one.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Build templates before you build headcount",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "The first instinct when campaigns get busy is to hire. The better first move is to write down what you currently do in your head and turn it into something reusable. A brief template that spells out deliverables, tone and usage rights means you stop re-explaining the same things to every new creator. Our [creator brief template for ecommerce](/blog/creator-brief-template-for-ecommerce) is a reasonable starting point if you don't have one.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Outreach is the other place templates save real time. A good opening message, adapted slightly per creator rather than written from scratch, gets replies faster and takes a fraction of the time. See [how to write a creator outreach message that gets replies](/blog/creator-outreach-message-that-works) for the structure that tends to work. Once these exist, a lot of what felt like judgement turns out to be copy and adapt.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Use tiers to match effort to creator value",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Not every creator deserves the same amount of your attention. A simple tier system fixes that: gifted product for new or unproven creators, a fixed fee for people with a track record of good content, and affiliate commission for anyone who can actually drive sales. You decide the tier once, per creator, and the system runs from there instead of you re-negotiating each time.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Say you run a skincare brand working with a mix of creators each month. The gifted tier gets a product and a brief. The paid tier gets a fee for a defined deliverable. The affiliate tier gets a unique link and a commission on what they sell. You don't need to think hard about each individual case once the tiers exist, you just place people into the right one. If you're unsure which mix suits you, [gifted vs paid creator collaborations](/blog/gifted-vs-paid-creator-collaborations) and [affiliate commission rates for creators](/blog/affiliate-commission-rates-for-creators) cover the trade-offs in more depth.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What should you automate first?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Automate the parts that are purely administrative and carry no creative judgement: order creation for gifted product, tracking links for affiliate sales, and reporting on what each creator actually delivered. These are exactly the tasks that eat an agency's hours and get billed to you as overhead. On Linkable, gifted orders can be created automatically from Shopify once a creator is approved, and affiliate sales are tracked through unique links and discount codes, so you aren't manually reconciling who sold what.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What you should not automate is anything involving tone, fit or quality. Reviewing applications, approving content and deciding who gets invited back next month still needs a human who understands the brand. That's the part an agency can't really replace either, since someone on their side is making those same calls on your behalf, just without your context.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "When is a managed service the better call?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "If you genuinely don't have the hours to run even a templated, tiered, automated system, a managed service is a reasonable alternative to an agency rather than a step back towards one. Linkable's managed service has the team plan campaigns, source creators and manage the collaborations for you, so you get the outcome of an agency relationship without building your own process from zero. It makes sense when the bottleneck is time, not know-how, and when you'd rather hand off execution than build it in-house for now.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Agencies tend to make sense when you need strategy you don't have and don't want to build. If your gap is hours rather than direction, a managed service or a self-run system on a platform built for this usually gets you further for less.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Not necessarily. A lot of brands run creator programmes with templates, tiers and a platform that handles tracking, with one person spending a few hours a week on it rather than a full-time hire.",
+      "q": "Do I need a dedicated creator marketing hire to scale?"
+    },
+    {
+      "a": "It depends heavily on how much of the admin is automated. See [how many creators should a brand work with each month](/blog/how-many-creators-brand-work-with) for a way to think about the right number for your stage.",
+      "q": "How many creators can one person manage without an agency?"
+    },
+    {
+      "a": "A managed service plans and runs campaigns for you on a platform you also have visibility into, while an agency typically works as a separate black box with its own tools and reporting. Linkable's managed service is reachable via [contact](/contact) if you want the team to run campaigns directly.",
+      "q": "What's the difference between a managed service and an agency?"
+    },
+    {
+      "a": "Yes. Most brands run all three at once, assigning each creator to the tier that fits their track record, which is exactly what a tiered system is designed to handle without extra tools.",
+      "q": "Can I mix gifted, paid and affiliate campaigns in one system?"
+    }
+  ]
+}

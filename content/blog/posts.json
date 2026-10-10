@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 38875803,
+      "alt": "Two young adults taking a selfie in a modern studio with vibrant lighting and tech equipment.",
+      "src": "https://images.pexels.com/photos/38875803/pexels-photo-38875803.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/young-creators-taking-selfie-in-studio-setting-38875803/",
+      "query": "founder planning creator campaign laptop",
+      "width": 6000,
+      "credit": {
+        "url": "https://www.pexels.com/@ben-bouh-1812715675",
+        "name": "Ben Bouh"
+      },
+      "height": 4000,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/38875803/pexels-photo-38875803.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/38875803/pexels-photo-38875803.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/scale-creator-marketing-without-agency-38875803-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/scale-creator-marketing-without-agency-38875803-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "scale-creator-marketing-without-agency",
+    "title": "How to scale creator marketing without an agency",
+    "description": "Learn how to scale creator marketing without an agency using templates, creator tiers and automation, and when a managed service makes more sense.",
+    "excerpt": "Scaling creator marketing doesn't require hiring an agency or a full team. It requires systems: templates, tiers and automation that let one person run what used to take five.",
+    "date": "2026-10-10",
+    "updated": "2026-10-10",
+    "image": "UHBbpALD52HI4ZQ8v0zXmnhdJjg",
+    "imageAlt": "Two young adults taking a selfie in a modern studio with vibrant lighting and tech equipment.",
+    "words": 791,
+    "source": "generated",
+    "keyword": "how to scale creator marketing without an agency",
+    "category": "Strategy",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 10376251,
       "alt": "A professional businessman working at his desk, reviewing documents in a modern office environment.",
       "src": "https://images.pexels.com/photos/10376251/pexels-photo-10376251.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
