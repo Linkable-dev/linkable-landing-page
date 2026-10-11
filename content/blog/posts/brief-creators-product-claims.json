@@ -1,0 +1,113 @@
+{
+  "blocks": [
+    {
+      "text": "A creator posts a video calling your supplement a cure for anxiety, or your serum a dupe for a prescription retinoid, and now you're fielding a platform strike or a legal letter instead of counting sales. The content looked great. That's usually the problem. Nobody told the creator where the line was, so they filled the gap with whatever sounded most persuasive.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you brief creators on product claims without killing their style",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "You brief creators on product claims by giving them a short list of things they cannot say and a couple of things they must say, then leaving the actual words, tone and format up to them. The brief is a set of boundaries, not a script. Creators who read a line-by-line script either refuse the job or read it in a flat voice that audiences skip past.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Split your brief into three parts: claims that are banned outright, claims that need a qualifier, and disclosure requirements. That structure takes a few minutes to write once and you can reuse it across every campaign in a category. Our [creator brief template for ecommerce](/blog/creator-brief-template-for-ecommerce) has a slot for exactly this section if you want a starting point.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What counts as a banned claim versus a qualified one",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Banned claims are absolute statements about outcomes you cannot stand behind: curing, treating or preventing a medical condition, guaranteeing a result, or comparing favourably to a named competitor or prescription product. These should be a flat no, with an example of the exact phrase you don't want (",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Qualified claims are things that are true for some people some of the time, like ",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Give one worked phrasing per category so the creator has a template for the distinction, not just a rule. Say your brand sells a magnesium supplement. A banned claim is ",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Banned: cures insomnia. Qualified: helped me wind down before bed, results vary. The creator still writes their own sentence, but now they know which shape it needs to take.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Why disclosure basics belong in every brief, not just paid ones",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Disclosure isn't optional once free product, payment or an affiliate link is involved, so it goes in every brief regardless of campaign type. Tell creators which platform tag or wording you expect (paid partnership label, #ad, or a spoken disclosure at the start of the video) and confirm it's their responsibility to apply it, not yours to catch after posting.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This matters more than brands expect because undisclosed gifting or affiliate content is the kind of thing that gets flagged by other creators, by competitors, or by the platform itself. One clear line in the brief (\"please use the paid partnership tag since you're earning commission on this link\") removes the ambiguity before it becomes a problem. If you're running affiliate campaigns through [discount codes vs affiliate links](/blog/discount-codes-vs-affiliate-links-creators), this is a natural place to mention both the tracking method and the disclosure expectation together.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What changes by category: skincare, supplements, coffee, activewear",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "The categories with the most regulatory exposure need the most specific briefs, and skincare and supplements sit at the top of that list. For skincare, avoid letting creators claim a product treats a diagnosed skin condition (eczema, acne as a medical term) rather than describing texture or appearance. For supplements, the safest brief bans any claim about treating, curing or preventing disease and steers creators toward how the product fits into a routine instead. We've covered this in more depth in [creator marketing for supplement brands that stays compliant](/blog/creator-marketing-for-supplement-brands) and in [creator marketing for skincare brands](/blog/creator-marketing-for-skincare-brands), both worth a read before your first briefing round in either category.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Coffee and food brands carry lighter risk but still need claims around caffeine content, allergens and sourcing to be accurate rather than aspirational. Activewear and fashion briefs are usually the lightest touch: the main risk there is overstating durability or performance claims that customer reviews will later contradict.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you check a creator's content before it goes live",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Build a claims check into whatever approval process you already run, rather than adding a separate review step that slows everyone down. If you're using [a creator content approval process](/blog/creator-content-approval-process) with a checklist, add one line: does this content make any banned or unqualified claim, and is the disclosure visible. That's the whole check. It takes less time than reshooting a video after it's flagged.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "On Linkable, campaign briefs and content review happen in the same place, so the claims guidance a creator reads when they apply is the same standard you check against before anything goes live. That consistency is what actually prevents the drift between brief and output.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Write your claims section this week: one page, three parts, specific examples per category you sell in. Attach it to your next brief before you send a single invite.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "No. A short, specific list of banned and qualified claims written in plain language does more than a legal disclaimer, which creators tend to skim past. Save formal legal review for high-risk categories like supplements with medical claims.",
+      "q": "Should every creator brief include a legal disclaimer"
+    },
+    {
+      "a": "Responsibility depends on your contract terms, but in practice the brand usually bears the reputational and regulatory risk even if the creator posted the content. That's why the brief and a quick content review before posting matter more than after-the-fact correction.",
+      "q": "Who is responsible if a creator makes a false claim anyway"
+    },
+    {
+      "a": "Yes. Gifted creators still represent your brand publicly and still need to disclose the relationship, so the same claims and disclosure section should appear in gifted briefs, not just paid or affiliate ones.",
+      "q": "Do gifted collaborations need the same claims guidance as paid ones"
+    }
+  ]
+}

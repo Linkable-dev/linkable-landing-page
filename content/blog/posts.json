@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 7755535,
+      "alt": "Man examines skincare product label in a modern, well-lit store.",
+      "src": "https://images.pexels.com/photos/7755535/pexels-photo-7755535.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/a-man-in-brown-crew-neck-t-shirt-holding-a-white-box-7755535/",
+      "query": "person reading product label notes",
+      "width": 6143,
+      "credit": {
+        "url": "https://www.pexels.com/@rdne",
+        "name": "RDNE Stock project"
+      },
+      "height": 4095,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/7755535/pexels-photo-7755535.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/7755535/pexels-photo-7755535.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/brief-creators-product-claims-7755535-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/brief-creators-product-claims-7755535-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "brief-creators-product-claims",
+    "title": "How to brief creators on product claims without scripts",
+    "description": "How to brief creators on product claims so content stays accurate and compliant, without writing word-for-word scripts for every post.",
+    "excerpt": "A good claims brief tells creators what they cannot say and leaves the rest to them. Here's how to write one that protects your brand without producing stiff, scripted content.",
+    "date": "2026-10-11",
+    "updated": "2026-10-11",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "Man examines skincare product label in a modern, well-lit store.",
+    "words": 800,
+    "source": "generated",
+    "keyword": "how to brief creators on product claims",
+    "category": "Playbook",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 38875803,
       "alt": "Two young adults taking a selfie in a modern studio with vibrant lighting and tech equipment.",
       "src": "https://images.pexels.com/photos/38875803/pexels-photo-38875803.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
