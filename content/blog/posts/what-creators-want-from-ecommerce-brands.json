@@ -1,0 +1,107 @@
+{
+  "blocks": [
+    {
+      "text": "You send ten creators a product, three reply, one actually posts, and when you ask why the other six went quiet nobody on your team has an answer. Creators aren't precious. They work with brands that make the process easy, pay fairly and don't waste their time.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What do creators actually want from ecommerce brands?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Creators want a clear brief, fair and prompt pay, product that arrives before the moment has passed, usage rights agreed up front rather than assumed, and one person at the brand they can message when something goes wrong. None of that is complicated or expensive. Most of it is a process problem, not a budget problem, and brands that fix the process keep creators coming back for a second and third collaboration.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Why a clear brief matters more than a big budget",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Vague instructions are the fastest way to lose a creator's trust. \"Make it fun and authentic\" tells a creator nothing about what the brand actually needs, so they guess, you ask for a reshoot, and the relationship starts with friction instead of goodwill.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Say you run a coffee brand and send a creator the product with no notes beyond \"show it however feels natural\". The creator films a morning routine, posts it, and you come back asking for a close-up of the packaging and a mention of the roast. By then the moment has passed and the creator has moved on to the next brand in their inbox.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "A brief that states the hook, the shots you need, the claims you can and can't make, and the length you're aiming for gives a creator something to work with on the first attempt. Our [creator brief template for ecommerce](/blog/creator-brief-template-for-ecommerce) covers what to include without turning into a script.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What counts as fair pay for creators?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Fair pay means the creator knows exactly what they're getting before they agree to post, and gets it on time. That's true whether it's free product, a fixed fee, or a commission on tracked sales. Creators compare brands constantly, and a brand that pays late or disputes a payout after the content is live doesn't get a second collaboration.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Gifted product works for brands and creators when both sides treat it as an exchange, not a favour. Our [creator gifting etiquette](/blog/creator-gifting-etiquette-for-brands) post covers how to set that expectation. If you're paying cash or commission, the mechanics matter just as much as the amount, and our guide on [how to pay creators for ecommerce campaigns](/blog/how-to-pay-creators-ecommerce-campaigns) walks through the options.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How fast should product arrive once a creator says yes?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "As soon as you can manage it, and definitely before the creator's enthusiasm cools. A creator who applies to a campaign has made a decision in the moment. If the package takes weeks to arrive, that decision has worn off by the time they unbox it, and the content shows it.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This is where the mechanics behind the scenes matter. On Linkable, gifted product orders can be created automatically on approval because the product catalogue and orders sync with Shopify, so there's no manual step between a creator being approved and the order going out.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Who owns the content, and who do creators call when something breaks?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Usage rights should be agreed before the creator films anything, not negotiated after the content performs well. Creators want to know up front whether a brand can repost their video, run it as a paid ad, or reuse it across channels, and for how long. Our [creator contract essentials for small brands](/blog/creator-contract-essentials-small-brands) post sets out what to put in writing so nobody is surprised later.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "The other thing creators consistently ask for is a person, not a form. When a payout is late or a shipping address changed, they want a reply within the day, not a ticket number. Brands running campaigns through Linkable can message creators directly in the platform, and brands that want someone else to run that relationship can use Linkable's managed service, where our team plans campaigns and handles creator communication on the brand's behalf.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Pick one of these five things, the brief, the pay, the shipping speed, the usage rights, or the contact point, and fix it this week. Pull up your last three creator collaborations and check which one broke down. If you want a structured way to run the next batch, [our activation playbook](/blog/creator-activation-playbook) is a reasonable place to start, or [get in touch](/contact) if you'd rather have someone else run it with you.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Most creators will take either if the terms are clear. Gifted product suits smaller brands and newer creators, while established creators with consistent output usually expect a fee or commission on top of product.",
+      "q": "Do creators prefer gifted product or paid collaborations?"
+    },
+    {
+      "a": "Within a day is a reasonable standard. Creators are often juggling several brand relationships at once, and slow replies are one of the main reasons they stop applying to a brand's campaigns.",
+      "q": "How quickly do creators expect a reply from a brand?"
+    },
+    {
+      "a": "Sharing clear photos, ingredients or specs in the campaign listing helps creators decide whether the product fits their audience before they apply, which cuts down on mismatched collaborations later.",
+      "q": "Should brands let creators see the product before committing to a campaign?"
+    },
+    {
+      "a": "This is avoidable by agreeing rights in the contract before filming starts. Once content is live, renegotiating usage terms is harder and tends to damage the relationship even if the brand pays extra for the rights.",
+      "q": "What happens if a creator and brand disagree about usage rights after posting?"
+    }
+  ]
+}

@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 39934760,
+      "alt": "Person holding Hollyland Lark M3 wireless microphone package indoors.",
+      "src": "https://images.pexels.com/photos/39934760/pexels-photo-39934760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/close-up-of-hollyland-lark-m3-wireless-microphone-package-39934760/",
+      "query": "creator unboxing product desk",
+      "width": 7008,
+      "credit": {
+        "url": "https://www.pexels.com/@sinan-kriya-2162662325",
+        "name": "Sinan KRIYA"
+      },
+      "height": 4672,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/39934760/pexels-photo-39934760.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/39934760/pexels-photo-39934760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/what-creators-want-from-ecommerce-brands-39934760-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/what-creators-want-from-ecommerce-brands-39934760-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "what-creators-want-from-ecommerce-brands",
+    "title": "What creators want from ecommerce brands today",
+    "description": "What creators want from ecommerce brands: a clear brief, fair pay, fast product, respected usage rights and a real person to contact.",
+    "excerpt": "Creators work with brands that make the process easy and respectful of their time. Here's what that actually looks like, from brief to payout.",
+    "date": "2026-10-12",
+    "updated": "2026-10-12",
+    "image": "UHBbpALD52HI4ZQ8v0zXmnhdJjg",
+    "imageAlt": "Person holding Hollyland Lark M3 wireless microphone package indoors.",
+    "words": 747,
+    "source": "generated",
+    "keyword": "what creators want from ecommerce brands",
+    "category": "Strategy",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 7755535,
       "alt": "Man examines skincare product label in a modern, well-lit store.",
       "src": "https://images.pexels.com/photos/7755535/pexels-photo-7755535.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
