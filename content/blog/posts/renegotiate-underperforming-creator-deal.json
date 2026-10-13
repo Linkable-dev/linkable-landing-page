@@ -1,0 +1,127 @@
+{
+  "blocks": [
+    {
+      "text": "You signed a creator for a fixed fee three months ago. The content looked good, the creator was pleasant to work with, and the posts went out on schedule. Sales from that link barely moved. Now you're deciding between two bad options: keep paying the same fee for the same result, or end things and start the search again.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "There's a third option, and it's the one most brands skip because it feels awkward. You go back to the creator and change the deal. This is how to renegotiate a creator deal that underperforms without burning the relationship or wasting another cycle of budget.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you renegotiate a creator deal that underperforms",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "You renegotiate by changing the structure of the deal, not the person delivering it. Move some or all of the fee from fixed to performance-based, shorten the commitment so you can both test the new terms quickly, and be specific about what underperformance means so the next review isn't a guessing game. Most creators would rather adjust terms than lose the partnership, especially if the content itself was fine and the problem is sales.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This only works if you raise it as a structural conversation, not a complaint about the creator's work. If the content was weak, that's a different conversation, covered in [how to evaluate a creator before working with them](/blog/how-to-evaluate-a-creator-before-working-with-them).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Is the problem the creator or the deal",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Before you touch the terms, work out what actually broke. A creator can produce content that gets views and engagement and still generate no tracked sales, because the deal rewarded reach rather than conversion. That's a structural problem, not a creator problem.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Compare it to a creator whose content barely got seen in the first place. Low reach usually means the audience fit was wrong, which is a sourcing issue you solve by changing who you work with, not how you pay them. If you're not sure which camp you're in, pull the per-creator breakdown rather than the campaign total. One quiet creator buried in a good campaign average looks very different from a campaign where nobody converts.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Check the attribution before you blame the content",
+      "type": "h3",
+      "items": null
+    },
+    {
+      "text": "Sometimes the deal and the creator were both fine and the tracking wasn't. A discount code that got shared outside the campaign, or a link that never got clicked because it sat in a caption nobody reads, will make a working partnership look dead. Run through [how creator marketing attribution problems skew your data](/blog/creator-marketing-attribution-problems) before you open the renegotiation, so you're not fixing a deal that was never broken.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you open the conversation without it feeling like a breakup",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Lead with the numbers, not the relationship. Tell the creator plainly what the content achieved (views, engagement, saves) and what it didn't (tracked sales), and say you want to keep working together on different terms rather than stop. Most creators have had this conversation before and respect directness more than a slow fade into silence.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Propose the new structure in the same message. A common shift is dropping the flat fee and moving to an affiliate commission on tracked sales, so the creator earns more if the content starts converting and you stop paying flat for content that doesn't. If you're unsure what commission to offer, [affiliate commission rates for creators that protect margin](/blog/affiliate-commission-rates-for-creators) is a reasonable starting point. A hybrid works too: a smaller fixed fee plus commission, so the creator isn't working for free while the new terms prove themselves.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Say you run a coffee subscription brand and paid a creator a flat fee for three posts that got decent engagement but almost no tracked orders. Instead of ending the deal, you offer a smaller fixed fee for the next round plus a commission on anything that converts through their link, and agree to review again after the next batch of content goes out.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What to change first, structure before people",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Change the fee model before you change the creator. Switching from flat fee to commission, or adding affiliate tracking to a gifted arrangement, costs you nothing if the content was already reasonable, and it tells you fast whether the problem was the deal or the fit. If you're running this on Linkable, switching a creator from a fixed fee to a commission structure is a campaign setting, and tracked sales show up per creator so you can see within the next cycle whether the new terms worked.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Only move to replacing the creator if the new structure still produces nothing after a fair test. A fair test means enough posts and enough time for a commission link to actually get clicked, not one post judged a week later.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "When renegotiating isn't worth it",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Some deals should end rather than get restructured. If the content quality was the actual problem (off-brand claims, poor product handling, missed deadlines), no fee change fixes that, and you're better off reading [creator contract essentials for small brands](/blog/creator-contract-essentials-small-brands) and moving on cleanly. Renegotiation is for deals where the output was acceptable and the incentives were wrong, not for deals where the creator wasn't a fit from the start.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "If you've renegotiated once already and the new structure still isn't producing tracked sales after a proper test, that's your answer. Keep the relationship on good terms (you may want to work with them again on a different product) but stop paying for a slot that isn't earning its place in the campaign.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This week, pull your current creator list and flag anyone on a flat fee who's produced content but no tracked sales in the last couple of cycles. Draft the restructure message for the one you're most on the fence about, and send it before you send a termination instead.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Only renegotiate where the content itself was reasonable and the fee structure likely caused the mismatch. If posts were off-brand, late or low quality, fix that through your contract terms instead, since a new fee structure won't fix bad content.",
+      "q": "Should I renegotiate every underperforming creator deal or only some"
+    },
+    {
+      "a": "Give it at least one full content cycle after the new terms start, with enough posts for a commission link to get genuine clicks. Judging a hybrid deal after a single post almost always looks worse than it is.",
+      "q": "How long should I give a renegotiated deal before judging it"
+    },
+    {
+      "a": "Some creators will decline a commission-heavy structure, which is a fair position for them to take. If they won't move at all, that's useful information: either end the deal or keep it as gifted product only rather than a paid fee.",
+      "q": "What if the creator refuses to move off a flat fee"
+    },
+    {
+      "a": "No. A hybrid of a smaller fixed fee plus commission on tracked sales is common and keeps the creator paid for their time while rewarding results. The exact split is a negotiation, not a fixed rule.",
+      "q": "Does switching to commission always mean dropping the fee to zero"
+    }
+  ]
+}

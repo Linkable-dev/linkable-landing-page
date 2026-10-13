@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 9052597,
+      "alt": "Close-up of hands examining printed documents next to laptop on office desk.",
+      "src": "https://images.pexels.com/photos/9052597/pexels-photo-9052597.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/person-holding-white-printed-papers-9052597/",
+      "query": "brand manager reviewing contract laptop",
+      "width": 6000,
+      "credit": {
+        "url": "https://www.pexels.com/@shvets-production",
+        "name": "SHVETS production"
+      },
+      "height": 4000,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/9052597/pexels-photo-9052597.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/9052597/pexels-photo-9052597.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/renegotiate-underperforming-creator-deal-9052597-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/renegotiate-underperforming-creator-deal-9052597-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "renegotiate-underperforming-creator-deal",
+    "title": "How to renegotiate a creator deal that underperforms",
+    "description": "Learn how to renegotiate a creator deal that underperforms before you cut the relationship, with a practical middle path between firing and flat fees.",
+    "excerpt": "Before you cut a creator loose or keep paying a flat fee for content that doesn't sell, there's a middle step most brands skip: renegotiating the deal itself.",
+    "date": "2026-10-13",
+    "updated": "2026-10-13",
+    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
+    "imageAlt": "Close-up of hands examining printed documents next to laptop on office desk.",
+    "words": 957,
+    "source": "generated",
+    "keyword": "how to renegotiate a creator deal that underperforms",
+    "category": "Playbook",
+    "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 39934760,
       "alt": "Person holding Hollyland Lark M3 wireless microphone package indoors.",
       "src": "https://images.pexels.com/photos/39934760/pexels-photo-39934760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
