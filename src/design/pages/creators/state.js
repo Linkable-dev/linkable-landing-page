@@ -66,7 +66,7 @@ export class PageLogic extends DCLogic {
       faqs: [
         { q: 'Is Linkable free for creators?', a: 'Yes. Creating a profile, applying to campaigns and pitching brands is always free.' },
         { q: 'Do I need a big following?', a: 'No. Brands look for creators who fit their audience, not just the biggest numbers. Many campaigns are open to smaller creators.' },
-        { q: 'How do I get paid?', a: 'Commission is tracked through your own link and code and paid out to you. Fixed fees are agreed with each brand before you start.' },
+        { q: 'How do I get paid?', a: 'Commission is tracked through your own link and paid out to you. Fixed fees are agreed with each brand before you start.' },
         { q: 'Which platforms can I use?', a: 'Instagram and TikTok. Connect your accounts and your audience insights are added to your profile automatically.' },
         { q: 'What can I pitch?', a: 'Any idea for a brand on Linkable. Set the content, the deliverables and your rate, and the brand replies in your inbox.' },
         { q: 'Who owns the content I make?', a: 'You do. Usage rights are agreed per campaign, so you always know how a brand can use your content.' },

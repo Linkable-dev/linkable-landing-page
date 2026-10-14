@@ -59,7 +59,7 @@ node tools/design/build.mjs                                    # templates + con
   `https://linkable-landing-page.vercel.app` (or `SITE_ORIGIN` if set), so previews never fetch images from the
   wrong site. When www.linkable.link points at Vercel, set `SITE_ORIGIN=https://www.linkable.link` on the Vercel
   project. Canonical links keep pointing at www.linkable.link.
-- **Fonts** are self-hosted (`manrope-*.woff2`, `fraunces-*.woff2`), so no request goes to Google before consent.
+- **Fonts** are self-hosted (`satoshi-variable.woff2`, `fraunces-*.woff2`), so no request goes to Google before consent.
 - **Cookies.** Pages draw the design's cookie bar; `src/consent.js` keeps the tracking tags parked until the
   visitor accepts, and the footer's "Cookie settings" link (added by the importer) reopens the preferences dialog.
 

@@ -43,7 +43,7 @@ export class PageLogic extends DCLogic {
         { q: 'What is the 2.5% fee?', a: 'It applies only to sales tracked through creator links and codes. Every other sale in your store carries no fee.' },
         { q: 'How does yearly billing work?', a: 'Pay once a year and save 17% compared with paying monthly.' },
         { q: 'Which currency are prices in?', a: 'Prices are in US dollars.' },
-        { q: 'Do I need a Shopify store?', a: 'No. Linkable works without Shopify. Connect it when you want product sync, discount codes and sales attribution.' },
+        { q: 'Do I need a Shopify store?', a: 'No. Linkable works without Shopify. Connect it when you want product sync, automatic audience discounts and sales attribution.' },
         { q: 'How much does the managed service cost?', a: 'It depends on the campaigns you want us to run. Talk to our team and we’ll put together a plan for your brand.' }
       ].map((f, i) => ({ ...f, open: i === openFaq, toggle: () => this.setState({ openFaq: i === openFaq ? -1 : i }), rot: i === openFaq ? '45deg' : '0deg', iconBg: i === openFaq ? '#232323' : '#F3F2EE', iconFg: i === openFaq ? '#FFFFFF' : '#232323' })),
       cookieShow: !(this.state && this.state.cookieDone),

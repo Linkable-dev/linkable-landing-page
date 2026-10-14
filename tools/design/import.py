@@ -30,6 +30,7 @@ if len(sys.argv) != 2:
     sys.exit(__doc__)
 SRC = sys.argv[1]
 ASSETS_IN = os.path.join(SRC, 'site', 'assets')
+EXTRA_IN = os.path.join(ROOT, 'tools', 'design', 'extra-assets')
 ASSETS_OUT = os.path.join(ROOT, 'public', 'assets', 'site')
 PAGES_OUT = os.path.join(ROOT, 'src', 'design', 'pages')
 
@@ -117,6 +118,17 @@ def home(body, logic):
     # importer rewrites).
     body = patch(body, '<img src="/_blob/bb0f4a7197b93d52a0ffa7861af0aedc" alt="Meta"',
                  '<img src="/assets/brand/meta.svg" alt="Meta"', label='meta logo')
+    # The creator cards behind the niche chips: leave out any creator whose
+    # photos are not in the export, rather than show a card of broken images.
+    start = logic.index('    const creatorList = [\n')
+    end = logic.index('\n    ];', start)
+    rows = logic[start:end].split('\n')
+    keep = [r for r in rows if all(i in assets for i in re.findall(r'/_blob/([a-f0-9]{32})', r))]
+    for r in rows:
+        if r not in keep:
+            print('home: left out creator', re.search(r"name: '([^']+)'", r).group(1), '(photos not in the export)')
+    assert len(keep) >= 5, 'home: fewer than four creators left with photos'
+    logic = logic[:start] + '\n'.join(keep) + logic[end:]
     return body, logic
 
 
@@ -279,10 +291,10 @@ PAGE_CSS = {
 """,
 }
 
-FONTS = """/* Self-hosted copies of the Google Fonts the design links (latin + latin-ext
-   subsets). Manrope is a variable font, so one file covers every weight. */
-@font-face{font-family:'Manrope';font-style:normal;font-weight:200 800;font-display:swap;src:url(/assets/fonts/manrope-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
-@font-face{font-family:'Manrope';font-style:normal;font-weight:200 800;font-display:swap;src:url(/assets/fonts/manrope-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+FONTS = """/* Self-hosted fonts. Satoshi is the design's own variable font (weights
+   300-900, converted to woff2); Fraunces is a copy of the Google Font the design
+   links (latin + latin-ext subsets). */
+@font-face{font-family:'Satoshi';font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/satoshi-variable.woff2) format('woff2')}
 @font-face{font-family:'Fraunces';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/fraunces-600-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 @font-face{font-family:'Fraunces';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/fraunces-600-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 """
@@ -303,18 +315,38 @@ HEADER = (
 )
 
 # --------------------------------------------------------------------- run
-assets = {f.split('.')[0]: f for f in os.listdir(ASSETS_IN)}
-assets['1db4202f667f59ea880dc6527a69d732'] = 'demo-video.mp4'  # the export renames the video
-shared = None
+assets = {f.split('.')[0]: os.path.join(ASSETS_IN, f) for f in os.listdir(ASSETS_IN)}
+# Images the export left out, cut from the founder's PDF print of the site
+# (tools/design/extra-assets/README.md). The export's own copy wins.
+for f in sorted(os.listdir(EXTRA_IN)):
+    if f.endswith('.jpg'):
+        assets.setdefault(f.split('.')[0], os.path.join(EXTRA_IN, f))
+VIDEO = '1db4202f667f59ea880dc6527a69d732'
+if os.path.exists(os.path.join(ASSETS_IN, 'demo-video.mp4')):  # the export renames the video
+    assets[VIDEO] = os.path.join(ASSETS_IN, 'demo-video.mp4')
+served = lambda i: 'demo-video.mp4' if i == VIDEO else os.path.basename(assets[i])  # noqa: E731
+shared = lite = None
+SATOSHI = re.compile(r'^@font-face\{font-family:"Satoshi";src:url\("/_blob/[a-f0-9]{32}"\) format\("truetype"\);font-weight:300 900;font-style:normal;font-display:swap\}$')
 used, missing = set(), set()
 os.makedirs(PAGES_OUT, exist_ok=True)
 
 for name, key in PAGES.items():
     styles, body, logic = split(name)
-    assert len(styles) in (2, 3), f'{name}: expected 2 or 3 style blocks, got {len(styles)}'
+    assert len(styles) in (3, 4), f'{name}: expected 3 or 4 style blocks, got {len(styles)}'
+    # Every page opens with the same Satoshi @font-face pointing at the export's
+    # .ttf; FONTS above serves a woff2 copy instead.
+    assert SATOSHI.match(styles[0]), f'{name}: first style block is not the Satoshi font'
+    styles = styles[1:]
     if shared is None:
         shared = styles[:2]
-    assert styles[:2] == shared, f'{name}: shared style blocks differ from the home page'
+    # The home page's copy of block 2 carries a few extra rules (.plat-grid,
+    # #video) for elements only it has, so the other pages may hold the copy
+    # without them; site.css takes the home page's.
+    assert styles[0] == shared[0], f'{name}: shared style block 1 differs from the home page'
+    if styles[1] != shared[1]:
+        lite = lite or styles[1]
+        assert styles[1] == lite, f'{name}: shared style block 2 matches neither copy'
+        assert not re.search(r'id="video"|plat-(grid|card)', body), f'{name}: uses home-only rules missing from its copy of block 2'
 
     if key in PAGE_PATCHES:
         body, logic = PAGE_PATCHES[key](body, logic)
@@ -341,7 +373,7 @@ for name, key in PAGES.items():
 
     for i in re.findall(r'/_blob/([a-f0-9]{32})', body + logic):
         (used if i in assets else missing).add(i)
-    blob = lambda m: '/assets/site/' + assets.get(m.group(1), m.group(1))  # noqa: E731
+    blob = lambda m: '/assets/site/' + (served(m.group(1)) if m.group(1) in assets else m.group(1))  # noqa: E731
     body = re.sub(r'/_blob/([a-f0-9]{32})', blob, body)
     logic = re.sub(r'/_blob/([a-f0-9]{32})', blob, logic)
 
@@ -361,7 +393,7 @@ open(os.path.join(ROOT, 'src', 'design', 'site.css'), 'w', encoding='utf-8').wri
 shutil.rmtree(ASSETS_OUT, ignore_errors=True)
 os.makedirs(ASSETS_OUT)
 for i in sorted(used):
-    shutil.copyfile(os.path.join(ASSETS_IN, assets[i]), os.path.join(ASSETS_OUT, assets[i]))
+    shutil.copyfile(assets[i], os.path.join(ASSETS_OUT, served(i)))
 print(f'assets: {len(used)} copied to public/assets/site')
 if missing:
     print(f'referenced by the design but not in the export ({len(missing)}): {sorted(missing)}')

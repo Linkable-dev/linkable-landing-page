@@ -5,7 +5,7 @@
   --lk-cc-ink: #232323;
   --lk-cc-muted: #515760;
   --lk-cc-line: rgba(31, 35, 41, 0.12);
-  font-family: 'Manrope', system-ui, sans-serif;
+  font-family: 'Satoshi', system-ui, sans-serif;
   color: var(--lk-cc-ink);
   box-sizing: border-box;
 }

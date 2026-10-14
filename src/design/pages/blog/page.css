@@ -11,7 +11,7 @@
 .bl-card:hover h3{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
 .bl-news{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center;padding:48px 56px;border-radius:28px;background:#F6F4EF;border:1px solid #ECEAE5}
 .bl-form{display:flex;gap:8px;padding:6px;border-radius:999px;background:#FFFFFF;border:1px solid #E3E0DA}
-.bl-form input{flex:1;min-width:0;border:0;outline:none;background:transparent;padding:0 16px;font:400 15px 'Manrope',system-ui,sans-serif;color:#232323}
+.bl-form input{flex:1;min-width:0;border:0;outline:none;background:transparent;padding:0 16px;font:400 15px 'Satoshi',system-ui,sans-serif;color:#232323}
 .bl-form input::placeholder{color:#9C9A95}
 @media (prefers-reduced-motion: reduce){.bl-feat-img img,.bl-img img{transition:none}}
 @media (max-width: 1000px){.bl-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.bl-feat{grid-template-columns:minmax(0,1fr);gap:24px}.bl-feat > div:last-child{padding:0 12px 16px}.bl-feat-img{height:320px}.bl-news{grid-template-columns:minmax(0,1fr);gap:24px;padding:32px 22px}}

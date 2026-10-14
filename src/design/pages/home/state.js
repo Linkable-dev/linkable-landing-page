@@ -100,6 +100,18 @@ export class PageLogic extends DCLogic {
       } else { document.documentElement.classList.add('no-io'); }
     } catch (e) { try { document.documentElement.classList.add('no-io'); } catch (x) {} }
     if (reduce) { this.setState({ reduced: true }); return; }
+    try {
+      const wv = document.getElementById('ways');
+      if (wv && window.innerWidth > 760 && 'IntersectionObserver' in window) {
+        const wio = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting && !(this.state && this.state.waysSeen)) this.setState({ waysSeen: true }); }), { threshold: 0.4 });
+        wio.observe(wv); (this._ios = this._ios || []).push(wio);
+        wv.addEventListener('animationend', (e) => {
+          if (e.animationName !== 'wprog' || (this.state && this.state.wayStop)) return;
+          const cur = (this.state && typeof this.state.wayPick === 'number') ? this.state.wayPick : 0;
+          this.setState({ wayPick: (cur + 1) % 4 });
+        });
+      }
+    } catch (e) {}
     if (window.innerWidth <= 760) {
       this.setState({ mobile: true });
       const how = document.getElementById('how');
@@ -129,7 +141,7 @@ export class PageLogic extends DCLogic {
   }
   renderVals() {
     const serif = "'Fraunces', Georgia, serif";
-    const sans = "'Manrope', system-ui, sans-serif";
+    const sans = "'Satoshi', system-ui, sans-serif";
     const base = [
       { name: 'Ryderwear', logo: '/assets/site/1a95697886757bf99ae3277e71f74287.png', h: '22px' },
       { name: 'CENTRED', logo: '/assets/site/7de170f2efabf62788bf7e3d76ebc57a.png', h: '22px' },
@@ -151,6 +163,7 @@ export class PageLogic extends DCLogic {
     const scrollMode = false;
     const scrollIdx = (this.state && typeof this.state.scrollIdx === 'number') ? this.state.scrollIdx : 0;
     const wayIdx = wayPick !== null ? wayPick : 0;
+    const wayAuto = !!(this.state && this.state.waysSeen) && !(this.state && this.state.wayStop) && !(this.state && (this.state.reduced || this.state.mobile));
     const yearly = !!(this.state && this.state.yearly);
     const openFaq = (this.state && typeof this.state.openFaq === 'number') ? this.state.openFaq : 0;
     const still = reduced || !!(this.state && this.state.mobile);
@@ -163,11 +176,10 @@ export class PageLogic extends DCLogic {
       : { bg: '#FFFFFF', bd: '#ECEAE5', fw: 500, fg: '#666563', ring: '1.5px solid #CFCCC5' };
     const nicheList = ['All creators', 'Beauty', 'Wellness', 'Fitness', 'Lifestyle', 'Food & Drink', 'Fashion'];
     const creatorList = [
-      { name: 'Sofia M.', city: 'London, UK', tags: ['Beauty', 'Skincare', 'Lifestyle'], eng: '4.8%', followers: '248K', views: '32K', photo: '/assets/site/9ee13537026be94c23d8f3ff27d01c21.jpg', thumbs: ['/assets/site/4140cd690b8c94548d03a1f6ad0b5a91.jpg', '/assets/site/5211fa4c363dd80d0487076a0a88baaa.jpg', '/assets/site/8ab0bf7546d0d73e4863716c42a8d5e0.jpg'] },
-      { name: 'Tom H.', city: 'Manchester, UK', tags: ['Fitness', 'Wellness', 'Lifestyle'], eng: '6.1%', followers: '120K', views: '18K', photo: '/assets/site/56b44078bd50090d765f675c5316889e.jpg', thumbs: ['/assets/site/a12774ed665e7b304e80de452cc3962b.jpg', '/assets/site/50e423476876f107a7371334a88f101c.jpg', '/assets/site/de7b57592a28410fc8f63cb6f539b0c2.jpg'] },
-      { name: 'Grace R.', city: 'Brighton, UK', tags: ['Food & Drink', 'Wellness', 'Lifestyle'], eng: '3.9%', followers: '86K', views: '11K', photo: '/assets/site/dcfbd6a0875a0baa6ef7cfd6c7f6a8b0.jpg', thumbs: ['/assets/site/edb8e4960878d9a522163f529090ba81.jpg', '/assets/site/1ca3de47edc7c2ab079864314fc94d03.jpg', '/assets/site/3acadc33b790ab86775d220fda492d1d.jpg'] },
-      { name: 'Naomi L.', city: 'London, UK', tags: ['Fashion', 'Lifestyle', 'Beauty'], eng: '5.2%', followers: '310K', views: '41K', photo: '/assets/site/3e142287963788eaaac9cf9cf8385d11.jpg', thumbs: ['/assets/site/7988faf653e9b58c0a33f109daa3234d.jpg', '/assets/site/f233528c4977d1c42f6d6550d7a5d35b.jpg', '/assets/site/218b89d8d87ded905723339b74a09bc8.jpg'] },
-      { name: 'Luca B.', city: 'Bristol, UK', tags: ['Travel', 'Outdoor', 'Lifestyle'], eng: '4.1%', followers: '62K', views: '9K', photo: '/assets/site/483c0bea8e706fa58d093ca5818daa2f', thumbs: ['/assets/site/efc8172f50611a3bbdebeadc274322ed', '/assets/site/208fd790ee10d295cddbbb83682a5717', '/assets/site/2f19f0059651af113bb1cb406234c143'] }
+      { name: 'Tom H.', city: 'Manchester, UK', tags: ['Fitness', 'Wellness', 'Lifestyle'], eng: '7.4%', followers: '24K', views: '6K', photo: '/assets/site/716b9c63b2dd9473060867ee750bc01c.jpg', thumbs: ['/assets/site/93631985b80ffb0fc76094e9c9d8cbbe.jpg', '/assets/site/d75fe18bb3aa40ec44e5601f6e57edde.jpg', '/assets/site/0888c3b53156d2c393c5b7a6a70d8e49.jpg'] },
+      { name: 'Sofia M.', city: 'London, UK', tags: ['Beauty', 'Skincare', 'Lifestyle'], eng: '6.2%', followers: '48K', views: '9K', photo: '/assets/site/f537fe8931a437cff9656eb3f4331c4b.jpg', thumbs: ['/assets/site/b36df4634d0317fccbaaf89c0025c0bd.jpg', '/assets/site/205c1283abb2ddabb1ee1c9b709b8cbb.jpg', '/assets/site/aad77ea560f63af00f8b4b0e1e099885.jpg'] },
+      { name: 'Grace R.', city: 'Brighton, UK', tags: ['Food & Drink', 'Wellness', 'Hosting'], eng: '8.1%', followers: '18K', views: '4K', photo: '/assets/site/a5c90b8cf995f70c3962333f94e0d633.jpg', thumbs: ['/assets/site/60b4285c9791177d6517c94017089611.jpg', '/assets/site/746f63023bff305f3ee1f5150dc656b4.jpg', '/assets/site/7a93152656e41c240a1d4b27c0b7030a.jpg'] },
+      { name: 'Naomi L.', city: 'London, UK', tags: ['Fashion', 'Lifestyle', 'Beauty'], eng: '5.2%', followers: '310K', views: '41K', photo: '/assets/site/00d7e265ff310f78642d7cf80c95b258.jpg', thumbs: ['/assets/site/c838c72cdb413bd3a3ef06da190a12aa.jpg', '/assets/site/5024141c5cbbe82ba2a487fdce1115ac.jpg', '/assets/site/d4b5cf5c8d0910a29198ffe836042ea5.jpg'] },
     ];
     const seq = [[0, 0], [1, 0], [1, 1], [2, 1], [2, 0], [0, 1]];
     const collab = seq[tick % seq.length][0];
@@ -194,7 +206,7 @@ export class PageLogic extends DCLogic {
         { value: '284K', label: 'Total reach', delta: '32%' }
       ],
       apps: [
-        { img: '/assets/site/e9742b9f0458267dad8898ce6202cb59.jpg', name: 'Sophie L.', handle: '@sophielaurem', followers: '284K followers', t1: 'Beauty', t2: 'Skincare', content },
+        { img: '/assets/site/e00a894cb6065581af2fd6588bac43ae.jpg', name: 'Sophie L.', handle: '@sophielaurem', followers: '284K followers', t1: 'Beauty', t2: 'Skincare', content },
         { img: '/assets/site/a4c01baa144c650adf451ba495665bcd.jpg', name: 'Marco R.', handle: '@marcorossi', followers: '94K followers', t1: 'Lifestyle', t2: 'Wellness', content: [content[1], content[2], content[0]] },
         { img: '/assets/site/cd18dc14c7998c6570e30910ac121a8b.jpg', name: 'Emma T.', handle: '@emmatravels', followers: '62K followers', t1: 'Beauty', t2: 'Lifestyle', content: [content[2], content[0], content[1]] }
       ],
@@ -230,16 +242,16 @@ export class PageLogic extends DCLogic {
       platCreators: [
         { img: '/assets/site/28e6a9a592897d051a983a76237125e3.jpg', handle: '@ellathompson', meta: '182K followers · 4.8% ER' },
         { img: '/assets/site/d3a871b40b9d03ede4a437dd568b13a6.jpg', handle: '@jamestaylor', meta: '89K followers · 3.9% ER' },
-        { img: '/assets/site/e9742b9f0458267dad8898ce6202cb59.jpg', handle: '@sophielaurem', meta: '284K followers · 5.1% ER' }
+        { img: '/assets/site/e00a894cb6065581af2fd6588bac43ae.jpg', handle: '@sophielaurem', meta: '284K followers · 5.1% ER' }
       ].map((p, i) => ({ ...p, line: i === 0 ? '0' : '1px solid #F0EEEA' })),
       platContent: [
-        { img: '/assets/site/d7af668480bb4be90c3e47de0162d131.jpg', views: '12.4K' },
-        { img: '/assets/site/a86660e3e823b9294e4b1bbf13de8993.jpg', views: '8.1K' },
-        { img: '/assets/site/282df7f07cadd350e4668517a7b798d4.jpg', views: '5.6K' },
-        { img: '/assets/site/006553a0c7d01ba2540f51addeca2f25.jpg', views: '34.2K' }
+        { img: '/assets/site/4c22fce284f5061fd7e3e2b5cdc149e2.jpg', views: '12.4K' },
+        { img: '/assets/site/cfa3f0894f9ebed152ee98b362191fb5.jpg', views: '8.1K' },
+        { img: '/assets/site/5024141c5cbbe82ba2a487fdce1115ac.jpg', views: '5.6K' },
+        { img: '/assets/site/7d81b2f64cd3b8b6fe1cf1aa0a76777e.jpg', views: '34.2K' }
       ],
       platPayouts: [
-        { img: '/assets/site/e9742b9f0458267dad8898ce6202cb59.jpg', handle: '@sophielaurem', meta: '14 sales · £48.20' },
+        { img: '/assets/site/e00a894cb6065581af2fd6588bac43ae.jpg', handle: '@sophielaurem', meta: '14 sales · £48.20' },
         { img: '/assets/site/0b01b160de2ef07bc1ee2726a517553b.jpg', handle: '@mianose', meta: '9 sales · £31.50' }
       ],
       platApps: [
@@ -248,19 +260,22 @@ export class PageLogic extends DCLogic {
         { img: '/assets/site/f0065530efafa045d283aebbbe735daf', name: 'Naomi L.', meta: 'Lifestyle · 310K', state: 'open' }
       ].map((a, i) => ({ ...a, done: a.state === 'done', open: a.state === 'open', line: i === 0 ? '0' : '1px solid #F0EEEA' })),
       platShips: [
-        { img: '/assets/site/e9742b9f0458267dad8898ce6202cb59.jpg', name: 'Sophie L.', status: 'Delivered', chipBg: '#EAF7EF', chipFg: '#168A4C', s2: '#22B566', s3: '#22B566' },
-        { img: '/assets/site/0b01b160de2ef07bc1ee2726a517553b.jpg', name: 'Mia R.', status: 'In transit', chipBg: '#F3F2EE', chipFg: '#666563', s2: '#22B566', s3: '#E8E6E1' }
+        { img: '/assets/site/e00a894cb6065581af2fd6588bac43ae.jpg', name: 'Sophie L.', status: 'Delivered', chipBg: '#EAF7EF', chipFg: '#168A4C', s2: '#22B566', s3: '#22B566' },
+        { img: '/assets/site/c7dd1cafcd838cc426d156a16a416e4b.jpg', name: 'Elsa W.', status: 'In transit', chipBg: '#F3F2EE', chipFg: '#666563', s2: '#22B566', s3: '#E8E6E1' }
       ].map((s, i) => ({ ...s, line: i === 0 ? '0' : '1px solid #F0EEEA' })),
       platProducts: [
-        { img: '/assets/site/965740eae8a5a81808529e3dc68a80ad.jpg', name: 'Vitamin C Serum', meta: '£24.00 · 86 in stock', camp: '2 campaigns' },
-        { img: '/assets/site/9b6e419b4a2c59d9374660a3eaff465f.jpg', name: 'Electrolyte Blend', meta: '£32.00 · 140 in stock', camp: '1 campaign' },
-        { img: '/assets/site/488756292311e242fa53c06256d1c149.jpg', name: 'Protein Bar', meta: '£2.50 · 410 in stock', camp: '1 campaign' }
+        { img: '/assets/site/5f227733b7cffeb6796ffdfabc19ddb7.jpg', name: 'Pure Daily Balm', meta: '£18.00 · 86 in stock', camp: '2 campaigns' },
+        { img: '/assets/site/1611e205018833b6a131f13c5f8a88cb.jpg', name: 'Kina Organic Matcha', meta: '£24.00 · 140 in stock', camp: '1 campaign' },
+        { img: '/assets/site/a54f2d8307a9552b5e70bbd8df73710e.jpg', name: 'Black Sunglasses', meta: '£65.00 · 52 in stock', camp: '1 campaign' }
       ],
       niches: nicheList.map((n) => {
         const on = n === niche;
         return { label: n, pick: () => this.setState({ niche: n }), bg: on ? '#232323' : '#FFFFFF', fg: on ? '#FFFFFF' : '#232323', bd: on ? '#232323' : '#E5E3DE' };
       }),
-      creators: creatorList.filter((c) => niche === 'All creators' || c.tags.indexOf(niche) !== -1).slice(0, 4),
+      creators: creatorList.filter((c) => niche === 'All creators' || c.tags.indexOf(niche) !== -1).slice(0, niche === 'All creators' ? 4 : 3),
+      moreOn: niche !== 'All creators',
+      moreLabel: niche,
+      moreAvs: creatorList.filter((c) => c.tags.indexOf(niche) === -1).slice(0, 4).map((c) => c.photo),
       trust: [
         { title: 'Verified creators', body: 'Real profiles, real audiences', icon: 'M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 3a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75' },
         { title: 'Worldwide reach', body: 'Work with creators anywhere', icon: 'M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z' },
@@ -268,23 +283,23 @@ export class PageLogic extends DCLogic {
         { title: 'Reviewed by brands', body: 'See ratings from past collaborations', icon: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10zM9 12l2 2 4-4' }
       ],
       steps: [
-        { n: 1, title: 'Create your campaign', body: 'Add your product, choose Gifted, Paid or Affiliate, and set your goals, audience and campaign details.', native1: true },
-        { n: 2, title: 'Connect with the right creators', body: 'Relevant creators can apply to your campaign, or you can discover and invite creators directly. You choose who to work with.', native2: true, rows: [
-          { img: '/assets/site/28e6a9a592897d051a983a76237125e3.jpg', name: 'Ella T.', match: '98% match', sub: 'Beauty · 182K followers · UK' },
-          { img: '/assets/site/e9742b9f0458267dad8898ce6202cb59.jpg', name: 'Sophie L.', match: '95% match', sub: 'Skincare · 284K followers · UK' },
-          { img: '/assets/site/0b01b160de2ef07bc1ee2726a517553b.jpg', name: 'Mia R.', match: '92% match', sub: 'Lifestyle · 120K followers · US' }
+        { n: 1, title: 'Launch any campaign in minutes', body: 'Add your product and choose what creators get: free product, a fee or commission. Matching creators see it right away.', native1: true },
+        { n: 2, title: 'Choose the creators you want', body: 'Creators apply with their audience and past content, or you invite them. You only work with the ones you approve.', native2: true, rows: [
+          { img: '/assets/site/2c0f99a5df5a6913ce12367dafae8e8c.jpg', name: 'Naomi L.', match: '98% match', sub: 'Lifestyle · 310K followers · UK' },
+          { img: '/assets/site/e00a894cb6065581af2fd6588bac43ae.jpg', name: 'Sophie L.', match: '95% match', sub: 'Lifestyle · 284K followers · UK' },
+          { img: '/assets/site/55056e82404c4cb253ab0737663b2a9c.jpg', name: 'Grace R.', match: '92% match', sub: 'Food · 18K followers · UK' }
         ].map((r, i, all) => {
           const shown = reduced ? all.length : Math.min(1 + (tick % 4), all.length);
           const on = i < shown;
           return { ...r, op: on ? 1 : 0, ty: on ? '0' : '-8px', line: i === 0 ? '0' : '1px solid #F0EEEA' };
         }), newCount: reduced ? 3 : Math.min(1 + (tick % 4), 3) },
-        { n: 3, title: 'Collaborate & grow', body: 'Manage samples, content, tracking and payouts in one place, and see the real results from your creator collaborations.', native3: true,
+        { n: 3, title: 'Get content and track results', body: 'Products ship, content arrives and creators get paid in one place. See the traffic and sales from every post.', native3: true,
           delivered: reduced ? 4 : 1 + (tick % 4),
           thumbs: [
-            { img: '/assets/site/d7af668480bb4be90c3e47de0162d131.jpg', badge: '/assets/site/dd5baa8cb08da03aac7d075ae4d91b8a.png' },
-            { img: '/assets/site/a86660e3e823b9294e4b1bbf13de8993.jpg', badge: '/assets/site/1c007a5e94d98ccd50f1412b646a785a.png' },
-            { img: '/assets/site/282df7f07cadd350e4668517a7b798d4.jpg', badge: '/assets/site/dd5baa8cb08da03aac7d075ae4d91b8a.png' },
-            { img: '/assets/site/006553a0c7d01ba2540f51addeca2f25.jpg', badge: '/assets/site/1c007a5e94d98ccd50f1412b646a785a.png' }
+            { img: '/assets/site/b4f80f223c8ec34a6e575c5d2895f75e.jpg', badge: '/assets/site/dd5baa8cb08da03aac7d075ae4d91b8a.png' },
+            { img: '/assets/site/406f4b50793952ea87bab9ab1542e527.jpg', badge: '/assets/site/1c007a5e94d98ccd50f1412b646a785a.png' },
+            { img: '/assets/site/e5c8bdd5595665a3e0655f087893bd8b.jpg', badge: '/assets/site/dd5baa8cb08da03aac7d075ae4d91b8a.png' },
+            { img: '/assets/site/2da8178fed971f761294ffb6a3770ff2.jpg', badge: '/assets/site/1c007a5e94d98ccd50f1412b646a785a.png' }
           ].map((t, i) => {
             const on = reduced || i < 1 + (tick % 4);
             return { ...t, op: on ? 1 : 0, sc: on ? 1 : 0.94 };
@@ -298,24 +313,24 @@ export class PageLogic extends DCLogic {
       ],
       brands: base.concat(base).map((b) => ({ ...b, logo: b.logo || null, isText: !b.logo, h: b.h ? Math.round(parseFloat(b.h) * 0.82) + 'px' : b.h })),
       stats: [
-        { value: '91%', label: 'approve a creator within 7 days' },
-        { value: '<1h', label: 'to the first application' },
-        { value: '3.5×', label: 'more content than traditional creator sourcing' },
+        { value: '<1h', label: 'to your first creator application' },
+        { value: '<7 days', label: 'to your first approved creator' },
+        { value: '3.5×', label: 'more content than finding creators by hand' },
         { value: '175+', label: 'countries in our creator network' }
       ],
-      managed: ['Samples and shipping', 'Deliverables', 'Content uploads', 'Usage rights', 'Discount codes', 'Sales attribution', 'Commissions', 'Creator payouts'],
+      managed: ['Samples and shipping', 'Deliverables', 'Content uploads', 'Usage rights', 'Audience discounts', 'Sales attribution', 'Commissions', 'Creator payouts'],
       ways: [
-        { name: 'Gifted', icon: 'M20 12v9H4v-9M2 7h20v5H2zM12 22V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z', body: 'Send free product to the creators you approve. They create and share content featuring it.', give: 'Free product', get: ['Brand awareness', 'Organic content', 'Product seeding', 'Reviews and unboxings'], best: 'building a content library', img: '/assets/site/805a37b5a4a7d21d3c5ca41108d60d5e.jpg', alt: 'Creator applying a gifted serum', pos: '50% 28%', thumb: '/assets/site/d644117d12fda0737df27a8bcb000da0.jpg', chipTitle: 'Clarifying Serum', chipSub: 'Shipped to 12 creators', chipTag: 'Delivered' },
+        { name: 'Gifted', icon: 'M20 12v9H4v-9M2 7h20v5H2zM12 22V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z', body: 'Send free product to the creators you approve. They create and share content featuring it.', give: 'Free product', get: ['Brand awareness', 'Organic content', 'Product seeding', 'Reviews and unboxings'], best: 'building a content library', img: '/assets/site/7d81b2f64cd3b8b6fe1cf1aa0a76777e.jpg', alt: 'Creator with a gifted Pure Skincare balm', pos: '50% 30%', thumb: '/assets/site/6f7612525d7110c24bd6d8ff2ef81061.jpg', chipTitle: 'Pure Skincare Daily Balm', chipSub: 'Shipped to 12 creators', chipTag: 'Delivered' },
         { name: 'Paid', icon: 'M2 5h20v14H2zM2 10h20', body: 'Pay a set fee for agreed content, or let creators propose their own rate when they apply.', give: 'A set fee', get: ['Assets for paid media', 'High quality content', 'Larger creators', 'Guaranteed deliverables'], best: 'ad creative and launches', img: '/assets/site/1896fe808a281f4c712f65fa80512594.jpg', alt: 'Creator wearing gold drop earrings', thumb: '/assets/site/75163011673c0bce90e5473c56500d66.jpg', chipTitle: 'Gold Drop Earrings', chipSub: '£100 per creator · 1 Reel', chipTag: 'Fee agreed' },
-        { name: 'Affiliate', icon: 'M19 5 5 19M6.5 4a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.5 15a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z', body: 'Creators earn commission on every sale they drive, with their own link and discount code.', give: 'Commission on sales', get: ['Sales', 'Testing new creators', 'Ongoing promotion', 'No upfront cost'], best: 'testing creators at no upfront cost', img: '/assets/site/065139893da1a2a2d8434306736e52a6.jpg', alt: 'Creators running together', thumb: '/assets/site/488756292311e242fa53c06256d1c149.jpg', chipTitle: 'LEO15 · 15% off', chipSub: 'Protein Bar · 15% commission', chipTag: 'Used ' + codeUses + '×' },
-        { name: 'Mix them', icon: 'M8 3H3v5M3 3l7 7M16 3h5v5M21 3l-7 7M8 21H3v-5M3 21l7-7M16 21h5v-5M21 21l-7-7', give: 'Any combination', get: ['Awareness and sales', 'Content at scale', 'Rewarding top creators', 'Flexible budgets'], img: '/assets/site/ec74e10b8d5abdfdc40051f8e07db321.jpg', alt: 'Creator wearing black sunglasses in the sun', pos: '50% 74%', mpos: '50% 100%', thumb: '/assets/site/a54f2d8307a9552b5e70bbd8df73710e.jpg', chipTitle: 'Black Rectangle Sunglasses', chipSub: 'Free product + 15% commission', chipTag: 'Live' }
-      ].map((w, i) => ({ ...w, pos: w.pos || '50% 50%', mpos: w.mpos || w.pos || '50% 50%', sc: i === wayIdx ? 1 : 1.07, on: i === wayIdx, op: i === wayIdx ? 1 : 0, pick: () => {
+        { name: 'Affiliate', icon: 'M19 5 5 19M6.5 4a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.5 15a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z', body: 'Creators earn commission on every sale through their link. Their followers get a discount automatically.', give: 'Commission on sales', get: ['Sales', 'Testing new creators', 'Ongoing promotion', 'No upfront cost'], best: 'testing creators at no upfront cost', img: '/assets/site/065139893da1a2a2d8434306736e52a6.jpg', alt: 'Creators running together', thumb: '/assets/site/1611e205018833b6a131f13c5f8a88cb.jpg', chipTitle: 'Tom’s link · 15% off', chipSub: 'Kina Matcha · 15% commission', chipTag: codeUses + ' sales' },
+        { name: 'Mix them', icon: 'M8 3H3v5M3 3l7 7M16 3h5v5M21 3l-7 7M8 21H3v-5M3 21l7-7M16 21h5v-5M21 21l-7-7', give: 'Any combination', get: ['Awareness and sales', 'Content at scale', 'Rewarding top creators', 'Flexible budgets'], img: '/assets/site/ec74e10b8d5abdfdc40051f8e07db321.jpg', alt: 'Creator wearing black sunglasses in the sun', pos: '50% 74%', mpos: '50% 100%', thumb: '/assets/site/a54f2d8307a9552b5e70bbd8df73710e.jpg', chipTitle: 'Black Rectangle Sunglasses', chipSub: '38 creators applied', chipTag: 'Live' }
+      ].map((w, i) => ({ ...w, pos: w.pos || '50% 50%', mpos: w.mpos || w.pos || '50% 50%', sc: i === wayIdx ? 1 : 1.07, on: i === wayIdx, prog: wayAuto && i === wayIdx, op: i === wayIdx ? 1 : 0, pick: () => {
           if (scrollMode) {
             const el = document.getElementById('ways-track');
             const top = el.getBoundingClientRect().top + window.scrollY;
             const total = el.offsetHeight - window.innerHeight;
             window.scrollTo({ top: top + total * (i + 0.5) / 4, behavior: 'smooth' });
-          } else { this.setState({ wayPick: i }); }
+          } else { this.setState({ wayPick: i, wayStop: true }); }
         }, bg: i === wayIdx ? '#FFFFFF' : 'transparent', sh: i === wayIdx ? '0 12px 32px rgba(35,35,35,.08)' : 'none', bd: i === wayIdx ? '#ECEAE5' : 'transparent', iconBg: i === wayIdx ? '#232323' : '#F3F2EE', iconFg: i === wayIdx ? '#FFFFFF' : '#232323' })),
       waysPad: scrollMode ? '0' : '120px 0 72px',
       waysTrackH: scrollMode ? '2400px' : 'auto',
@@ -353,16 +368,16 @@ export class PageLogic extends DCLogic {
       })(),
       wG: wayIdx === 0, wP: wayIdx === 1, wA: wayIdx === 2, wM: wayIdx === 3,
       wayNow: [
-        { thumb: '/assets/site/d644117d12fda0737df27a8bcb000da0.jpg', chipTitle: 'Clarifying Serum', chipSub: 'Shipped to 12 creators', chipTag: 'Delivered' },
+        { thumb: '/assets/site/6f7612525d7110c24bd6d8ff2ef81061.jpg', chipTitle: 'Pure Skincare Daily Balm', chipSub: 'Shipped to 12 creators', chipTag: 'Delivered' },
         { thumb: '/assets/site/75163011673c0bce90e5473c56500d66.jpg', chipTitle: 'Gold Drop Earrings', chipSub: '£100 per creator · 1 Reel', chipTag: 'Fee agreed' },
-        { thumb: '/assets/site/488756292311e242fa53c06256d1c149.jpg', chipTitle: 'LEO15 · 15% off', chipSub: 'Protein Bar · 15% commission', chipTag: 'Used ' + codeUses + '×' },
-        { thumb: '/assets/site/a54f2d8307a9552b5e70bbd8df73710e.jpg', chipTitle: 'Black Rectangle Sunglasses', chipSub: 'Free product + 15% commission', chipTag: 'Live' }
+        { thumb: '/assets/site/1611e205018833b6a131f13c5f8a88cb.jpg', chipTitle: 'Tom’s link · 15% off', chipSub: 'Kina Matcha · 15% commission', chipTag: codeUses + ' sales' },
+        { thumb: '/assets/site/a54f2d8307a9552b5e70bbd8df73710e.jpg', chipTitle: 'Black Rectangle Sunglasses', chipSub: '38 creators applied', chipTag: 'Live' }
       ][wayIdx],
       faqs: [
         { q: 'What is Linkable?', a: 'Linkable is where ecommerce brands find creators and run every collaboration in one place. You launch a campaign, creators apply, you choose who to work with, and Linkable handles samples, content, usage rights, tracking and commission payouts.' },
         { q: 'How do I find the right creators?', a: 'Creators in our network apply to your campaign, and AI matching suggests the best fits with the reasons they suit your brand. You can also invite creators directly. You always choose who you work with.' },
         { q: 'What can I offer creators?', a: 'Free product, a fixed fee, commission on sales, or any mix of the three. You set it per campaign.' },
-        { q: 'Do I need a Shopify store?', a: 'No. Linkable works without Shopify. Connect it when you want product sync, discount codes and sales attribution.' },
+        { q: 'Do I need a Shopify store?', a: 'No. Linkable works without Shopify. Connect it when you want product sync, automatic audience discounts and sales attribution.' },
         { q: 'How does the free trial work?', a: 'Every plan is free for the first 30 days, with full access to the platform. Change plan or cancel any time.' },
         { q: 'What counts towards my monthly creator limit?', a: 'Each new creator you start working with in a month counts once. Applications and invitations are unlimited on every plan.' },
         { q: 'What is the 2.5% fee?', a: 'It applies only to sales tracked through creator links and codes. Everything else is covered by your plan.' },

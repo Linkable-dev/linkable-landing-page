@@ -66,7 +66,7 @@ ${imageW ? `<meta property="og:image:width" content="${imageW}">\n<meta property
 <meta name="twitter:description" content="${esc(description)}">
 <meta name="twitter:image" content="${img}">
 <meta name="twitter:image:alt" content="${esc(imageAlt)}">
-${extra}<link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+${extra}<link rel="preload" href="/assets/fonts/satoshi-variable.woff2" as="font" type="font/woff2" crossorigin>
 ${TRACKING}${css.map((h) => `<link rel="stylesheet" href="${h}">`).join('\n')}
 <script type="module" src="/src/design/entry.js"></script>
 </head>
