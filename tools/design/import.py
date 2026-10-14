@@ -119,14 +119,24 @@ def home(body, logic):
     body = patch(body, '<img src="/_blob/bb0f4a7197b93d52a0ffa7861af0aedc" alt="Meta"',
                  '<img src="/assets/brand/meta.svg" alt="Meta"', label='meta logo')
     # The creator cards behind the niche chips: leave out any creator whose
-    # photos are not in the export, rather than show a card of broken images.
+    # photo is not in the export, and any content thumbnail that is not,
+    # rather than show broken images.
     start = logic.index('    const creatorList = [\n')
     end = logic.index('\n    ];', start)
     rows = logic[start:end].split('\n')
-    keep = [r for r in rows if all(i in assets for i in re.findall(r'/_blob/([a-f0-9]{32})', r))]
+    keep = []
     for r in rows:
-        if r not in keep:
-            print('home: left out creator', re.search(r"name: '([^']+)'", r).group(1), '(photos not in the export)')
+        photo = re.search(r"photo: '/_blob/([a-f0-9]{32})'", r)
+        name = re.search(r"name: '([^']+)'", r)
+        if photo and photo.group(1) not in assets:
+            print('home: left out creator', name.group(1), '(photo not in the export)')
+            continue
+        gone = [i for i in re.findall(r"'/_blob/([a-f0-9]{32})'", r) if i not in assets]
+        for i in gone:
+            r = re.sub(r",? ?'/_blob/" + i + "'", '', r).replace("thumbs: [, ", 'thumbs: [')
+        if gone:
+            print('home: creator', name.group(1), 'without', len(gone), 'content thumbnails (not in the export)')
+        keep.append(r)
     assert len(keep) >= 5, 'home: fewer than four creators left with photos'
     logic = logic[:start] + '\n'.join(keep) + logic[end:]
     return body, logic

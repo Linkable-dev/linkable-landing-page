@@ -180,6 +180,10 @@ export class PageLogic extends DCLogic {
       { name: 'Sofia M.', city: 'London, UK', tags: ['Beauty', 'Skincare', 'Lifestyle'], eng: '6.2%', followers: '48K', views: '9K', photo: '/assets/site/f537fe8931a437cff9656eb3f4331c4b.jpg', thumbs: ['/assets/site/b36df4634d0317fccbaaf89c0025c0bd.jpg', '/assets/site/205c1283abb2ddabb1ee1c9b709b8cbb.jpg', '/assets/site/aad77ea560f63af00f8b4b0e1e099885.jpg'] },
       { name: 'Grace R.', city: 'Brighton, UK', tags: ['Food & Drink', 'Wellness', 'Hosting'], eng: '8.1%', followers: '18K', views: '4K', photo: '/assets/site/a5c90b8cf995f70c3962333f94e0d633.jpg', thumbs: ['/assets/site/60b4285c9791177d6517c94017089611.jpg', '/assets/site/746f63023bff305f3ee1f5150dc656b4.jpg', '/assets/site/7a93152656e41c240a1d4b27c0b7030a.jpg'] },
       { name: 'Naomi L.', city: 'London, UK', tags: ['Fashion', 'Lifestyle', 'Beauty'], eng: '5.2%', followers: '310K', views: '41K', photo: '/assets/site/00d7e265ff310f78642d7cf80c95b258.jpg', thumbs: ['/assets/site/c838c72cdb413bd3a3ef06da190a12aa.jpg', '/assets/site/5024141c5cbbe82ba2a487fdce1115ac.jpg', '/assets/site/d4b5cf5c8d0910a29198ffe836042ea5.jpg'] },
+      { name: 'Ava K.', city: 'Leeds, UK', tags: ['Fitness', 'Wellness', 'Beauty'], eng: '6.9%', followers: '36K', views: '8K', photo: '/assets/site/23e1f40c832d09c3aef3140bdd95b296.jpg', thumbs: [] },
+      { name: 'Priya S.', city: 'London, UK', tags: ['Parenting', 'Fashion', 'Lifestyle'], eng: '5.9%', followers: '138K', views: '22K', photo: '/assets/site/ea82fdfe521e0410e52c8ec12245b326.jpg', thumbs: [] },
+      { name: 'Elsa W.', city: 'Bristol, UK', tags: ['Travel', 'Food & Drink', 'Fashion'], eng: '5.8%', followers: '62K', views: '11K', photo: '/assets/site/a0b6d2722d4f1e02f2929a8d481790b9.jpg', thumbs: [] },
+      { name: 'Freya J.', city: 'London, UK', tags: ['Fashion', 'Lifestyle', 'Food & Drink'], eng: '6.4%', followers: '205K', views: '38K', photo: '/assets/site/11c413edb07a7d18c04ae3eb5988c562.jpg', thumbs: [] }
     ];
     const seq = [[0, 0], [1, 0], [1, 1], [2, 1], [2, 0], [0, 1]];
     const collab = seq[tick % seq.length][0];

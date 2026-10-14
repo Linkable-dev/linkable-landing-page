@@ -10,5 +10,9 @@ the export has no image under the same id, so a full export replaces them.
 - `7d81b2f6…` (the Gifted photo in "Ways to collaborate") is a copy of Sofia's
   card photo `f537fe89…`: same shot, and the PDF has cards drawn over it.
 
-Creators whose photos are in neither place are left out of the niche chips
-(see `home()` in `import.py`).
+- Four creator photos (Ava K., Priya S., Elsa W., Freya J.) were sent separately
+  on 14 Oct as 840x564 PNGs and saved here as JPEGs.
+
+A creator with no photo here or in the export is left out of the niche chips,
+and a missing content thumbnail is dropped from its card (see `home()` in
+`import.py`).
