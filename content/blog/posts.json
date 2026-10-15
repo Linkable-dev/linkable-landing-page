@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 6347720,
+      "alt": "Side view of crop ethnic female dealer using trading app on cellphone against netbook with graph on screen in house",
+      "src": "https://images.pexels.com/photos/6347720/pexels-photo-6347720.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/crop-ethnic-trader-with-smartphone-and-laptop-on-bench-indoors-6347720/",
+      "query": "marketer reviewing phone content laptop",
+      "width": 6000,
+      "credit": {
+        "url": "https://www.pexels.com/@liza-summer",
+        "name": "Liza Summer"
+      },
+      "height": 4000,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/6347720/pexels-photo-6347720.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/6347720/pexels-photo-6347720.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/creator-application-worth-accepting-6347720-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/creator-application-worth-accepting-6347720-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "creator-application-worth-accepting",
+    "title": "What makes a creator application worth accepting",
+    "description": "Follower count rarely predicts good content. Learn what makes a creator application worth accepting, from fit signals to past work quality.",
+    "excerpt": "A big following tells you almost nothing about whether a creator will make content that sells. Here's what to actually check before you accept an application.",
+    "date": "2026-10-15",
+    "updated": "2026-10-15",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "Side view of crop ethnic female dealer using trading app on cellphone against netbook with graph on screen in house",
+    "words": 943,
+    "source": "generated",
+    "keyword": "what makes a creator application worth accepting",
+    "category": "Sourcing",
+    "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 9052597,
       "alt": "Close-up of hands examining printed documents next to laptop on office desk.",
       "src": "https://images.pexels.com/photos/9052597/pexels-photo-9052597.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
