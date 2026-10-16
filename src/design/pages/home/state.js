@@ -262,7 +262,7 @@ export class PageLogic extends DCLogic {
       platApps: [
         { img: '/assets/site/87b45fd0cb05693b5656283cc9b34690.jpg', name: 'Sofia M.', meta: 'Beauty · 248K', state: 'done' },
         { img: '/assets/site/dcfbd6a0875a0baa6ef7cfd6c7f6a8b0.jpg', name: 'Grace R.', meta: 'Wellness · 86K', state: 'open' },
-        { img: '/assets/site/f0065530efafa045d283aebbbe735daf', name: 'Naomi L.', meta: 'Lifestyle · 310K', state: 'open' }
+        { img: '/assets/site/f0065530efafa045d283aebbbe735daf.jpg', name: 'Naomi L.', meta: 'Lifestyle · 310K', state: 'open' }
       ].map((a, i) => ({ ...a, done: a.state === 'done', open: a.state === 'open', line: i === 0 ? '0' : '1px solid #F0EEEA' })),
       platShips: [
         { img: '/assets/site/e00a894cb6065581af2fd6588bac43ae.jpg', name: 'Sophie L.', status: 'Delivered', chipBg: '#EAF7EF', chipFg: '#168A4C', s2: '#22B566', s3: '#22B566' },
