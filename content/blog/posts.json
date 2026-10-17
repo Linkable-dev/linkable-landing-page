@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 7013070,
+      "alt": "A person in a blue jacket analyzing business analytics on a laptop outdoors during winter.",
+      "src": "https://images.pexels.com/photos/7013070/pexels-photo-7013070.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/person-using-black-laptop-7013070/",
+      "query": "person checking sales dashboard laptop",
+      "width": 6210,
+      "credit": {
+        "url": "https://www.pexels.com/@firmbee-com-22729701",
+        "name": "Firmbee.com"
+      },
+      "height": 4140,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/7013070/pexels-photo-7013070.png?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/7013070/pexels-photo-7013070.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/track-creator-content-drives-sales-7013070-940.png",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/track-creator-content-drives-sales-7013070-1880.png",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "track-creator-content-drives-sales",
+    "title": "How to track which creator content actually drives sales",
+    "description": "Likes and views don't prove sales. Here's how to track which creator content actually drives revenue using unique links and codes.",
+    "excerpt": "Engagement numbers tell you a video was watched, not that it sold anything. Here's how to set up tracking so every creator has a link or code tied to them from the first post.",
+    "date": "2026-10-17",
+    "updated": "2026-10-17",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "A person in a blue jacket analyzing business analytics on a laptop outdoors during winter.",
+    "words": 911,
+    "source": "generated",
+    "keyword": "how to track which creator content actually drives sales",
+    "category": "Measurement",
+    "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 7792650,
       "alt": "Woman arranging a decorative tray in a cozy living room setting with modern decor.",
       "src": "https://images.pexels.com/photos/7792650/pexels-photo-7792650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
