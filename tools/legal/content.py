@@ -27,7 +27,8 @@ COMPANY_NUMBER = '14658892'
 ADDRESS = ['10 Esprit Court', '21 Brune Street', 'London, England', 'E1 7ND']
 CONTACT = 'support@linkable.link'
 SITE = 'linkable.link'
-UPDATED = '18 October 2026'
+UPDATED = '12 September 2026'
+PRIVACY_UPDATED = '18 October 2026'  # Instagram data section added
 
 # Nothing outstanding. support@linkable.link is confirmed as the address for data
 # requests, so it is what both documents give.
@@ -53,6 +54,7 @@ TODO = []
 
 PRIVACY = {
     'slug': 'privacy-policy',
+    'updated': PRIVACY_UPDATED,
     'nav': 'Privacy Policy',
     'title': 'Privacy Policy',
     'lede': 'How we collect, use and protect personal data when you use Linkable.',
@@ -60,7 +62,7 @@ PRIVACY = {
             'website and in the Linkable app for Shopify.',
     'blocks': [
         ('h1', 'Linkable Privacy Policy'),
-        ('p', f'<strong>Last updated: {UPDATED}</strong>'),
+        ('p', f'<strong>Last updated: {PRIVACY_UPDATED}</strong>'),
         ('p', f'This policy covers two things: the {SITE} website you are reading, and the '
               'Linkable app that merchants install in Shopify. Where a section applies to only '
               'one of them it says so.'),

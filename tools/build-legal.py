@@ -79,7 +79,7 @@ def main():
             'title': page['title'],
             'lede': page['lede'],
             'meta': page['meta'],
-            'updated': content.UPDATED,
+            'updated': page.get('updated', content.UPDATED),
             'toc': toc,
             'body': body,
             'others': [{'href': f'/legal/{p["slug"]}', 'label': p['nav']}
