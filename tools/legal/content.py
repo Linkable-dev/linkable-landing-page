@@ -27,7 +27,7 @@ COMPANY_NUMBER = '14658892'
 ADDRESS = ['10 Esprit Court', '21 Brune Street', 'London, England', 'E1 7ND']
 CONTACT = 'support@linkable.link'
 SITE = 'linkable.link'
-UPDATED = '12 September 2026'
+UPDATED = '18 October 2026'
 
 # Nothing outstanding. support@linkable.link is confirmed as the address for data
 # requests, so it is what both documents give.
@@ -113,6 +113,26 @@ PRIVACY = {
             'audience figures, country of residence, and payout details, which are collected and '
             'held by Stripe rather than by us.',
         ]),
+        ('h3', 'Information from Instagram'),
+        ('p', 'A creator can connect her Instagram professional account, or sign in with it, '
+              'through Meta’s Instagram API with Instagram Login. Only after she approves it on '
+              'Instagram, we receive an access token for that account and read: her Instagram '
+              'user ID, username, name, account type, profile picture, follower, following and '
+              'post counts; the details of her latest posts (caption, type, link, date, likes and '
+              'comments); her account insights over the last 30 days (reach, views, accounts '
+              'engaged, interactions); her followers’ breakdown by age, gender and country, as '
+              'percentages only; and the insights of posts she submits for a Linkable campaign '
+              '(views, reach, likes, comments, shares, saves).'),
+        ('p', 'We use this to verify that she owns the handle on her profile, to keep her '
+              'profile figures and audience up to date for the brands she works with, to report '
+              'how her campaign posts performed, and to sign her in. The token is stored '
+              'encrypted, the data is refreshed daily and replaces the previous copy, and we never '
+              'post, comment or message on her behalf.'),
+        ('p', 'She can disconnect Instagram at any time in Settings, which deletes the token and '
+              'everything read through it straight away. Removing Linkable in Instagram’s “Apps '
+              'and websites” settings, or asking Meta to have the data deleted, does the same; a '
+              'deletion request made through Meta returns a confirmation code she can check on '
+              'our deletion status page. She can also write to us to have it deleted.'),
         ('h3', 'What we do with it'),
         ('ul', [
             'Run the service: sync products, track clicks and conversions, validate commissions.',
@@ -159,6 +179,9 @@ PRIVACY = {
             'Contact and newsletter messages: two years from our last exchange, or until you '
             'unsubscribe.',
             'Website server logs: kept short-term by our host for security and diagnostics.',
+            'Data read from a connected Instagram account: while it stays connected; deleted '
+            'as soon as it is disconnected, the app is removed in Instagram or a deletion request '
+            'is received.',
         ]),
         ('p', 'If a merchant uninstalls the app, their store data is deleted or anonymised within '
               '90 days, except records we are required to keep for longer. You may ask us to '
