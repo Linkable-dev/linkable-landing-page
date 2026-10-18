@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 6892902,
+      "alt": "Close-up of hands writing in a content planner for organizational purposes.",
+      "src": "https://images.pexels.com/photos/6892902/pexels-photo-6892902.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/a-hand-writing-on-a-planner-6892902/",
+      "query": "team planning content calendar",
+      "width": 6085,
+      "credit": {
+        "url": "https://www.pexels.com/@cottonbro",
+        "name": "cottonbro studio"
+      },
+      "height": 4057,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/6892902/pexels-photo-6892902.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/6892902/pexels-photo-6892902.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/turn-one-creator-campaign-recurring-programme-6892902-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/turn-one-creator-campaign-recurring-programme-6892902-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "turn-one-creator-campaign-recurring-programme",
+    "title": "How to turn one creator campaign into a recurring programme",
+    "description": "Turn a one-off creator campaign into a recurring programme with a scheduling change, not a new strategy or a bigger budget.",
+    "excerpt": "Most brands run one creator campaign, get good content, and then stop. Here's how to turn that single campaign into an always-on programme without redoing the work.",
+    "date": "2026-10-18",
+    "updated": "2026-10-18",
+    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
+    "imageAlt": "Close-up of hands writing in a content planner for organizational purposes.",
+    "words": 791,
+    "source": "generated",
+    "keyword": "how to turn one creator campaign into a recurring programme",
+    "category": "Strategy",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 7013070,
       "alt": "A person in a blue jacket analyzing business analytics on a laptop outdoors during winter.",
       "src": "https://images.pexels.com/photos/7013070/pexels-photo-7013070.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",

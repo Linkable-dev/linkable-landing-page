@@ -1,0 +1,112 @@
+{
+  "blocks": [
+    {
+      "text": "You ran a campaign. Ten or twenty creators posted, a few of them were genuinely good, and sales moved. Then the campaign ended, the spreadsheet got closed, and three months later you're starting from zero again, writing a new brief, finding new creators, waiting for the first posts to land.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "That gap is where most of the value gets left on the table.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you turn one creator campaign into a recurring programme?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "You turn a single campaign into a programme by keeping the same creators active on a schedule instead of closing the campaign and starting over. The product, the brief and the relationships you already built don't need to be rebuilt each time. What changes is that you plan the next collaboration before the current one finishes, so creators move from one piece of content into the next without a gap long enough for them to forget your brand.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This is mostly a scheduling decision, not a strategy overhaul. If you already have a campaign structure that works, from [the activation playbook](/blog/creator-activation-playbook), the next step is deciding how often it repeats, not redesigning it.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Why running a campaign once wastes what you've built",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "A creator who posted once about your coffee or your skincare line learned something during that collaboration. They worked out how to film your product, what their audience responded to, and whether the product was actually good enough to talk about again. All of that knowledge disappears if you don't ask them back.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "There's also the audience side. One post is a single impression in someone's feed. A creator who mentions your brand every few weeks becomes a signal their followers start to notice and trust, which is a different thing entirely from a one-off mention. We've written before about [the difference between a long-term partnership and a one-off post](/blog/long-term-creator-partnerships-vs-one-off-posts), and the gap between the two is almost always repetition, not better creators.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What a recurring programme actually looks like on a calendar",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Say you run a supplement brand and you just finished a gifted campaign where a dozen creators posted unboxing and first-impression content. Instead of closing that campaign, you set a second one to go live before the first one ends, inviting the creators whose content and audience worked. The brief changes slightly, maybe this one focuses on a specific use case or a seasonal angle, but the relationship and the logistics stay the same.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "On Linkable, this is a scheduling choice rather than a rebuild. Creators already matched to your brand can be invited to a new campaign directly, product syncs from Shopify so gifted orders go out automatically, and you're not re-doing outreach from scratch each time. If you'd rather hand the planning side off entirely, that's also something the [Linkable team can run for you](/contact).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you keep creators coming back without renegotiating every time?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Set the terms once and let them carry forward. If a creator is on an affiliate commission, keep that rate consistent unless performance clearly justifies a change, because renegotiating every single collaboration is what turns a relaxed, repeatable relationship into an administrative chore for both sides. The same goes for gifted or paid arrangements. Consistency is what makes a creator treat your brand as a standing commitment rather than a one-time favour.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "It helps to have a small group you treat as regulars rather than mixing them in with every new applicant each time. Decide roughly how many creators you want posting in a given month, and structure your campaigns around repeat invitations to that group plus a smaller slice of new names to keep testing fresh talent.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What changes in how you track results",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "A single campaign gets measured once, at the end. A programme needs the same metrics tracked across every cycle so you can see which creators are actually compounding and which ones were a one-time spike. Content delivered, audience reached, engagement and tracked sales per creator, reviewed every cycle rather than once, is what tells you whether a creator deserves a standing invite or should drop off. If you haven't settled on which numbers matter at each stage, [our KPI breakdown](/blog/creator-marketing-kpis-for-ecommerce) is a useful starting point before you commit to a recurring schedule.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Treat the review as part of the calendar, not an afterthought. Before you invite creators to the next cycle, look back at the last one and decide, creator by creator, whether they're in or out.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "If you're currently running campaigns one at a time and closing them before starting the next, pick your three best-performing creators from your last campaign this week and invite them to a second collaboration before you open applications to anyone new. That single move is what turns a campaign into a programme.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Most brands settle into a rhythm of a new campaign every few weeks rather than a single annual push, though the right cadence depends on how much new content and reach you need. The point is that a new cycle starts before the last one is forgotten by the creator or their audience.",
+      "q": "How often should a recurring creator programme run?"
+    },
+    {
+      "a": "No. A programme usually works best with a smaller, consistent group of creators who post repeatedly, supplemented occasionally with new names, rather than constantly recruiting a large new batch for every cycle.",
+      "q": "Do I need more creators to run a recurring programme?"
+    },
+    {
+      "a": "Drop them from the next cycle and replace them with a new applicant or a creator you've been testing in parallel. A recurring programme only works if the roster is reviewed each cycle rather than kept on by default.",
+      "q": "What happens if a creator's content stops performing?"
+    },
+    {
+      "a": "Not inherently. The collaborations themselves cost the same whether they're planned as a one-off or as part of a schedule. The savings come from not repeating sourcing and onboarding work every single time.",
+      "q": "Does a recurring programme cost more than running separate campaigns?"
+    }
+  ]
+}
