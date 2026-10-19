@@ -28,7 +28,7 @@ ADDRESS = ['10 Esprit Court', '21 Brune Street', 'London, England', 'E1 7ND']
 CONTACT = 'support@linkable.link'
 SITE = 'linkable.link'
 UPDATED = '12 September 2026'
-PRIVACY_UPDATED = '18 October 2026'  # Instagram data section added
+PRIVACY_UPDATED = '19 October 2026'  # Instagram data section added
 
 # Nothing outstanding. support@linkable.link is confirmed as the address for data
 # requests, so it is what both documents give.
@@ -126,8 +126,8 @@ PRIVACY = {
               'percentages only; and the insights of posts she submits for a Linkable campaign '
               '(views, reach, likes, comments, shares, saves).'),
         ('p', 'We use this to verify that she owns the handle on her profile, to keep her '
-              'profile figures and audience up to date for the brands she works with, to report '
-              'how her campaign posts performed, and to sign her in. The token is stored '
+              'profile figures and audience up to date for the brands she works with, and to '
+              'report how her campaign posts performed. The token is stored '
               'encrypted, the data is refreshed daily and replaces the previous copy, and we never '
               'post, comment or message on her behalf.'),
         ('p', 'She can disconnect Instagram at any time in Settings, which deletes the token and '
