@@ -121,8 +121,7 @@ PRIVACY = {
               'Instagram, we receive an access token for that account and read: her Instagram '
               'user ID, username, name, account type, profile picture, follower, following and '
               'post counts; the details of her latest posts (caption, type, link, date, likes and '
-              'comments); her account insights over the last 30 days (reach, views, accounts '
-              'engaged, interactions); her followers’ breakdown by age, gender and country, as '
+              'comments); her followers’ breakdown by age, gender and country, as '
               'percentages only; and the insights of posts she submits for a Linkable campaign '
               '(views, reach, likes, comments, shares, saves).'),
         ('p', 'We use this to verify that she owns the handle on her profile, to keep her '
