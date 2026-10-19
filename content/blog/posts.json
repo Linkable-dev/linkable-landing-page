@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 17668838,
+      "alt": "A person plans on a calendar at a desk with a laptop and phone, May 2022.",
+      "src": "https://images.pexels.com/photos/17668838/pexels-photo-17668838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/a-person-marking-a-day-in-a-calendar-17668838/",
+      "query": "woman checking phone calendar desk",
+      "width": 6000,
+      "credit": {
+        "url": "https://www.pexels.com/@edge-training-521332405",
+        "name": "Edge Training"
+      },
+      "height": 4000,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/17668838/pexels-photo-17668838.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/17668838/pexels-photo-17668838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/creator-missed-deadline-handling-17668838-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/creator-missed-deadline-handling-17668838-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "creator-missed-deadline-handling",
+    "title": "How to handle a creator who misses a deadline",
+    "description": "How to handle a creator who misses a deadline without losing the campaign, by building slack and fallback content into the brief from day one.",
+    "excerpt": "Chasing a late creator wastes a week you don't have. Here's how to build slack and automatic fallbacks into the brief so a missed deadline never stalls the whole campaign.",
+    "date": "2026-10-19",
+    "updated": "2026-10-19",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "A person plans on a calendar at a desk with a laptop and phone, May 2022.",
+    "words": 805,
+    "source": "generated",
+    "keyword": "how to handle a creator who misses a deadline",
+    "category": "Playbook",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 6892902,
       "alt": "Close-up of hands writing in a content planner for organizational purposes.",
       "src": "https://images.pexels.com/photos/6892902/pexels-photo-6892902.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
