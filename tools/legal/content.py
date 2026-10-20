@@ -29,6 +29,7 @@ CONTACT = 'support@linkable.link'
 SITE = 'linkable.link'
 UPDATED = '12 September 2026'
 PRIVACY_UPDATED = '19 October 2026'  # Instagram data section added
+TERMS_UPDATED = '20 October 2026'  # 6. Content usage rights added
 
 # Nothing outstanding. support@linkable.link is confirmed as the address for data
 # requests, so it is what both documents give.
@@ -222,12 +223,13 @@ TERMS = {
     'slug': 'terms-of-service',
     'nav': 'Terms of Service',
     'title': 'Terms of Service',
+    'updated': TERMS_UPDATED,
     'lede': 'The terms that apply when brands and creators use Linkable.',
     'meta': 'The terms on which you may use the Linkable website and the Linkable app '
             'for Shopify.',
     'blocks': [
         ('h1', 'Linkable Terms of Service'),
-        ('p', f'<strong>Last updated: {UPDATED}</strong>'),
+        ('p', f'<strong>Last updated: {TERMS_UPDATED}</strong>'),
         ('p', f'These terms are between you and {COMPANY}, a company registered in England and '
               f'Wales under number {COMPANY_NUMBER}, whose registered office is at '
               f'{ADDRESS[0]}, {ADDRESS[1]}, {ADDRESS[2]} {ADDRESS[3]}. They cover the {SITE} '
@@ -275,14 +277,88 @@ TERMS = {
               'guarantee that either side will perform, and we do not guarantee any level of '
               'sales, reach or return. Where a campaign includes a gifted product, sending it is '
               'the merchant’s responsibility. Affiliate commission tracked through Linkable '
-              'is paid out after the applicable returns window.'),
+              'is paid out after the applicable returns window. What the merchant may do with '
+              'the content the creator makes is set out in section 6, which forms part of '
+              'their agreement.'),
 
-        ('h2', '6. Privacy'),
+        # Content usage rights: the same words as version 2026-10-20 in the app
+        # (linkable repo, client/src/lib/constants/usage_rights_terms.ts), which
+        # records the version each collaboration agreed. Drafted by Claude on
+        # 20 October 2026; to be reviewed by a UK lawyer. Change both together,
+        # and a change is a new version there.
+        ('h2', '6. Content usage rights'),
+        ('p', '<strong>Version 2026-10-20, effective 20 October 2026.</strong> Here “brand” means the merchant in section 5. In short:'),
+        ('ul', [
+            'The creator keeps ownership of the content. From approval, the brand gets a non-exclusive licence to use it.',
+            'Own channels means the brand’s social accounts, website, online store, marketplace listings and emails. Not print, packaging, outdoor or TV.',
+            'Ads only if the agreed option includes them, and only until its end date. Ads from the creator’s own handle need the creator’s separate permission.',
+            'The brand may crop, cut, subtitle and add its logo and links. It may not change what the creator says or alter them with AI.',
+            'Posts are labelled as ads. The licence stops if the fee isn’t paid or is refunded.',
+        ]),
+        ('p', 'This section sets out what a brand may do with the photos and videos (the “content”) a creator makes for a collaboration arranged through Linkable. It forms part of the agreement between that brand and that creator. Linkable Ltd is not a party to it: we record which terms were agreed and when, and show them to both sides.'),
+        ('p', '<strong>6.1 Who owns the content.</strong> The creator owns the copyright in the content they make. Nothing in these terms transfers that ownership to the brand or to Linkable. The brand receives a licence, which is permission to use the content in the ways described below.'),
+        ('p', '<strong>6.2 The three usage options.</strong> Every collaboration carries one of these options. It is shown on the campaign before a creator applies or accepts an invitation, and Linkable records the option and the version of these terms when the collaboration is accepted (“Accept”).'),
+        ('ul', [
+            'Own channels and ads for 12 months: use on the brand’s own channels with no end date, and in ads for 12 months from the date the content is approved.',
+            'Own channels only, no ads: use on the brand’s own channels with no end date, and never in ads.',
+            'Own channels and ads with no end date: use on the brand’s own channels and in ads, both with no end date.',
+        ]),
+        ('p', 'A later change to the campaign or to these terms does not change a collaboration that has already been accepted.'),
+        ('p', '<strong>6.3 The licence.</strong> When the brand approves the content, including automatic approval at the end of the review period shown on the campaign, the creator grants the brand a non-exclusive, worldwide, royalty-free licence to copy, publish, display and share the approved content within the option agreed and these terms. The free product, fee and commission agreed for the collaboration are the full payment for this licence.'),
+        ('p', 'Non-exclusive means the creator may keep using the content themselves, including on their own channels and in their portfolio. Before approval the brand may only view the content to review it.'),
+        ('p', '“No end date” means the licence lasts for as long as copyright in the content lasts, unless it ends under 6.12 or 6.13.'),
+        ('p', '<strong>6.4 Own channels.</strong> Own channels are channels the brand owns or controls and uses for its own business: its social media accounts (including reposts, story shares and collaborative posts), its website and online store, its listings on marketplaces, and its emails and newsletters. Use on own channels is organic: the brand does not pay to promote it.'),
+        ('p', 'Own channels do not include printed materials, packaging, in-store or outdoor displays, TV, cinema or radio. Those need the creator’s separate written agreement.'),
+        ('p', '<strong>6.5 Ads.</strong> Ads means paid media: the content placed or promoted in exchange for payment to a platform or publisher, for example boosted posts and ads on social networks, search engines and other online ad networks.'),
+        ('p', 'Where the option includes ads, the brand may run them from its own accounts. Running ads through the creator’s own account or handle (for example Meta partnership ads, TikTok Spark Ads or “whitelisting”) needs the creator’s separate permission, given in the platform. The creator may refuse, and any permission given ends no later than the brand’s ad rights.'),
+        ('p', 'With ads for 12 months, the ad rights end 12 months after the approval date (shown in Linkable as “Ads until” that date). By the end of that day the brand must stop every ad using the content, including ads it scheduled earlier.'),
+        ('p', 'With no ads, the brand may not use the content in any paid placement, including boosting its own post.'),
+        ('p', '<strong>6.6 Edits.</strong> The brand may make the edits needed to use the content where it is allowed to: crop, resize or reframe it; shorten it or cut it into clips; add subtitles, captions, translations, its logo, product details, prices, discount codes, links, calls to action and any label the law or a platform requires; and replace the music with music it has licensed for that use.'),
+        ('p', 'The brand may not:'),
+        ('ul', [
+            'change what the creator says or does, or the meaning of the content;',
+            'add words, claims or endorsements the creator did not make;',
+            'combine the content with other material in a way that suggests the creator endorses another product, brand or cause;',
+            'alter the creator’s face, body or voice, including with AI or other synthetic media tools;',
+            'use the content, or the creator’s likeness or voice, to train an AI model or to generate new content;',
+            'present the content in a way that is derogatory or would harm the creator’s reputation.',
+        ]),
+        ('p', 'Anything beyond these edits needs the creator’s separate written agreement.'),
+        ('p', '<strong>6.7 Credit and moral rights.</strong> When the brand reposts the creator’s own post organically, it credits the creator, for example by tagging their handle or using a collaborative post, where the platform allows. Ads and other uses do not have to credit the creator.'),
+        ('p', 'Under the Copyright, Designs and Patents Act 1988 the creator has moral rights, including the right to be identified as the author and the right to object to derogatory treatment of the work. The creator consents to the uses and edits these terms allow, and waives those moral rights, and any performer’s rights in their appearance in the content, only to that extent. In every other respect the creator keeps them.'),
+        ('p', '<strong>6.8 Who else may use the content.</strong> The brand may let others use the content on its behalf and within these terms: its group companies, its agencies and contractors, and the platforms and ad networks that host or run it. The brand is responsible for what they do. The brand may not sell, license or give the content to anyone to use for their own purposes, and an agency may not use it for its other clients.'),
+        ('p', '<strong>6.9 Ad labels and the law.</strong> A collaboration is advertising under UK rules, because the creator receives a product, fee or commission and the brand reviews the content. When posting, the creator labels it clearly and upfront as an ad, for example “Ad” or “#ad” at the start of the caption or the platform’s paid partnership label, as the CAP Code and the ASA and CMA guidance for influencers require. “#gifted”, “#sp” or a thank-you alone is not enough.'),
+        ('p', 'The brand must not ask the creator to hide or play down the label. The brand is responsible for its own use of the content, including every ad it runs and every claim about its product, complying with the CAP Code, consumer protection law and the platform’s rules.'),
+        ('p', '<strong>6.10 The creator’s promises.</strong> The creator confirms that:'),
+        ('ul', [
+            'the content is their own original work and they are free to grant this licence;',
+            'everyone who can be identified in the content agreed to appear in it and to its use under these terms, with a parent’s or guardian’s agreement for anyone under 18;',
+            'the content contains no music, artwork, footage, logos or other material belonging to someone else, unless it is licensed for the uses these terms allow;',
+            'what the content says about the product is their honest opinion of it, makes no claim the brand has not supplied or approved, and is not misleading;',
+            'the content does not break the law or the platform’s rules, or infringe anyone’s rights.',
+        ]),
+        ('p', 'Music added from a platform’s library (for example Instagram or TikTok sounds) is usually licensed for that platform only. Before using such content anywhere else or in an ad, the brand removes or replaces the music, unless the platform’s licence covers that use.'),
+        ('p', '<strong>6.11 The brand’s promises.</strong> The brand confirms that it will use the content only as these terms allow, that the product information and claims it supplies in the brief are accurate and lawful, and that it will handle the personal data in the content, such as the creator’s image, in line with UK data protection law.'),
+        ('p', '<strong>6.12 Ending a collaboration, refunds and non-payment.</strong>'),
+        ('ul', [
+            'If a collaboration ends before the content is approved, no licence is granted and the brand may not use any content it has seen.',
+            'If the agreed fee or commission is not paid when due, the brand must stop using the content until it is paid. If it is still unpaid 30 days after it fell due, the creator may end the licence by notice through Linkable or by email.',
+            'If a fee the brand paid is refunded to it, for example because the creator did not post as agreed, the licence ends unless the creator agrees otherwise.',
+            'When a licence ends, the brand removes the content from its social media accounts, website, online store and ads within 7 days. It does not have to recall what cannot be recalled, such as emails already sent.',
+            'A brand cancelling its Linkable plan, or a creator deleting their Linkable account, does not end a licence already granted.',
+        ]),
+        ('p', '<strong>6.13 Removal on request.</strong> Once the ad rights have ended, the creator may ask the brand to take down any ad still showing the content, and the brand does so within 5 working days.'),
+        ('p', 'At any time the creator may ask the brand to stop using the content and remove it from the places the brand controls if someone who appears in it withdraws their agreement, if it puts anyone’s safety at risk, or if a credible legal claim is made about it. The brand does so within 5 working days of a request made through Linkable or by email. Otherwise, own-channel use the brand has already made under these terms does not have to be removed.'),
+        ('p', 'The brand may stop using the content at any time.'),
+        ('p', '<strong>6.14 Responsibility.</strong> The brand and the creator are each responsible to the other for loss caused by their own breach of these terms, as far as the law allows. Linkable is not responsible for how either side uses the content or meets these terms, but may suspend an account that breaks them and will help either side reach the other. Questions or complaints: support@linkable.link.'),
+        ('p', '<strong>6.15 Versions.</strong> We may update this section. Each version has an id and an effective date. A collaboration keeps the version in force when it was accepted, and both sides can see that version and the option agreed on the collaboration in Linkable. These terms are governed by the laws of England and Wales.'),
+
+        ('h2', '7. Privacy'),
         ('p', 'Our handling of personal data is described in the '
               '<a href="/legal/privacy-policy">Privacy Policy</a>, and the cookies this site '
               'uses in the <a href="/legal/cookie-policy">Cookie Policy</a>.'),
 
-        ('h2', '7. Suspension and termination'),
+        ('h2', '8. Suspension and termination'),
         ('p', 'You may stop using the site at any time. We may suspend or end your access if you '
               'break these terms, if we are required to by law, or if your use threatens the '
               'security or availability of the service. Except where a breach or a legal '
@@ -291,13 +367,13 @@ TERMS = {
               'including the licence granted above, the disclaimers and the liability limits, '
               'continue to apply.'),
 
-        ('h2', '8. Availability and disclaimers'),
+        ('h2', '9. Availability and disclaimers'),
         ('p', 'We work to keep the site available but do not promise it will be uninterrupted or '
               'error-free, and it is provided as is. To the extent the law allows, we exclude '
               'implied warranties. Nothing here limits any right you have as a consumer that '
               'cannot lawfully be excluded.'),
 
-        ('h2', '9. Liability'),
+        ('h2', '10. Liability'),
         ('p', 'We do not exclude or limit liability for death or personal injury caused by our '
               'negligence, for fraud or fraudulent misrepresentation, or for anything else that '
               'cannot lawfully be limited. Subject to that, we are not liable for indirect or '
@@ -305,13 +381,13 @@ TERMS = {
               'liability arising from your use of the site is limited to the greater of the '
               'amount you paid us in the twelve months before the claim, or one hundred pounds.'),
 
-        ('h2', '10. Governing law'),
+        ('h2', '11. Governing law'),
         ('p', 'These terms are governed by the laws of England and Wales, and the courts of '
               'England and Wales have exclusive jurisdiction, except that if you are a consumer '
               'resident elsewhere in the UK or the EEA you keep the right to bring proceedings in '
               'your own country.'),
 
-        ('h2', '11. Contact'),
+        ('h2', '12. Contact'),
         ('p', f'<strong>{CONTACT}</strong>'),
         ('address', None),
     ],
