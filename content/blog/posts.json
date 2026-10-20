@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 6593773,
+      "alt": "Man recording a vlog indoors using a mirrorless camera on a tripod with selective focus.",
+      "src": "https://images.pexels.com/photos/6593773/pexels-photo-6593773.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/man-filming-vlog-on-camera-6593773/",
+      "query": "creator filming product video home",
+      "width": 6075,
+      "credit": {
+        "url": "https://www.pexels.com/@shvetsa",
+        "name": "Anna Shvets"
+      },
+      "height": 4069,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/6593773/pexels-photo-6593773.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/6593773/pexels-photo-6593773.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/exclusivity-vs-multiple-creator-brands-6593773-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/exclusivity-vs-multiple-creator-brands-6593773-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "exclusivity-vs-multiple-creator-brands",
+    "title": "How to choose between exclusivity and multiple creator brands",
+    "description": "How to choose between exclusivity and multiple creator brands, and why exclusivity usually costs more than it protects for a new programme.",
+    "excerpt": "Exclusivity feels like protection, but locking in a creator before you know what works usually costs more than it saves. Here's how to decide.",
+    "date": "2026-10-20",
+    "updated": "2026-10-20",
+    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
+    "imageAlt": "Man recording a vlog indoors using a mirrorless camera on a tripod with selective focus.",
+    "words": 755,
+    "source": "generated",
+    "keyword": "how to choose between exclusivity and multiple creator brands",
+    "category": "Strategy",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 17668838,
       "alt": "A person plans on a calendar at a desk with a laptop and phone, May 2022.",
       "src": "https://images.pexels.com/photos/17668838/pexels-photo-17668838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
