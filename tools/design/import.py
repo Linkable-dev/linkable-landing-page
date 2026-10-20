@@ -48,13 +48,14 @@ PAGES = {
     'NotFound': 'notfound',
 }
 
-SHOPIFY = 'https://apps.shopify.com/linkable-1'
 APP_LOGIN = 'https://app.linkable.link/auth/login'
 APP_SIGNUP = 'https://app.linkable.link/auth/signup'
+# Brands sign up in the app and connect Shopify after, not through the listing.
+APP_BRAND_SIGNUP = 'https://app.linkable.link/auth/brand/sign-up'
 
 # Routes of this site in place of the design's file names and placeholders.
 LINKS = {
-    'Main.dc.html#start': SHOPIFY,
+    'Main.dc.html#start': APP_BRAND_SIGNUP,
     'Main.dc.html': '/',
     'Creators.dc.html': '/creators',
     'Pricing.dc.html#compare': '/pricing#compare',
@@ -66,13 +67,13 @@ LINKS = {
     'Privacy.dc.html': '/legal/privacy-policy',
     'Terms.dc.html': '/legal/terms-of-service',
     '#login': APP_LOGIN,
-    '#signup': SHOPIFY,
-    '#start': SHOPIFY,
+    '#signup': APP_BRAND_SIGNUP,
+    '#start': APP_BRAND_SIGNUP,
     '#facebook': 'https://www.facebook.com/profile.php?id=61571103328154',
     '#instagram': 'https://www.instagram.com/linkable.link/',
     '#linkedin': 'https://www.linkedin.com/company/joinlinkable/',
 }
-# The creators page signs creators up in the app, not through the Shopify listing.
+# The creators page signs creators up as creators.
 LINK_OVERRIDES = {'creators': {'#signup': APP_SIGNUP, '#join': APP_SIGNUP}}
 # On pages that have a #start section of their own, the hero buttons still mean
 # "start the trial"; the design only used the anchor as a placeholder.
