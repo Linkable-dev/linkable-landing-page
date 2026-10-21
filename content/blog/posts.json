@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 6223605,
+      "alt": "Young children with a mother in a domestic kitchen setting, showcasing family time.",
+      "src": "https://images.pexels.com/photos/6223605/pexels-photo-6223605.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/boy-sitting-by-table-in-kitchen-6223605/",
+      "query": "parent toddler kitchen morning routine",
+      "width": 6000,
+      "credit": {
+        "url": "https://www.pexels.com/@jep-gambardella",
+        "name": "Jep Gambardella"
+      },
+      "height": 4000,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/6223605/pexels-photo-6223605.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/6223605/pexels-photo-6223605.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/creator-marketing-baby-kids-brands-6223605-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/creator-marketing-baby-kids-brands-6223605-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "creator-marketing-baby-kids-brands",
+    "title": "Creator marketing for baby and kids brands, done right",
+    "description": "Parents buy baby and kids products on trust, not price. Here's how creator marketing for baby and kids brands turns real households into sales.",
+    "excerpt": "Parents researching a stroller or a first-foods brand want to see a real kitchen, a real nap time, a real toddler who won't sit still. Here's how to build a creator programme around that.",
+    "date": "2026-10-21",
+    "updated": "2026-10-21",
+    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
+    "imageAlt": "Young children with a mother in a domestic kitchen setting, showcasing family time.",
+    "words": 964,
+    "source": "generated",
+    "keyword": "creator marketing for baby and kids brands",
+    "category": "By category",
+    "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 6593773,
       "alt": "Man recording a vlog indoors using a mirrorless camera on a tripod with selective focus.",
       "src": "https://images.pexels.com/photos/6593773/pexels-photo-6593773.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
