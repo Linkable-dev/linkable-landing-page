@@ -50,6 +50,7 @@ PAGES = {
 
 APP_LOGIN = 'https://app.linkable.link/auth/login'
 APP_SIGNUP = 'https://app.linkable.link/auth/signup'
+APP_CREATOR_LOGIN = 'https://app.linkable.link/auth/login?as=creator'
 # Brands sign up in the app and connect Shopify after, not through the listing.
 APP_BRAND_SIGNUP = 'https://app.linkable.link/auth/brand/sign-up'
 
@@ -73,8 +74,9 @@ LINKS = {
     '#instagram': 'https://www.instagram.com/linkable.link/',
     '#linkedin': 'https://www.linkedin.com/company/joinlinkable/',
 }
-# The creators page signs creators up as creators.
-LINK_OVERRIDES = {'creators': {'#signup': APP_SIGNUP, '#join': APP_SIGNUP}}
+# The creators page signs creators up and logs them in as creators: the plain
+# log in is the brand one, whose only sign up is the brand trial.
+LINK_OVERRIDES = {'creators': {'#signup': APP_SIGNUP, '#join': APP_SIGNUP, '#login': APP_CREATOR_LOGIN}}
 # On pages that have a #start section of their own, the hero buttons still mean
 # "start the trial"; the design only used the anchor as a placeholder.
 
