@@ -4,7 +4,145 @@ import { copyLink, sendContact, subscribe } from '../../actions.js';
 import { acceptAll, consentChoice, rejectAll } from '../../../consent.js';
 
 export class PageLogic extends DCLogic {
+  hiwGo(i) {
+    if (window.innerWidth <= 960) {
+      const el = document.querySelector('.hiw-mc[data-step="' + i + '"]'), tabs = document.querySelector('.hiw-steps');
+      if (el) {
+        const off = (tabs ? tabs.getBoundingClientRect().bottom : 120) + 12;
+        this._hiwLock = Date.now() + 900;
+        this.setState({ hiwStep: i, hiwStop: true });
+        window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - off, behavior: 'smooth' });
+        return;
+      }
+    }
+    const t = document.querySelector('.hiw-track');
+    if (t && window.innerWidth > 960) {
+      const h = t.querySelector('.hiw');
+      const span = Math.max(1, t.offsetHeight - (h ? h.offsetHeight : 0));
+      const top = t.getBoundingClientRect().top + window.scrollY - 96 + span * (i + 0.5) / 6;
+      this._hiwLock = Date.now() + 150;
+      try { window.scrollTo({ top, behavior: 'instant' }); } catch (e) { window.scrollTo(0, top); }
+      this.setState({ hiwStep: i });
+    } else {
+      this.setState({ hiwStep: i, hiwStop: true });
+    }
+  }
   componentDidMount() {
+    this._hiwM = () => { const m = window.innerWidth <= 960; if (m !== !!(this.state && this.state.hiwM)) this.setState({ hiwM: m }); };
+    this._hiwM();
+    window.addEventListener('resize', this._hiwM);
+    this._hiwScroll = () => {
+      if (this._hiwLock && Date.now() < this._hiwLock) return;
+      if (window.innerWidth <= 960) {
+        const tabs = document.querySelector('.hiw-steps');
+        const line = (tabs ? tabs.getBoundingClientRect().bottom : 120) + 60;
+        let idx = 0;
+        document.querySelectorAll('.hiw-mc').forEach((el) => { if (el.getBoundingClientRect().top <= line) idx = +el.getAttribute('data-step'); });
+        const cur = (this.state && typeof this.state.hiwStep === 'number') ? this.state.hiwStep : 0;
+        if (idx !== cur) {
+          this.setState({ hiwStep: idx });
+          requestAnimationFrame(() => { const on = tabs && tabs.querySelector('.hiw-step.on'); if (on) tabs.scrollTo({ left: Math.max(0, on.offsetLeft - 16), behavior: 'smooth' }); });
+        }
+        return;
+      }
+      const t = document.querySelector('.hiw-track');
+      if (!t) return;
+      const h = t.querySelector('.hiw');
+      const span = Math.max(1, t.offsetHeight - (h ? h.offsetHeight : 0));
+      const prog = Math.min(0.999, Math.max(0, (96 - t.getBoundingClientRect().top) / span));
+      const idx = Math.floor(prog * 6);
+      const cur = (this.state && typeof this.state.hiwStep === 'number') ? this.state.hiwStep : 0;
+      if (idx !== cur) this.setState({ hiwStep: idx });
+    };
+    window.addEventListener('scroll', this._hiwScroll, { passive: true });
+    this._wmFit = () => { const tr = document.getElementById('wm-track'); if (tr) tr.style.height = ''; };
+    this._wmMove = () => {
+      const row = document.getElementById('wm-row');
+      if (!row || window.innerWidth > 760 || (this._wmLock && Date.now() < this._wmLock)) return;
+      const tabs = document.querySelector('.wm-tabs'), line = 68 + (tabs ? tabs.offsetHeight : 0) + window.innerHeight * 0.3;
+      const cards = row.querySelectorAll('.wm-card');
+      let idx = 0;
+      cards.forEach((c, i) => { if (c.getBoundingClientRect().top < line) idx = i; });
+      const cur = (this.state && typeof this.state.wayPick === 'number') ? this.state.wayPick : 0;
+      if (idx !== cur) this.setState({ wayPick: idx });
+    };
+    this._wmAll = () => { this._wmFit(); this._wmMove(); };
+    window.addEventListener('scroll', this._wmMove, { passive: true });
+    window.addEventListener('resize', this._wmAll);
+    setTimeout(this._wmAll, 300); setTimeout(this._wmAll, 1500);
+    this._wmScroll = (e) => {
+      const r = e && e.target;
+      if (!r || r.id !== 'wm-row' || (this._wmLock && Date.now() < this._wmLock)) return;
+      const cards = r.querySelectorAll('.wm-card');
+      if (!cards.length) return;
+      let idx = 0, best = 1e9;
+      cards.forEach((c, i) => { const d = Math.abs(c.offsetLeft - 16 - r.scrollLeft); if (d < best) { best = d; idx = i; } });
+      if (r.scrollLeft + r.clientWidth >= r.scrollWidth - 4) idx = cards.length - 1;
+      const cur = (this.state && typeof this.state.wayPick === 'number') ? this.state.wayPick : 0;
+      if (idx !== cur) this.setState({ wayPick: idx });
+    };
+    document.addEventListener('scroll', this._wmScroll, { passive: true, capture: true });
+    try {
+      const apxEl = document.getElementById('autopilot-band');
+      if (apxEl && 'IntersectionObserver' in window) {
+        const aio = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { apxEl.classList.add('in'); aio.disconnect(); } }), { threshold: 0.45 });
+        aio.observe(apxEl); (this._ios = this._ios || []).push(aio);
+      } else if (apxEl) { apxEl.classList.add('in'); }
+    } catch (e) {}
+    this._wyScroll = () => {
+      if (window.innerWidth <= 960) return;
+      const tr = document.querySelector('.wy-track'), pin = tr && tr.querySelector('.wy-pin');
+      if (!tr || !pin) return;
+      const total = Math.max(1, tr.offsetHeight - pin.offsetHeight);
+      const prog = Math.min(0.999, Math.max(0, (96 - tr.getBoundingClientRect().top) / total));
+      const idx = Math.floor(prog * 4);
+      const cur = (this.state && typeof this.state.wayPick === 'number') ? this.state.wayPick : 0;
+      if (idx !== cur) this.setState({ wayPick: idx });
+    };
+    window.addEventListener('scroll', this._wyScroll, { passive: true });
+    this._cnTabIn = () => requestAnimationFrame(() => {
+      const tb = document.querySelector('.cn-tabs');
+      const on = tb && tb.querySelector('.cn-tab.on');
+      if (on && tb.scrollWidth > tb.clientWidth) tb.scrollTo({ left: Math.max(0, on.offsetLeft - 16), behavior: 'smooth' });
+    });
+    this._cnScroll = (e) => {
+      const r = e && e.target;
+      if (!r || !r.classList || !r.classList.contains('cn-row')) return;
+      if (this._cnLock && Date.now() < this._cnLock) return;
+      const cards = r.querySelectorAll('.cn-card[data-cat]');
+      if (!cards.length) return;
+      let cat = cards[0].getAttribute('data-cat');
+      if (r.scrollLeft + r.clientWidth >= r.scrollWidth - 4) cat = cards[cards.length - 1].getAttribute('data-cat');
+      else for (const c of cards) { if (c.offsetLeft + c.offsetWidth / 2 > r.scrollLeft) { cat = c.getAttribute('data-cat'); break; } }
+      if (cat && cat !== (this.state && this.state.niche)) { this.setState({ niche: cat }); this._cnTabIn(); }
+    };
+    document.addEventListener('scroll', this._cnScroll, { passive: true, capture: true });
+    this._cnGo = (n) => {
+      this.setState({ niche: n });
+      this._cnTabIn();
+      const r = document.querySelector('.cn-row');
+      const c = r && r.querySelector('.cn-card[data-cat="' + n + '"]');
+      if (!r || !c) return;
+      const from = r.scrollLeft, to = Math.min(c.offsetLeft, r.scrollWidth - r.clientWidth), dur = 1100, t0 = performance.now();
+      this._cnLock = Date.now() + dur + 150;
+      if (this._cnRaf) cancelAnimationFrame(this._cnRaf);
+      r.style.scrollSnapType = 'none';
+      const ease = (t) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+      const step = (now) => {
+        const k = Math.min(1, (now - t0) / dur);
+        r.scrollLeft = from + (to - from) * ease(k);
+        if (k < 1) this._cnRaf = requestAnimationFrame(step);
+        else r.style.scrollSnapType = '';
+      };
+      this._cnRaf = requestAnimationFrame(step);
+    };
+    this._hiwT = setInterval(() => {
+      const st = this.state || {};
+      if (st.hiwStop || st.reduced || document.hidden || window.innerWidth > 0) return;
+      const cur = typeof st.hiwStep === 'number' ? st.hiwStep : 0;
+      this._hiwSec = (this._hiwSec || 0) + 1;
+      if (this._hiwSec >= (cur === 0 ? 8 : 6)) { this._hiwSec = 0; this.setState({ hiwStep: (cur + 1) % 6 }); }
+    }, 1000);
     try {
       const cv = document.getElementById('ap-cloud');
       if (cv && cv.getContext) {
@@ -49,18 +187,19 @@ export class PageLogic extends DCLogic {
     try {
       this._onScroll = () => {
         const el = document.getElementById('ways-track');
-        if (!el || window.innerWidth <= 960) return;
+        if (!el) return;
+        if (window.innerWidth <= 960) { if (this.state && this.state.scrollMode) this.setState({ scrollMode: false }); return; }
         const scrollable = document.documentElement.scrollHeight > window.innerHeight + 400;
         if (scrollable !== !!(this.state && this.state.scrollMode)) this.setState({ scrollMode: scrollable });
         if (!scrollable) return;
         const r = el.getBoundingClientRect();
-        const total = el.offsetHeight - window.innerHeight;
+        const st = el.querySelector('.ways-sticky');
+        const total = el.offsetHeight - (st ? st.offsetHeight : 0);
         if (total <= 0) return;
-        const prog = Math.min(Math.max(-r.top / total, 0), 0.9999);
+        const prog = Math.min(Math.max((96 - r.top) / total, 0), 0.9999);
         const idx = Math.floor(prog * 4);
         if (!this.state || this.state.scrollIdx !== idx) this.setState({ scrollIdx: idx });
       };
-      // scroll pinning disabled for now
     } catch (e) {}
     let reduce = false;
     try { reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
@@ -133,6 +272,14 @@ export class PageLogic extends DCLogic {
     }, 1600);
   }
   componentWillUnmount() {
+    if (this._hiwT) clearInterval(this._hiwT);
+    if (this._hiwScroll) window.removeEventListener('scroll', this._hiwScroll);
+    if (this._hiwM) window.removeEventListener('resize', this._hiwM);
+    if (this._cnScroll) document.removeEventListener('scroll', this._cnScroll, true);
+    if (this._wmScroll) document.removeEventListener('scroll', this._wmScroll, true);
+    if (this._wmMove) { window.removeEventListener('scroll', this._wmMove); window.removeEventListener('resize', this._wmAll); }
+    if (this._wyScroll) window.removeEventListener('scroll', this._wyScroll);
+    if (this._onScroll) { window.removeEventListener('scroll', this._onScroll); window.removeEventListener('resize', this._onScroll); }
     if (this._timer) clearInterval(this._timer);
     if (this._apRaf) cancelAnimationFrame(this._apRaf);
     (this._ios || []).forEach((o) => o.disconnect());
@@ -140,6 +287,14 @@ export class PageLogic extends DCLogic {
     if (this._onScroll) { window.removeEventListener('scroll', this._onScroll); window.removeEventListener('resize', this._onScroll); }
   }
   renderVals() {
+    let tz = '';
+    try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}
+    const ukZones = ['Europe/London', 'Europe/Belfast', 'Europe/Jersey', 'Europe/Guernsey', 'Europe/Isle_of_Man'];
+    const euroZones = ['Atlantic/Canary', 'Atlantic/Madeira', 'Atlantic/Azores'];
+    const cur = ukZones.indexOf(tz) > -1 ? { s: '£', code: 'GBP' }
+      : (tz.indexOf('Europe/') === 0 || euroZones.indexOf(tz) > -1) ? { s: '€', code: 'EUR' }
+      : { s: '$', code: 'USD' };
+    const m = (n) => cur.s + n.toLocaleString('en-US');
     const serif = "'Fraunces', Georgia, serif";
     const sans = "'Satoshi', system-ui, sans-serif";
     const base = [
@@ -157,13 +312,13 @@ export class PageLogic extends DCLogic {
     ];
     const tick = (this.state && this.state.tick) || 0;
     const reduced = !!(this.state && this.state.reduced);
-    const niche = (this.state && this.state.niche) || 'All creators';
+    const niche = (this.state && this.state.niche) || 'Beauty';
     const hoverWay = (this.state && this.state.hoverWay) || null;
     const wayPick = (this.state && typeof this.state.wayPick === 'number') ? this.state.wayPick : null;
     const scrollMode = false;
     const scrollIdx = (this.state && typeof this.state.scrollIdx === 'number') ? this.state.scrollIdx : 0;
-    const wayIdx = wayPick !== null ? wayPick : 0;
-    const wayAuto = !!(this.state && this.state.waysSeen) && !(this.state && this.state.wayStop) && !(this.state && (this.state.reduced || this.state.mobile));
+    const wayIdx = scrollMode ? Math.min(3, scrollIdx) : (wayPick !== null ? wayPick : 0);
+    const wayAuto = false && !!(this.state && this.state.waysSeen) && !(this.state && this.state.wayStop) && !(this.state && (this.state.reduced || this.state.mobile));
     const yearly = !!(this.state && this.state.yearly);
     const openFaq = (this.state && typeof this.state.openFaq === 'number') ? this.state.openFaq : 0;
     const still = reduced || !!(this.state && this.state.mobile);
@@ -174,17 +329,25 @@ export class PageLogic extends DCLogic {
     const feeOpt = (on) => on
       ? { bg: '#F3F2EE', bd: '#CFCCC5', fw: 600, fg: '#232323', ring: '4px solid #232323' }
       : { bg: '#FFFFFF', bd: '#ECEAE5', fw: 500, fg: '#666563', ring: '1.5px solid #CFCCC5' };
-    const nicheList = ['All creators', 'Beauty', 'Wellness', 'Fitness', 'Lifestyle', 'Food & Drink', 'Fashion'];
+    const nicheList = ['Beauty', 'Fitness', 'Lifestyle', 'Food & Drink', 'Fashion', 'Wellness'];
+    const catOf = { 'Sofia M.': 'Beauty', 'Ava K.': 'Wellness', 'Tom H.': 'Fitness', 'Luca B.': 'Lifestyle', 'Priya S.': 'Lifestyle', 'Grace R.': 'Food & Drink', 'Elsa W.': 'Food & Drink', 'Naomi L.': 'Fashion', 'Freya J.': 'Fashion', 'Chloé D.': 'Beauty', 'Leo M.': 'Lifestyle', 'Amara O.': 'Food & Drink', 'Isabella V.': 'Fashion', 'Maya R.': 'Wellness', 'Nadia K.': 'Beauty' };
+    const cnOrder = ['Nadia K.', 'Chloé D.', 'Sofia M.', 'Tom H.', 'Priya S.', 'Luca B.', 'Leo M.', 'Grace R.', 'Amara O.', 'Elsa W.', 'Naomi L.', 'Isabella V.', 'Freya J.', 'Maya R.', 'Ava K.'];
     const creatorList = [
-      { name: 'Tom H.', city: 'Manchester, UK', tags: ['Fitness', 'Wellness', 'Lifestyle'], eng: '7.4%', followers: '24K', views: '6K', photo: '/assets/site/716b9c63b2dd9473060867ee750bc01c.jpg', thumbs: ['/assets/site/93631985b80ffb0fc76094e9c9d8cbbe.jpg', '/assets/site/d75fe18bb3aa40ec44e5601f6e57edde.jpg', '/assets/site/0888c3b53156d2c393c5b7a6a70d8e49.jpg'] },
-      { name: 'Sofia M.', city: 'London, UK', tags: ['Beauty', 'Skincare', 'Lifestyle'], eng: '6.2%', followers: '48K', views: '9K', photo: '/assets/site/f537fe8931a437cff9656eb3f4331c4b.jpg', thumbs: ['/assets/site/b36df4634d0317fccbaaf89c0025c0bd.jpg', '/assets/site/205c1283abb2ddabb1ee1c9b709b8cbb.jpg', '/assets/site/aad77ea560f63af00f8b4b0e1e099885.jpg'] },
-      { name: 'Grace R.', city: 'Brighton, UK', tags: ['Food & Drink', 'Wellness', 'Hosting'], eng: '8.1%', followers: '18K', views: '4K', photo: '/assets/site/a5c90b8cf995f70c3962333f94e0d633.jpg', thumbs: ['/assets/site/60b4285c9791177d6517c94017089611.jpg', '/assets/site/746f63023bff305f3ee1f5150dc656b4.jpg', '/assets/site/7a93152656e41c240a1d4b27c0b7030a.jpg'] },
-      { name: 'Naomi L.', city: 'London, UK', tags: ['Fashion', 'Lifestyle', 'Beauty'], eng: '5.2%', followers: '310K', views: '41K', photo: '/assets/site/00d7e265ff310f78642d7cf80c95b258.jpg', thumbs: ['/assets/site/c838c72cdb413bd3a3ef06da190a12aa.jpg', '/assets/site/5024141c5cbbe82ba2a487fdce1115ac.jpg', '/assets/site/d4b5cf5c8d0910a29198ffe836042ea5.jpg'] },
-      { name: 'Ava K.', city: 'Leeds, UK', tags: ['Fitness', 'Wellness', 'Beauty'], eng: '6.9%', followers: '36K', views: '8K', photo: '/assets/site/23e1f40c832d09c3aef3140bdd95b296.jpg', thumbs: ['/assets/site/964eef3f06704aaf816880720a5c6db2.jpg', '/assets/site/c7136a4fdaac1658a0947b62bc2b9c74.jpg', '/assets/site/2bb6238724fe2f3703df38f9adb6fb17.jpg'] },
-      { name: 'Luca B.', city: 'London, UK', tags: ['Lifestyle', 'Travel', 'Grooming'], eng: '4.3%', followers: '96K', views: '14K', photo: '/assets/site/fe6c7b90a20e3033267567727bd15af4.jpg', thumbs: [] },
+      { name: 'Tom H.', city: 'Los Angeles, US', tags: ['Fitness', 'Wellness', 'Lifestyle'], eng: '7.4%', followers: '24K', views: '6K', photo: '/assets/site/716b9c63b2dd9473060867ee750bc01c.jpg', thumbs: ['/assets/site/93631985b80ffb0fc76094e9c9d8cbbe.jpg', '/assets/site/d75fe18bb3aa40ec44e5601f6e57edde.jpg', '/assets/site/0888c3b53156d2c393c5b7a6a70d8e49.jpg'] },
+      { name: 'Sofia M.', city: 'Madrid, Spain', tags: ['Beauty', 'Skincare', 'Lifestyle'], eng: '6.2%', followers: '48K', views: '9K', photo: '/assets/site/f537fe8931a437cff9656eb3f4331c4b.jpg', thumbs: ['/assets/site/b36df4634d0317fccbaaf89c0025c0bd.jpg', '/assets/site/205c1283abb2ddabb1ee1c9b709b8cbb.jpg', '/assets/site/aad77ea560f63af00f8b4b0e1e099885.jpg'] },
+      { name: 'Grace R.', city: 'Sydney, Australia', tags: ['Food & Drink', 'Wellness', 'Hosting'], eng: '8.1%', followers: '18K', views: '4K', photo: '/assets/site/a5c90b8cf995f70c3962333f94e0d633.jpg', thumbs: ['/assets/site/60b4285c9791177d6517c94017089611.jpg', '/assets/site/746f63023bff305f3ee1f5150dc656b4.jpg', '/assets/site/7a93152656e41c240a1d4b27c0b7030a.jpg'] },
+      { name: 'Naomi L.', city: 'New York, US', tags: ['Fashion', 'Lifestyle', 'Beauty'], eng: '5.2%', followers: '310K', views: '41K', photo: '/assets/site/00d7e265ff310f78642d7cf80c95b258.jpg', thumbs: ['/assets/site/c838c72cdb413bd3a3ef06da190a12aa.jpg', '/assets/site/5024141c5cbbe82ba2a487fdce1115ac.jpg', '/assets/site/d4b5cf5c8d0910a29198ffe836042ea5.jpg'] },
+      { name: 'Nadia K.', city: 'Amsterdam, Netherlands', tags: ['Beauty', 'Fashion', 'Lifestyle'], eng: '6.6%', followers: '58K', views: '10K', photo: '/assets/site/a384759ce1361f55775db59aefd8ff13.jpg', thumbs: [] },
+      { name: 'Chloé D.', city: 'Nice, France', tags: ['Beauty', 'Skincare', 'Travel'], eng: '6.1%', followers: '72K', views: '12K', photo: '/assets/site/e65220cba431fedd1d1f63c031355abb.jpg', thumbs: [] },
+      { name: 'Leo M.', city: 'Barcelona, Spain', tags: ['Lifestyle', 'Photography', 'Fashion'], eng: '5.6%', followers: '54K', views: '9K', photo: '/assets/site/82ba18b33061ab183328d78410296889.jpg', thumbs: [] },
+      { name: 'Amara O.', city: 'Paris, France', tags: ['Food & Drink', 'Fashion', 'Lifestyle'], eng: '6.3%', followers: '88K', views: '16K', photo: '/assets/site/94ea648c542e815ff094601d1a753cc5.jpg', thumbs: [] },
+      { name: 'Isabella V.', city: 'Mexico City, Mexico', tags: ['Fashion', 'Lifestyle', 'Beauty'], eng: '5.4%', followers: '164K', views: '27K', photo: '/assets/site/7249ebbb588516cb490e3c6c20a99748.jpg', thumbs: [] },
+      { name: 'Maya R.', city: 'Lisbon, Portugal', tags: ['Wellness', 'Lifestyle', 'Fashion'], eng: '7.1%', followers: '41K', views: '7K', photo: '/assets/site/ec90400aca13b44714a88df820d81711.jpg', thumbs: [] },
+      { name: 'Ava K.', city: 'Toronto, Canada', tags: ['Fitness', 'Wellness', 'Beauty'], eng: '6.9%', followers: '36K', views: '8K', photo: '/assets/site/23e1f40c832d09c3aef3140bdd95b296.jpg', thumbs: ['/assets/site/964eef3f06704aaf816880720a5c6db2.jpg', '/assets/site/c7136a4fdaac1658a0947b62bc2b9c74.jpg', '/assets/site/2bb6238724fe2f3703df38f9adb6fb17.jpg'] },
+      { name: 'Luca B.', city: 'Milan, Italy', tags: ['Lifestyle', 'Travel', 'Grooming'], eng: '4.3%', followers: '96K', views: '14K', photo: '/assets/site/fe6c7b90a20e3033267567727bd15af4.jpg', thumbs: ['/assets/site/c38c6ab36575c0c9c2ae499595633395.jpg', '/assets/site/d9e6c9dcce3b23e62f481e1506e8b76d.jpg', '/assets/site/deea88ee4eacc3cc3723b670aa9afb2c.jpg'] },
       { name: 'Priya S.', city: 'London, UK', tags: ['Parenting', 'Fashion', 'Lifestyle'], eng: '5.9%', followers: '138K', views: '22K', photo: '/assets/site/ea82fdfe521e0410e52c8ec12245b326.jpg', thumbs: ['/assets/site/1cb46b09a9eeaca296a2637a58d23492.jpg', '/assets/site/42825d01a8c224b5d8b9d9c7b5dd62e1.jpg', '/assets/site/35b0fae6e1a0c9f31eb2ba0702308339.jpg'] },
-      { name: 'Elsa W.', city: 'Bristol, UK', tags: ['Travel', 'Food & Drink', 'Fashion'], eng: '5.8%', followers: '62K', views: '11K', photo: '/assets/site/a0b6d2722d4f1e02f2929a8d481790b9.jpg', thumbs: ['/assets/site/166615f31b925f09bd23c704177b0149.jpg', '/assets/site/b118adeb379840eb21814a1a1e96f0ba.jpg', '/assets/site/cef49c4488a8c655bd6175e1d73bfe37.jpg'] },
-      { name: 'Freya J.', city: 'London, UK', tags: ['Fashion', 'Lifestyle', 'Food & Drink'], eng: '6.4%', followers: '205K', views: '38K', photo: '/assets/site/11c413edb07a7d18c04ae3eb5988c562.jpg', thumbs: ['/assets/site/0e3510a1ba51846b1e2bd20c3493508e.jpg', '/assets/site/dcab074202f289bb6e60c96aadf2e927.jpg', '/assets/site/b2bb96275607136d99818ec908e47d5c.jpg'] }
+      { name: 'Elsa W.', city: 'Berlin, Germany', tags: ['Travel', 'Food & Drink', 'Fashion'], eng: '5.8%', followers: '62K', views: '11K', photo: '/assets/site/a0b6d2722d4f1e02f2929a8d481790b9.jpg', thumbs: ['/assets/site/166615f31b925f09bd23c704177b0149.jpg', '/assets/site/b118adeb379840eb21814a1a1e96f0ba.jpg', '/assets/site/cef49c4488a8c655bd6175e1d73bfe37.jpg'] },
+      { name: 'Freya J.', city: 'Copenhagen, Denmark', tags: ['Fashion', 'Lifestyle', 'Food & Drink'], eng: '6.4%', followers: '205K', views: '38K', photo: '/assets/site/11c413edb07a7d18c04ae3eb5988c562.jpg', thumbs: ['/assets/site/0e3510a1ba51846b1e2bd20c3493508e.jpg', '/assets/site/dcab074202f289bb6e60c96aadf2e927.jpg', '/assets/site/b2bb96275607136d99818ec908e47d5c.jpg'] }
     ];
     const seq = [[0, 0], [1, 0], [1, 1], [2, 1], [2, 0], [0, 1]];
     const collab = seq[tick % seq.length][0];
@@ -269,16 +432,16 @@ export class PageLogic extends DCLogic {
         { img: '/assets/site/c7dd1cafcd838cc426d156a16a416e4b.jpg', name: 'Elsa W.', status: 'In transit', chipBg: '#F3F2EE', chipFg: '#666563', s2: '#22B566', s3: '#E8E6E1' }
       ].map((s, i) => ({ ...s, line: i === 0 ? '0' : '1px solid #F0EEEA' })),
       platProducts: [
-        { img: '/assets/site/5f227733b7cffeb6796ffdfabc19ddb7.jpg', name: 'Pure Daily Balm', meta: '£18.00 · 86 in stock', camp: '2 campaigns' },
-        { img: '/assets/site/1611e205018833b6a131f13c5f8a88cb.jpg', name: 'Kina Organic Matcha', meta: '£24.00 · 140 in stock', camp: '1 campaign' },
-        { img: '/assets/site/a54f2d8307a9552b5e70bbd8df73710e.jpg', name: 'Black Sunglasses', meta: '£65.00 · 52 in stock', camp: '1 campaign' }
+        { img: '/assets/site/5f227733b7cffeb6796ffdfabc19ddb7.jpg', name: 'Pure Daily Balm', meta: cur.s + '18.00 · 86 in stock', camp: '2 campaigns' },
+        { img: '/assets/site/a645b35c2fa21a160db16c8503771554.jpg', name: 'KORA Organic Matcha', meta: cur.s + '24.00 · 140 in stock', camp: '1 campaign' },
+        { img: '/assets/site/a54f2d8307a9552b5e70bbd8df73710e.jpg', name: 'Black Sunglasses', meta: cur.s + '65.00 · 52 in stock', camp: '1 campaign' }
       ],
       niches: nicheList.map((n) => {
         const on = n === niche;
-        return { label: n, pick: () => this.setState({ niche: n }), bg: on ? '#232323' : '#FFFFFF', fg: on ? '#FFFFFF' : '#232323', bd: on ? '#232323' : '#E5E3DE' };
+        return { label: n, pick: () => this._cnGo(n), cls: 'cn-tab' + (on ? ' on' : ''), bg: on ? '#232323' : '#FFFFFF', fg: on ? '#FFFFFF' : '#232323', bd: on ? '#232323' : '#E5E3DE' };
       }),
-      creators: creatorList.filter((c) => niche === 'All creators' || c.tags.indexOf(niche) !== -1).slice(0, niche === 'All creators' ? 4 : 3),
-      moreOn: niche !== 'All creators',
+      creators: cnOrder.map((n) => creatorList.find((c) => c.name === n)).filter(Boolean).map((c) => ({ ...c, cat: catOf[c.name], cpos: ({ 'Chloé D.': '50% 0%', 'Nadia K.': '50% 0%' })[c.name] || '50% 50%' })),
+      moreOn: false,
       moreLabel: niche,
       moreAvs: creatorList.filter((c) => c.tags.indexOf(niche) === -1).slice(0, 4).map((c) => c.photo),
       trust: [
@@ -287,8 +450,39 @@ export class PageLogic extends DCLogic {
         { title: 'All niches', body: 'From beauty to fitness and more', icon: 'M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9zM19 3v4M17 5h4M5 17v3M3.5 18.5h3' },
         { title: 'Reviewed by brands', body: 'See ratings from past collaborations', icon: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10zM9 12l2 2 4-4' }
       ],
+      hiwSteps: (() => {
+        const st = this.state || {};
+        const cur = typeof st.hiwStep === 'number' ? st.hiwStep : 0;
+        return ['Launch a campaign', 'Match with creators', 'Get content', 'Reach new audiences', 'Repurpose your content', 'Measure your results']
+          .map((label, i) => ({ label, num: '0' + (i + 1), cls: 'hiw-step' + (i === cur ? ' on' : ''), pressed: i === cur ? 'true' : 'false', pick: () => this.hiwGo(i) }));
+      })(),
+      ...(() => { const a = [
+          { num: '01', title: 'Launch a campaign in seconds.', body: 'Gifted, paid or affiliate. Describe your campaign in one line and Autopilot writes the brief, sets the offer and has it ready to launch.' },
+          { num: '02', title: 'Match with creators who fit.', body: 'Invite creators matched to your brand, or let them apply. See their past content, collaborations and results, then decide who to work with.' },
+          { num: '03', title: 'Get content made for you.', body: 'Delivery updates, drafts and approvals all land in one chat. Approve in one click and it’s ready to post.' },
+          { num: '04', title: 'Tap into new, engaged audiences.', body: 'Creators share your product with followers who already trust them.\nEvery post gets you more visibility and becomes a new place to buy.' },
+          { num: '05', title: 'Use it on ads, your\u00a0site\u00a0and\u00a0socials.', body: 'Every piece lands in your content library with up to 12 months of usage rights.' },
+          { num: '06', title: 'See what every creator drives.', body: 'Views, clicks and sales for every creator and campaign in one place. Creators get paid automatically.' }
+        ]; return { hm0: a[0], hm1: a[1], hm2: a[2], hm3: a[3], hm4: a[4], hm5: a[5] }; })(),
+      hiwNow: (() => {
+        const cur = (this.state && typeof this.state.hiwStep === 'number') ? this.state.hiwStep : 0;
+        return [
+          { num: '01', title: 'Launch a campaign in seconds.', body: 'Gifted, paid or affiliate. Describe your campaign in one line and Autopilot writes the brief, sets the offer and has it ready to launch.' },
+          { num: '02', title: 'Match with creators who fit.', body: 'Invite creators matched to your brand, or let them apply. See their past content, collaborations and results, then decide who to work with.' },
+          { num: '03', title: 'Get content made for you.', body: 'Delivery updates, drafts and approvals all land in one chat. Approve in one click and it’s ready to post.' },
+          { num: '04', title: 'Tap into new, engaged audiences.', body: 'Creators share your product with followers who already trust them.\nEvery post gets you more visibility and becomes a new place to buy.' },
+          { num: '05', title: 'Use it on ads, your\u00a0site\u00a0and\u00a0socials.', body: 'Every piece lands in your content library with up to 12 months of usage rights.' },
+          { num: '06', title: 'See what every creator drives.', body: 'Views, clicks and sales for every creator and campaign in one place. Creators get paid automatically.' }
+        ][cur];
+      })(),
+      hiw0: !!(this.state && this.state.hiwM) || ((this.state && typeof this.state.hiwStep === 'number') ? this.state.hiwStep : 0) === 0,
+      hiw1: !!(this.state && this.state.hiwM) || ((this.state && typeof this.state.hiwStep === 'number') ? this.state.hiwStep : 0) === 1,
+      hiw2: !!(this.state && this.state.hiwM) || ((this.state && typeof this.state.hiwStep === 'number') ? this.state.hiwStep : 0) === 2,
+      hiw3: !!(this.state && this.state.hiwM) || ((this.state && typeof this.state.hiwStep === 'number') ? this.state.hiwStep : 0) === 3,
+      hiw4: !!(this.state && this.state.hiwM) || ((this.state && typeof this.state.hiwStep === 'number') ? this.state.hiwStep : 0) === 4,
+      hiw5: !!(this.state && this.state.hiwM) || ((this.state && typeof this.state.hiwStep === 'number') ? this.state.hiwStep : 0) === 5,
       steps: [
-        { n: 1, title: 'Launch any campaign in minutes', body: 'Add your product and choose what creators get: free product, a fee or commission. Matching creators see it right away.', native1: true },
+        { n: 1, title: 'Launch a campaign in seconds', body: 'Gifted, paid or affiliate. Describe your campaign in one line and Autopilot writes the brief, sets the offer and has it ready to launch.', native1: true },
         { n: 2, title: 'Choose the creators you want', body: 'Creators apply with their audience and past content, or you invite them. You only work with the ones you approve.', native2: true, rows: [
           { img: '/assets/site/2c0f99a5df5a6913ce12367dafae8e8c.jpg', name: 'Naomi L.', match: '98% match', sub: 'Lifestyle · 310K followers · UK' },
           { img: '/assets/site/e00a894cb6065581af2fd6588bac43ae.jpg', name: 'Sophie L.', match: '95% match', sub: 'Lifestyle · 284K followers · UK' },
@@ -319,28 +513,45 @@ export class PageLogic extends DCLogic {
       brands: base.concat(base).map((b) => ({ ...b, logo: b.logo || null, isText: !b.logo, h: b.h ? Math.round(parseFloat(b.h) * 0.82) + 'px' : b.h })),
       stats: [
         { value: '<1h', label: 'to your first creator application' },
-        { value: '<7 days', label: 'to your first approved creator' },
+        { value: '120 hrs', label: 'saved every month on creator admin' },
         { value: '3.5×', label: 'more content than finding creators by hand' },
         { value: '175+', label: 'countries in our creator network' }
       ],
       managed: ['Samples and shipping', 'Deliverables', 'Content uploads', 'Usage rights', 'Audience discounts', 'Sales attribution', 'Commissions', 'Creator payouts'],
       ways: [
         { name: 'Gifted', icon: 'M20 12v9H4v-9M2 7h20v5H2zM12 22V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z', body: 'Send free product to the creators you approve. They create and share content featuring it.', give: 'Free product', get: ['Brand awareness', 'Organic content', 'Product seeding', 'Reviews and unboxings'], best: 'building a content library', img: '/assets/site/7d81b2f64cd3b8b6fe1cf1aa0a76777e.jpg', alt: 'Creator with a gifted Pure Skincare balm', pos: '50% 30%', thumb: '/assets/site/6f7612525d7110c24bd6d8ff2ef81061.jpg', chipTitle: 'Pure Skincare Daily Balm', chipSub: 'Shipped to 12 creators', chipTag: 'Delivered' },
-        { name: 'Paid', icon: 'M2 5h20v14H2zM2 10h20', body: 'Pay a set fee for agreed content, or let creators propose their own rate when they apply.', give: 'A set fee', get: ['Assets for paid media', 'High quality content', 'Larger creators', 'Guaranteed deliverables'], best: 'ad creative and launches', img: '/assets/site/1896fe808a281f4c712f65fa80512594.jpg', alt: 'Creator wearing gold drop earrings', thumb: '/assets/site/75163011673c0bce90e5473c56500d66.jpg', chipTitle: 'Gold Drop Earrings', chipSub: '£100 per creator · 1 Reel', chipTag: 'Fee agreed' },
-        { name: 'Affiliate', icon: 'M19 5 5 19M6.5 4a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.5 15a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z', body: 'Creators earn commission on every sale through their link. Their followers get a discount automatically.', give: 'Commission on sales', get: ['Sales', 'Testing new creators', 'Ongoing promotion', 'No upfront cost'], best: 'testing creators at no upfront cost', img: '/assets/site/065139893da1a2a2d8434306736e52a6.jpg', alt: 'Creators running together', thumb: '/assets/site/1611e205018833b6a131f13c5f8a88cb.jpg', chipTitle: 'Tom’s link · 15% off', chipSub: 'Kina Matcha · 15% commission', chipTag: codeUses + ' sales' },
+        { name: 'Paid', icon: 'M2 5h20v14H2zM2 10h20', body: 'Pay a set fee for agreed content, or let creators propose their own rate when they apply.', give: 'A set fee', get: ['Assets for paid media', 'High quality content', 'Larger creators', 'Guaranteed deliverables'], best: 'ad creative and launches', img: '/assets/site/1896fe808a281f4c712f65fa80512594.jpg', alt: 'Creator wearing gold drop earrings', thumb: '/assets/site/75163011673c0bce90e5473c56500d66.jpg', chipTitle: 'Gold Drop Earrings', chipSub: cur.s + '100 per creator · 1 Reel', chipTag: 'Fee agreed' },
+        { name: 'Affiliate', icon: 'M19 5 5 19M6.5 4a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.5 15a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z', body: 'Creators earn commission on every sale through their link. Their followers get a discount automatically.', give: 'Commission on sales', get: ['Sales', 'Testing new creators', 'Ongoing promotion', 'No upfront cost'], best: 'testing creators at no upfront cost', img: '/assets/site/065139893da1a2a2d8434306736e52a6.jpg', alt: 'Creators running together', thumb: '/assets/site/a645b35c2fa21a160db16c8503771554.jpg', chipTitle: 'Tom’s link · 15% off', chipSub: 'KORA Matcha · 15% commission', chipTag: codeUses + ' sales' },
         { name: 'Mix them', icon: 'M8 3H3v5M3 3l7 7M16 3h5v5M21 3l-7 7M8 21H3v-5M3 21l7-7M16 21h5v-5M21 21l-7-7', give: 'Any combination', get: ['Awareness and sales', 'Content at scale', 'Rewarding top creators', 'Flexible budgets'], img: '/assets/site/ec74e10b8d5abdfdc40051f8e07db321.jpg', alt: 'Creator wearing black sunglasses in the sun', pos: '50% 74%', mpos: '50% 100%', thumb: '/assets/site/a54f2d8307a9552b5e70bbd8df73710e.jpg', chipTitle: 'Black Rectangle Sunglasses', chipSub: '38 creators applied', chipTag: 'Live' }
-      ].map((w, i) => ({ ...w, pos: w.pos || '50% 50%', mpos: w.mpos || w.pos || '50% 50%', sc: i === wayIdx ? 1 : 1.07, on: i === wayIdx, prog: wayAuto && i === wayIdx, op: i === wayIdx ? 1 : 0, pick: () => {
+      ].map((w, i) => ({ ...w, pos: w.pos || '50% 50%', mpos: w.mpos || w.pos || '50% 50%', sc: i === wayIdx ? 1 : 1.07, on: i === wayIdx, prog: wayAuto && i === wayIdx, tcls: 'wy-tab' + (i === wayIdx ? ' on' : ''), bestTxt: (w.get || []).map((g, k) => k ? g.charAt(0).toLowerCase() + g.slice(1) : g).join(', '), op: i === wayIdx ? 1 : 0, pick: () => {
           if (scrollMode) {
             const el = document.getElementById('ways-track');
             const top = el.getBoundingClientRect().top + window.scrollY;
-            const total = el.offsetHeight - window.innerHeight;
-            window.scrollTo({ top: top + total * (i + 0.5) / 4, behavior: 'smooth' });
-          } else { this.setState({ wayPick: i, wayStop: true }); }
+            const st = el.querySelector('.ways-sticky');
+            const total = el.offsetHeight - (st ? st.offsetHeight : 0);
+            window.scrollTo({ top: top - 96 + total * (i + 0.5) / 4, behavior: 'smooth' });
+          } else {
+            const tr = document.querySelector('.wy-track'), pin = tr && tr.querySelector('.wy-pin');
+            if (tr && pin && window.innerWidth > 960) {
+              const total = tr.offsetHeight - pin.offsetHeight;
+              const y = tr.getBoundingClientRect().top + window.scrollY - 96 + total * (i + 0.5) / 4;
+              this.setState({ wayPick: i });
+              try { window.scrollTo({ top: y, behavior: 'instant' }); } catch (e) { window.scrollTo(0, y); }
+            } else {
+              this.setState({ wayPick: i, wayStop: true });
+              const row = document.getElementById('wm-row'), c = row && row.querySelectorAll('.wm-card')[i], tabs = document.querySelector('.wm-tabs');
+              if (c && window.innerWidth <= 760) {
+                const y = c.getBoundingClientRect().top + window.scrollY - 68 - (tabs ? tabs.offsetHeight : 0) - 12;
+                this._wmLock = Date.now() + 900;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+              }
+            }
+          }
         }, bg: i === wayIdx ? '#FFFFFF' : 'transparent', sh: i === wayIdx ? '0 12px 32px rgba(35,35,35,.08)' : 'none', bd: i === wayIdx ? '#ECEAE5' : 'transparent', iconBg: i === wayIdx ? '#232323' : '#F3F2EE', iconFg: i === wayIdx ? '#FFFFFF' : '#232323' })),
-      waysPad: scrollMode ? '0' : '120px 0 72px',
-      waysTrackH: scrollMode ? '2400px' : 'auto',
+      waysPad: '120px 0 72px',
+      waysTrackH: scrollMode ? '3400px' : 'auto',
       waysPos: scrollMode ? 'sticky' : 'relative',
-      waysInnerPad: scrollMode ? '88px 0 24px' : '0',
+      waysInnerPad: '0',
       waysMode: scrollMode ? 'ways-pinned' : '',
       demoOn: !!(this.state && this.state.demoOn),
       demoIdle: !(this.state && this.state.demoOn),
@@ -352,6 +563,34 @@ export class PageLogic extends DCLogic {
       cookieShow: !(this.state && this.state.cookieDone),
       cookieAccept: () => { acceptAll(); this.setState({ cookieDone: true }); },
       cookieReject: () => { rejectAll(); this.setState({ cookieDone: true }); },
+      apEv: (() => {
+        const ev = [['Mon 09:02', '12 creators matched', '2%', 0], ['Tue 10:40', '10 accepted your offer', '28%', 1], ['Wed 15:12', '9 products delivered', '50%', 0], ['Thu 11:05', 'First 3 posts live', '66%', 1], ['Fri 08:30', '7 posts live', '82%', 0]];
+        const ph = still ? 4 : Math.min(4, tick % 7);
+        return ev.map(([day, title, x, row], i) => ({ day, title, x, avs: i === 4, cls: 'apz-e' + (row ? ' low' : '') + (i <= ph ? ' on' : '') + (i === ph ? ' cur' : '') }));
+      })(),
+      apHead: ['calc(2% + 18px)', 'calc(28% + 18px)', 'calc(50% + 18px)', 'calc(66% + 18px)', 'calc(82% + 18px)'][still ? 4 : Math.min(4, tick % 7)],
+      apStats: (() => {
+        const ph = still ? 4 : Math.min(4, tick % 7);
+        const rows = [['Creators sourced', [6, 18, 31, 42, 48]], ['Invites sent', [0, 3, 6, 9, 12]], ['Products shipped', [0, 1, 4, 7, 9]], ['Posts received', [0, 0, 2, 4, 7]]];
+        const max = [48, 12, 9, 7];
+        return rows.map(([l, vals], i) => ({ l, v: String(vals[ph]), w: Math.round(vals[ph] / max[i] * 100) + '%' }));
+      })(),
+      apNote: ['Waiting on first posts', 'Waiting on first posts', 'Ella and Tom posted today', 'Ella, Tom and 2 more posted today', 'Ella, Tom, Naomi and 4 more posted today'][still ? 4 : Math.min(4, tick % 7)],
+      cs: cur.s,
+      apTl: (() => {
+        const st = [
+          ['Sourced', '48 creators who fit your brand'],
+          ['Matched', 'Top 12 by audience and engagement'],
+          ['Invited', 'Your offer sent to all 12'],
+          ['Shipped', 'Product sent to 9 approved creators'],
+          ['Followed up', 'Reminders sent to keep content on time']
+        ];
+        const ph = still ? st.length : tick % (st.length + 3);
+        return st.map(([title, sub], i) => {
+          const done = i < ph, run = i === ph;
+          return { title, sub, done, run, when: run ? 'Now' : (done ? (ph - i) + 'm ago' : 'Waiting'), cls: 'apx-s' + (done ? ' done' : '') + (run ? ' run' : '') };
+        });
+      })(),
       apFeed: (() => {
         const steps = [
           'Campaign drafted from your product page',
@@ -374,8 +613,8 @@ export class PageLogic extends DCLogic {
       wG: wayIdx === 0, wP: wayIdx === 1, wA: wayIdx === 2, wM: wayIdx === 3,
       wayNow: [
         { thumb: '/assets/site/6f7612525d7110c24bd6d8ff2ef81061.jpg', chipTitle: 'Pure Skincare Daily Balm', chipSub: 'Shipped to 12 creators', chipTag: 'Delivered' },
-        { thumb: '/assets/site/75163011673c0bce90e5473c56500d66.jpg', chipTitle: 'Gold Drop Earrings', chipSub: '£100 per creator · 1 Reel', chipTag: 'Fee agreed' },
-        { thumb: '/assets/site/1611e205018833b6a131f13c5f8a88cb.jpg', chipTitle: 'Tom’s link · 15% off', chipSub: 'Kina Matcha · 15% commission', chipTag: codeUses + ' sales' },
+        { thumb: '/assets/site/75163011673c0bce90e5473c56500d66.jpg', chipTitle: 'Gold Drop Earrings', chipSub: cur.s + '100 per creator · 1 Reel', chipTag: 'Fee agreed' },
+        { thumb: '/assets/site/a645b35c2fa21a160db16c8503771554.jpg', chipTitle: 'Tom’s link · 15% off', chipSub: 'KORA Matcha · 15% commission', chipTag: codeUses + ' sales' },
         { thumb: '/assets/site/a54f2d8307a9552b5e70bbd8df73710e.jpg', chipTitle: 'Black Rectangle Sunglasses', chipSub: '38 creators applied', chipTag: 'Live' }
       ][wayIdx],
       faqs: [
@@ -385,14 +624,15 @@ export class PageLogic extends DCLogic {
         { q: 'Do I need a Shopify store?', a: 'No. Linkable works without Shopify. Connect it when you want product sync, automatic audience discounts and sales attribution.' },
         { q: 'How does the free trial work?', a: 'Every plan is free for the first 30 days, with full access to the platform. Change plan or cancel any time.' },
         { q: 'What counts towards my monthly creator limit?', a: 'Each new creator you start working with in a month counts once. Applications and invitations are unlimited on every plan.' },
-        { q: 'What is the 2.5% fee?', a: 'It applies only to sales tracked through creator links and codes. Everything else is covered by your plan.' },
+        { q: 'What is the 2.5% fee?', a: 'It applies only to sales tracked through creator links. Everything else is covered by your plan.' },
         { q: 'Who owns the content creators make?', a: 'You agree usage rights in each campaign, and they are saved with every piece of content in your library, so you always know where you can use it.' },
         { q: 'Can your team run campaigns for us?', a: 'Yes. Our managed service plans your campaigns, finds the right creators and manages every collaboration from start to finish. Talk to our team to set it up.' }
       ].map((f, i) => ({ ...f, open: i === openFaq, toggle: () => this.setState({ openFaq: i === openFaq ? -1 : i }), rot: i === openFaq ? '45deg' : '0deg', iconBg: i === openFaq ? '#232323' : '#F3F2EE', iconFg: i === openFaq ? '#FFFFFF' : '#232323' })),
+      curCode: cur.code,
       plans: [
-        { name: 'Starter', price: '$99', year: '$990', mo: '$83', blurb: 'For brands getting started with creators.', features: ['Work with up to 10 new creators a month', 'Run up to 2 campaigns at once', 'Campaign and creator insights', 'Dedicated support and onboarding'], bg: '#F6F4EF', fg: '#232323', sub: '#666563', line: '#E8E6E1', pillBg: '#232323', pillFg: '#FFFFFF', popular: false, btnClass: 'btn btn-primary btn-arrow' },
-        { name: 'Growth', price: '$199', year: '$1,990', mo: '$166', blurb: 'For brands working with creators every month.', features: ['Work with up to 50 new creators a month', 'Run up to 10 campaigns at once', 'Campaign and creator insights', 'Dedicated support and onboarding'], bg: '#232323', fg: '#FFFFFF', sub: '#B5B3AE', line: '#3A3A38', pillBg: '#FFFFFF', pillFg: '#232323', popular: true, btnClass: 'btn btn-ghost btn-arrow' },
-        { name: 'Scale', price: '$499', year: '$4,990', mo: '$416', blurb: 'For brands running a full creator program.', features: ['Work with up to 100 new creators a month', 'Run up to 20 campaigns at once', 'Advanced campaign and creator insights', 'Priority support and onboarding'], bg: '#F6F4EF', fg: '#232323', sub: '#666563', line: '#E8E6E1', pillBg: '#232323', pillFg: '#FFFFFF', popular: false, btnClass: 'btn btn-primary btn-arrow' }
+        { name: 'Starter', price: m(99), year: m(990), mo: m(83), blurb: 'For brands getting started with creators.', features: ['Work with up to 10 new creators a month', 'Run up to 2 campaigns at once', 'Campaign and creator insights', 'Dedicated support and onboarding'], bg: '#F6F4EF', fg: '#232323', sub: '#666563', line: '#E8E6E1', pillBg: '#232323', pillFg: '#FFFFFF', popular: false, btnClass: 'btn btn-primary btn-arrow' },
+        { name: 'Growth', price: m(199), year: m(1990), mo: m(166), blurb: 'For brands working with creators every month.', features: ['Work with up to 50 new creators a month', 'Run up to 10 campaigns at once', 'Campaign and creator insights', 'Dedicated support and onboarding'], bg: '#232323', fg: '#FFFFFF', sub: '#B5B3AE', line: '#3A3A38', pillBg: '#FFFFFF', pillFg: '#232323', popular: true, btnClass: 'btn btn-ghost btn-arrow' },
+        { name: 'Scale', price: m(499), year: m(4990), mo: m(416), blurb: 'For brands running a full creator program.', features: ['Work with up to 100 new creators a month', 'Run up to 20 campaigns at once', 'Advanced campaign and creator insights', 'Priority support and onboarding'], bg: '#F6F4EF', fg: '#232323', sub: '#666563', line: '#E8E6E1', pillBg: '#232323', pillFg: '#FFFFFF', popular: false, btnClass: 'btn btn-primary btn-arrow' }
       ].map((p) => ({ ...p, shown: yearly ? p.mo : p.price, note: yearly ? 'Billed ' + p.year + ' a year' : 'or ' + p.year + ' a year, save 17%' }))
     };
   }

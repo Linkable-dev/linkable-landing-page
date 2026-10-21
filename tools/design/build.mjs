@@ -18,6 +18,10 @@ import { compile, render } from '../../src/design/render.js';
 import { AUTHOR, CONTENT, SITE, esc, fmtDate, heroInfo, readJson, renderArticle, wordCount } from '../blog/lib.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
+// Home and pricing pick £, € or $ from the visitor's time zone. Render the
+// first frame in UTC (US dollars, the design's fallback) whoever builds it;
+// the browser switches to the visitor's currency when the runtime starts.
+process.env.TZ = 'UTC';
 const TRACKING = fs.readFileSync(path.join(ROOT, 'tools/design/tracking.html'), 'utf8');
 // Link-preview cards rendered by tools/design/og.mjs (1200x630).
 const OG = (name) => ({ image: `/assets/og/${name}.jpg`, imageW: 1200, imageH: 630 });
@@ -38,9 +42,12 @@ const STATIC = [
 function head({ key, url, title, description, image, imageW, imageH, imageAlt = title, type = 'website', robots = 'max-image-preview:large', extra = '' }) {
   const canonical = SITE + url;
   const img = SITE + image;
-  // A page whose design has no styles of its own (the home page) gets no page.css link.
-  const own = fs.readFileSync(path.join(ROOT, `src/design/pages/${key}/page.css`), 'utf8').replace(/\/\*[\s\S]*?\*\//g, '').trim();
-  const css = ['/src/design/site.css', ...(own ? [`/src/design/pages/${key}/page.css`] : []), '/src/consent.css'];
+  // A page whose design has no styles of its own gets no page.css link; one
+  // marked standalone (the home page) carries every style and skips site.css.
+  const raw = fs.readFileSync(path.join(ROOT, `src/design/pages/${key}/page.css`), 'utf8');
+  const own = raw.replace(/\/\*[\s\S]*?\*\//g, '').trim();
+  const page = own ? [`/src/design/pages/${key}/page.css`] : [];
+  const css = [...(raw.startsWith('/* standalone:') ? page : ['/src/design/site.css', ...page]), '/src/consent.css'];
   return `<!doctype html>
 <html lang="en" data-page="${key}">
 <head>

@@ -23,14 +23,25 @@ export class PageLogic extends DCLogic {
     ];
     const yearly = !!(this.state && this.state.yearly);
     const openFaq = (this.state && typeof this.state.openFaq === 'number') ? this.state.openFaq : 0;
+    let tz = '';
+    try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}
+    const ukZones = ['Europe/London', 'Europe/Belfast', 'Europe/Jersey', 'Europe/Guernsey', 'Europe/Isle_of_Man'];
+    const euroZones = ['Atlantic/Canary', 'Atlantic/Madeira', 'Atlantic/Azores'];
+    const cur = ukZones.indexOf(tz) > -1 ? { s: '£', name: 'British pounds', code: 'GBP' }
+      : (tz.indexOf('Europe/') === 0 || euroZones.indexOf(tz) > -1) ? { s: '€', name: 'euros', code: 'EUR' }
+      : { s: '$', name: 'US dollars', code: 'USD' };
+    const m = (n) => cur.s + n.toLocaleString('en-US');
     const plans = [
-        { name: 'Starter', price: '$99', year: '$990', mo: '$83', blurb: 'For brands getting started with creators.', features: ['Work with up to 10 new creators a month', 'Run up to 2 campaigns at once', 'Campaign and creator insights', 'Dedicated support and onboarding'], bg: '#F6F4EF', fg: '#232323', sub: '#666563', line: '#E8E6E1', popular: false, btnClass: 'btn btn-primary btn-arrow' },
-        { name: 'Growth', price: '$199', year: '$1,990', mo: '$166', blurb: 'For brands working with creators every month.', features: ['Work with up to 50 new creators a month', 'Run up to 10 campaigns at once', 'Campaign and creator insights', 'Dedicated support and onboarding'], bg: '#232323', fg: '#FFFFFF', sub: '#B5B3AE', line: '#3A3A38', popular: true, btnClass: 'btn btn-ghost btn-arrow' },
-        { name: 'Scale', price: '$499', year: '$4,990', mo: '$416', blurb: 'For brands running a full creator program.', features: ['Work with up to 100 new creators a month', 'Run up to 20 campaigns at once', 'Advanced campaign and creator insights', 'Priority support and onboarding'], bg: '#F6F4EF', fg: '#232323', sub: '#666563', line: '#E8E6E1', popular: false, btnClass: 'btn btn-primary btn-arrow' }
+        { name: 'Starter', price: m(99), year: m(990), mo: m(83), blurb: 'For brands getting started with creators.', features: ['Work with up to 10 new creators a month', 'Run up to 2 campaigns at once', 'Campaign and creator insights', 'Dedicated support and onboarding'], bg: '#F6F4EF', fg: '#232323', sub: '#666563', line: '#E8E6E1', popular: false, btnClass: 'btn btn-primary btn-arrow' },
+        { name: 'Growth', price: m(199), year: m(1990), mo: m(166), blurb: 'For brands working with creators every month.', features: ['Work with up to 50 new creators a month', 'Run up to 10 campaigns at once', 'Campaign and creator insights', 'Dedicated support and onboarding'], bg: '#232323', fg: '#FFFFFF', sub: '#B5B3AE', line: '#3A3A38', popular: true, btnClass: 'btn btn-ghost btn-arrow' },
+        { name: 'Scale', price: m(499), year: m(4990), mo: m(416), blurb: 'For brands running a full creator program.', features: ['Work with up to 100 new creators a month', 'Run up to 20 campaigns at once', 'Advanced campaign and creator insights', 'Priority support and onboarding'], bg: '#F6F4EF', fg: '#232323', sub: '#666563', line: '#E8E6E1', popular: false, btnClass: 'btn btn-primary btn-arrow' }
       ].map((p) => ({ ...p, shown: yearly ? p.mo : p.price, note: yearly ? 'Billed ' + p.year + ' a year' : 'or ' + p.year + ' a year, save 17%' }));
     return {
       brands: base.concat(base),
       plans: plans,
+      curName: cur.code,
+      y0: plans[0].year, y1: plans[1].year, y2: plans[2].year,
+      feePlan: m(199), feeSales: m(4000), feeCut: m(100), feeZero: m(0), feeTotal: m(299),
       cmp0: plans[0].shown, cmp1: plans[1].shown, cmp2: plans[2].shown,
       setMonthly: () => this.setState({ yearly: false }),
       setYearly: () => this.setState({ yearly: true }),
@@ -42,7 +53,7 @@ export class PageLogic extends DCLogic {
         { q: 'What counts towards my monthly creator limit?', a: 'Each new creator you start working with in a month counts once. Applications and invitations are unlimited on every plan.' },
         { q: 'What is the 2.5% fee?', a: 'It applies only to sales tracked through creator links and codes. Every other sale in your store carries no fee.' },
         { q: 'How does yearly billing work?', a: 'Pay once a year and save 17% compared with paying monthly.' },
-        { q: 'Which currency are prices in?', a: 'Prices are in US dollars.' },
+        { q: 'Which currency are prices in?', a: 'Prices are shown in ' + cur.name + '. UK brands pay in British pounds, brands in Europe pay in euros, and everyone else pays in US dollars.' },
         { q: 'Do I need a Shopify store?', a: 'No. Linkable works without Shopify. Connect it when you want product sync, automatic audience discounts and sales attribution.' },
         { q: 'How much does the managed service cost?', a: 'It depends on the campaigns you want us to run. Talk to our team and we’ll put together a plan for your brand.' }
       ].map((f, i) => ({ ...f, open: i === openFaq, toggle: () => this.setState({ openFaq: i === openFaq ? -1 : i }), rot: i === openFaq ? '45deg' : '0deg', iconBg: i === openFaq ? '#232323' : '#F3F2EE', iconFg: i === openFaq ? '#FFFFFF' : '#232323' })),

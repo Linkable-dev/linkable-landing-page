@@ -372,8 +372,6 @@ section{scroll-margin-top:72px}
 .plat-grid .plat-card{flex:0 0 84vw;animation:none!important}
 .plat-grid .plat-ui{animation:none!important}
 .plat-grid .plat-well{zoom:.86;overflow:hidden}
-.plat-grid .plat-chart{height:14px}
-@media (hover: none){.plat-card:hover{transform:none!important;box-shadow:none!important}.plat-card:hover .plat-ui{transform:none!important}}
 .plat-grid .plat-ui{box-shadow:0 4px 14px rgba(35,35,35,.06)!important}
 .plat-grid .plat-title{font-size:18px!important}
 .plat-grid .plat-body{font-size:14.5px!important}
@@ -449,7 +447,7 @@ img[src*="e00a894cb6065581af2fd6588bac43ae"]{object-position:50% 25%!important}
 .dash-up{display:flex;align-items:center;gap:10px;padding:11px 0;border-top:1px solid #F0EEE9;font-size:12.5px}
 .dash-up img{width:26px;height:26px;border-radius:50%;object-fit:cover}
 .dash-sales{margin-top:14px}
-@media (min-width: 601px){#video .demo-wash{background:rgba(255,254,251,.55)!important;transition:background .3s}#video .card:hover .demo-wash{background:rgba(255,254,251,.4)!important}#video .play{padding:10px 24px 10px 10px;font-size:17px}}
+@media (min-width: 601px){#video .play{top:70%}}
 .more-card{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px 24px!important;border-radius:18px;background:#F6F4EF!important;border:1px dashed #DAD7D0!important;box-shadow:none!important;text-decoration:none;color:#232323;min-height:100%}
 .more-avs{display:flex;align-items:center}
 .more-avs img,.more-avs span{width:44px;height:44px;border-radius:50%;object-fit:cover;border:3px solid #F6F4EF;margin-left:-12px}

@@ -116,11 +116,10 @@ def split(name):
 
 # ------------------------------------------------------------- page patches
 def home(body, logic):
-    # The design references a Meta wordmark the export does not ship; the
-    # official one lives in public/assets/brand (outside the folder this
-    # importer rewrites).
-    body = patch(body, '<img src="/_blob/bb0f4a7197b93d52a0ffa7861af0aedc" alt="Meta"',
-                 '<img src="/assets/brand/meta.svg" alt="Meta"', label='meta logo')
+    # A stray </span> in the "Ella sent content for review" card; browsers
+    # ignore it, the renderer does not.
+    body = patch(body, '<em>Photo</em></span></span></span></div><div class="ms-me ms-a4">',
+                 '<em>Photo</em></span></span></div><div class="ms-me ms-a4">', label='stray span')
     # The creator cards behind the niche chips: leave out any creator whose
     # photo is not in the export, and any content thumbnail that is not,
     # rather than show broken images.
@@ -338,7 +337,7 @@ VIDEO = '1db4202f667f59ea880dc6527a69d732'
 if os.path.exists(os.path.join(ASSETS_IN, 'demo-video.mp4')):  # the export renames the video
     assets[VIDEO] = os.path.join(ASSETS_IN, 'demo-video.mp4')
 served = lambda i: 'demo-video.mp4' if i == VIDEO else os.path.basename(assets[i])  # noqa: E731
-shared = lite = None
+shared = standalone = None
 SATOSHI = re.compile(r'^@font-face\{font-family:"Satoshi";src:url\("/_blob/[a-f0-9]{32}"\) format\("truetype"\);font-weight:300 900;font-style:normal;font-display:swap\}$')
 used, missing = set(), set()
 os.makedirs(PAGES_OUT, exist_ok=True)
@@ -350,16 +349,18 @@ for name, key in PAGES.items():
     # .ttf; FONTS above serves a woff2 copy instead.
     assert SATOSHI.match(styles[0]), f'{name}: first style block is not the Satoshi font'
     styles = styles[1:]
-    if shared is None:
-        shared = styles[:2]
-    # The home page's copy of block 2 carries a few extra rules (.plat-grid,
-    # #video) for elements only it has, so the other pages may hold the copy
-    # without them; site.css takes the home page's.
-    assert styles[0] == shared[0], f'{name}: shared style block 1 differs from the home page'
-    if styles[1] != shared[1]:
-        lite = lite or styles[1]
-        assert styles[1] == lite, f'{name}: shared style block 2 matches neither copy'
-        assert not re.search(r'id="video"|plat-(grid|card)', body), f'{name}: uses home-only rules missing from its copy of block 2'
+    # Since the 21 Oct 2026 design the home page holds its own edited copies of
+    # both shared blocks, its page rules folded in, and lacks a few rules the
+    # other pages share (.ap2, .ways-pinned). Layering it over site.css would
+    # let those leak in, so it gets one whole stylesheet of its own instead.
+    if key == 'home':
+        assert len(styles) == 2, f'{name}: expected its own 2 style blocks, got {len(styles)}'
+        standalone = styles
+    else:
+        if shared is None:
+            shared = styles[:2]
+        assert styles[0] == shared[0], f'{name}: shared style block 1 differs from the other pages'
+        assert styles[1] == shared[1], f'{name}: shared style block 2 differs from the other pages'
 
     if key in PAGE_PATCHES:
         body, logic = PAGE_PATCHES[key](body, logic)
@@ -394,9 +395,16 @@ for name, key in PAGES.items():
     os.makedirs(out, exist_ok=True)
     open(os.path.join(out, 'template.html'), 'w', encoding='utf-8').write(body + '\n')
     open(os.path.join(out, 'state.js'), 'w', encoding='utf-8').write(HEADER + logic + '\n')
-    css = (styles[2] if len(styles) == 3 else '') + PAGE_CSS.get(key, '')
-    open(os.path.join(out, 'page.css'), 'w', encoding='utf-8').write(
-        f'/* {name}.dc.html: styles of this page only (shared ones are in ../../site.css). */' + css)
+    if key == 'home':
+        # build.mjs reads the "standalone" marker and leaves site.css out.
+        open(os.path.join(out, 'page.css'), 'w', encoding='utf-8').write(
+            f'/* standalone: {name}.dc.html carries its own copy of every style, so this page does not load ../../site.css. */\n'
+            + FONTS + '\n/* --- design styles (block 1) --- */' + standalone[0]
+            + '\n/* --- design styles (block 2) --- */' + standalone[1] + PAGE_CSS.get(key, '') + FIXES)
+    else:
+        css = (styles[2] if len(styles) == 3 else '') + PAGE_CSS.get(key, '')
+        open(os.path.join(out, 'page.css'), 'w', encoding='utf-8').write(
+            f'/* {name}.dc.html: styles of this page only (shared ones are in ../../site.css). */' + css)
     print(f'wrote src/design/pages/{key}/ from {name}.dc.html')
 
 open(os.path.join(ROOT, 'src', 'design', 'site.css'), 'w', encoding='utf-8').write(
