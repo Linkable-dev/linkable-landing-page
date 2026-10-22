@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 6214965,
+      "alt": "A woman in a white robe interacts with two smartphones, showcasing social media engagement icons.",
+      "src": "https://images.pexels.com/photos/6214965/pexels-photo-6214965.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/person-holding-smartphones-6214965/",
+      "query": "woman checking phone comments",
+      "width": 6720,
+      "credit": {
+        "url": "https://www.pexels.com/@karola-g",
+        "name": "https://kaboompics.com/"
+      },
+      "height": 4480,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/6214965/pexels-photo-6214965.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/6214965/pexels-photo-6214965.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/spot-fake-followers-before-gifting-6214965-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/spot-fake-followers-before-gifting-6214965-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "spot-fake-followers-before-gifting",
+    "title": "How to spot fake followers before gifting product",
+    "description": "Learn how to spot fake followers before gifting product, with a five-minute comment and posting-history check any brand can run.",
+    "excerpt": "A follower count can look perfectly healthy and still be hollow. Here is the five-minute check that tells you before you ship a single box.",
+    "date": "2026-10-22",
+    "updated": "2026-10-22",
+    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
+    "imageAlt": "A woman in a white robe interacts with two smartphones, showcasing social media engagement icons.",
+    "words": 947,
+    "source": "generated",
+    "keyword": "how to spot fake followers before gifting",
+    "category": "Sourcing",
+    "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 6223605,
       "alt": "Young children with a mother in a domestic kitchen setting, showcasing family time.",
       "src": "https://images.pexels.com/photos/6223605/pexels-photo-6223605.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",

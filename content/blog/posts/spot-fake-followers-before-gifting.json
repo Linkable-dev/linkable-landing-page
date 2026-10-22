@@ -1,0 +1,112 @@
+{
+  "blocks": [
+    {
+      "text": "You found a creator with a following that fits your brand, the aesthetic is right, the niche is right, and the number next to \"followers\" looks solid enough to justify sending product. Then the post goes up and almost nothing happens. No comments worth reading, no saves, no clicks on the link in bio. The follower count was never the problem you needed to check.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you spot fake followers before gifting a creator product",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "You spot fake followers before gifting by checking three things that take about five minutes total: the comments under the last three or four posts, the ratio between likes and comments, and whether the posting history shows a steady pattern or a sudden spike. Real audiences leave comments that reference something specific in the post. Bought or bot audiences leave generic praise, emoji strings, or nothing at all.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This matters more at the gifting stage than almost anywhere else in the process, because gifting has no fee attached. There is no contract forcing the creator to deliver, so the only signal you have is whether their existing audience actually behaves like people who buy things. If you skip the check, you find out the hard way after the product has already shipped.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What do the comments actually tell you",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Open the last three or four posts and read the comments properly, not just scroll past them. You are looking for specificity. A comment that says \"this is exactly what I needed for my morning routine\" is a person. A row of comments that say \"nice\", \"love this\", and a string of fire emojis, all posted within minutes of each other, is not.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Check who is commenting too. Click into three or four of the commenting accounts. If they all have no profile photo, a handful of posts, and a username that is a random string of letters and numbers, that is the clearest sign you will get. Real followers tend to have some kind of profile behind them, even a modest one.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Also look at the tone of replies from the creator. A creator who actually knows their audience replies to comments by name, references an earlier conversation, or answers a question properly. A creator managing a hollow following tends to reply with a single heart emoji or nothing at all, because there is no real conversation to continue.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Why the like-to-comment ratio matters more than follower count",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Followers can be bought in bulk and likes can be bought almost as easily, but comments are harder to fake convincingly at scale, which is why the ratio between the two is the more reliable number. An account with a healthy following usually has a reasonable spread of comments relative to likes. An account that gets plenty of likes but almost no comments, post after post, is showing you a following that looks at content without engaging with it, which is exactly the behaviour a bot-inflated account produces.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This is also a useful filter to apply before you even open a conversation. If you are reviewing applications or scanning profiles to invite, run this check on anyone whose numbers look unusually smooth, where every post gets a suspiciously similar amount of engagement regardless of what is actually in it. Our guide on [how to evaluate a creator before working with them](/blog/how-to-evaluate-a-creator-before-working-with-them) covers the wider checklist this sits inside, including rates and past brand work.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Does posting history reveal anything the profile page hides",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Scroll back further than the last month. A creator whose follower count jumped sharply at some point with no corresponding spike in posting quality or a viral moment you can point to is worth a second look. Organic growth tends to be lumpy but gradual. A following that doubled over a short window and then flattened out again, with engagement that never moved with it, usually means the growth was bought rather than earned.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Posting frequency tells you something too. A creator who posted consistently for months and then went quiet before picking back up right as they started applying to brand campaigns is not automatically a red flag, people take breaks, but combine it with the comment pattern above and you get a fuller picture than the follower count alone ever gives you.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Say you are a candle brand reviewing an applicant",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Picture a home fragrance brand with a handful of gifting slots open this month. An applicant comes in with a following that looks strong for the niche, good photos, on-brand colour palette. You open the last four posts. The comments are mostly emoji and the handful of worded ones repeat the same phrase almost verbatim across different posts. You click into three commenting accounts and two have no posts at all. That five-minute check saves you a box of product and a slot that could have gone to someone whose audience actually reads captions.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "If you are running this process across a few applicants a week, it is worth building it into whatever system you use to review applications rather than doing it ad hoc, so it happens every time and not just when something feels off. On [Linkable](/creators), you can review applications and the creator's existing content before approving a gifted collaboration, which gives you the same window to run this check before any product ships.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This week, before you approve your next gifting request, open the applicant's last four posts and spend the five minutes on comments and commenters rather than the headline follower number. If you want the fuller framework for judging an application beyond this one check, our post on [what makes a creator application worth accepting](/blog/creator-application-worth-accepting) walks through the rest of it.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Yes. Many creators buy followers early on for credibility or inherit a following that was bought by a previous manager, and the engagement patterns described above will still show up regardless of intent.",
+      "q": "Can a creator have fake followers without knowing it"
+    },
+    {
+      "a": "Not necessarily, but smaller accounts are generally easier to verify because you can read every comment on every post rather than sampling a handful, which is part of why micro accounts are often a safer gifting bet.",
+      "q": "Is a low follower count always a sign of a healthier audience"
+    },
+    {
+      "a": "A handful of generic comments mixed in with specific ones is normal, every account gets some low-effort comments. The concern is when generic comments are the overwhelming majority and specific ones are rare or absent.",
+      "q": "Should you still gift a creator if a few comments look generic"
+    },
+    {
+      "a": "Check again before any paid or affiliate upgrade, since a following that looked fine for a one-off gifted post deserves a second look once real money or commission is attached to the relationship.",
+      "q": "How often should you re-check a creator's audience quality"
+    }
+  ]
+}
