@@ -1,0 +1,102 @@
+{
+  "blocks": [
+    {
+      "text": "You run a campaign, the video hits a big number, and you book that creator again next month. Three campaigns later you notice the sales never followed the views. This is the trap of judging creator content on reach alone, and it quietly wastes a chunk of every brand's creator budget.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What does content quality actually mean beyond view counts?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Content quality beyond views means measuring whether the video or post made someone take a step towards buying: clicking through, adding to cart, using a discount code, saving the post, or asking a question in the comments. Views only tell you that a feed or For You page showed the content to people. They say nothing about whether those people cared.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "A creator with a modest view count but a clear product demonstration, a believable reaction, and a direct call to action will often outsell a creator with huge reach and a vague, generic post. If you only look at the top-line number, you will keep rehiring the second creator and dropping the first.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you know if content made someone want the product?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Watch the content the way a stranger would, not the way a marketer scanning for a thumbnail does. Does it show the product being used, not just held up to the camera? Does the creator explain why they picked it, in their own words, rather than reading a script? Does it end with a reason to act now, a code, a link, a specific claim, rather than just a sign-off?",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Say you run a coffee brand and send bags to two creators. One films themselves grinding beans, talking through the flavour, and showing the bag on their counter for the rest of the week in other videos. The other does a single unboxing clip and never mentions it again. The first is building familiarity that compounds. The second is a view count and nothing else.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What should you actually track instead of views?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Track engagement that signals intent rather than exposure: comments asking where to buy, saves, shares to friends, click-throughs on the bio link or swipe-up, and use of the creator's discount code or affiliate link. These behaviours sit closer to a purchase decision than a scroll-past view ever will.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Then connect that engagement to tracked sales. A unique discount code or affiliate link per creator lets you see which content actually converted, not just which content was seen. If you are still working this out campaign by campaign, [how to track which creator content actually drives sales](/blog/track-creator-content-drives-sales) walks through the mechanics of doing that cleanly. On Linkable, this reporting (content delivered, audience reached, engagement generated and sales tracked) sits per creator and per campaign, so you are not stitching screenshots together after the fact.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you turn quality signals into who you rehire?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Build a short scorecard before you look at a single piece of content again. Rate each delivered post on whether it showed the product in use, whether the creator sounded like themselves rather than a script, whether the call to action was specific, and whether it produced any tracked clicks or sales. A creator who scores well here but had a small reach is still worth a second booking. A creator who scores badly but has a huge following is not, no matter how good the view count looks on a report.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This is also where brief quality matters. If you never told the creator what a good call to action looks like, you cannot fairly judge them for leaving it out. A tighter brief up front, covering the shot, the claim and the code, removes a lot of the guesswork later. [A creator brief template for ecommerce](/blog/creator-brief-template-for-ecommerce) covers what to put in that document so you are rating content against a standard the creator actually knew about.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Where does this fit into your wider measurement?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Content quality is one layer of a bigger picture that includes cost per collaboration, repeat purchase from creator-driven customers, and overall return on what you spent. If you want the full stack of numbers to track at each stage of a programme, [creator marketing KPIs for ecommerce, stage by stage](/blog/creator-marketing-kpis-for-ecommerce) sets those out properly. Quality scoring just makes sure the KPIs you report on are coming from content that was actually good, not content that was merely seen.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This week, pull the last handful of creator deliverables you have sitting in a folder and score them against the four questions above: product shown in use, creator sounding like themselves, a specific call to action, any tracked clicks or sales. Keep the list short. You will probably find your best-performing creator by sales was not your top view count, and that one creator you were about to drop deserves another campaign instead.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "No, views still tell you how far content travelled, which matters for brand awareness campaigns. The point is to stop treating views as a proxy for quality or sales, and to read them alongside engagement and tracked conversions instead.",
+      "q": "Should I stop looking at view counts altogether"
+    },
+    {
+      "a": "One well-briefed piece is usually enough to see whether a creator can show the product properly and deliver a clear call to action. Judging sales impact fairly needs more than one post, since a single video can under or overperform for reasons unrelated to quality.",
+      "q": "How many pieces of content do I need before I can judge a creator fairly"
+    },
+    {
+      "a": "Check whether they were given a trackable link or code in the first place. Without one, you cannot separate a creator who did not convert from a creator whose sales you simply never saw.",
+      "q": "What if a creator has strong engagement but no tracked sales"
+    },
+    {
+      "a": "It matters less than most brands assume. A smaller creator who genuinely uses and believes in the product often produces content that sells better than a larger one reading from a script, which is worth checking before you gift product based on follower count alone.",
+      "q": "Does follower count still matter if I am measuring quality properly"
+    }
+  ]
+}

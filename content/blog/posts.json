@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 6248959,
+      "alt": "Business person evaluating financial charts on a laptop in a modern office setting.",
+      "src": "https://images.pexels.com/photos/6248959/pexels-photo-6248959.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/photograph-of-a-paper-and-laptop-with-graphs-6248959/",
+      "query": "marketer reviewing video analytics laptop",
+      "width": 7360,
+      "credit": {
+        "url": "https://www.pexels.com/@kampus",
+        "name": "Kampus Production"
+      },
+      "height": 4912,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/6248959/pexels-photo-6248959.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/6248959/pexels-photo-6248959.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/measure-creator-content-quality-beyond-views-6248959-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/measure-creator-content-quality-beyond-views-6248959-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "measure-creator-content-quality-beyond-views",
+    "title": "How to measure creator content quality beyond views",
+    "description": "View counts don't tell you if content sold anything. Here's how to measure creator content quality beyond views and rehire the right people.",
+    "excerpt": "View counts tell you reach, not whether anyone wanted to buy. Here's what to track instead so you keep working with the creators who actually move product.",
+    "date": "2026-10-23",
+    "updated": "2026-10-23",
+    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
+    "imageAlt": "Business person evaluating financial charts on a laptop in a modern office setting.",
+    "words": 798,
+    "source": "generated",
+    "keyword": "how to measure creator content quality beyond views",
+    "category": "Measurement",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 6214965,
       "alt": "A woman in a white robe interacts with two smartphones, showcasing social media engagement icons.",
       "src": "https://images.pexels.com/photos/6214965/pexels-photo-6214965.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
