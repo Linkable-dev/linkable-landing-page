@@ -118,8 +118,8 @@ def split(name):
 def home(body, logic):
     # A stray </span> in the "Ella sent content for review" card; browsers
     # ignore it, the renderer does not.
-    body = patch(body, '<em>Photo</em></span></span></span></div><div class="ms-me ms-a4">',
-                 '<em>Photo</em></span></span></div><div class="ms-me ms-a4">', label='stray span')
+    body = patch(body, '</em></span></span></span></div><div class="ms-me ms-a4">',
+                 '</em></span></span></div><div class="ms-me ms-a4">', label='stray span')
     # The creator cards behind the niche chips: leave out any creator whose
     # photo is not in the export, and any content thumbnail that is not,
     # rather than show broken images.

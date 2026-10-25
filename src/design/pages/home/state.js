@@ -5,27 +5,12 @@ import { acceptAll, consentChoice, rejectAll } from '../../../consent.js';
 
 export class PageLogic extends DCLogic {
   hiwGo(i) {
-    if (window.innerWidth <= 960) {
-      const el = document.querySelector('.hiw-mc[data-step="' + i + '"]'), tabs = document.querySelector('.hiw-steps');
-      if (el) {
-        const off = (tabs ? tabs.getBoundingClientRect().bottom : 120) + 12;
-        this._hiwLock = Date.now() + 900;
-        this.setState({ hiwStep: i, hiwStop: true });
-        window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - off, behavior: 'smooth' });
-        return;
-      }
-    }
-    const t = document.querySelector('.hiw-track');
-    if (t && window.innerWidth > 960) {
-      const h = t.querySelector('.hiw');
-      const span = Math.max(1, t.offsetHeight - (h ? h.offsetHeight : 0));
-      const top = t.getBoundingClientRect().top + window.scrollY - 96 + span * (i + 0.5) / 6;
-      this._hiwLock = Date.now() + 150;
-      try { window.scrollTo({ top, behavior: 'instant' }); } catch (e) { window.scrollTo(0, top); }
-      this.setState({ hiwStep: i });
-    } else {
-      this.setState({ hiwStep: i, hiwStop: true });
-    }
+    const el = document.querySelector('.hiw-mc[data-step="' + i + '"]'), tabs = document.querySelector('.hiw-steps');
+    if (!el) { this.setState({ hiwStep: i, hiwStop: true }); return; }
+    const off = window.innerWidth <= 960 ? (tabs ? tabs.getBoundingClientRect().bottom : 120) + 12 : 120;
+    this._hiwLock = Date.now() + 900;
+    this.setState({ hiwStep: i, hiwStop: true });
+    window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - off, behavior: 'smooth' });
   }
   componentDidMount() {
     this._hiwM = () => { const m = window.innerWidth <= 960; if (m !== !!(this.state && this.state.hiwM)) this.setState({ hiwM: m }); };
@@ -33,28 +18,35 @@ export class PageLogic extends DCLogic {
     window.addEventListener('resize', this._hiwM);
     this._hiwScroll = () => {
       if (this._hiwLock && Date.now() < this._hiwLock) return;
-      if (window.innerWidth <= 960) {
-        const tabs = document.querySelector('.hiw-steps');
-        const line = (tabs ? tabs.getBoundingClientRect().bottom : 120) + 60;
-        let idx = 0;
-        document.querySelectorAll('.hiw-mc').forEach((el) => { if (el.getBoundingClientRect().top <= line) idx = +el.getAttribute('data-step'); });
-        const cur = (this.state && typeof this.state.hiwStep === 'number') ? this.state.hiwStep : 0;
-        if (idx !== cur) {
-          this.setState({ hiwStep: idx });
-          requestAnimationFrame(() => { const on = tabs && tabs.querySelector('.hiw-step.on'); if (on) tabs.scrollTo({ left: Math.max(0, on.offsetLeft - 16), behavior: 'smooth' }); });
-        }
-        return;
-      }
-      const t = document.querySelector('.hiw-track');
-      if (!t) return;
-      const h = t.querySelector('.hiw');
-      const span = Math.max(1, t.offsetHeight - (h ? h.offsetHeight : 0));
-      const prog = Math.min(0.999, Math.max(0, (96 - t.getBoundingClientRect().top) / span));
-      const idx = Math.floor(prog * 6);
+      const mob = window.innerWidth <= 960;
+      const tabs = document.querySelector('.hiw-steps');
+      const line = mob ? (tabs ? tabs.getBoundingClientRect().bottom : 120) + 60 : 96 + window.innerHeight * 0.35;
+      let idx = 0;
+      document.querySelectorAll('.hiw-mc').forEach((el) => { if (el.getBoundingClientRect().top <= line) idx = +el.getAttribute('data-step'); });
       const cur = (this.state && typeof this.state.hiwStep === 'number') ? this.state.hiwStep : 0;
-      if (idx !== cur) this.setState({ hiwStep: idx });
+      if (idx !== cur) {
+        this.setState({ hiwStep: idx });
+        if (mob) requestAnimationFrame(() => { const on = tabs && tabs.querySelector('.hiw-step.on'); if (on) tabs.scrollTo({ left: Math.max(0, on.offsetLeft - 16), behavior: 'smooth' }); });
+      }
     };
     window.addEventListener('scroll', this._hiwScroll, { passive: true });
+    this._hiwScroll();
+    this._hiwSee = () => {
+      if (this._io) this._io.disconnect();
+      if (typeof IntersectionObserver === 'undefined') { const st = { apl0: true }; for (let n = 1; n <= 5; n++) st['seen' + n] = true; for (let n = 0; n < 4; n++) st['wm' + n] = true; this.setState(st); return; }
+      if (this._wmIo) this._wmIo.disconnect();
+      this._wmIo = new IntersectionObserver((ents) => ents.forEach((e) => { const k = 'wm' + e.target.getAttribute('data-wm'); if (e.isIntersecting && !(this.state && this.state[k])) this.setState({ [k]: true }); }), { threshold: 0.2 });
+      document.querySelectorAll('.wm-card[data-wm]').forEach((el) => this._wmIo.observe(el));
+      this._io = new IntersectionObserver((ents) => {
+        ents.forEach((e) => {
+          const p = e.target.getAttribute('data-p');
+          if (p) { if (e.isIntersecting && !(this.state && this.state['seen' + p])) this.setState({ ['seen' + p]: true }); }
+          else if (e.isIntersecting !== !!(this.state && this.state.apl0)) this.setState({ apl0: e.isIntersecting });
+        });
+      }, { threshold: 0.35 });
+      document.querySelectorAll('.hiw-pan[data-p], .hiw-card .apl2').forEach((el) => this._io.observe(el));
+    };
+    setTimeout(this._hiwSee, 0);
     this._wmFit = () => { const tr = document.getElementById('wm-track'); if (tr) tr.style.height = ''; };
     this._wmMove = () => {
       const row = document.getElementById('wm-row');
@@ -90,7 +82,7 @@ export class PageLogic extends DCLogic {
       } else if (apxEl) { apxEl.classList.add('in'); }
     } catch (e) {}
     this._wyScroll = () => {
-      if (window.innerWidth <= 960) return;
+      return;
       const tr = document.querySelector('.wy-track'), pin = tr && tr.querySelector('.wy-pin');
       if (!tr || !pin) return;
       const total = Math.max(1, tr.offsetHeight - pin.offsetHeight);
@@ -274,6 +266,8 @@ export class PageLogic extends DCLogic {
   componentWillUnmount() {
     if (this._hiwT) clearInterval(this._hiwT);
     if (this._hiwScroll) window.removeEventListener('scroll', this._hiwScroll);
+    if (this._io) this._io.disconnect();
+    if (this._wmIo) this._wmIo.disconnect();
     if (this._hiwM) window.removeEventListener('resize', this._hiwM);
     if (this._cnScroll) document.removeEventListener('scroll', this._cnScroll, true);
     if (this._wmScroll) document.removeEventListener('scroll', this._wmScroll, true);
@@ -318,7 +312,7 @@ export class PageLogic extends DCLogic {
     const scrollMode = false;
     const scrollIdx = (this.state && typeof this.state.scrollIdx === 'number') ? this.state.scrollIdx : 0;
     const wayIdx = scrollMode ? Math.min(3, scrollIdx) : (wayPick !== null ? wayPick : 0);
-    const wayAuto = false && !!(this.state && this.state.waysSeen) && !(this.state && this.state.wayStop) && !(this.state && (this.state.reduced || this.state.mobile));
+    const wayAuto = !!(this.state && this.state.waysSeen) && !(this.state && this.state.wayStop) && !(this.state && (this.state.reduced || this.state.mobile));
     const yearly = !!(this.state && this.state.yearly);
     const openFaq = (this.state && typeof this.state.openFaq === 'number') ? this.state.openFaq : 0;
     const still = reduced || !!(this.state && this.state.mobile);
@@ -453,37 +447,43 @@ export class PageLogic extends DCLogic {
       hiwSteps: (() => {
         const st = this.state || {};
         const cur = typeof st.hiwStep === 'number' ? st.hiwStep : 0;
-        return ['Launch a campaign', 'Match with creators', 'Get content', 'Reach new audiences', 'Repurpose your content', 'Measure your results']
+        return ['Launch campaigns', 'Match with creators', 'Get content', 'Reach new audiences', 'Reuse your content', 'Track results']
           .map((label, i) => ({ label, num: '0' + (i + 1), cls: 'hiw-step' + (i === cur ? ' on' : ''), pressed: i === cur ? 'true' : 'false', pick: () => this.hiwGo(i) }));
       })(),
       ...(() => { const a = [
-          { num: '01', title: 'Launch a campaign in seconds.', body: 'Gifted, paid or affiliate. Describe your campaign in one line and Autopilot writes the brief, sets the offer and has it ready to launch.' },
-          { num: '02', title: 'Match with creators who fit.', body: 'Invite creators matched to your brand, or let them apply. See their past content, collaborations and results, then decide who to work with.' },
-          { num: '03', title: 'Get content made for you.', body: 'Delivery updates, drafts and approvals all land in one chat. Approve in one click and it’s ready to post.' },
-          { num: '04', title: 'Tap into new, engaged audiences.', body: 'Creators share your product with followers who already trust them.\nEvery post gets you more visibility and becomes a new place to buy.' },
-          { num: '05', title: 'Use it on ads, your\u00a0site\u00a0and\u00a0socials.', body: 'Every piece lands in your content library with up to 12 months of usage rights.' },
-          { num: '06', title: 'See what every creator drives.', body: 'Views, clicks and sales for every creator and campaign in one place. Creators get paid automatically.' }
+          { num: '01', title: 'Launch campaigns in seconds.', body: 'Linkable learns about your brand and products, then automatically creates a campaign tailored to your goals, ready to review and launch.' },
+          { num: '02', title: 'Match with the right creators.', body: 'Linkable matches creators to your campaign. Explore their content, audience and past collaborations, then pick who to work with.' },
+          { num: '03', title: 'Get content made for you.', body: 'Linkable tracks product deliveries, organises conversations and makes it easy to review, request changes and approve content, all in one place.' },
+          { num: '04', title: 'Reach new, engaged audiences.', body: 'Creators introduce your products to their audiences, helping you reach new customers and drive measurable sales.' },
+          { num: '05', title: 'Reuse your best content everywhere.', body: 'Linkable identifies your best-performing creator content and helps you reuse it across ads, your website and social channels.' },
+          { num: '06', title: 'Track results across every creator.', body: 'Linkable shows you views, sales and content from every creator and campaign in one place, and pays creators automatically.' }
         ]; return { hm0: a[0], hm1: a[1], hm2: a[2], hm3: a[3], hm4: a[4], hm5: a[5] }; })(),
       hiwNow: (() => {
         const cur = (this.state && typeof this.state.hiwStep === 'number') ? this.state.hiwStep : 0;
         return [
-          { num: '01', title: 'Launch a campaign in seconds.', body: 'Gifted, paid or affiliate. Describe your campaign in one line and Autopilot writes the brief, sets the offer and has it ready to launch.' },
-          { num: '02', title: 'Match with creators who fit.', body: 'Invite creators matched to your brand, or let them apply. See their past content, collaborations and results, then decide who to work with.' },
-          { num: '03', title: 'Get content made for you.', body: 'Delivery updates, drafts and approvals all land in one chat. Approve in one click and it’s ready to post.' },
-          { num: '04', title: 'Tap into new, engaged audiences.', body: 'Creators share your product with followers who already trust them.\nEvery post gets you more visibility and becomes a new place to buy.' },
-          { num: '05', title: 'Use it on ads, your\u00a0site\u00a0and\u00a0socials.', body: 'Every piece lands in your content library with up to 12 months of usage rights.' },
-          { num: '06', title: 'See what every creator drives.', body: 'Views, clicks and sales for every creator and campaign in one place. Creators get paid automatically.' }
+          { num: '01', title: 'Launch campaigns in seconds.', body: 'Linkable learns about your brand and products, then automatically creates a campaign tailored to your goals, ready to review and launch.' },
+          { num: '02', title: 'Match with the right creators.', body: 'Linkable matches creators to your campaign. Explore their content, audience and past collaborations, then pick who to work with.' },
+          { num: '03', title: 'Get content made for you.', body: 'Linkable tracks product deliveries, organises conversations and makes it easy to review, request changes and approve content, all in one place.' },
+          { num: '04', title: 'Reach new, engaged audiences.', body: 'Creators introduce your products to their audiences, helping you reach new customers and drive measurable sales.' },
+          { num: '05', title: 'Reuse your best content everywhere.', body: 'Linkable identifies your best-performing creator content and helps you reuse it across ads, your website and social channels.' },
+          { num: '06', title: 'Track results across every creator.', body: 'Linkable shows you views, sales and content from every creator and campaign in one place, and pays creators automatically.' }
         ][cur];
       })(),
-      hiw0: !!(this.state && this.state.hiwM) || ((this.state && typeof this.state.hiwStep === 'number') ? this.state.hiwStep : 0) === 0,
-      hiw1: !!(this.state && this.state.hiwM) || ((this.state && typeof this.state.hiwStep === 'number') ? this.state.hiwStep : 0) === 1,
-      hiw2: !!(this.state && this.state.hiwM) || ((this.state && typeof this.state.hiwStep === 'number') ? this.state.hiwStep : 0) === 2,
-      hiw3: !!(this.state && this.state.hiwM) || ((this.state && typeof this.state.hiwStep === 'number') ? this.state.hiwStep : 0) === 3,
-      hiw4: !!(this.state && this.state.hiwM) || ((this.state && typeof this.state.hiwStep === 'number') ? this.state.hiwStep : 0) === 4,
-      hiw5: !!(this.state && this.state.hiwM) || ((this.state && typeof this.state.hiwStep === 'number') ? this.state.hiwStep : 0) === 5,
+      hiw0: true,
+      apl0: !!(this.state && this.state.apl0),
+      pan1: 'hiw-pan' + (this.state && this.state.seen1 ? ' go' : ''),
+      pan2: 'hiw-pan' + (this.state && this.state.seen2 ? ' go' : ''),
+      pan3: 'hiw-pan' + (this.state && this.state.seen3 ? ' go' : ''),
+      pan4: 'hiw-pan' + (this.state && this.state.seen4 ? ' go' : ''),
+      pan5: 'hiw-pan' + (this.state && this.state.seen5 ? ' go' : ''),
+      hiw1: true,
+      hiw2: true,
+      hiw3: true,
+      hiw4: true,
+      hiw5: true,
       steps: [
-        { n: 1, title: 'Launch a campaign in seconds', body: 'Gifted, paid or affiliate. Describe your campaign in one line and Autopilot writes the brief, sets the offer and has it ready to launch.', native1: true },
-        { n: 2, title: 'Choose the creators you want', body: 'Creators apply with their audience and past content, or you invite them. You only work with the ones you approve.', native2: true, rows: [
+        { n: 1, title: 'Launch campaigns in seconds', body: 'Linkable learns about your brand and products, then automatically creates a campaign tailored to your goals, ready to review and launch.', native1: true },
+        { n: 2, title: 'Match with the right creators', body: 'Linkable matches creators to your campaign. Explore their content, audience and past collaborations, then pick who to work with.', native2: true, rows: [
           { img: '/assets/site/2c0f99a5df5a6913ce12367dafae8e8c.jpg', name: 'Naomi L.', match: '98% match', sub: 'Lifestyle · 310K followers · UK' },
           { img: '/assets/site/e00a894cb6065581af2fd6588bac43ae.jpg', name: 'Sophie L.', match: '95% match', sub: 'Lifestyle · 284K followers · UK' },
           { img: '/assets/site/55056e82404c4cb253ab0737663b2a9c.jpg', name: 'Grace R.', match: '92% match', sub: 'Food · 18K followers · UK' }
@@ -519,11 +519,11 @@ export class PageLogic extends DCLogic {
       ],
       managed: ['Samples and shipping', 'Deliverables', 'Content uploads', 'Usage rights', 'Audience discounts', 'Sales attribution', 'Commissions', 'Creator payouts'],
       ways: [
-        { name: 'Gifted', icon: 'M20 12v9H4v-9M2 7h20v5H2zM12 22V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z', body: 'Send free product to the creators you approve. They create and share content featuring it.', give: 'Free product', get: ['Brand awareness', 'Organic content', 'Product seeding', 'Reviews and unboxings'], best: 'building a content library', img: '/assets/site/7d81b2f64cd3b8b6fe1cf1aa0a76777e.jpg', alt: 'Creator with a gifted Pure Skincare balm', pos: '50% 30%', thumb: '/assets/site/6f7612525d7110c24bd6d8ff2ef81061.jpg', chipTitle: 'Pure Skincare Daily Balm', chipSub: 'Shipped to 12 creators', chipTag: 'Delivered' },
-        { name: 'Paid', icon: 'M2 5h20v14H2zM2 10h20', body: 'Pay a set fee for agreed content, or let creators propose their own rate when they apply.', give: 'A set fee', get: ['Assets for paid media', 'High quality content', 'Larger creators', 'Guaranteed deliverables'], best: 'ad creative and launches', img: '/assets/site/1896fe808a281f4c712f65fa80512594.jpg', alt: 'Creator wearing gold drop earrings', thumb: '/assets/site/75163011673c0bce90e5473c56500d66.jpg', chipTitle: 'Gold Drop Earrings', chipSub: cur.s + '100 per creator · 1 Reel', chipTag: 'Fee agreed' },
-        { name: 'Affiliate', icon: 'M19 5 5 19M6.5 4a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.5 15a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z', body: 'Creators earn commission on every sale through their link. Their followers get a discount automatically.', give: 'Commission on sales', get: ['Sales', 'Testing new creators', 'Ongoing promotion', 'No upfront cost'], best: 'testing creators at no upfront cost', img: '/assets/site/065139893da1a2a2d8434306736e52a6.jpg', alt: 'Creators running together', thumb: '/assets/site/a645b35c2fa21a160db16c8503771554.jpg', chipTitle: 'Tom’s link · 15% off', chipSub: 'KORA Matcha · 15% commission', chipTag: codeUses + ' sales' },
-        { name: 'Mix them', icon: 'M8 3H3v5M3 3l7 7M16 3h5v5M21 3l-7 7M8 21H3v-5M3 21l7-7M16 21h5v-5M21 21l-7-7', give: 'Any combination', get: ['Awareness and sales', 'Content at scale', 'Rewarding top creators', 'Flexible budgets'], img: '/assets/site/ec74e10b8d5abdfdc40051f8e07db321.jpg', alt: 'Creator wearing black sunglasses in the sun', pos: '50% 74%', mpos: '50% 100%', thumb: '/assets/site/a54f2d8307a9552b5e70bbd8df73710e.jpg', chipTitle: 'Black Rectangle Sunglasses', chipSub: '38 creators applied', chipTag: 'Live' }
-      ].map((w, i) => ({ ...w, pos: w.pos || '50% 50%', mpos: w.mpos || w.pos || '50% 50%', sc: i === wayIdx ? 1 : 1.07, on: i === wayIdx, prog: wayAuto && i === wayIdx, tcls: 'wy-tab' + (i === wayIdx ? ' on' : ''), bestTxt: (w.get || []).map((g, k) => k ? g.charAt(0).toLowerCase() + g.slice(1) : g).join(', '), op: i === wayIdx ? 1 : 0, pick: () => {
+        { name: 'Gifted', icon: 'M20 12v9H4v-9M2 7h20v5H2zM12 22V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z', body: 'Send free product to the creators you approve. They create and share content featuring it.', give: 'Free product', get: ['Brand awareness', 'Organic content'], best: 'building a content library', img: '/assets/site/7d81b2f64cd3b8b6fe1cf1aa0a76777e.jpg', alt: 'Creator with a gifted Pure Skincare balm', pos: '50% 30%', thumb: '/assets/site/6f7612525d7110c24bd6d8ff2ef81061.jpg', chipTitle: 'Pure Skincare Daily Balm', chipSub: 'Shipped to 12 creators', chipTag: 'Delivered' },
+        { name: 'Paid', icon: 'M2 5h20v14H2zM2 10h20', body: 'Pay a set fee for agreed content, or let creators propose their own rate when they apply.', give: 'A set fee', get: ['Ad creative', 'Product launches'], best: 'ad creative and launches', img: '/assets/site/1896fe808a281f4c712f65fa80512594.jpg', alt: 'Creator wearing gold drop earrings', thumb: '/assets/site/75163011673c0bce90e5473c56500d66.jpg', chipTitle: 'Gold Drop Earrings', chipSub: cur.s + '100 per creator · 1 Reel', chipTag: 'Fee agreed' },
+        { name: 'Affiliate', icon: 'M19 5 5 19M6.5 4a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.5 15a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z', body: 'Creators earn commission on every sale through their link. Their followers get a discount automatically.', give: 'Commission on sales', get: ['Driving sales', 'Testing new creators'], best: 'testing creators at no upfront cost', img: '/assets/site/065139893da1a2a2d8434306736e52a6.jpg', alt: 'Creators running together', thumb: '/assets/site/a645b35c2fa21a160db16c8503771554.jpg', chipTitle: 'KORA Matcha', chipSub: '15% off for Tom’s followers', chipTag: codeUses + ' sales' },
+        { name: 'Mix them', body: 'Combine product, fees and commission in one campaign.', icon: 'M8 3H3v5M3 3l7 7M16 3h5v5M21 3l-7 7M8 21H3v-5M3 21l7-7M16 21h5v-5M21 21l-7-7', give: 'Any combination', get: ['Awareness and sales', 'Content at scale'], img: '/assets/site/ec74e10b8d5abdfdc40051f8e07db321.jpg', alt: 'Creator wearing black sunglasses in the sun', pos: '50% 74%', mpos: '50% 100%', thumb: '/assets/site/a54f2d8307a9552b5e70bbd8df73710e.jpg', chipTitle: 'Black Rectangle Sunglasses', chipSub: '38 creators applied', chipTag: 'Live' }
+      ].map((w, i) => ({ ...w, pos: w.pos || '50% 50%', mpos: w.mpos || w.pos || '50% 50%', sc: i === wayIdx ? 1 : 1.07, on: i === wayIdx, prog: wayAuto && i === wayIdx, wmc: 'wm-card' + (this.state && this.state['wm' + i] ? ' in' : ''), wmi: String(i), tcls: 'wy-tab' + (i === wayIdx ? ' on' : '') + (wayAuto && i === wayIdx ? ' auto' : ''), bestTxt: (w.get || []).map((g, k) => k ? g.charAt(0).toLowerCase() + g.slice(1) : g).join(', '), op: i === wayIdx ? 1 : 0, pick: () => {
           if (scrollMode) {
             const el = document.getElementById('ways-track');
             const top = el.getBoundingClientRect().top + window.scrollY;
@@ -532,11 +532,8 @@ export class PageLogic extends DCLogic {
             window.scrollTo({ top: top - 96 + total * (i + 0.5) / 4, behavior: 'smooth' });
           } else {
             const tr = document.querySelector('.wy-track'), pin = tr && tr.querySelector('.wy-pin');
-            if (tr && pin && window.innerWidth > 960) {
-              const total = tr.offsetHeight - pin.offsetHeight;
-              const y = tr.getBoundingClientRect().top + window.scrollY - 96 + total * (i + 0.5) / 4;
-              this.setState({ wayPick: i });
-              try { window.scrollTo({ top: y, behavior: 'instant' }); } catch (e) { window.scrollTo(0, y); }
+            if (window.innerWidth > 960) {
+              this.setState({ wayPick: i, wayStop: true });
             } else {
               this.setState({ wayPick: i, wayStop: true });
               const row = document.getElementById('wm-row'), c = row && row.querySelectorAll('.wm-card')[i], tabs = document.querySelector('.wm-tabs');
@@ -614,7 +611,7 @@ export class PageLogic extends DCLogic {
       wayNow: [
         { thumb: '/assets/site/6f7612525d7110c24bd6d8ff2ef81061.jpg', chipTitle: 'Pure Skincare Daily Balm', chipSub: 'Shipped to 12 creators', chipTag: 'Delivered' },
         { thumb: '/assets/site/75163011673c0bce90e5473c56500d66.jpg', chipTitle: 'Gold Drop Earrings', chipSub: cur.s + '100 per creator · 1 Reel', chipTag: 'Fee agreed' },
-        { thumb: '/assets/site/a645b35c2fa21a160db16c8503771554.jpg', chipTitle: 'Tom’s link · 15% off', chipSub: 'KORA Matcha · 15% commission', chipTag: codeUses + ' sales' },
+        { thumb: '/assets/site/a645b35c2fa21a160db16c8503771554.jpg', chipTitle: 'KORA Matcha', chipSub: '15% off for Tom’s followers', chipTag: codeUses + ' sales' },
         { thumb: '/assets/site/a54f2d8307a9552b5e70bbd8df73710e.jpg', chipTitle: 'Black Rectangle Sunglasses', chipSub: '38 creators applied', chipTag: 'Live' }
       ][wayIdx],
       faqs: [
