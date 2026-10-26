@@ -1,4 +1,8 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/partners", "destination": "https://app.linkable.link/partners", "permanent": false },
+    { "source": "/r/:handle", "destination": "https://app.linkable.link/r/:handle", "permanent": false }
+  ]
 }
