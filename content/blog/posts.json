@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 7278889,
+      "alt": "Adult writing notes in a notebook at a desk with a laptop, emphasizing productivity.",
+      "src": "https://images.pexels.com/photos/7278889/pexels-photo-7278889.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/person-writing-on-notebook-7278889/",
+      "query": "marketing manager planning notebook laptop",
+      "width": 6720,
+      "credit": {
+        "url": "https://www.pexels.com/@anastasia-shuraeva",
+        "name": "Anastasia  Shuraeva"
+      },
+      "height": 4480,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/7278889/pexels-photo-7278889.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/7278889/pexels-photo-7278889.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/how-to-set-creator-campaign-goals-7278889-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/how-to-set-creator-campaign-goals-7278889-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "how-to-set-creator-campaign-goals",
+    "title": "How to set creator campaign goals before you launch",
+    "description": "Learn how to set creator campaign goals before launch so you know what a campaign needs to prove and can judge the results honestly.",
+    "excerpt": "Most brands launch a creator campaign before deciding what it needs to prove, then wonder why the report feels disappointing. Here is how to fix that before you brief a single creator.",
+    "date": "2026-10-26",
+    "updated": "2026-10-26",
+    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
+    "imageAlt": "Adult writing notes in a notebook at a desk with a laptop, emphasizing productivity.",
+    "words": 823,
+    "source": "generated",
+    "keyword": "how to set creator campaign goals",
+    "category": "Strategy",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 5060982,
       "alt": "Professional businessman explaining during video call using laptop in modern office setting.",
       "src": "https://images.pexels.com/photos/5060982/pexels-photo-5060982.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",

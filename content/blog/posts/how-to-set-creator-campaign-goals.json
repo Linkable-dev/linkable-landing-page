@@ -1,0 +1,112 @@
+{
+  "blocks": [
+    {
+      "text": "You open a creator's content, watch the views climb, and still feel flat. The post did fine. But fine compared to what? Nobody wrote down what this campaign was meant to prove before it went out, so the report that lands on your desk a week later answers a question nobody asked.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This happens constantly. A founder decides to \"try creators\", picks a handful of names, sends product, and waits. There's no target for content volume, no target for sales, no agreement on what a good outcome even looks like. The campaign isn't bad. It's undirected.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you set creator campaign goals before launch?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "You set a creator campaign goal by picking one primary thing the campaign needs to prove (content, reach, or tracked sales), attaching it to the campaign type you're running, and writing the number or outcome down before you brief a single creator. One goal, one campaign type, one way to judge it. If you can't state the goal in a sentence before launch, you're not ready to launch.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "The mistake isn't skipping goals entirely. It's picking a vague one like \"get some good content\" or \"see what happens\", which can't fail and therefore can't succeed either. A specific goal gives you something to brief against and something to measure against later.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What should a campaign actually prove?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Every creator campaign is really trying to answer one of three questions: does this product photograph and talk about well (content), will people outside our existing audience see it (reach), or does a recommendation turn into a sale (tracked sales). Trying to answer all three at once with the same brief is why reports feel muddled.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Say you run a coffee subscription brand that's never worked with creators before. Your honest goal for campaign one isn't revenue, it's content: do creators actually want to film themselves brewing this, and does the footage look like something you'd want in a paid ad. Revenue becomes the goal for campaign two, once you know the content works.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Write the goal as a question you're trying to answer, not a wish. \"Will this product generate content worth repurposing\" is answerable. \"Make a splash\" isn't.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Match the goal to the campaign type",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Gifted product, paid collaboration, and affiliate commission each push toward a different honest goal, and picking the wrong pairing is the second most common way campaigns disappoint. Gifted campaigns are built for content and discovery, not sales volume, because there's no cost pressure making a creator post something that converts. Paid collaborations buy you reach and a guaranteed deliverable, but they don't guarantee sales either unless the brief and the tracking link are built for it. Affiliate deals are the only campaign type where tracked sales is a fair primary goal, because the creator only gets paid when a sale happens, which naturally pushes them toward content that sells.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "If your goal is sales and your campaign type is gifted, you've set yourself up to be disappointed by a mechanism that was never designed to produce that number. Our piece on [gifted vs paid creator collaborations](/blog/gifted-vs-paid-creator-collaborations) goes through this matching in more detail if you're still deciding which type to run.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How many creators do you need to hit the goal?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "The honest answer is that the goal decides the number, not the other way round. A content goal needs enough creators that you can be picky about usage rights and still end up with several pieces worth repurposing into ads. A sales goal needs enough affiliate creators running that even if most of them produce a handful of orders, a few strong ones carry the campaign. A reach goal needs creators whose combined audience is actually larger than yours, which rules out working with people who mostly follow each other's accounts.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This is also where the goal protects your budget. If you've decided the goal is content, you don't need twenty creators, you need five whose work you'll actually use. Running [Linkable](/pricing) campaigns, we see brands discover applications within a day of posting a brief, which is useful, but more applications only helps if you already know what you're filtering for.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Write the goal down before you brief anyone",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "A goal that lives only in your head doesn't survive contact with a busy week. Put it at the top of the brief: what this campaign needs to prove, which campaign type is running, and what counts as a good result. Anyone looking at the brief later, including you in a month, should be able to tell whether the campaign did its job without guessing what you meant.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This single step also makes the reporting conversation shorter. Instead of staring at content delivered, audience reached and tracked sales and wondering which number matters, you already know, because you wrote it down before launch. Our guide to [creator marketing KPIs](/blog/creator-marketing-kpis-for-ecommerce) is a good companion once you're choosing which metric proves your goal at each stage.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "It can have a secondary goal, but only one primary goal should decide whether the campaign succeeded. Trying to optimise a brief for content, reach and sales at once usually means it does none of them particularly well.",
+      "q": "Can a single campaign have more than one goal?"
+    },
+    {
+      "a": "Default to content. It's the easiest to judge honestly, it tells you whether creators and your product suit each other, and it gives you footage to test in ads regardless of how the campaign performs on sales.",
+      "q": "What if we don't know which goal to pick for our first campaign?"
+    },
+    {
+      "a": "No. Changing the goal mid-campaign is how teams end up judging a gifted content campaign by sales it was never designed to produce. Finish the campaign against the original goal, then set a new one for the next round.",
+      "q": "Should the goal change once the campaign is live?"
+    },
+    {
+      "a": "It tells you which number to look at first. A team that agreed the goal was content doesn't need to explain a modest sales number, because that was never what the campaign was measuring.",
+      "q": "How does setting a goal help with the final report?"
+    }
+  ]
+}
