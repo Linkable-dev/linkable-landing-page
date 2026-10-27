@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 34303854,
+      "alt": "Two people hold hands in a warmly lit indoor setting wearing black outfits and necklaces.",
+      "src": "https://images.pexels.com/photos/34303854/pexels-photo-34303854.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/two-people-in-black-outfits-holding-hands-indoors-34303854/",
+      "query": "hands holding gold necklace light",
+      "width": 6000,
+      "credit": {
+        "url": "https://www.pexels.com/@airamdphoto",
+        "name": "Airam Dato-on"
+      },
+      "height": 4000,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/34303854/pexels-photo-34303854.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/34303854/pexels-photo-34303854.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/creator-marketing-jewelry-accessory-brands-34303854-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/creator-marketing-jewelry-accessory-brands-34303854-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "creator-marketing-jewelry-accessory-brands",
+    "title": "Creator Marketing for Jewelry and Accessory Brands",
+    "description": "Creator marketing for jewelry and accessory brands lives or dies on hand shots and lighting. Here's what the brief needs to say.",
+    "excerpt": "A necklace or a ring is tiny on screen, so the brief has to cover hands, light and framing, not just which product to post about.",
+    "date": "2026-10-27",
+    "updated": "2026-10-27",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "Two people hold hands in a warmly lit indoor setting wearing black outfits and necklaces.",
+    "words": 1036,
+    "source": "generated",
+    "keyword": "creator marketing for jewelry and accessory brands",
+    "category": "By category",
+    "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 7278889,
       "alt": "Adult writing notes in a notebook at a desk with a laptop, emphasizing productivity.",
       "src": "https://images.pexels.com/photos/7278889/pexels-photo-7278889.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
