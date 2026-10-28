@@ -62,7 +62,7 @@ export function heroInfo(post) {
 }
 
 /* ---------------------------------------------------- inline markdown */
-const ALLOWED_INTERNAL = /^\/(pricing|creators|contact|autopilot|blog(\/[a-z0-9-]+)?)$/;
+const ALLOWED_INTERNAL = /^\/(pricing|creators|contact|autopilot|pitch|blog(\/[a-z0-9-]+)?)$/;
 const ALLOWED_EXTERNAL = /^https:\/\/(apps\.shopify\.com\/linkable-1|app\.linkable\.link\/)/;
 export function inline(text) {
   let s = esc(text);

@@ -1,4 +1,5 @@
-/* Post.dc.html: styles of this page only (shared ones are in ../../site.css). */
+@import '../../site.css';
+/* Post.dc.html: styles of this page only, after the shared ones as in the design. */
 .bl-tag{display:inline-flex;padding:3px 10px;border-radius:999px;background:#F3F2EE;color:#232323;font-size:12.5px;font-weight:600}
 .ps-hero{margin-top:48px;height:520px;border-radius:28px;overflow:hidden;background:#F3F2EE}
 .ps-layout{display:grid;grid-template-columns:240px minmax(0,680px);gap:80px;justify-content:center;margin-top:64px}

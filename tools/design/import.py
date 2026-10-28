@@ -41,6 +41,7 @@ PAGES = {
     'Creators': 'creators',
     'Pricing': 'pricing',
     'Autopilot': 'autopilot',
+    'Pitch': 'pitch',
     'Contact': 'contact',
     'Blog': 'blog',
     'Post': 'post',
@@ -64,6 +65,7 @@ LINKS = {
     'Blog.dc.html': '/blog',
     'Contact.dc.html': '/contact',
     'Autopilot.dc.html': '/autopilot',
+    'Pitch.dc.html': '/pitch',
     'Privacy.dc.html#cookies': '/legal/cookie-policy',
     'Privacy.dc.html': '/legal/privacy-policy',
     'Terms.dc.html': '/legal/terms-of-service',
@@ -76,7 +78,16 @@ LINKS = {
 }
 # The creators page signs creators up and logs them in as creators: the plain
 # log in is the brand one, whose only sign up is the brand trial.
-LINK_OVERRIDES = {'creators': {'#signup': APP_SIGNUP, '#join': APP_SIGNUP, '#login': APP_CREATOR_LOGIN}}
+LINK_OVERRIDES = {'creators': {'#signup': APP_SIGNUP, '#join': APP_SIGNUP, '#login': APP_CREATOR_LOGIN},
+                  # Pitch is for creators too; its "Start pitching" buttons sign one up.
+                  'pitch': {'#signup': APP_SIGNUP, '#start': APP_SIGNUP, '#login': APP_CREATOR_LOGIN}}
+# Pages whose design carries its own copy of every style: they get one whole
+# stylesheet each and do not load site.css.
+STANDALONE = {'home', 'pitch'}
+# The Pitch page's creator quotes and its "<name> sent a pitch" pop-up are
+# sample content in the design (the canvas notes say: replace with real quotes
+# and real sent pitches before it goes live). Off until they are real.
+PITCH_SAMPLES = False
 # On pages that have a #start section of their own, the hero buttons still mean
 # "start the trial"; the design only used the anchor as a placeholder.
 
@@ -273,8 +284,25 @@ def legal(body, logic):
     return body, logic
 
 
+def pitch(body, logic):
+    if not PITCH_SAMPLES:
+        body = between(body, '<section id="creator-quotes"', '</section>\n', '', 'pitch quotes')
+        body = between(body, '<div class="{{ntCls}}" aria-hidden="true">', '</small></span></div>\n', '', 'pitch ticker')
+        logic = patch(logic, "    const ntTick = () => { if (document.hidden) return; this.setState({ nt: ((this.state && this.state.nt) || 0) + 1 }); };\n"
+                      "    this._ntT = setTimeout(() => { ntTick(); this._nt = setInterval(ntTick, 15000); }, 8000);\n", '', label='pitch ticker timer')
+    return body, logic
+
+
 PAGE_PATCHES = {'home': home, 'creators': creators, 'contact': contact,
-                'blog': blog, 'post': post, 'legal': legal}
+                'blog': blog, 'post': post, 'legal': legal, 'pitch': pitch}
+
+# Since the 28 Oct 2026 design every page jumps to the top when it opens: the
+# canvas keeps the scroll of an artboard between visits. On the site that would
+# break links to a section (/pricing#compare, a post's contents) and the
+# browser's own back/forward scroll, so it is left out.
+TO_TOP = ("    try { if ('scrollRestoration' in history) history.scrollRestoration = 'manual'; } catch (e) {}\n"
+          "    const toTop = () => { try { window.scrollTo(0, 0); document.documentElement.scrollTop = 0; document.body.scrollTop = 0; } catch (e) {} };\n"
+          "    toTop(); requestAnimationFrame(toTop); setTimeout(toTop, 60);\n")
 
 # Styles added on top of a page's own block, for content the mock-ups did not have.
 PAGE_CSS = {
@@ -337,30 +365,37 @@ VIDEO = '1db4202f667f59ea880dc6527a69d732'
 if os.path.exists(os.path.join(ASSETS_IN, 'demo-video.mp4')):  # the export renames the video
     assets[VIDEO] = os.path.join(ASSETS_IN, 'demo-video.mp4')
 served = lambda i: 'demo-video.mp4' if i == VIDEO else os.path.basename(assets[i])  # noqa: E731
-shared = standalone = None
-SATOSHI = re.compile(r'^@font-face\{font-family:"Satoshi";src:url\("/_blob/[a-f0-9]{32}"\) format\("truetype"\);font-weight:300 900;font-style:normal;font-display:swap\}$')
+shared = None
+# Since the 28 Oct 2026 design the font's block also holds the nav dropdown
+# styles (.nd-*); they follow the @font-face.
+SATOSHI = re.compile(r'^@font-face\{font-family:"Satoshi";src:url\("/_blob/[a-f0-9]{32}"\) format\("truetype"\);font-weight:300 900;font-style:normal;font-display:swap\}')
 used, missing = set(), set()
 os.makedirs(PAGES_OUT, exist_ok=True)
 
 for name, key in PAGES.items():
     styles, body, logic = split(name)
-    assert len(styles) in (3, 4), f'{name}: expected 3 or 4 style blocks, got {len(styles)}'
     # Every page opens with the same Satoshi @font-face pointing at the export's
     # .ttf; FONTS above serves a woff2 copy instead.
-    assert SATOSHI.match(styles[0]), f'{name}: first style block is not the Satoshi font'
-    styles = styles[1:]
+    font = SATOSHI.match(styles[0])
+    assert font, f'{name}: first style block is not the Satoshi font'
+    styles = [styles[0][font.end():]] + styles[1:]
     # Since the 21 Oct 2026 design the home page holds its own edited copies of
     # both shared blocks, its page rules folded in, and lacks a few rules the
     # other pages share (.ap2, .ways-pinned). Layering it over site.css would
     # let those leak in, so it gets one whole stylesheet of its own instead.
+    # Pitch (28 Oct) is the same: its own nav and base styles, then 25 blocks
+    # of its own.
     if key == 'home':
-        assert len(styles) == 2, f'{name}: expected its own 2 style blocks, got {len(styles)}'
-        standalone = styles
-    else:
+        assert len(styles) == 3, f'{name}: expected the nav block and its own 2 style blocks, got {len(styles)}'
+    elif key not in STANDALONE:
+        assert len(styles) in (3, 4), f'{name}: expected 3 or 4 style blocks after the font, got {len(styles)}'
         if shared is None:
-            shared = styles[:2]
-        assert styles[0] == shared[0], f'{name}: shared style block 1 differs from the other pages'
-        assert styles[1] == shared[1], f'{name}: shared style block 2 differs from the other pages'
+            shared = styles[:3]
+        for n in range(3):
+            assert styles[n] == shared[n], f'{name}: shared style block {n} differs from the other pages'
+
+    if 'componentDidMount' in logic:
+        logic = patch(logic, TO_TOP, '', label=f'{name} scroll to top')
 
     if key in PAGE_PATCHES:
         body, logic = PAGE_PATCHES[key](body, logic)
@@ -395,21 +430,28 @@ for name, key in PAGES.items():
     os.makedirs(out, exist_ok=True)
     open(os.path.join(out, 'template.html'), 'w', encoding='utf-8').write(body + '\n')
     open(os.path.join(out, 'state.js'), 'w', encoding='utf-8').write(HEADER + logic + '\n')
-    if key == 'home':
+    if key in STANDALONE:
         # build.mjs reads the "standalone" marker and leaves site.css out.
         open(os.path.join(out, 'page.css'), 'w', encoding='utf-8').write(
             f'/* standalone: {name}.dc.html carries its own copy of every style, so this page does not load ../../site.css. */\n'
-            + FONTS + '\n/* --- design styles (block 1) --- */' + standalone[0]
-            + '\n/* --- design styles (block 2) --- */' + standalone[1] + PAGE_CSS.get(key, '') + FIXES)
+            + FONTS + '\n/* --- nav dropdowns --- */' + styles[0]
+            + ''.join(f'\n/* --- design styles (block {n}) --- */' + s for n, s in enumerate(styles[1:], 1))
+            + PAGE_CSS.get(key, '') + FIXES)
     else:
-        css = (styles[2] if len(styles) == 3 else '') + PAGE_CSS.get(key, '')
+        css = (styles[3] if len(styles) == 4 else '') + PAGE_CSS.get(key, '')
+        # The shared styles are imported here rather than linked beside this
+        # file: Vite emits a CSS chunk shared by several pages after the page's
+        # own, so linked separately the shared rules would win every tie the
+        # design meant this page's rules to win (Creators' phone paddings).
         open(os.path.join(out, 'page.css'), 'w', encoding='utf-8').write(
-            f'/* {name}.dc.html: styles of this page only (shared ones are in ../../site.css). */' + css)
+            "@import '../../site.css';\n"
+            f'/* {name}.dc.html: styles of this page only, after the shared ones as in the design. */' + css)
     print(f'wrote src/design/pages/{key}/ from {name}.dc.html')
 
 open(os.path.join(ROOT, 'src', 'design', 'site.css'), 'w', encoding='utf-8').write(
-    FONTS + '\n/* --- design styles shared by every page (block 1) --- */' + shared[0]
-    + '\n/* --- design styles shared by every page (block 2) --- */' + shared[1] + FIXES)
+    FONTS + '\n/* --- nav dropdowns --- */' + shared[0]
+    + '\n/* --- design styles shared by every page (block 1) --- */' + shared[1]
+    + '\n/* --- design styles shared by every page (block 2) --- */' + shared[2] + FIXES)
 
 shutil.rmtree(ASSETS_OUT, ignore_errors=True)
 os.makedirs(ASSETS_OUT)

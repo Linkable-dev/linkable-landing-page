@@ -1,4 +1,5 @@
-/* Pricing.dc.html: styles of this page only (shared ones are in ../../site.css). */
+@import '../../site.css';
+/* Pricing.dc.html: styles of this page only, after the shared ones as in the design. */
 @media (min-width: 601px){section[aria-label="Brands working with Linkable"]{padding-top:120px!important}#compare{padding-top:144px!important}#fee{padding-top:96px!important}#help{padding-top:80px!important}#faq{padding-top:96px!important}}
 @media (max-width: 600px){#top{padding-top:32px!important}section[aria-label="Brands working with Linkable"]{padding-top:28px!important}#compare{padding-top:80px!important;padding-bottom:40px!important}#fee{padding-top:24px!important;padding-bottom:40px!important}#help{padding-top:24px!important;padding-bottom:40px!important}#faq{padding-top:40px!important}}
 .pc-scroll{margin-top:56px}

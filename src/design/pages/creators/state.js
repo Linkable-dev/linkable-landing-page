@@ -57,6 +57,7 @@ export class PageLogic extends DCLogic {
     const mkCat = (this.state && this.state.mkCat) || 'All campaigns';
     const openFaq = (this.state && typeof this.state.openFaq === 'number') ? this.state.openFaq : 0;
     return {
+      cs: (() => { let tz = ''; try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {} if (['Europe/London', 'Europe/Belfast', 'Europe/Jersey', 'Europe/Guernsey', 'Europe/Isle_of_Man'].indexOf(tz) > -1) return '£'; if (tz.indexOf('Europe/') === 0 || ['Atlantic/Canary', 'Atlantic/Madeira', 'Atlantic/Azores'].indexOf(tz) > -1) return '€'; return '$'; })(),
       brands: base.concat(base).map((b) => ({ ...b, h: Math.round(parseFloat(b.h) * 0.82) + 'px' })),
       mkCats: cats.map((c) => ({ label: c, pick: () => this.setState({ mkCat: c }), bg: c === mkCat ? '#232323' : '#FFFFFF', fg: c === mkCat ? '#FFFFFF' : '#232323', bd: c === mkCat ? '#232323' : '#E5E3DE' })),
       mkD0: mkCat === 'All campaigns' || cardCat[0] === mkCat ? 'block' : 'none',

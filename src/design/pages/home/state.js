@@ -51,6 +51,7 @@ export class PageLogic extends DCLogic {
     this._wmMove = () => {
       const row = document.getElementById('wm-row');
       if (!row || window.innerWidth > 760 || (this._wmLock && Date.now() < this._wmLock)) return;
+      if (row.scrollWidth > row.clientWidth + 4) return;
       const tabs = document.querySelector('.wm-tabs'), line = 68 + (tabs ? tabs.offsetHeight : 0) + window.innerHeight * 0.3;
       const cards = row.querySelectorAll('.wm-card');
       let idx = 0;
@@ -413,8 +414,8 @@ export class PageLogic extends DCLogic {
         { img: '/assets/site/7d81b2f64cd3b8b6fe1cf1aa0a76777e.jpg', views: '34.2K' }
       ],
       platPayouts: [
-        { img: '/assets/site/e00a894cb6065581af2fd6588bac43ae.jpg', handle: '@sophielaurem', meta: '14 sales · £48.20' },
-        { img: '/assets/site/0b01b160de2ef07bc1ee2726a517553b.jpg', handle: '@mianose', meta: '9 sales · £31.50' }
+        { img: '/assets/site/e00a894cb6065581af2fd6588bac43ae.jpg', handle: '@sophielaurem', meta: '14 sales · ' + cur.s + '48.20' },
+        { img: '/assets/site/0b01b160de2ef07bc1ee2726a517553b.jpg', handle: '@mianose', meta: '9 sales · ' + cur.s + '31.50' }
       ],
       platApps: [
         { img: '/assets/site/87b45fd0cb05693b5656283cc9b34690.jpg', name: 'Sofia M.', meta: 'Beauty · 248K', state: 'done' },
@@ -508,7 +509,7 @@ export class PageLogic extends DCLogic {
       metrics: [
         { value: '284K', label: 'Views', delta: '72%', border: '0' },
         { value: '18.6K', label: 'Clicks', delta: '48%', border: '1px solid #ECEAE5' },
-        { value: '£12,480', label: 'Revenue', delta: '67%', border: '1px solid #ECEAE5' }
+        { value: cur.s + '12,480', label: 'Revenue', delta: '67%', border: '1px solid #ECEAE5' }
       ],
       brands: base.concat(base).map((b) => ({ ...b, logo: b.logo || null, isText: !b.logo, h: b.h ? Math.round(parseFloat(b.h) * 0.82) + 'px' : b.h })),
       stats: [
@@ -519,10 +520,10 @@ export class PageLogic extends DCLogic {
       ],
       managed: ['Samples and shipping', 'Deliverables', 'Content uploads', 'Usage rights', 'Audience discounts', 'Sales attribution', 'Commissions', 'Creator payouts'],
       ways: [
-        { name: 'Gifted', icon: 'M20 12v9H4v-9M2 7h20v5H2zM12 22V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z', body: 'Send free product to the creators you approve. They create and share content featuring it.', give: 'Free product', get: ['Brand awareness', 'Organic content'], best: 'building a content library', img: '/assets/site/7d81b2f64cd3b8b6fe1cf1aa0a76777e.jpg', alt: 'Creator with a gifted Pure Skincare balm', pos: '50% 30%', thumb: '/assets/site/6f7612525d7110c24bd6d8ff2ef81061.jpg', chipTitle: 'Pure Skincare Daily Balm', chipSub: 'Shipped to 12 creators', chipTag: 'Delivered' },
-        { name: 'Paid', icon: 'M2 5h20v14H2zM2 10h20', body: 'Pay a set fee for agreed content, or let creators propose their own rate when they apply.', give: 'A set fee', get: ['Ad creative', 'Product launches'], best: 'ad creative and launches', img: '/assets/site/1896fe808a281f4c712f65fa80512594.jpg', alt: 'Creator wearing gold drop earrings', thumb: '/assets/site/75163011673c0bce90e5473c56500d66.jpg', chipTitle: 'Gold Drop Earrings', chipSub: cur.s + '100 per creator · 1 Reel', chipTag: 'Fee agreed' },
-        { name: 'Affiliate', icon: 'M19 5 5 19M6.5 4a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.5 15a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z', body: 'Creators earn commission on every sale through their link. Their followers get a discount automatically.', give: 'Commission on sales', get: ['Driving sales', 'Testing new creators'], best: 'testing creators at no upfront cost', img: '/assets/site/065139893da1a2a2d8434306736e52a6.jpg', alt: 'Creators running together', thumb: '/assets/site/a645b35c2fa21a160db16c8503771554.jpg', chipTitle: 'KORA Matcha', chipSub: '15% off for Tom’s followers', chipTag: codeUses + ' sales' },
-        { name: 'Mix them', body: 'Combine product, fees and commission in one campaign.', icon: 'M8 3H3v5M3 3l7 7M16 3h5v5M21 3l-7 7M8 21H3v-5M3 21l7-7M16 21h5v-5M21 21l-7-7', give: 'Any combination', get: ['Awareness and sales', 'Content at scale'], img: '/assets/site/ec74e10b8d5abdfdc40051f8e07db321.jpg', alt: 'Creator wearing black sunglasses in the sun', pos: '50% 74%', mpos: '50% 100%', thumb: '/assets/site/a54f2d8307a9552b5e70bbd8df73710e.jpg', chipTitle: 'Black Rectangle Sunglasses', chipSub: '38 creators applied', chipTag: 'Live' }
+        { name: 'Gifted', icon: 'M20 12v9H4v-9M2 7h20v5H2zM12 22V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z', body: 'Send free product to the creators you approve. They create and share content featuring it.', give: 'Free product', get: ['Brand awareness', 'Organic content'], best: 'building a content library', img: '/assets/site/7d81b2f64cd3b8b6fe1cf1aa0a76777e.jpg', alt: 'Creator with a gifted Pure Skincare balm', pos: '50% 30%', thumb: '/assets/site/6f7612525d7110c24bd6d8ff2ef81061.jpg', chipTitle: 'Pure Skincare Daily Balm', chipSub: 'Shipped to 12 creators', chipTag: 'Delivered', mchip: 'Shipped to 12 creators', mcount: true, mpre: 'Shipped to ', mw: '2ch', mto: 12, msuf: ' creators' },
+        { name: 'Paid', icon: 'M2 5h20v14H2zM2 10h20', body: 'Pay a set fee for agreed content, or let creators propose their own rate when they apply.', give: 'A set fee', get: ['Ad creative', 'Product launches'], best: 'ad creative and launches', img: '/assets/site/1896fe808a281f4c712f65fa80512594.jpg', alt: 'Creator wearing gold drop earrings', thumb: '/assets/site/75163011673c0bce90e5473c56500d66.jpg', chipTitle: 'Gold Drop Earrings', chipSub: cur.s + '100 per creator · 1 Reel', chipTag: 'Fee agreed', mchip: cur.s + '100 per creator · 1 Reel', mcount: true, mpre: cur.s, mw: '3ch', mto: 100, msuf: ' per creator · 1 Reel' },
+        { name: 'Affiliate', icon: 'M19 5 5 19M6.5 4a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.5 15a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z', body: 'Creators earn commission on every sale through their link. Their followers get a discount automatically.', give: 'Commission on sales', get: ['Driving sales', 'Testing new creators'], best: 'testing creators at no upfront cost', img: '/assets/site/065139893da1a2a2d8434306736e52a6.jpg', alt: 'Creators running together', thumb: '/assets/site/a645b35c2fa21a160db16c8503771554.jpg', chipTitle: 'KORA Matcha', chipSub: '15% off for Tom’s followers', chipTag: codeUses + ' sales', mchip: '15% commission on sales', mcount: true, mpre: '', mw: '2ch', mto: 15, msuf: '% commission on sales' },
+        { name: 'Mix them', body: 'Combine product, fees and commission in one campaign.', icon: 'M8 3H3v5M3 3l7 7M16 3h5v5M21 3l-7 7M8 21H3v-5M3 21l7-7M16 21h5v-5M21 21l-7-7', give: 'Any combination', get: ['Awareness and sales', 'Content at scale'], img: '/assets/site/ec74e10b8d5abdfdc40051f8e07db321.jpg', alt: 'Creator wearing black sunglasses in the sun', pos: '50% 74%', mpos: '50% 100%', thumb: '/assets/site/a54f2d8307a9552b5e70bbd8df73710e.jpg', chipTitle: 'Black Rectangle Sunglasses', chipSub: '38 creators applied', chipTag: 'Live', mchip: 'Free product + fee + commission', mmix: true, mcount: false }
       ].map((w, i) => ({ ...w, pos: w.pos || '50% 50%', mpos: w.mpos || w.pos || '50% 50%', sc: i === wayIdx ? 1 : 1.07, on: i === wayIdx, prog: wayAuto && i === wayIdx, wmc: 'wm-card' + (this.state && this.state['wm' + i] ? ' in' : ''), wmi: String(i), tcls: 'wy-tab' + (i === wayIdx ? ' on' : '') + (wayAuto && i === wayIdx ? ' auto' : ''), bestTxt: (w.get || []).map((g, k) => k ? g.charAt(0).toLowerCase() + g.slice(1) : g).join(', '), op: i === wayIdx ? 1 : 0, pick: () => {
           if (scrollMode) {
             const el = document.getElementById('ways-track');
@@ -538,9 +539,8 @@ export class PageLogic extends DCLogic {
               this.setState({ wayPick: i, wayStop: true });
               const row = document.getElementById('wm-row'), c = row && row.querySelectorAll('.wm-card')[i], tabs = document.querySelector('.wm-tabs');
               if (c && window.innerWidth <= 760) {
-                const y = c.getBoundingClientRect().top + window.scrollY - 68 - (tabs ? tabs.offsetHeight : 0) - 12;
                 this._wmLock = Date.now() + 900;
-                window.scrollTo({ top: y, behavior: 'smooth' });
+                row.scrollTo({ left: c.offsetLeft - 16, behavior: 'smooth' });
               }
             }
           }
@@ -609,10 +609,10 @@ export class PageLogic extends DCLogic {
       })(),
       wG: wayIdx === 0, wP: wayIdx === 1, wA: wayIdx === 2, wM: wayIdx === 3,
       wayNow: [
-        { thumb: '/assets/site/6f7612525d7110c24bd6d8ff2ef81061.jpg', chipTitle: 'Pure Skincare Daily Balm', chipSub: 'Shipped to 12 creators', chipTag: 'Delivered' },
-        { thumb: '/assets/site/75163011673c0bce90e5473c56500d66.jpg', chipTitle: 'Gold Drop Earrings', chipSub: cur.s + '100 per creator · 1 Reel', chipTag: 'Fee agreed' },
-        { thumb: '/assets/site/a645b35c2fa21a160db16c8503771554.jpg', chipTitle: 'KORA Matcha', chipSub: '15% off for Tom’s followers', chipTag: codeUses + ' sales' },
-        { thumb: '/assets/site/a54f2d8307a9552b5e70bbd8df73710e.jpg', chipTitle: 'Black Rectangle Sunglasses', chipSub: '38 creators applied', chipTag: 'Live' }
+        { thumb: '/assets/site/6f7612525d7110c24bd6d8ff2ef81061.jpg', chipTitle: 'Pure Skincare Daily Balm', chipSub: 'Shipped to 12 creators', chipTag: 'Delivered', mchip: 'Shipped to 12 creators', mcount: true, mpre: 'Shipped to ', mw: '2ch', mto: 12, msuf: ' creators' },
+        { thumb: '/assets/site/75163011673c0bce90e5473c56500d66.jpg', chipTitle: 'Gold Drop Earrings', chipSub: cur.s + '100 per creator · 1 Reel', chipTag: 'Fee agreed', mchip: cur.s + '100 per creator · 1 Reel', mcount: true, mpre: cur.s, mw: '3ch', mto: 100, msuf: ' per creator · 1 Reel' },
+        { thumb: '/assets/site/a645b35c2fa21a160db16c8503771554.jpg', chipTitle: 'KORA Matcha', chipSub: '15% off for Tom’s followers', chipTag: codeUses + ' sales', mchip: '15% commission on sales', mcount: true, mpre: '', mw: '2ch', mto: 15, msuf: '% commission on sales' },
+        { thumb: '/assets/site/a54f2d8307a9552b5e70bbd8df73710e.jpg', chipTitle: 'Black Rectangle Sunglasses', chipSub: '38 creators applied', chipTag: 'Live', mchip: 'Free product + fee + commission', mmix: true, mcount: false }
       ][wayIdx],
       faqs: [
         { q: 'What is Linkable?', a: 'Linkable is where ecommerce brands find creators and run every collaboration in one place. You launch a campaign, creators apply, you choose who to work with, and Linkable handles samples, content, usage rights, tracking and commission payouts.' },

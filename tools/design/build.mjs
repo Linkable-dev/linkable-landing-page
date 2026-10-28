@@ -1,7 +1,7 @@
 // Renders the site's pages from the design templates (src/design/pages/*).
 //
 //   node tools/design/build.mjs            every page
-//   node tools/design/build.mjs static     home, creators, pricing, autopilot, contact, 404
+//   node tools/design/build.mjs static     home, creators, pricing, autopilot, pitch, contact, 404
 //   node tools/design/build.mjs blog       blog index + every post (content/blog)
 //   node tools/design/build.mjs legal      the legal documents (content/legal/documents.json)
 //
@@ -32,6 +32,7 @@ const STATIC = [
   { key: 'creators', file: 'creators/index.html', url: '/creators', title: 'Brand Collaborations for Creators | Linkable', description: 'Discover gifted, paid and affiliate collaborations with ecommerce brands. Create content, promote products you love and earn through Linkable.', ...OG('creators') },
   { key: 'pricing', file: 'pricing/index.html', url: '/pricing', title: 'Creator Marketing Pricing for Ecommerce Brands | Linkable', description: 'Explore Linkable pricing for ecommerce brands. Find creators and run gifted, paid and affiliate campaigns, with everything managed in one place.', ...OG('pricing') },
   { key: 'autopilot', file: 'autopilot/index.html', url: '/autopilot', title: 'Autopilot: Creator Campaigns That Run Themselves | Linkable', description: 'Autopilot sets up your creator campaigns, sources and matches creators and keeps every collaboration moving, so your team doesn’t have to.', ...OG('autopilot') },
+  { key: 'pitch', file: 'pitch/index.html', url: '/pitch', title: 'Pitch Brands With AI: Land Brand Deals as a Creator | Linkable', description: 'Find brands worth pitching, get a pitch written for you and sent to the person who runs partnerships, with follow ups handled. Free for 5 pitches a month.', ...OG('pitch') },
   { key: 'contact', file: 'contact/index.html', url: '/contact', title: 'Contact Linkable – Speak With the Team', description: 'Get in touch with the Linkable team for support, partnerships, or press inquiries. We usually reply within 24 hours.', ...OG('contact') },
   { key: 'notfound', file: '404.html', url: '/404', title: 'Linkable – Page Not Found', description: 'The page you’re looking for doesn’t exist. Visit Linkable to discover creator campaigns for ecommerce brands.', robots: 'noindex', ...OG('home') },
 ];
@@ -42,12 +43,9 @@ const STATIC = [
 function head({ key, url, title, description, image, imageW, imageH, imageAlt = title, type = 'website', robots = 'max-image-preview:large', extra = '' }) {
   const canonical = SITE + url;
   const img = SITE + image;
-  // A page whose design has no styles of its own gets no page.css link; one
-  // marked standalone (the home page) carries every style and skips site.css.
-  const raw = fs.readFileSync(path.join(ROOT, `src/design/pages/${key}/page.css`), 'utf8');
-  const own = raw.replace(/\/\*[\s\S]*?\*\//g, '').trim();
-  const page = own ? [`/src/design/pages/${key}/page.css`] : [];
-  const css = [...(raw.startsWith('/* standalone:') ? page : ['/src/design/site.css', ...page]), '/src/consent.css'];
+  // One stylesheet per page: page.css either carries every style (standalone:
+  // home, pitch) or imports site.css ahead of its own rules (import.py).
+  const css = [`/src/design/pages/${key}/page.css`, '/src/consent.css'];
   return `<!doctype html>
 <html lang="en" data-page="${key}">
 <head>

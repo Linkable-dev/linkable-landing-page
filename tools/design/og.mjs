@@ -27,6 +27,7 @@ export const CARDS = [
   { name: 'home', path: '/index.html', mode: 'hero' },
   { name: 'creators', path: '/creators/index.html', mode: 'hero' },
   { name: 'autopilot', path: '/autopilot/index.html', mode: 'hero' },
+  { name: 'pitch', path: '/pitch/index.html', mode: 'hero' },
   { name: 'contact', path: '/contact/index.html', mode: 'hero' },
   { name: 'pricing', path: '/pricing/index.html', mode: 'title' },
   { name: 'blog', path: '/blog/index.html', mode: 'title' },
