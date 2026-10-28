@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 5717757,
+      "alt": "A business professional uses a laptop with charts and graphs while wearing earphones in an office setting.",
+      "src": "https://images.pexels.com/photos/5717757/pexels-photo-5717757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/a-man-sitting-at-the-table-5717757/",
+      "query": "marketer reviewing creator profiles laptop",
+      "width": 6720,
+      "credit": {
+        "url": "https://www.pexels.com/@karola-g",
+        "name": "https://kaboompics.com/"
+      },
+      "height": 4480,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/5717757/pexels-photo-5717757.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/5717757/pexels-photo-5717757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/creator-shortlist-before-outreach-5717757-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/creator-shortlist-before-outreach-5717757-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "creator-shortlist-before-outreach",
+    "title": "How to build a creator shortlist before outreach",
+    "description": "Learn how to build a creator shortlist before outreach so you message people who actually fit, not fifty strangers who never reply.",
+    "excerpt": "Ten minutes spent shortlisting against your real customer beats an afternoon spent messaging fifty creators at random. Here's how to build that shortlist before you send a single message.",
+    "date": "2026-10-28",
+    "updated": "2026-10-28",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "A business professional uses a laptop with charts and graphs while wearing earphones in an office setting.",
+    "words": 815,
+    "source": "generated",
+    "keyword": "how to build a creator shortlist before outreach",
+    "category": "Sourcing",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 34303854,
       "alt": "Two people hold hands in a warmly lit indoor setting wearing black outfits and necklaces.",
       "src": "https://images.pexels.com/photos/34303854/pexels-photo-34303854.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",

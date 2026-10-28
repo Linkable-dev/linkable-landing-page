@@ -1,0 +1,117 @@
+{
+  "blocks": [
+    {
+      "text": "You open Instagram, search a hashtag, and start sending the same message to anyone with a decent grid and a few thousand followers. Twenty messages later, two replies, and neither creator has customers who look anything like yours. This is how most brands spend a Tuesday afternoon, and it's why outreach feels like shouting into a crowd.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you build a creator shortlist before outreach?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "You build a shortlist by writing down who your actual customer is, then only adding creators whose audience, content style and past brand work match that person, before you send a single message. The shortlist should be short on purpose, usually a handful of names you'd be glad to work with, not a list you're hoping to whittle down later. Everything else below is just the method for getting there without guessing.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What to pull from your own customer data first",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Before you look at a single creator profile, look at your own orders. Who buys your product, what else do they follow, what tone does your brand use in its best-performing ads. If you sell supplements for shift workers, a creator whose audience is mostly students training for a marathon is a mismatch however good their content looks.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Write this down somewhere, even three lines in a doc. Age range, main use case, platform your buyers actually spend time on. This becomes the filter every creator has to pass before they're worth a message. Skip this step and you'll shortlist on vibes, which is how brands end up with a roster of attractive accounts and no sales to show for it.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How many creators should actually make the shortlist",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Smaller than you think. A shortlist built properly is not a volume play, it's a precision one. Ten well-matched creators who each reply to a message built for them will outperform fifty cold strangers every time, because reply rates follow fit, not follower count. If you're unsure what a working monthly roster looks like once you're past the first shortlist, we've covered that in [how many creators should a brand work with each month](/blog/how-many-creators-brand-work-with).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Say you run a coffee subscription brand and you've shortlisted eight creators who post home brewing routines to audiences who actually buy beans online. Compare that to sending the same generic message to fifty lifestyle accounts picked off a hashtag search. The eight will get you further, because every one of them already talks to your customer, and your message can say so specifically.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What disqualifies a creator before you even message them",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "A shortlist works as much by exclusion as by inclusion. Before a creator earns a spot, check a few things that take minutes and save you weeks of back and forth later.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": null,
+      "type": "ul",
+      "items": [
+        "Their content style doesn't match how your product needs to be shown (a skincare routine shot in poor light won't sell a premium serum)",
+        "Their past brand partnerships look rushed, mismatched or clash with your category",
+        "Their comments section is dead or full of bot replies rather than real engagement",
+        "They've posted for a direct competitor recently in a way that would make your product look like an afterthought"
+      ]
+    },
+    {
+      "text": "Fake followers are a separate check worth doing properly rather than eyeballing, and we've written a full method for it in [how to spot fake followers before gifting product](/blog/spot-fake-followers-before-gifting). Do this before outreach, not after you've already sent product.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Where to find the creators once you know what you're looking for",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Once the filter is written down, sourcing gets much faster, because you're searching for something specific instead of browsing. Search hashtags and sounds relevant to your product category, check who your competitors' best creators follow, and look at who's already tagging your brand or using your product without being asked. We go into the full range of sourcing channels in [how to find creators for your Shopify brand every month](/blog/how-to-find-creators-shopify-brand).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "If manual searching is eating your week, matching software removes most of the guesswork. Linkable's AI-powered matching surfaces creators against your product and campaign brief, and once a campaign is live creators typically start applying within a day, which means your shortlist can come from inbound applications as well as outbound search. That combination, a tight filter plus a wider pool to draw from, is what makes a ten-minute shortlisting session worth more than an afternoon of cold messages.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Once your shortlist is set, the message itself still has to earn a reply. Our guide on [how to write a creator outreach message that gets replies](/blog/creator-outreach-message-that-works) covers that part. But the message only works if the person reading it was the right person to message in the first place.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This week, before you send another round of outreach, write your three-line customer filter, pull ten names that pass it, and check each one against the disqualifiers above. Message those ten and compare the replies to your last batch of fifty.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "A search tool gives you anyone who matches a keyword or hashtag. A shortlist is that list filtered against your actual customer and past brand fit, so every name on it is someone you'd genuinely want to work with.",
+      "q": "What's the difference between a shortlist and a creator list from a search tool?"
+    },
+    {
+      "a": "The filter is the same (audience fit, content style, past partnership quality) but the bar is higher for paid work since you're committing a fee before you see results. Read our comparison in [gifted vs paid creator collaborations](/blog/gifted-vs-paid-creator-collaborations) for how the economics differ.",
+      "q": "Should gifted and paid creators be shortlisted differently?"
+    },
+    {
+      "a": "Yes, and you should. Creators who performed well on one campaign are usually worth returning to for the next, which is part of how a one-off campaign turns into a repeatable programme rather than starting from zero each time.",
+      "q": "Can I reuse a shortlist for future campaigns?"
+    },
+    {
+      "a": "If you're struggling to find even a handful of creators who pass your filter, the filter is probably too specific, not the creator pool too small. Loosen one criterion, such as platform or exact audience size, before abandoning the method.",
+      "q": "How do I know if my shortlist is too narrow?"
+    }
+  ]
+}
