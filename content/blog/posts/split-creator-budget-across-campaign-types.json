@@ -1,0 +1,92 @@
+{
+  "blocks": [
+    {
+      "text": "Say you run a skincare brand and spend this quarter's whole creator budget on gifted product. By the end of it you have a folder full of nice photos and videos, a handful of tags, maybe a few comments. The Shopify dashboard barely moves. That is the gifting trap, and it is the budget mistake we see most often on Linkable.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How should you split creator budget across campaign types?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Spread it across gifted product, paid collaboration and affiliate commission, with the weighting set by what stage your brand is at, not by habit. Gifted product is cheap and good for getting a volume of content and first impressions from new creators. Paid collaboration is for creators whose audience is a strong fit and whose content you need to be reliably good, so you pay a fixed fee rather than hope. Affiliate commission is for creators who have already proven they can sell, and it ties your cost directly to tracked sales rather than to posting. There is no single correct percentage split for every brand, because it depends on your catalogue price, margin and how established your creator relationships already are. The point that matters is never to put the entire budget into one bucket, and especially not into gifting alone.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Why does an all-gifting budget stop producing sales?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Gifted product pays a creator for making content, not for selling anything. A creator who receives free product has fulfilled their side of the deal the moment the post goes up. Nothing in that arrangement rewards them for driving a purchase, so you end up with reach and content but no mechanism connecting either to revenue. Run the same gifting motion with the same creators every month and you also lose the ability to repeat with the ones who actually performed, because gifting treats every creator the same regardless of outcome.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "We wrote about this trade-off in more detail in [gifted vs paid creator collaborations](/blog/gifted-vs-paid-creator-collaborations), which is worth reading before you decide how far to push gifting on its own.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What is paid collaboration for in the split?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Paid collaboration is where you spend on certainty rather than on hope. You pay a fixed fee to a creator whose audience closely matches your buyer and whose past content has been consistently well made, so the campaign is not gambling on whether free product produces something usable. This matters most in categories where content quality carries the sale, such as fashion, activewear or home fragrance, where a single polished video can be reused in ads for months. Paid budget should go to a smaller, known group of creators rather than being spread thin across strangers, because the fee is only worth paying when you already have reason to trust the output.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How much should go to affiliate commission?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Give affiliate commission the room to grow as a share of spend over time, because it is the only one of the three that scales with revenue rather than against it. Creators earn a percentage on sales tracked through their unique link or discount code, so you are not paying for posts that go nowhere, and you are not capping a creator's upside if their content genuinely sells. The detail of how to set that percentage without giving away margin is covered in [affiliate commission rates for creators](/blog/affiliate-commission-rates-for-creators). As a rough shape, affiliate suits creators who have already worked with you once on gifted or paid terms and shown they can move product, rather than brand new creators you have no track record with yet.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "When should you rebalance the split?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Rebalance once you can see, campaign by campaign and creator by creator, which content actually produced tracked sales rather than just views or likes. On Linkable, campaign and creator reporting shows content delivered, audiences reached, engagement generated and tracked sales side by side, which makes it obvious where gifting spend is only buying content and where a creator deserves to move to a paid or affiliate arrangement instead. If you are not yet tracking that distinction, [how to measure creator marketing ROI](/blog/how-to-measure-creator-marketing-roi) is a good place to start before you touch next month's budget split.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Treat the split as something you revisit every cycle, not something you set once and forget. A brand doing a handful of gifted campaigns a month might find that two or three creators consistently drive sales, and that is your signal to shift their arrangement to affiliate or paid while leaving the rest of the budget on gifting for discovery.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This week, pull up your last two creator campaigns and sort the creators by tracked sales rather than by post count. Move next month's budget for the top performers into paid or affiliate terms, and keep gifting for the creators you are still testing. If you want to run all three campaign types from one dashboard, [Linkable](/pricing) sets up gifted, paid and affiliate campaigns side by side so you can see which one is actually earning its keep.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Yes, and it is normal. Start a new creator on gifted product, move them to a paid fee once their content proves reliable, then shift to affiliate commission once they have shown they can drive tracked sales.",
+      "q": "Can one creator be on gifted, paid and affiliate terms over time?"
+    },
+    {
+      "a": "Not entirely, but new brands should weight more heavily towards gifted and paid campaigns at first, because affiliate commission works best with creators who already have a track record with your products.",
+      "q": "Should new brands avoid affiliate campaigns entirely?"
+    },
+    {
+      "a": "Not necessarily. A small budget split across gifted, paid and a limited affiliate programme usually outperforms a larger budget poured entirely into one type, because the mix is what connects content to sales.",
+      "q": "Does a bigger budget mean more campaign types at once?"
+    },
+    {
+      "a": "Review it every campaign cycle using tracked sales and content performance, not on a fixed schedule. Shift spend as soon as you have enough data to tell which creators and campaign types are earning it.",
+      "q": "How often should the budget split change?"
+    }
+  ]
+}

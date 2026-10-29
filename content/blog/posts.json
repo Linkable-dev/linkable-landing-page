@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 7580704,
+      "alt": "A business analyst reviews a colorful bar chart and documents at a desk, indicating data analysis.",
+      "src": "https://images.pexels.com/photos/7580704/pexels-photo-7580704.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/person-holding-white-printer-paper-7580704/",
+      "query": "founder reviewing campaign spreadsheet laptop",
+      "width": 6143,
+      "credit": {
+        "url": "https://www.pexels.com/@rdne",
+        "name": "RDNE Stock project"
+      },
+      "height": 4095,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/7580704/pexels-photo-7580704.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/7580704/pexels-photo-7580704.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/split-creator-budget-across-campaign-types-7580704-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/split-creator-budget-across-campaign-types-7580704-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "split-creator-budget-across-campaign-types",
+    "title": "How to split creator budget across campaign types",
+    "description": "Learn how to split creator budget across gifting, paid and affiliate campaigns so you get content, reach and sales, not just free product.",
+    "excerpt": "Putting your whole budget into gifting gets you a folder of nice content and no movement in Shopify. Here is how to split spend across gifted, paid and affiliate campaigns so each pound has a job.",
+    "date": "2026-10-29",
+    "updated": "2026-10-29",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "A business analyst reviews a colorful bar chart and documents at a desk, indicating data analysis.",
+    "words": 831,
+    "source": "generated",
+    "keyword": "how to split creator budget across campaign types",
+    "category": "Strategy",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 5717757,
       "alt": "A business professional uses a laptop with charts and graphs while wearing earphones in an office setting.",
       "src": "https://images.pexels.com/photos/5717757/pexels-photo-5717757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
