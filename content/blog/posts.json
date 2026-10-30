@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 8189630,
+      "alt": "A smartphone on a stand shows a virtual guitar lesson with sheets and highlighters nearby, illustrating online learning.",
+      "src": "https://images.pexels.com/photos/8189630/pexels-photo-8189630.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/people-on-a-video-call-8189630/",
+      "query": "woman reviewing phone video notes",
+      "width": 6000,
+      "credit": {
+        "url": "https://www.pexels.com/@yankrukov",
+        "name": "Yan Krukau"
+      },
+      "height": 4000,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/8189630/pexels-photo-8189630.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/8189630/pexels-photo-8189630.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/give-creators-feedback-without-scripting-8189630-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/give-creators-feedback-without-scripting-8189630-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "give-creators-feedback-without-scripting",
+    "title": "How to give creators feedback without scripting them",
+    "description": "Learn how to give creators feedback that fixes tone and clarity without turning their post into a stiff, scripted advert.",
+    "excerpt": "The note that kills a natural creator post is usually well meant. Here is the phrasing that fixes tone without rewriting the script.",
+    "date": "2026-10-30",
+    "updated": "2026-10-30",
+    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
+    "imageAlt": "A smartphone on a stand shows a virtual guitar lesson with sheets and highlighters nearby, illustrating online learning.",
+    "words": 845,
+    "source": "generated",
+    "keyword": "how to give creators feedback without scripting them",
+    "category": "Playbook",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 7580704,
       "alt": "A business analyst reviews a colorful bar chart and documents at a desk, indicating data analysis.",
       "src": "https://images.pexels.com/photos/7580704/pexels-photo-7580704.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",

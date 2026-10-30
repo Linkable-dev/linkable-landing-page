@@ -1,0 +1,113 @@
+{
+  "blocks": [
+    {
+      "text": "You watch the draft, something feels off, and you type a comment to fix it. Three rounds later the creator sends back a version that sounds like your website copy read aloud. The product is fine. The tone is gone.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This happens to almost every brand that gives creator feedback without a plan for it. The fix is not fewer notes. It is different ones.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you give creators feedback without scripting them",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "You give feedback on the outcome you need, not the words you'd use to get there. Tell the creator what a viewer needs to understand or feel by a certain point in the video, and let them choose how to say it in their own voice. Scripting happens when a note hands over exact phrasing instead of a goal.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Say a skincare brand gets a draft where the creator calls a serum \"lightweight\" when the brand wants \"fast-absorbing\" on record for a claims reason. The scripting instinct is to reply: \"Change lightweight to fast-absorbing and add 'clinically tested' before the second clip.\" The better note is: \"Can you describe how quickly it sinks in, in your own words, somewhere in the first half? We need the absorption point made clearly for claims reasons.\" Same requirement, no handed-over sentence.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Why specific phrasing requests backfire",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Once a creator hears your exact words, they tend to protect themselves by using them exactly. Nobody wants to get a reshoot note for paraphrasing too loosely, so they stop paraphrasing at all. The next line in the video often picks up the same stiffness, because the creator has shifted into \"write for the brand\" mode rather than \"talk to my audience\" mode.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "You can see this most clearly on claims-sensitive categories like supplements, where brands are already careful about wording. Our post on [briefing creators on product claims without scripts](/blog/brief-creators-product-claims) covers how to hold a legal line without handing over a script, and the same logic applies to tone feedback generally: say what must be true, not what must be said.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What a good feedback note actually looks like",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "A good note names the problem, not the fix. \"This feels like an ad in the first five seconds\" tells the creator something useful about how it lands. \"Say 'I've been using this for two weeks and here's what I noticed' instead\" removes their judgement entirely and replaces it with yours.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Three habits make this easier to apply consistently. First, point at the moment, not the sentence: \"the opening feels slow\" rather than rewriting the opening line. Second, ask a question instead of issuing an instruction where you can: \"what made you want to try this?\" often gets a better hook than any line you could write. Third, separate must-haves from preferences clearly, so the creator knows which notes are non-negotiable (a claim, a disclosure, a product name spelled correctly) and which are just your taste.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "If you set this expectation in the brief before the first draft lands, feedback gets shorter and faster for every round after. Our [creator brief template for ecommerce](/blog/creator-brief-template-for-ecommerce) has a section for exactly this split between requirements and preferences, so it is not something you are explaining fresh on every campaign.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "When tighter direction is actually the right call",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Not every note should be loose. Legal disclosures, pricing, discount code mentions and safety language need exact wording, and you should say so plainly rather than hinting at it through tone feedback. The difference is that you're asking for a fact to be stated, not for the creator's whole delivery to match your voice.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "A paid collaboration with a fixed fee can usually absorb one tighter round of direction without damaging the relationship, because the creator expects more brand input on a paid post than on a gifted one. Our post on [gifted vs paid creator collaborations](/blog/gifted-vs-paid-creator-collaborations) goes into how expectations shift with the commercial arrangement, which is worth reading before you decide how firm to be on a given note.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How to review drafts so feedback stays light",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "The amount of scripting you end up doing usually traces back to how clear the original brief was, not how the feedback round went. A brief that states the one or two things that must land, and otherwise leaves the delivery to the creator, needs far fewer corrective notes afterwards. If you're building or reviewing a content approval process, our guide on a [creator content approval process that doesn't slow you down](/blog/creator-content-approval-process) covers how to structure rounds so you're not sending three emails to fix one tone problem.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Using Linkable to manage the brief and the approval thread in one place also helps, since the requirement the creator agreed to at the start stays visible next to the draft, which makes it easier to point at \"this bit\" rather than retype the whole requirement in a comment.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Pull up the last three drafts you sent feedback on this week and check whether your notes named a sentence or named a problem. Rewrite one of them as a question before you send the next round.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Most brands get a usable result within two rounds if the brief was specific about must-haves. A third round is reasonable for a claims or safety fix, but if you're still correcting tone by round three, the issue is usually the brief, not the creator.",
+      "q": "How many rounds of feedback should a creator get before you accept the draft as is"
+    },
+    {
+      "a": "Gifted creators generally expect lighter input since there's no fee attached, so heavy notes can cause them to disengage. Paid creators expect more brand direction as part of the arrangement, so firmer feedback lands better there.",
+      "q": "Should feedback be different for gifted creators versus paid ones"
+    },
+    {
+      "a": "Check whether your notes were clear about what was required versus preferred, since vague notes get ignored more than firm ones. If a required element is still missing after a clear ask, that's a fit problem worth addressing directly rather than through another round of notes.",
+      "q": "What if a creator keeps ignoring feedback and posting their own version"
+    }
+  ]
+}
