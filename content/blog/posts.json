@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 7310095,
+      "alt": "A person packing a white t-shirt with a thank you card into a cardboard box.",
+      "src": "https://images.pexels.com/photos/7310095/pexels-photo-7310095.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/woman-putting-thank-you-card-into-box-with-t-shirts-7310095/",
+      "query": "woman opening subscription box monthly",
+      "width": 6645,
+      "credit": {
+        "url": "https://www.pexels.com/@rdne",
+        "name": "RDNE Stock project"
+      },
+      "height": 4430,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/7310095/pexels-photo-7310095.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/7310095/pexels-photo-7310095.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/creator-marketing-subscription-box-brands-7310095-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/creator-marketing-subscription-box-brands-7310095-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "creator-marketing-subscription-box-brands",
+    "title": "Creator Marketing for Subscription Box Brands That Fights Churn",
+    "description": "Creator marketing for subscription box brands works best when creators show the unboxing again each month, not just at launch.",
+    "excerpt": "Subscription boxes live or die on renewal, not on a single unboxing video. Here's how to brief creators to show up every month, not just at launch.",
+    "date": "2026-10-31",
+    "updated": "2026-10-31",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "A person packing a white t-shirt with a thank you card into a cardboard box.",
+    "words": 976,
+    "source": "generated",
+    "keyword": "creator marketing for subscription box brands",
+    "category": "By category",
+    "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 8189630,
       "alt": "A smartphone on a stand shows a virtual guitar lesson with sheets and highlighters nearby, illustrating online learning.",
       "src": "https://images.pexels.com/photos/8189630/pexels-photo-8189630.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
