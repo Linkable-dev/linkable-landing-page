@@ -1,0 +1,117 @@
+{
+  "blocks": [
+    {
+      "text": "You've just launched on Shopify. There's a product, a theme, maybe a handful of friends-and-family orders, and nothing else. No reviews. No repeat customers. No proof that anyone outside your own circle wants this. Most creator marketing advice assumes you already have some of that, which is exactly why it doesn't work for you yet.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What does creator marketing look like for a new Shopify store?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "For a store with no reviews and no order history, creator marketing for new Shopify stores means prioritising content and credibility over tracked sales in the first few campaigns. You're not trying to prove a return on ad spend yet. You're trying to get real people holding, using and talking about your product so the next visitor to your site has something to believe other than your own copy.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "That changes almost every decision: who you approach, what you pay them with, what you ask them to post, and what you measure when it's done. An established brand with months of orders can chase affiliate sales from day one. You can't, because there's no audience trust yet for an affiliate link to convert against.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Why social proof matters more than sales data at this stage",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "A new visitor to your store has no reason to trust you. They don't know if the product works, if it'll arrive, or if the photos match reality. Reviews, unboxing videos and people they half-recognise from their feed all do the job your sales page can't do alone, which is answer ",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This is the gap creator content fills before you have enough customers to generate reviews on your own. A short video of someone opening the box, trying the product and giving an honest reaction does more for a first-time buyer than a polished product shot ever will, because it looks like something a real person made, not an ad.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Say you run a skincare brand with a handful of orders so far, all from people you know. You don't need a creator to drive a spike in sales this month. You need three or four pieces of content that show your serum on real skin, in a real bathroom, with a reaction that sounds like a person rather than a script. That content becomes your first proof point for every stranger who lands on the product page after.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How to structure your first campaigns without a sales history",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Run gifted collaborations first, not affiliate or paid deals. Affiliate only works once a creator's audience actually converts, and you won't know that yet. Paid fees are hard to justify when you can't tell a brand-new creator what kind of return to expect. Gifted product, in exchange for honest content, is the right trade when both sides are taking a chance on something unproven.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Keep the brief loose on opinion and tight on what you need back. Ask for a specific shot of the product in use, a close-up, and an honest reaction, but don't script the words. A creator sounding natural is the entire point of using one instead of running an ad. Our [product seeding campaign strategy](/blog/product-seeding-campaign-strategy) post covers how to brief gifted campaigns so you actually get usable content back, not just a free product given away.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "If you're setting this up on Linkable, the [creator activation playbook](/blog/creator-activation-playbook) walks through the first campaign step by step, and the Shopify integration means gifted orders can go out automatically once you approve an applicant, so you're not manually processing every address.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Which creators to approach when you have no track record",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Go smaller than you think. A creator with a modest, engaged following who actually uses products like yours will give you more believable content than someone with a huge audience and no connection to your category. Micro creators are also far more likely to say yes to a brand they've never heard of, because the ask (free product, honest post) is low-risk for them too.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Look for creators already posting about adjacent products, not just your exact category. Someone who reviews skincare routines generally is a better early fit than someone who only posts about one competitor brand, because they're used to trying new things on camera and their audience expects it. [How to find creators for your Shopify brand](/blog/how-to-find-creators-shopify-brand) has more on building that first list.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How to turn early content into proof that sells",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Content only becomes proof once it's visible where buyers decide. Pull the best clips onto your product page, your homepage and your checkout flow if your theme allows it. A short clip of someone else trying the product next to the ",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Once you've run a handful of gifted campaigns and have content plus a small order history, you can start layering in affiliate links and paid deals with creators who already performed well for you. At that point the goal shifts from proof to tracked sales, and [how to launch your first creator campaign](/blog/launch-campaign-linkable) is the right next read for that stage.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This week, pick three creators whose existing posts look like something your customer would already be watching, and send a gifted offer asking for one honest piece of content each. You don't need a programme yet. You need proof.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "No. Gifted product is the right starting point because neither side has proof yet that the product converts. Save paid fees and affiliate commission for creators who've already produced content for you and shown their audience responds.",
+      "q": "Should a new Shopify store pay creators cash before it has any sales?"
+    },
+    {
+      "a": "A handful is enough. Three to five gifted collaborations will usually give you several usable pieces of content without overwhelming your ability to brief, ship and follow up with each one properly.",
+      "q": "How many creators do I need for my first campaign?"
+    },
+    {
+      "a": "Put it on the product page itself and in any ads or social posts that drive people to the store, since that is where a first-time visitor needs the reassurance most.",
+      "q": "Where should I put creator content if I have no website traffic yet?"
+    },
+    {
+      "a": "Honest and slightly rough usually outperforms polished for a brand nobody has heard of yet, because it reads as a real opinion rather than an advert. Save the professional-looking content for later once you have some trust built up.",
+      "q": "What if a creator's content doesn't look professional enough to use?"
+    }
+  ]
+}
