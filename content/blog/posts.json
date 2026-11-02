@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 17094505,
+      "alt": "A professional studio scene with a man preparing packages under studio lighting, showcasing a modern photography setup.",
+      "src": "https://images.pexels.com/photos/17094505/pexels-photo-17094505.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/studio-shot-of-a-man-unboxing-a-package-17094505/",
+      "query": "woman filming product unboxing phone",
+      "width": 6000,
+      "credit": {
+        "url": "https://www.pexels.com/@amar",
+        "name": "Amar  Preciado"
+      },
+      "height": 4000,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/17094505/pexels-photo-17094505.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/17094505/pexels-photo-17094505.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/add-creator-content-product-pages-17094505-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/add-creator-content-product-pages-17094505-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "add-creator-content-product-pages",
+    "title": "How to add creator content to product pages",
+    "description": "Learn how to add creator content to product pages so shoppers get proof right before they buy, not just in an ad they scrolled past.",
+    "excerpt": "Creator videos and photos convert better on product pages than in ads because they answer the exact question a shopper has right before they click buy. Here's how to get them there.",
+    "date": "2026-11-02",
+    "updated": "2026-11-02",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "A professional studio scene with a man preparing packages under studio lighting, showcasing a modern photography setup.",
+    "words": 824,
+    "source": "generated",
+    "keyword": "how to add creator content to product pages",
+    "category": "Playbook",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 6958425,
       "alt": "Hands opening a package with a skincare dropper bottle in protective packaging.",
       "src": "https://images.pexels.com/photos/6958425/pexels-photo-6958425.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",

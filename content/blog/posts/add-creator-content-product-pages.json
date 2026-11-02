@@ -1,0 +1,112 @@
+{
+  "blocks": [
+    {
+      "text": "A shopper lands on your product page, scrolls past the studio shots, reads a couple of reviews, and leaves without buying. They weren't unconvinced by your ad. They just couldn't tell what the product actually looks like on a real person, in a real kitchen, under real light. That gap is where creator content belongs, and it's a different job to the one it does in an ad.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you add creator content to product pages?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "You place the actual video or photo files from your creator collaborations directly into the product page template, usually near the image gallery or just below the add-to-cart button, using a theme block or an app that supports video embeds. Collect the raw files from creators through your campaign (gifted, paid or affiliate), pick the clips that show real use rather than polish, and drop them where a shopper is already looking when they're deciding.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "On Shopify this is usually a case of adding a video or UGC gallery section to the product template, uploading the file or pasting a link, and setting it to appear above the fold on mobile. If you're running campaigns through [Linkable](/creators), the content comes with clear usage rights attached, so you're not guessing whether you're allowed to reuse it on the page.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Why does creator content convert better here than in an ad?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "An ad has to stop a scroll and introduce a product someone wasn't thinking about. A product page is different. The shopper already wants the thing, they're just checking whether it will work for them. Creator content on the page answers that specific doubt: how it fits, how it sounds, how it smells, how long it takes, whether it's annoying to use. A studio photo can't answer any of that.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Say you run a skincare brand selling a vitamin C serum. Your product photos show the bottle on a marble surface. A fifteen second clip of a creator applying it, showing the texture and how fast it absorbs, answers the question a shopper is actually asking at that moment, which is ",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "something closer to \"will this feel sticky under makeup\" than \"what does the bottle look like.\" That's the difference between content built to interrupt and content built to reassure.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What kind of creator content actually works on a product page?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Short, unscripted and specific beats long and polished. A clip of someone opening the box, trying the product and giving a plain reaction works better than a produced advert, because it reads as proof rather than marketing. A photo of the product in a messy real kitchen or bathroom does more for conversion than a clean flat lay, because it looks like the shopper's own life.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Honesty helps too. A creator mentioning a minor downside (the scent is strong, the fit runs small) makes the praise around it more believable, and shoppers tend to trust that over content that sounds like it was written by the brand. If you're briefing creators for this, our [creator brief template](/blog/creator-brief-template-for-ecommerce) covers how to ask for this kind of footage without scripting it out of them.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Where on the page should the content actually sit?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Put the strongest clip or photo where the shopper's eye already goes before they click add to cart, which is usually in or right after the main image gallery, not buried under a long description or past the reviews. On mobile especially, anything below the fold might as well not exist for a large share of visitors, so test placing one short video high on the page rather than a gallery low on it.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Reviews sections are a good secondary spot. A written review next to a photo or short clip from the same customer does more work than either on its own, because the two reinforce each other.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you keep product pages updated with new creator content?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Treat the product page as something that needs refreshing, not a one-time setup. As new creators post for a given product, swap in the newer clips and retire the ones that have been live the longest, since shoppers who browse your site repeatedly will notice if nothing changes. Keep a simple record of which creator made which piece and what [usage rights](/blog/creator-content-usage-rights-explained) you have for it, so you're not scrambling when a creator asks you to take something down.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "It also pays to check which pieces are actually doing something once they're live, rather than assuming a video is working because it's there. Our guide on how to [track which creator content actually drives sales](/blog/track-creator-content-drives-sales) walks through tagging content so you can see which clips are tied to add-to-carts and which ones are just sitting there.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Pick your three highest-traffic product pages this week and add one creator clip or photo to each, placed above the fold. Watch add-to-cart rate on those pages for a couple of weeks before you roll the same approach out further.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Yes. Usage rights should be agreed before the content goes live, covering where you can use it and for how long. Gifted and paid collaborations through Linkable include clear usage terms as part of the campaign setup.",
+      "q": "Do I need a creator's permission to use their content on a product page?"
+    },
+    {
+      "a": "It can if the files are hosted and loaded badly. Use a video platform or app built for ecommerce product pages rather than embedding large raw files directly, and set videos to load on click rather than autoplay for every visitor.",
+      "q": "Will adding creator videos slow down my product page?"
+    },
+    {
+      "a": "You can reuse the same clip, but the strongest performers on an ad and on a product page are often different, because the jobs are different. Test placing your most unscripted, detail-focused clips on the page even if a punchier one works better as an ad.",
+      "q": "Should I use the same creator content on ads and product pages?"
+    },
+    {
+      "a": "One strong, relevant clip near the top of the page does more than a cluttered gallery of five mediocre ones. Add a second piece in the reviews section if you have it, and prioritise freshness over volume.",
+      "q": "How many pieces of creator content should one product page have?"
+    }
+  ]
+}
