@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 5993963,
+      "alt": "A couple assembling a tent in a wooded forest, enjoying an outdoor camping adventure.",
+      "src": "https://images.pexels.com/photos/5993963/pexels-photo-5993963.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/man-in-blue-jacket-standing-near-green-tent-5993963/",
+      "query": "creator filming tent campsite forest",
+      "width": 6240,
+      "credit": {
+        "url": "https://www.pexels.com/@cottonbro",
+        "name": "cottonbro studio"
+      },
+      "height": 4160,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/5993963/pexels-photo-5993963.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/5993963/pexels-photo-5993963.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/creator-marketing-outdoor-camping-brands-5993963-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/creator-marketing-outdoor-camping-brands-5993963-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "creator-marketing-outdoor-camping-brands",
+    "title": "Creator Marketing for Outdoor and Camping Brands",
+    "description": "Creator marketing for outdoor and camping brands works better when the brief centres on location and season, not studio-style posts.",
+    "excerpt": "Outdoor and camping brands get more from creators filming on a real trail or campsite than from polished studio content. Here is how to brief for place and season instead of a script.",
+    "date": "2026-11-04",
+    "updated": "2026-11-04",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "A couple assembling a tent in a wooded forest, enjoying an outdoor camping adventure.",
+    "words": 977,
+    "source": "generated",
+    "keyword": "creator marketing for outdoor and camping brands",
+    "category": "By category",
+    "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 17094505,
       "alt": "A professional studio scene with a man preparing packages under studio lighting, showcasing a modern photography setup.",
       "src": "https://images.pexels.com/photos/17094505/pexels-photo-17094505.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
