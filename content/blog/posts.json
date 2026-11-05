@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 8360444,
+      "alt": "A young man recording video content indoors with a smartphone and tripod.",
+      "src": "https://images.pexels.com/photos/8360444/pexels-photo-8360444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/a-man-creating-video-content-8360444/",
+      "query": "creator filming product video phone",
+      "width": 6720,
+      "credit": {
+        "url": "https://www.pexels.com/@ron-lach",
+        "name": "Ron Lach"
+      },
+      "height": 4480,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/8360444/pexels-photo-8360444.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/8360444/pexels-photo-8360444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/ftc-disclosure-rules-creator-content-8360444-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/ftc-disclosure-rules-creator-content-8360444-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "ftc-disclosure-rules-creator-content",
+    "title": "FTC disclosure rules for creator content and brand risk",
+    "description": "FTC disclosure rules for creator content put compliance risk on your brand, not the creator. Here's how to manage it properly.",
+    "excerpt": "Most brands assume disclosure is the creator's job. The FTC disagrees, and that gap is where brands get exposed.",
+    "date": "2026-11-05",
+    "updated": "2026-11-05",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "A young man recording video content indoors with a smartphone and tripod.",
+    "words": 835,
+    "source": "generated",
+    "keyword": "ftc disclosure rules for creator content",
+    "category": "Playbook",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 5993963,
       "alt": "A couple assembling a tent in a wooded forest, enjoying an outdoor camping adventure.",
       "src": "https://images.pexels.com/photos/5993963/pexels-photo-5993963.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",

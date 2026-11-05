@@ -1,0 +1,112 @@
+{
+  "blocks": [
+    {
+      "text": "You send gifted product to a handful of creators this month, they post, the content looks great, and nobody on your side checks whether any of the captions mention the product was free. Three of the posts go up with no disclosure at all. If the FTC ever looks at that campaign, it is not the creator who answers for it. It is you.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Who is responsible for FTC disclosure on creator content?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "The brand running the campaign carries the compliance risk, not the creator who posts the content. FTC guidance treats the brand as the party responsible for making sure disclosures happen, because the brand is the one benefiting from the endorsement and the one with the ability to set the rules before anything goes live. A creator forgetting to tag a post as an ad is a creator mistake. A brand with no process for catching it is a brand problem.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This surprises a lot of founders who assume the creator signed up for the legal exposure along with the free product. They did not. Most creators are not lawyers and most have never read the FTC's endorsement guidance. If disclosure matters to you, which it should, it has to be something you build into the campaign rather than something you hope happens.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What counts as a material connection that needs disclosing?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Any time money, free product, a discount code, or a commission changes hands between your brand and a creator, that is a material connection and it needs to be disclosed. Gifted product counts even if the creator was never asked to post in exchange for it. A fixed fee for a video counts. Affiliate commission on sales through a creator's link or code counts too, and it is easy to miss because the creator might frame the post as a personal recommendation rather than a paid one.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "The test is simple: would knowing about the relationship change how a viewer reads the content. If product was given for free, paid for, or tied to a commission, the answer is yes, and the connection needs to be stated plainly rather than implied.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Where should the disclosure go and what should it say?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "The disclosure needs to sit inside the content itself, where a viewer sees it without hunting for it. A tag buried at the end of a long caption, after several hashtags, does not count. Neither does relying only on a platform's built-in paid partnership label if the brand name in that label does not clearly match who sent the product. For video, the clearest approach is a spoken or on-screen mention near the start, plus a plain word in the caption such as ",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Say a skincare brand sends a cleanser to a creator for a gifted post. The caption reads like a personal find, no mention of the product being free, no ",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What happens if a creator doesn't disclose?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Enforcement activity from the FTC has focused on the brands running the campaigns, not the individual creators posting the content. A creator who forgets to disclose might get a platform warning or lose the partnership. A brand with a pattern of undisclosed gifted or paid content across a campaign is the one facing scrutiny, because the brand is the entity that structured the relationship and benefited from the sales.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This is also a trust issue with your own audience, separate from the legal question. Customers who find out a glowing review was paid for and not labelled as such tend to discount everything else that creator, and sometimes the brand, says afterwards.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you build disclosure into your creator workflow?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Put the disclosure requirement in writing before the content gets made, not after. A [creator brief](/blog/creator-brief-template-for-ecommerce) should state exactly what the disclosure needs to say and where it needs to appear, in the same section that covers deliverables and deadlines. A [contract](/blog/creator-contract-essentials-small-brands) that spells out disclosure obligations gives you something to point to if a creator pushes back or forgets.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Review content before it goes live rather than after, so you can catch a missing disclosure while it is still fixable. If you run campaigns through [Linkable](/creators), the brief and approval step is where this check naturally sits, before content is marked ready and before any affiliate link goes live. Categories under close regulatory attention, like supplements, need an even tighter process, which is why we wrote a separate [guide on compliant creator marketing for supplement brands](/blog/creator-marketing-for-supplement-brands).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Keep a simple record of what each piece of content said and when it was checked. If a question ever comes up about a specific post, you want to be able to show that your process required disclosure, not just that you hoped for it.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This week, open your current campaign brief and check whether it says anything about disclosure at all. If it does not, add a line specifying the exact wording and placement you expect, and start checking for it before you approve content rather than after it is already public.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Yes. Free product is a material connection under FTC guidance regardless of whether a fee changed hands, so gifted posts need the same clear disclosure as paid collaborations.",
+      "q": "Does gifted product need the same disclosure as a paid post?"
+    },
+    {
+      "a": "The underlying FTC requirement is the same across platforms: the connection must be clear and conspicuous. Each platform has its own paid partnership tool, but using the tool alone does not guarantee compliance if the disclosure is not also clear within the content itself.",
+      "q": "Do disclosure rules differ between TikTok and Instagram?"
+    },
+    {
+      "a": "A template helps you be consistent, but it only satisfies the requirement if the creator actually uses it, places it where viewers will see it, and the wording is unambiguous rather than vague terms like a stylised hashtag no one recognises as a disclosure.",
+      "q": "Can a standard brand template satisfy FTC disclosure requirements?"
+    },
+    {
+      "a": "FTC enforcement has concentrated on brands rather than individual creators, since brands structure and benefit from the campaign. That is exactly why leaving disclosure entirely up to the creator is the wrong default.",
+      "q": "Is there a penalty difference between brands and creators for non-disclosure?"
+    }
+  ]
+}
