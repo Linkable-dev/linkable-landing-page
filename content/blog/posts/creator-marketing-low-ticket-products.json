@@ -1,0 +1,107 @@
+{
+  "blocks": [
+    {
+      "text": "Say you sell a phone accessory or a travel mug priced below what most people spend on lunch. The margin on each unit is small. A single creator with a beautifully shot video and a long caption might get you a few sales, but the cost of producing that one piece of content, in time and sometimes in fee, rarely earns itself back on a product this cheap.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "That's the problem founders run into when they try to copy the creator strategy they see premium skincare or supplement brands use. The economics of creator marketing for low ticket products work differently, and the brands that get it right treat it as a volume game rather than a partnerships game.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Why does volume beat polish for low ticket products?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Because the cost of reaching one more audience doesn't change much whether the content is highly produced or filmed on a phone in a kitchen, but the revenue per sale is small. One creator, however good, only exposes your product to one audience once. To get to meaningful revenue on a cheap item you need the same message repeated across many smaller audiences, not one message perfected for a single large one.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This is why gifted product and affiliate campaigns suit low ticket brands better than a small number of paid, heavily briefed partnerships. You're not paying for production value. You're paying, in product or in commission, for reach that compounds as more creators post.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How many creators should you work with on a low ticket product?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "More than you'd think, and more than a premium brand selling a higher priced item would need. If each creator's post converts a small slice of their audience, you need a larger pool posting regularly to see it show up in revenue. This is less about finding the perfect ten creators and more about keeping a steady pipeline of new applications and gifted orders moving every week. Our post on [how many creators a brand should work with each month](/blog/how-many-creators-brand-work-with) goes into the maths behind choosing that number for your own margins.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "On Linkable, the Starter plan covers ten creator collaborations a month across up to two campaigns, which is a reasonable place to start testing a volume approach before scaling the pool through the Growth or Scale plans. Details are on the [pricing page](/pricing).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What campaign type fits low ticket products: gifted, paid or affiliate?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Gifted product and affiliate commission, usually mixed, almost always beat flat paid fees on cheap products. A flat fee is a fixed cost that has to be earned back from sales of a low margin item, and on a low ticket product that math rarely works out across a large creator pool. Affiliate commission ties your cost directly to tracked sales, so you only pay out when the content actually sells something, which matters far more here than it does for a premium brand that can afford to pay a handful of creators a fee regardless of sales.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Gifted product gets creators making content without any cash outlay at all, which is what lets you run a wide pool without blowing the budget. For the full comparison, including when a flat fee still makes sense, see [gifted vs paid creator collaborations](/blog/gifted-vs-paid-creator-collaborations) and [affiliate commission rates for creators](/blog/affiliate-commission-rates-for-creators).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you manage the logistics of lots of small collaborations?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "You need the ordering and tracking to be automatic, because a volume strategy falls apart fast if someone has to manually process gifted orders and chase creators for links. On Linkable, gifted product orders can be created automatically once a creator is approved, and sales are tracked through unique creator links and discount codes, with commission payouts handled through the platform. Creators typically start applying to a new campaign within a day of it going live, which matters when the whole strategy depends on a steady stream of new creators rather than a handful of long relationships.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Our guide to [product seeding campaign strategy](/blog/product-seeding-campaign-strategy) covers how to keep a high volume of gifted sends organised without it turning into a spreadsheet nightmare.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you know the volume approach is working?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Look at the pool's total output, not any one creator's individual return. No single creator is meant to carry the campaign on a low ticket product, so judging each one against the same bar you'd use for a paid partnership on a premium item will make the whole programme look like it's failing when it isn't. Track content delivered, audiences reached and tracked sales across the full set of creators for the campaign, then compare that total against your cost across gifted product and commission paid out. Our piece on [how to measure creator marketing ROI without guessing](/blog/how-to-measure-creator-marketing-roi) walks through setting that up properly.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This week, pick one low ticket product in your catalogue and set a target for how many creators you want posting about it in the next month, not how many sales one creator should bring in. Build the pool first. The sales follow once enough people are posting.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Yes, and they usually work better than paid fees on low cost products because you're not adding a fixed cost on top of an already thin margin. The product itself becomes the payment, which keeps the economics workable even across a large pool of creators.",
+      "q": "Do gifted collaborations work for products that cost almost nothing to make?"
+    },
+    {
+      "a": "Generally no, unless you only plan to work with a very small number of creators for a specific push. A flat fee works against the volume approach because it has to be earned back from sales of a low margin item, and across many creators that adds up fast.",
+      "q": "Should low ticket brands pay creators a flat fee?"
+    },
+    {
+      "a": "It can produce a spike, but spikes from a single creator rarely repeat and don't build the steady, repeatable sales a low ticket product needs. Treat a viral moment as a bonus on top of a wider pool, not a replacement for one.",
+      "q": "Can one viral creator replace the need for volume?"
+    },
+    {
+      "a": "You'll usually see content and early engagement within the first couple of weeks once a campaign is live, since creators tend to apply quickly. Sales take longer to build because they depend on the pool growing, so give it at least one full month before judging it against your targets.",
+      "q": "How long does a volume based creator strategy take to show results?"
+    }
+  ]
+}

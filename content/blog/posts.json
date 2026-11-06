@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 7180906,
+      "alt": "Two men working together in a workshop to package a handcrafted wooden item, with a focus on craftsmanship and teamwork.",
+      "src": "https://images.pexels.com/photos/7180906/pexels-photo-7180906.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/a-man-with-afro-hair-taking-picture-of-a-wood-carving-7180906/",
+      "query": "small product packages shipping table",
+      "width": 6720,
+      "credit": {
+        "url": "https://www.pexels.com/@thirdman",
+        "name": "Thirdman"
+      },
+      "height": 4480,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/7180906/pexels-photo-7180906.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/7180906/pexels-photo-7180906.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/creator-marketing-low-ticket-products-7180906-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/creator-marketing-low-ticket-products-7180906-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "creator-marketing-low-ticket-products",
+    "title": "Creator marketing for low ticket products that scales",
+    "description": "Creator marketing for low ticket products relies on volume, not polish from a few creators. Here's the model that works.",
+    "excerpt": "On a low priced product, one polished creator partnership won't move revenue. Here's why spreading gifted product and affiliate links across many creators is the only maths that works.",
+    "date": "2026-11-06",
+    "updated": "2026-11-06",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "Two men working together in a workshop to package a handcrafted wooden item, with a focus on craftsmanship and teamwork.",
+    "words": 842,
+    "source": "generated",
+    "keyword": "creator marketing for low ticket products",
+    "category": "Strategy",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 8360444,
       "alt": "A young man recording video content indoors with a smartphone and tripod.",
       "src": "https://images.pexels.com/photos/8360444/pexels-photo-8360444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
