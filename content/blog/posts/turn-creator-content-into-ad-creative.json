@@ -1,0 +1,118 @@
+{
+  "blocks": [
+    {
+      "text": "You briefed a creator, got the content back, posted it, and it did fine. A few weeks later you ask your media buyer to put together some new ad creative, and the team starts from a blank page: a new brief, a new creator, a new shoot. Meanwhile the post that actually worked is sitting in your Shopify order notes doing nothing, because nobody thought to run it as an ad.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you turn creator content into ad creative",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "You turn creator content into ad creative by finding the posts that already got engagement or sales organically, getting usage rights sorted, and pushing those exact clips into paid as whitelisted or boosted ads instead of commissioning new content for ads from scratch. The content has already proved it holds attention and drives action. Paid spend just gives it reach.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This is backwards from how most brands set up creator work. Most brief a creator for \"an ad\", get something polished, and then wonder why it underperforms against the scrappier gifted post from last month. The polished one looks like an ad. The scrappy one looks like a recommendation from someone the viewer already half trusts, and that is the thing paid media struggles to fake.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Why organic performance is the best ad brief you'll get",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "A brief can describe tone, hooks and pacing, but it cannot tell you in advance whether real people will stop scrolling. Organic performance already answers that question. If a creator post is getting comments, saves or shares without any spend behind it, you have evidence the hook works, the pacing works and the product claim lands the way you wrote it in the [creator brief](/blog/creator-brief-template-for-ecommerce).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Say you run a coffee brand and gift a bag to a creator who films themselves making a pour-over before work. The video is unremarkable as a shoot, shaky in places, but it gets strong organic reach because the creator talks over the brewing like they would to a friend. That is the one to put money behind, not the tidier studio-style video your team commissioned the same month.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Which creator posts are actually worth turning into ads",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Look for posts where the engagement rate beats the creator's usual average, where comments ask where to buy rather than just complimenting the look, and where the hook in the first few seconds survives on its own without the caption explaining it. Those three signals matter far more than follower count or how the video looks on a grid.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "It also helps to separate content that performed because of the creator's existing audience from content that would perform for a cold audience who has never seen that creator before. A post full of inside jokes with regular followers might flop as an ad. A post where the product problem and solution are clear in the first line travels much better once you put spend behind it, because a stranger scrolling past can follow it with no context.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Getting the content and the rights to run it as an ad",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Before anything goes into ad manager, confirm you have the right to use the content commercially and, if you're running whitelisted ads, that the creator's account is set up to allow it. This should be agreed in the original [creator contract](/blog/creator-contract-essentials-small-brands) or usage rights terms, not negotiated after you've already decided a video is a winner. Chasing permission retroactively slows everything down and weakens your position if the creator asks for more money once they know the post is driving sales.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "On Linkable, content delivered through a campaign sits alongside the reporting on reach and engagement for that creator and that post, so you can see which pieces are already outperforming before you spend a pound pushing them further. If a post is clearly working, you can go back to that creator for a paid or affiliate arrangement specifically for ad use rather than guessing at a one-size usage fee.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Running the ad without losing what made it work",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "The biggest mistake brands make here is editing the winning post to make it \"more ad-like\": adding a logo sting, trimming the authentic bits, bolting on a discount code overlay. Every change you make moves it back towards looking like an ad, which is the exact thing that was holding it back before.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Run it close to the original, change the caption and targeting rather than the footage, and test it against your current best performer. If you're running creator whitelisting or Spark-style ads, the platform mechanics differ from a standard boosted post, and it's worth reading how that setup works before you launch, since the account that posts the ad affects both delivery and reporting.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "If the ad underperforms the organic version, that's a signal to check targeting and audience overlap before touching the creative again. Content that worked on an engaged following doesn't always hold up against a cold audience with different context, and that gap is usually a targeting problem, not a creative one.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This week, go through the last couple of months of creator content you've received and pull out anything with engagement above the creator's own average. Check the usage rights on each one, then test the strongest two or three as ads before you brief anything new.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Where this fits with your wider creator programme",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Turning organic winners into ads works best when you're already running enough creator volume to have winners to choose from. If you're only working with one or two creators a month, you won't have much to pick between. That's a reason to think about [how many creators you should be working with](/blog/how-many-creators-brand-work-with) and to keep tracking results consistently so you can spot which content is quietly outperforming, using the same approach described in [how to track which creator content actually drives sales](/blog/track-creator-content-drives-sales).",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Usually yes, unless your original agreement already covers paid usage and whitelisting. Check the usage rights terms first, since using content commercially without that cover can mean renegotiating after the creator has already seen it perform.",
+      "q": "Do I need a new contract to run a creator's organic post as a paid ad"
+    },
+    {
+      "a": "Keep edits minimal. Trimming for length is fine, but adding logos, voiceovers or heavy branding tends to make it look like an ad again, which removes the trust signal that made it work organically.",
+      "q": "Should I edit creator content before running it as an ad"
+    },
+    {
+      "a": "Give it a few days of organic reach before deciding. Early comments asking where to buy, or an engagement rate clearly above the creator's usual average, are better signals than raw view count on day one.",
+      "q": "How long should I wait before judging whether a post is worth turning into an ad"
+    }
+  ]
+}

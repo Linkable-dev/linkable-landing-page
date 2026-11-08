@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 7014919,
+      "alt": "Side view of crop anonymous female editing photos on netbook while sitting at table with graphic tablet in room with potted plants",
+      "src": "https://images.pexels.com/photos/7014919/pexels-photo-7014919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/unrecognizable-photographer-working-on-laptop-7014919/",
+      "query": "person editing video laptop phone",
+      "width": 6000,
+      "credit": {
+        "url": "https://www.pexels.com/@george-milton",
+        "name": "George Milton"
+      },
+      "height": 4000,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/7014919/pexels-photo-7014919.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/7014919/pexels-photo-7014919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/turn-creator-content-into-ad-creative-7014919-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/turn-creator-content-into-ad-creative-7014919-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "turn-creator-content-into-ad-creative",
+    "title": "How to turn creator content into ad creative",
+    "description": "Learn how to spot creator posts that already proved themselves organically and turn them into paid ad creative that performs.",
+    "excerpt": "The strongest ads usually started as ordinary creator posts that worked. Here is how to find them and push them into paid without starting from a brief.",
+    "date": "2026-11-08",
+    "updated": "2026-11-08",
+    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
+    "imageAlt": "Side view of crop anonymous female editing photos on netbook while sitting at table with graphic tablet in room with potted plants",
+    "words": 970,
+    "source": "generated",
+    "keyword": "how to turn creator content into ad creative",
+    "category": "Playbook",
+    "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 7180906,
       "alt": "Two men working together in a workshop to package a handcrafted wooden item, with a focus on craftsmanship and teamwork.",
       "src": "https://images.pexels.com/photos/7180906/pexels-photo-7180906.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
