@@ -90,7 +90,7 @@ export class PageLogic extends DCLogic {
         const openFaq = (this.state && typeof this.state.openFaq === 'number') ? this.state.openFaq : 0;
         return [
           { q: 'Do I need a big following?', a: 'No. Brands look for creators whose audience fits their products, not just big numbers. Pitch works for creators of any size.' },
-          { q: 'Is Pitch free?', a: 'Yes. Every creator gets 5 pitches a month for free. Pitch Pro gives you unlimited pitches to brands on Linkable, 100 a month to any other brand, and automatic follow ups.' },
+          { q: 'Is Pitch free?', a: 'Yes. Every creator gets 25 pitches a month for free, follow ups included. Pitch Pro gives you unlimited pitches to brands on Linkable, 100 a month to any other brand, and Auto Pitch, which pitches 25 brands for you every week.' },
           { q: 'Which brands can I pitch?', a: 'Any brand you want to work with, including brands that aren’t on Linkable yet. Linkable also suggests brands that fit your niche and audience.' },
           { q: 'Who receives my pitch?', a: 'We find the person who runs creator partnerships at the brand and send your pitch to them, not to a generic inbox.' },
           { q: 'Can I edit the pitch before it’s sent?', a: 'Yes. Everything AI drafts is yours to change, from the idea to what you’ll create and what you ask for.' },
