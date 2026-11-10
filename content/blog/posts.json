@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 19148312,
+      "alt": "Young black men filming a casual video with laptop and camera in a home studio setting.",
+      "src": "https://images.pexels.com/photos/19148312/pexels-photo-19148312.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/men-recording-with-camera-19148312/",
+      "query": "creator filming product unboxing home",
+      "width": 6720,
+      "credit": {
+        "url": "https://www.pexels.com/@gistsandthrills",
+        "name": "Gists And Thrills Studios"
+      },
+      "height": 4480,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/19148312/pexels-photo-19148312.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/19148312/pexels-photo-19148312.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/keep-creators-posting-after-launch-19148312-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/keep-creators-posting-after-launch-19148312-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "keep-creators-posting-after-launch",
+    "title": "How to keep creators posting after launch",
+    "description": "Learn how to keep creators posting after launch with a follow-up plan that turns one post into months of content and sales.",
+    "excerpt": "Most brands treat the first post as the finish line. Here's how to turn it into the start of a relationship that keeps producing content for months.",
+    "date": "2026-11-10",
+    "updated": "2026-11-10",
+    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
+    "imageAlt": "Young black men filming a casual video with laptop and camera in a home studio setting.",
+    "words": 712,
+    "source": "generated",
+    "keyword": "how to keep creators posting after launch",
+    "category": "Playbook",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 7014919,
       "alt": "Side view of crop anonymous female editing photos on netbook while sitting at table with graphic tablet in room with potted plants",
       "src": "https://images.pexels.com/photos/7014919/pexels-photo-7014919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",

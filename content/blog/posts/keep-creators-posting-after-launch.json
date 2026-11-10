@@ -1,0 +1,107 @@
+{
+  "blocks": [
+    {
+      "text": "Say you run a coffee subscription brand and a creator just posted your unboxing video. The comments are good, the save count is decent, and then nothing. No second post, no reply to your next invite, no sign they'd work with you again. You got one piece of content and a small spike in orders, and the relationship ended there.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How to keep creators posting after launch",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "You keep creators posting by treating the first collaboration as the start of a conversation, not a finished transaction. That means replying fast when they post, paying on time without being chased, giving them a reason to come back (a new product, a better rate, an easier brief) and asking directly whether they want to keep going before the campaign quietly ends. Brands that do this well build a small group of creators who post every month without a fresh pitch each time. Brands that don't restart from zero every launch.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Why the first post is usually the last one",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Most creator relationships die from silence, not from a bad experience. A creator posts, you thank them, and then you move on to the next campaign while they wait to hear if it worked, whether you liked it, or if there's anything else coming. From their side, that silence reads as ",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "the brand got what it needed. Why would they post again for free attention with no follow-up.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What a follow-up plan actually looks like",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "A follow-up plan is just a short list of things that happen automatically after a creator's content goes live, rather than things you only do if you happen to have time. Confirm the post landed and tell them what it drove, even if the number i",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Make the second ask specific",
+      "type": "h3",
+      "items": null
+    },
+    {
+      "text": "A vague \"keen to work together again\" message gets ignored. A specific one gets replies: a named product, a rough timeline, and whether the deal is gifted, paid or affiliate. If you're still working out how to brief that clearly, our [creator brief template](/blog/creator-brief-template-for-ecommerce) covers what to include so the creator isn't guessing.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How to make the second collaboration easier than the first",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "The second collaboration should take less back-and-forth than the first, not the same amount. By now you know their posting style, their turnaround time and whether they take direction well. Skip the parts of onboarding that don't need repeating: the brand explainer, the tone guide, the long list of dos and don'ts. Keep the parts that still matter: the product details, the deadline, what you'll pay and how.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This is where a lot of the manual effort in creator marketing actually lives, chasing replies, tracking who posted what, remembering who's owed a payout. [Linkable](/pricing) keeps that history against each creator so a repeat collaboration starts from where the last one ended, rather than from a blank application.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "When to turn a single creator into a repeat partner",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Turn a creator into a repeat partner when their content actually moved something, orders, traffic to a product page, or a noticeably higher save and comment rate compared with your other creators that month. You don't need every creator from a launch to stick around. You need the handful whose content worked to keep producing, because that's where a recurring programme comes from rather than a string of one-off posts. We've written about the difference between the two in [long term partnerships vs one-off posts](/blog/long-term-creator-partnerships-vs-one-off-posts), and how to structure the step after your first campaign in [turning one campaign into a recurring programme](/blog/turn-one-creator-campaign-recurring-programme).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Picture a skincare brand that gifted product to a batch of creators for a launch. Most posted once and moved on. Two or three kept tagging the brand in follow-up content without being asked, because the product worked for their skin and the brand had replied, paid and asked again without friction. Those are the two or three worth building a standing arrangement with, paid or affiliate, rather than treating them as a one-off gift.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This week, go back through your last launch campaign and pull out who posted. Message the ones whose content performed, confirm what it drove, and ask what they'd want to do next. That single follow-up is usually the difference between a creator who posts once and one who posts every month.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Reach out within a week or two of their first post going live, while the collaboration is still fresh for them. Waiting until you're planning the next campaign from scratch usually means starting the relationship over.",
+      "q": "How long should I wait before asking a creator for a second post?"
+    },
+    {
+      "a": "Not necessarily. Some creators keep posting for gifted product if the relationship feels easy and they're asked again. Others will want to move from gifted to paid or affiliate once they're producing content consistently, which is a fair trade for reliable output.",
+      "q": "Do I need to pay more to keep a creator posting regularly?"
+    },
+    {
+      "a": "Follow up once with something specific, then move on. Not every creator from a launch will become a repeat partner, and chasing non-responders takes time better spent on the ones who already showed they'll engage.",
+      "q": "What if a creator never replies after their first post?"
+    },
+    {
+      "a": "Reuse the parts that worked, like the tone and the product details, but update the ask so it feels like a new opportunity rather than a copy-paste of the first message.",
+      "q": "Should I use the same brief for a repeat collaboration?"
+    }
+  ]
+}
