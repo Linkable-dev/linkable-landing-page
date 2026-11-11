@@ -1,0 +1,107 @@
+{
+  "blocks": [
+    {
+      "text": "Say you have just agreed affiliate terms with a handful of creators. They post, you see sales come in, and the numbers you show in your weekly report do not match what the creators say they drove. Nobody did anything wrong. The tracking setup underneath the campaign was never actually finished.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What has to be true before affiliate tracking works on Shopify",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Affiliate tracking on Shopify works when every creator has a unique link or code that is never shared with anyone else, when your store attributes orders to that link or code automatically, and when your order sync is clean enough that refunds, cancellations and duplicate orders do not get counted as sales. Miss any one of those three and the commission total you show a creator will be wrong, usually higher than it should be.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Most brands get the first part right and skip the second two. They hand out codes, watch sales roll in, and assume the dashboard is telling the truth. It is worth checking the plumbing before you trust it with real commission payouts.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Do creators need unique links, discount codes, or both",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "You need at least one of the two, and for most brands a unique link plus a matching discount code is the cleanest setup. The link tracks clicks and sessions before checkout, the code confirms attribution at the point of purchase, and together they give you a way to cross-check one against the other when a number looks off.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "A code on its own is easy for a creator's audience to find and pass around outside the content it was meant for, which is how tracking starts crediting the wrong source. We covered what that costs brands in [the hidden cost of uncontrolled discount codes](/blog/leaked-discount-codes). A link on its own avoids that leak but loses anyone who sees the content, remembers the brand, and buys later through a search or a saved tab. Running both closes most of that gap. If you are deciding which one to lead with for a given creator, [discount codes vs affiliate links for creators](/blog/discount-codes-vs-affiliate-links-creators) walks through the trade-off in more detail.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How does Shopify order sync affect your affiliate numbers",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Order sync decides whether a sale that gets attributed to a creator link stays attributed once Shopify finishes processing it. A customer can click a creator's link, add to cart, then abandon and come back later through a different route. A customer can also complete checkout, get attributed correctly, then cancel or return the order a week later. If your tracking only looks at the moment of click or the moment of order creation and never checks back in, you end up paying commission on sales that no longer exist.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "The fix is to treat order status as part of attribution, not separate from it. Commission should calculate off orders that are paid and still stand, not off every order that was briefly tagged with a creator's code. On Linkable, affiliate sales are tracked through unique creator links and discount codes with the product catalogue and orders synced from Shopify directly, so commission payouts reflect orders as they actually stand rather than a snapshot from the moment of purchase.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Why do your affiliate numbers not match your Shopify reports",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "This usually comes down to timing or scope, not a tracking fault. Your Shopify reports count every order in a date range. Your affiliate dashboard is counting only orders tied to a specific link or code, filtered to orders still marked paid. If a customer used a code but also qualified for a store-wide promotion, or if an order was split across two shipments, the two reports can disagree without either one being wrong. The discrepancy is a scope difference, not a tracking failure, and it is worth checking before you assume the setup is broken.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Where attribution genuinely breaks down is usually upstream of Shopify entirely. A creator's content gets reposted, a follower screenshots a code and shares it in a group chat, or a sale happens on a platform's own checkout where no Shopify link was ever involved. We go through the common causes in [how creator marketing attribution problems skew your data](/blog/creator-marketing-attribution-problems). None of that is a Shopify configuration issue, which is exactly why it is worth ruling Shopify out first.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What to check before you launch the campaign",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Before creators go live, confirm that each one has a code or link that is unique to them and not reused from a previous campaign, that your store's checkout actually applies the code without requiring extra steps that will make people abandon, and that whatever system you are using for reporting pulls live order status rather than a static export. If you are installing a platform to handle this, [how to install the Linkable Shopify app the right way](/blog/install-linkable-shopify-app) covers the setup steps, including how product and order sync connects before you invite your first creator.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "If you run this through Linkable, affiliate commission is tracked per creator automatically once the app is connected, and creators typically start applying to a new campaign within 24 hours of it going live, so the tracking needs to be right from day one rather than patched after the fact.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Run one creator through the full loop, click to checkout to payout, before you open the campaign to everyone else. Fixing a broken link for one creator costs you an afternoon. Fixing it for fifteen creators after a month of bad numbers costs you a campaign.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "You can, but it removes your ability to tell which creator drove which sale, and it makes leaked codes impossible to trace back to a source. Separate codes per creator cost nothing extra to set up and solve both problems at once.",
+      "q": "Can I use the same discount code for multiple creators"
+    },
+    {
+      "a": "Commission should be calculated only on orders that are still paid, so a refunded order should drop out of the creator's tracked sales automatically if your system checks order status rather than a one-time snapshot at purchase.",
+      "q": "What happens to commission if an order is refunded"
+    },
+    {
+      "a": "No. A Shopify affiliate link or code only tracks sales that go through your Shopify checkout, so a purchase completed entirely inside a platform like TikTok Shop will not show up in Shopify-based affiliate tracking.",
+      "q": "Do affiliate links work for sales made through a social platform's own checkout"
+    },
+    {
+      "a": "Give it one full order cycle, including the window for returns and cancellations on your store, before treating the reported commission total as final rather than provisional.",
+      "q": "How long should I wait before trusting the commission numbers"
+    }
+  ]
+}

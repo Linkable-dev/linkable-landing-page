@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 11952301,
+      "alt": "Engaging in online shopping using a credit card with a laptop for convenience and ease.",
+      "src": "https://images.pexels.com/photos/11952301/pexels-photo-11952301.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/a-person-shopping-online-11952301/",
+      "query": "person checking shopify orders laptop",
+      "width": 6000,
+      "credit": {
+        "url": "https://www.pexels.com/@marcial-comeron-177639337",
+        "name": "Marcial Comeron"
+      },
+      "height": 4000,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/11952301/pexels-photo-11952301.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/11952301/pexels-photo-11952301.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/how-to-set-up-affiliate-tracking-shopify-11952301-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/how-to-set-up-affiliate-tracking-shopify-11952301-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "how-to-set-up-affiliate-tracking-shopify",
+    "title": "How to Set Up Affiliate Tracking on Shopify",
+    "description": "Learn how to set up affiliate tracking on Shopify so commission numbers match reality, covering unique links, discount codes and order sync.",
+    "excerpt": "Affiliate tracking on Shopify only works if a few boring setup details are right first. Here is what has to be true before you trust a single number.",
+    "date": "2026-11-11",
+    "updated": "2026-11-11",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "Engaging in online shopping using a credit card with a laptop for convenience and ease.",
+    "words": 917,
+    "source": "generated",
+    "keyword": "how to set up affiliate tracking on shopify",
+    "category": "Playbook",
+    "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 19148312,
       "alt": "Young black men filming a casual video with laptop and camera in a home studio setting.",
       "src": "https://images.pexels.com/photos/19148312/pexels-photo-19148312.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
