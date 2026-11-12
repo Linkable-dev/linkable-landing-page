@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 5717716,
+      "alt": "An office setup with a person analyzing a graph printout while using a laptop and notebook.",
+      "src": "https://images.pexels.com/photos/5717716/pexels-photo-5717716.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/a-person-holding-a-pen-5717716/",
+      "query": "marketer reviewing campaign dashboard laptop",
+      "width": 6720,
+      "credit": {
+        "url": "https://www.pexels.com/@karola-g",
+        "name": "https://kaboompics.com/"
+      },
+      "height": 4480,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/5717716/pexels-photo-5717716.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/5717716/pexels-photo-5717716.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/signs-creator-campaign-underperforming-5717716-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/signs-creator-campaign-underperforming-5717716-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "signs-creator-campaign-underperforming",
+    "title": "Signs a creator campaign is underperforming before the report",
+    "description": "Learn the early signs a creator campaign is underperforming, from low application rates to content with no sales, so you can fix it mid flight.",
+    "excerpt": "Most brands only notice a weak creator campaign when the end-of-month report lands. Here are the signs that show up weeks earlier, and what to do about each one.",
+    "date": "2026-11-12",
+    "updated": "2026-11-12",
+    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
+    "imageAlt": "An office setup with a person analyzing a graph printout while using a laptop and notebook.",
+    "words": 871,
+    "source": "generated",
+    "keyword": "signs a creator campaign is underperforming",
+    "category": "Measurement",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 11952301,
       "alt": "Engaging in online shopping using a credit card with a laptop for convenience and ease.",
       "src": "https://images.pexels.com/photos/11952301/pexels-photo-11952301.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",

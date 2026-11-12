@@ -1,0 +1,112 @@
+{
+  "blocks": [
+    {
+      "text": "You launched a campaign three weeks ago. A few creators are posting, product has gone out, and nobody on the team has said anything is wrong. Then the month closes, sales from the campaign are flat, and you are left wondering what you missed and when you could have caught it.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "The signs a creator campaign is underperforming almost always show up before the final numbers do. You just have to know where to look while the campaign is still running, not after.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What's the clearest early sign a campaign is underperforming",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "A low application rate in the first week is the single clearest warning sign. If you open a campaign and only a handful of creators apply, or the applications that do come in are a poor match for your product, that is not a slow start you wait out. It usually means the offer, the brief, or the product category is not landing with the creators who see it.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Compare this against what a healthy campaign looks like. On Linkable, creators typically start applying to a new campaign within 24 hours, so by day three or four you should have a sense of whether interest is building or stalling. If it is stalling, the fix is in the offer and the brief, not in waiting another week. Check the brief against our [creator brief template for ecommerce](/blog/creator-brief-template-for-ecommerce) and compare your terms with what similar brands are offering in [affiliate commission rates for creators](/blog/affiliate-commission-rates-for-creators).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Why content is coming in but sales aren't moving",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Content without sales usually means the content isn't being tracked properly, or it isn't being shown to people who buy. Say you run a coffee subscription brand and five creators have posted reels that look genuinely good, but your tracked sales for the campaign are close to zero. Before you blame the creators, check the links and codes.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "A common cause is that creators are posting but not using their unique link or code, so the sale happens and gets attributed to organic or direct traffic instead of the campaign. Another cause is that the content itself is well made but doesn't actually prompt a purchase, it's a pretty video with no clear reason to buy today. Read [how to track which creator content actually drives sales](/blog/track-creator-content-drives-sales) and [how creator marketing attribution problems skew your data](/blog/creator-marketing-attribution-problems) before you conclude the campaign has failed. Sometimes the sales are there, you just can't see them yet.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Is one creator carrying the whole campaign",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "If you pull your per-creator report and one person accounts for most of the content, reach or tracked sales, your campaign is not actually a campaign, it's one relationship wearing a campaign's clothes. That is a real risk, not just an imbalance. If that creator goes quiet, changes their rates, or simply moves on, your results disappear with them.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This shows up often in gifted product campaigns, where a handful of creators who were already fans of the brand post enthusiastically and everyone else sends one lukewarm story and stops. The fix is not to cut the quiet creators immediately, it's to find out why they stopped. Was the brief unclear, did the product arrive late, or did they simply not feel like the relationship was worth continuing. Our piece on [how to keep creators posting after launch](/blog/keep-creators-posting-after-launch) covers the follow-up cadence that prevents this.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "When the content looks fine but nobody can see it",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Reach and engagement that look thin next to the number of posts usually point to a mismatch between the creators you picked and the audience you wanted. A creator with a loyal following can still produce content that barely moves, if their audience was never a good match for your product category in the first place.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This is worth separating from content quality, which is a different problem with a different fix, covered in [how to measure creator content quality beyond views](/blog/measure-creator-content-quality-beyond-views). If the content itself is strong and the audience fit was right, low reach is sometimes just a timing or platform issue, for instance posting on a day with less traffic, or choosing a format the platform isn't currently pushing.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What to do once you've spotted a warning sign mid campaign",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Catching a problem early only helps if you act on it before the campaign ends rather than after. Don't wait for the full report to renegotiate terms, swap creators, or tighten the brief, do it the week you notice the sign. If a specific deal isn't earning its keep, our guide on [how to renegotiate a creator deal that underperforms](/blog/renegotiate-underperforming-creator-deal) walks through how to have that conversation without burning the relationship.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This is also where having applications, content and tracked sales in one place matters. Checking application rates, per-creator sales and content delivery separately across spreadsheets and DMs is how brands miss these signs until it's too late to fix them. Linkable's [campaign and creator insights](/pricing) show these numbers while the campaign is still live, not just at the end.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "If you're setting up a new campaign and want to avoid these signs from the start, go back to [how to set creator campaign goals before you launch](/blog/how-to-set-creator-campaign-goals) so you know what good looks like before day one.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Applications should start within a day or two of launch, and content usually follows within one to two weeks depending on the campaign type. Tracked sales take longer to build, so judge the campaign on applications and content first, then on sales once enough creators have posted.",
+      "q": "How soon should I expect to see results from a new creator campaign"
+    },
+    {
+      "a": "Not immediately. First work out which sign you're seeing, since a low application rate needs a different fix to one creator carrying the campaign, then make a targeted change rather than pausing everything.",
+      "q": "Should I pause a campaign as soon as I see a warning sign"
+    },
+    {
+      "a": "Not necessarily. It more often means the offer, commission or brief isn't competitive enough to catch attention, and adjusting those before giving up on the channel usually solves it.",
+      "q": "Does a low application rate mean my product isn't right for creator marketing"
+    },
+    {
+      "a": "Yes. Gifted campaigns tend to show the one-creator-carrying-it problem since enthusiasm varies, while affiliate campaigns are more likely to show the content-without-sales problem if links or codes aren't used correctly.",
+      "q": "Can gifted campaigns underperform in different ways to paid or affiliate campaigns"
+    }
+  ]
+}
