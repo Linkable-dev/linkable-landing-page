@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 6953990,
+      "alt": "Young positive multiethnic female bloggers testing makeup products while sitting at table and recording vlog on smartphone placed on tripod with ring light",
+      "src": "https://images.pexels.com/photos/6953990/pexels-photo-6953990.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/stylish-young-ladies-recording-tutorial-video-while-applying-makeup-at-table-6953990/",
+      "query": "creator filming product desk daylight",
+      "width": 6000,
+      "credit": {
+        "url": "https://www.pexels.com/@george-milton",
+        "name": "George Milton"
+      },
+      "height": 4000,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/6953990/pexels-photo-6953990.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/6953990/pexels-photo-6953990.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/seasonal-creator-campaigns-outside-q4-6953990-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/seasonal-creator-campaigns-outside-q4-6953990-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "seasonal-creator-campaigns-outside-q4",
+    "title": "Seasonal creator campaigns outside of Q4 cost less",
+    "description": "Most brands pour their budget into Q4. Seasonal creator campaigns outside of Q4, like January resets, cost less and face far less competition for creators.",
+    "excerpt": "Everyone fights for the same creators in November. Seasonal creator campaigns outside of Q4, from January resets to back to school, cost less and get more attention from both creators and shoppers.",
+    "date": "2026-11-13",
+    "updated": "2026-11-13",
+    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
+    "imageAlt": "Young positive multiethnic female bloggers testing makeup products while sitting at table and recording vlog on smartphone placed on tripod with ring light",
+    "words": 823,
+    "source": "generated",
+    "keyword": "seasonal creator campaigns outside of q4",
+    "category": "Strategy",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 5717716,
       "alt": "An office setup with a person analyzing a graph printout while using a laptop and notebook.",
       "src": "https://images.pexels.com/photos/5717716/pexels-photo-5717716.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
