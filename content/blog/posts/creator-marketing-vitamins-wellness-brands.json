@@ -1,0 +1,102 @@
+{
+  "blocks": [
+    {
+      "text": "You send a vitamin or supplement brief to a creator and get back a video that says the product cured their fatigue, fixed their sleep and changed their skin in a week. It looks great. It is also the kind of claim that gets a post flagged, a platform strike issued, or worse, lands you in a letter from a regulator. Wellness is one of the few categories where the content that performs best on camera is often the content you cannot legally run.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Why is creator marketing riskier for vitamins and wellness brands",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "It is riskier because the category sits closer to health claims than almost any other, and creators naturally reach for outcome language (cures, fixes, heals, treats) because that is what sounds compelling on camera. A skincare creator saying a serum made their skin glow is a stretch but rarely a legal problem. A wellness creator saying a supplement helped their anxiety or regulated their hormones is a claim your brand did not approve and cannot substantiate, and once it is posted, it is attached to your product whether you take it down or not.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "The fix is not tighter scripts. Over-scripted wellness content reads as fake faster than almost anything else, because viewers are already primed to distrust supplement marketing. The fix is a brief that tells creators exactly which territory they can speak in freely and which territory is off-limits, so they can still sound like themselves inside those lines.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What a safe gifting brief actually covers",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "A gifting brief for a vitamin or supplement product needs three things most category briefs skip: a list of words to avoid, a list of what the product is actually licensed or labelled to say, and a plain instruction that the creator should talk about their own experience, not the product's effect on a condition. ",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Say you run a magnesium supplement brand and you gift product to a creator for a gifted-only post. Instead of briefing them to say it \"helps you sleep deeper,\" you brief them to describe their own routine: when they take it, what their evening looks like, how it fits before bed. That is a personal observation, not a medical claim, and it still gives the viewer the information that makes them want to try it. For a full structure on how to write this kind of brief without boxing creators into a script, see [how to brief creators on product claims without scripts](/blog/brief-creators-product-claims).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you keep gifted wellness content from sounding scripted",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "You keep it sounding real by briefing the boundary, not the sentence. Tell the creator what they cannot say (cure, treat, fix a named condition, replace medication) and then leave the actual words to them. Creators who work in wellness regularly already know this line better than most brands assume, because platforms have been removing supplement content that oversteps it for a while now. Ask for first-person language only: what they noticed, what changed in how they felt, what their routine looks like with the product in it, never what the product did to a diagnosed condition.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This is also where picking the right creators matters more than usual. A creator whose whole account is before-and-after transformation claims is going to default to that voice regardless of your brief. A creator who already posts routine content, morning stacks, what's-in-my-bag style videos, is a safer fit because their natural format does not require a claim to work. Our [guide to evaluating a creator before working with them](/blog/how-to-evaluate-a-creator-before-working-with-them) covers how to check that fit before you send product.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Where gifted, paid and affiliate fit in a wellness programme",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Gifted product is the right starting point for wellness because it keeps the content low-pressure: the creator is sharing an honest reaction to something they were given, not performing a paid pitch for an outcome. Paid collaborations work once you have a brief tight enough to trust, usually after a few gifted rounds show you which creators stay inside the lines without needing to be told twice. Affiliate links are worth adding once you can see which creators' content is actually driving orders, since commission gives them a reason to keep posting routine content rather than a one-off unboxing. If you are weighing the three against each other for the first time, [gifted vs paid creator collaborations](/blog/gifted-vs-paid-creator-collaborations) walks through when each makes sense.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "On Linkable, you can run all three campaign types from one dashboard, which matters for wellness brands specifically because it lets you move a creator from gifted to paid only after you have seen their content respect the claims boundary, rather than committing to a fee upfront.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What to check before any wellness content goes live",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Every piece of gifted or paid content needs a review pass against two things: the claim it makes and the disclosure it carries. A video can be well shot and still unusable if it names a condition the product is not labelled to treat, so build this check into your approval step rather than catching it after it is already posted. Our [content approval process](/blog/creator-content-approval-process) and the [FTC disclosure rules for creator content](/blog/ftc-disclosure-rules-creator-content) are both worth reading alongside your brief template so the review step is not something you are inventing from scratch each campaign.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This week, pull your current creator brief and check it against one question: does it tell creators what they cannot say, or only what you hope they will. If it is the second, rewrite it before you send the next round of product.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Only in general, personal terms about their own experience, not as a claim that the product treats or cures a named condition. Keep the language to what they noticed, not what the product did medically.",
+      "q": "Can creators mention specific health benefits of a supplement"
+    },
+    {
+      "a": "No, the disclosure requirement is the same as any gifted or paid post: a clear, visible statement that the product was given free or paid for. What changes in wellness is the claim itself, not the disclosure rule.",
+      "q": "Should wellness creators disclose gifted product differently to other categories"
+    },
+    {
+      "a": "It works well once you know which creators produce content that stays within your claims boundary, since commission rewards ongoing honest routine content rather than a single exaggerated post.",
+      "q": "Is affiliate commission a good fit for supplement brands"
+    },
+    {
+      "a": "Start small, often a handful of gifted creators whose existing content already looks like routine or personal-experience posts, then expand once you have reviewed their first round and trust the voice they use.",
+      "q": "How many creators should a wellness brand start with"
+    }
+  ]
+}

@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 7418503,
+      "alt": "Neatly arranged glass jars holding kitchen staples like pasta and grains on a wooden counter.",
+      "src": "https://images.pexels.com/photos/7418503/pexels-photo-7418503.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/bottles-and-vials-near-tray-7418503/",
+      "query": "vitamin bottles kitchen counter morning",
+      "width": 6564,
+      "credit": {
+        "url": "https://www.pexels.com/@cottonbro",
+        "name": "cottonbro studio"
+      },
+      "height": 4376,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/7418503/pexels-photo-7418503.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/7418503/pexels-photo-7418503.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/creator-marketing-vitamins-wellness-brands-7418503-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/creator-marketing-vitamins-wellness-brands-7418503-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "creator-marketing-vitamins-wellness-brands",
+    "title": "Creator Marketing for Vitamins and Wellness Brands",
+    "description": "How vitamins and wellness brands can brief creators for gifted content that stays compliant and still sounds like the creator, not the label.",
+    "excerpt": "Wellness claims carry more risk than most categories, which means your creator briefs need more structure, not more scripting. Here's how to get gifted content that still sounds real.",
+    "date": "2026-11-14",
+    "updated": "2026-11-14",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "Neatly arranged glass jars holding kitchen staples like pasta and grains on a wooden counter.",
+    "words": 923,
+    "source": "generated",
+    "keyword": "creator marketing for vitamins and wellness brands",
+    "category": "By category",
+    "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 6953990,
       "alt": "Young positive multiethnic female bloggers testing makeup products while sitting at table and recording vlog on smartphone placed on tripod with ring light",
       "src": "https://images.pexels.com/photos/6953990/pexels-photo-6953990.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
