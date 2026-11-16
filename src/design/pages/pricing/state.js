@@ -32,23 +32,25 @@ export class PageLogic extends DCLogic {
       : { s: '$', name: 'US dollars', code: 'USD' };
     const m = (n) => cur.s + n.toLocaleString('en-US');
     const plans = [
-        { name: 'Starter', price: m(99), year: m(990), mo: m(83), blurb: 'For brands getting started with creators.', features: ['Work with up to 10 new creators a month', 'Run up to 2 campaigns at once', 'Campaign and creator insights', 'Dedicated support and onboarding'], bg: '#F6F4EF', fg: '#232323', sub: '#666563', line: '#E8E6E1', popular: false, btnClass: 'btn btn-primary btn-arrow' },
-        { name: 'Growth', price: m(199), year: m(1990), mo: m(166), blurb: 'For brands working with creators every month.', features: ['Work with up to 50 new creators a month', 'Run up to 10 campaigns at once', 'Campaign and creator insights', 'Dedicated support and onboarding'], bg: '#232323', fg: '#FFFFFF', sub: '#B5B3AE', line: '#3A3A38', popular: true, btnClass: 'btn btn-ghost btn-arrow' },
-        { name: 'Scale', price: m(499), year: m(4990), mo: m(416), blurb: 'For brands running a full creator program.', features: ['Work with up to 100 new creators a month', 'Run up to 20 campaigns at once', 'Advanced campaign and creator insights', 'Priority support and onboarding'], bg: '#F6F4EF', fg: '#232323', sub: '#666563', line: '#E8E6E1', popular: false, btnClass: 'btn btn-primary btn-arrow' }
-      ].map((p) => ({ ...p, shown: yearly ? p.mo : p.price, note: yearly ? 'Billed ' + p.year + ' a year' : 'or ' + p.year + ' a year, save 17%' }));
+        { name: 'Starter', price: m(99), year: m(990), mo: m(83), blurb: 'For brands getting started with creators.', features: ['Work with up to 10 new creators a month', 'Run up to 2 public campaigns at once', 'Unlimited private campaigns', 'Campaign and creator insights', 'Dedicated support and onboarding'], bg: '#F6F4EF', fg: '#232323', sub: '#666563', line: '#E8E6E1', popular: false, btnClass: 'btn btn-primary btn-arrow' },
+        { name: 'Growth', price: m(199), year: m(1990), mo: m(166), blurb: 'For brands working with creators every month.', features: ['Work with up to 50 new creators a month', 'Run up to 10 public campaigns at once', 'Unlimited private campaigns', 'Campaign and creator insights', 'Dedicated support and onboarding'], bg: '#232323', fg: '#FFFFFF', sub: '#B5B3AE', line: '#3A3A38', popular: true, btnClass: 'btn btn-ghost btn-arrow' },
+        { name: 'Scale', price: m(499), year: m(4990), mo: m(416), blurb: 'For brands running a full creator program.', features: ['Work with up to 100 new creators a month', 'Run up to 20 public campaigns at once', 'Unlimited private campaigns', 'Advanced campaign and creator insights', 'Priority support and onboarding'], bg: '#F6F4EF', fg: '#232323', sub: '#666563', line: '#E8E6E1', popular: false, btnClass: 'btn btn-primary btn-arrow' }
+      ].map((p) => ({ ...p, paid: true, per: '/month', cta: 'Start your free trial', shown: yearly ? p.mo : p.price, note: yearly ? 'Billed ' + p.year + ' a year' : 'or ' + p.year + ' a year, save 17%' }));
+    const freePlan = { name: 'Free', shown: m(0), per: 'forever', paid: false, cta: 'Start free', note: '', blurb: 'For brands working with their own creators.', features: ['Unlimited private campaigns', 'Your own application link to share', 'Samples, content and usage rights handled', 'No card needed'], bg: '#F6F4EF', fg: '#232323', sub: '#666563', line: '#E8E6E1', popular: false, btnClass: 'btn btn-primary btn-arrow' };
     return {
       brands: base.concat(base),
-      plans: plans,
+      plans: [freePlan].concat(plans),
       curName: cur.code,
       y0: plans[0].year, y1: plans[1].year, y2: plans[2].year,
       feePlan: m(199), feeSales: m(4000), feeCut: m(100), feeZero: m(0), feeTotal: m(299),
-      cmp0: plans[0].shown, cmp1: plans[1].shown, cmp2: plans[2].shown,
+      cmpFree: freePlan.shown, cmp0: plans[0].shown, cmp1: plans[1].shown, cmp2: plans[2].shown,
       setMonthly: () => this.setState({ yearly: false }),
       setYearly: () => this.setState({ yearly: true }),
       mBg: yearly ? 'transparent' : '#FFFFFF', mFg: yearly ? '#666563' : '#232323', mSh: yearly ? 'none' : '0 1px 3px rgba(35,35,35,.12)',
       yBg: yearly ? '#FFFFFF' : 'transparent', yFg: yearly ? '#232323' : '#666563', ySh: yearly ? '0 1px 3px rgba(35,35,35,.12)' : 'none',
       faqs: [
-        { q: 'How does the free trial work?', a: 'Every plan is free for the first 30 days, with full access to the platform. Change plan or cancel any time.' },
+        { q: 'How does the free trial work?', a: 'Every paid plan is free for the first 30 days, with full access to the platform. Change plan or cancel any time.' },
+        { q: 'Is there a free plan?', a: 'Yes. On the Free plan you run unlimited private campaigns with your own creators, shared through your own application link, free forever. You only pay 2.5% of creator driven sales. On Free, Linkable doesn’t bring you creators or reach out to them for you. Upgrade any time to get creators from Linkable applying too.' },
         { q: 'Can I change plan later?', a: 'Yes. Move up or down a plan, or cancel, whenever you need to.' },
         { q: 'What counts towards my monthly creator limit?', a: 'Each new creator you start working with in a month counts once. Applications and invitations are unlimited on every plan.' },
         { q: 'What is the 2.5% fee?', a: 'It applies only to sales tracked through creator links and codes. Every other sale in your store carries no fee.' },
