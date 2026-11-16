@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 8528484,
+      "alt": "Businesswoman in red jacket using a laptop at her desk in an office setting.",
+      "src": "https://images.pexels.com/photos/8528484/pexels-photo-8528484.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/a-person-in-red-blazer-using-silver-laptop-8528484/",
+      "query": "founder reviewing laptop proposal desk",
+      "width": 6720,
+      "credit": {
+        "url": "https://www.pexels.com/@karola-g",
+        "name": "https://kaboompics.com/"
+      },
+      "height": 4480,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/8528484/pexels-photo-8528484.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/8528484/pexels-photo-8528484.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/negotiate-creator-rates-small-brand-8528484-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/negotiate-creator-rates-small-brand-8528484-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "negotiate-creator-rates-small-brand",
+    "title": "How to negotiate creator rates as a small brand",
+    "description": "Learn how to negotiate creator rates as a small brand with counters that protect margin and keep the creator relationship intact.",
+    "excerpt": "A practical way to counter an inflated creator rate card without insulting the creator or losing a good match for your brand.",
+    "date": "2026-11-16",
+    "updated": "2026-11-16",
+    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
+    "imageAlt": "Businesswoman in red jacket using a laptop at her desk in an office setting.",
+    "words": 858,
+    "source": "generated",
+    "keyword": "how to negotiate creator rates as a small brand",
+    "category": "Playbook",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 7418503,
       "alt": "Neatly arranged glass jars holding kitchen staples like pasta and grains on a wooden counter.",
       "src": "https://images.pexels.com/photos/7418503/pexels-photo-7418503.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",

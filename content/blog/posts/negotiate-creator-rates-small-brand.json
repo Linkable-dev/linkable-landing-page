@@ -1,0 +1,127 @@
+{
+  "blocks": [
+    {
+      "text": "A creator with a decent following sends over a rate card asking for a fee that would eat most of your month's marketing budget. You like their content and their audience fits your product, but the number does not work for a brand still counting every pound. Saying no outright risks losing a good match. Paying it sets a bad precedent for every deal after this one.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "There is a way through this that does not involve caving or ghosting. It starts with understanding what you are actually negotiating, and ends with a counter that respects the creator's time while protecting your margin.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What's a fair rate for a creator working with a small brand?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "There is no single fair number. A fair rate is whatever balances the creator's time and reach against the value you can realistically generate from the deal, and for most small brands that lands closer to product plus a modest fee or commission than to the flat fee printed on a rate card. Rate cards are usually built for brands with established budgets and proven payback, not for a Shopify store still building its first customer base.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "If you run gifted and affiliate campaigns through [Linkable](/creators), you already have a benchmark: what creators on your own campaigns have accepted for similar content. That internal data is worth more than any public rate card, because it reflects what creators who actually want to work with brands like yours will take.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Why do creator rate cards get inflated in the first place?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Most rate cards are anchors, not prices. Agents and bigger creators expect a negotiation, so the opening number leaves room to come down without the creator feeling like they lost. Rate cards are also usually priced on reach and aesthetics, not on whether the content converts for a small catalogue brand with a modest order volume.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Knowing this changes how you read the quote. The number on the page is not a verdict on what your brand can afford. It is a starting position, and starting positions are meant to move.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you counter a high rate without insulting the creator?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Ask what is included before you argue the number. A flat fee that covers one video, usage rights for ads and a story post is a different deal to a flat fee for one post with no usage rights. Half the time, the rate feels high because the scope is vague, not because the creator is being unreasonable.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "A counter that keeps the relationship intact",
+      "type": "h3",
+      "items": null
+    },
+    {
+      "text": "Say you run a skincare brand doing a few hundred orders a month, and a creator quotes a flat fee for a single video that your budget cannot absorb. Instead of rejecting it, propose a smaller base fee plus affiliate commission on tracked sales, with a review after the first post to see whether a second collaboration makes sense on better terms. You are not asking the creator to work for less for the same output. You are offering upside if the content performs, which is a fair trade for a brand that cannot guarantee a result up front.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Frame the counter around your stage, not their worth. A line like ",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "we're a small brand testing what works, and we'd rather start smaller and grow the deal if the first post performs",
+      "type": "quote",
+      "items": null
+    },
+    {
+      "text": "reads as honest, not cheap. Most creators who are serious about repeat work will take that over a flat no.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What should you offer instead of matching the rate card?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "If the fee cannot move, change the structure instead. A lower base fee paired with affiliate commission lets a creator earn more if their content actually sells, which is also a better outcome for you than paying full price for content that does nothing. Our guide on [affiliate commission rates for creators](/blog/affiliate-commission-rates-for-creators) covers how to set commission so it is attractive without eating your margin.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Usage rights are another lever. Creators often price a rate card assuming you only want the post on their own channel. Paying a little more for the right to repost on your ads and product pages can be cheaper than negotiating a second shoot later, and it is worth spelling out in the agreement rather than assuming. Our [creator contract essentials](/blog/creator-contract-essentials-small-brands) post walks through what to put in writing so this does not become a dispute after the content is delivered.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "When is it worth walking away from a rate negotiation?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Walk away when the gap between your counter and their floor is too wide to close without losing the margin the deal was supposed to protect. A creator who will not move at all on structure, usage or scope is telling you something about how the relationship will go after the contract is signed. Better to pass politely and keep the door open than to accept terms that make the campaign a loss before it starts.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Keep the exit graceful. Thank them for their time, say the budget is not there right now, and ask if they would be open to a smaller test collaboration instead. Creators notice brands that negotiate respectfully even when the deal does not",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Not always. If the rate reflects a clear scope and the content is likely to earn that back, negotiating hard over a small gap can cost you a creator who would have delivered strong results. Negotiate when the gap is real, not as a habit.",
+      "q": "Should you always try to negotiate creator rates down?"
+    },
+    {
+      "a": "Be specific about your stage and what you can offer instead of cash, such as commission upside or a longer-term arrangement. Vague complaints about budget read as an excuse, while a concrete alternative reads as a real offer.",
+      "q": "How do you talk about budget with creators without sounding cheap?"
+    },
+    {
+      "a": "Yes. Product has a cost but it is usually far lower than a flat fee, so offering product plus a smaller fee or commission often gets you closer to a deal both sides can accept than asking a creator to simply lower their price.",
+      "q": "Does sending free product change the negotiation?"
+    },
+    {
+      "a": "That usually means the rate card is fixed company policy, often with bigger creators or agencies. In that case, decide whether the fee is worth paying outright or whether to look for a creator closer to your current budget instead.",
+      "q": "What if a creator refuses to negotiate the rate at all?"
+    }
+  ]
+}
