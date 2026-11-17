@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 6958443,
+      "alt": "Hands unboxing a white dropper bottle from a cardboard package with shredded paper.",
+      "src": "https://images.pexels.com/photos/6958443/pexels-photo-6958443.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/hands-of-a-person-holding-a-plain-white-dropper-bottle-6958443/",
+      "query": "creators unboxing product packages",
+      "width": 6720,
+      "credit": {
+        "url": "https://www.pexels.com/@karola-g",
+        "name": "https://kaboompics.com/"
+      },
+      "height": 4480,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/6958443/pexels-photo-6958443.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/6958443/pexels-photo-6958443.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/batch-creator-content-product-drop-6958443-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/batch-creator-content-product-drop-6958443-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "batch-creator-content-product-drop",
+    "title": "How to batch creator content for a product drop",
+    "description": "Here's how to batch creator content for a product drop so posts cluster in launch week instead of trickling in for weeks afterwards.",
+    "excerpt": "Most brands gift product on a rolling basis and then wonder why content dribbles in for a month after launch. Here's how to compress the send and the brief so it all lands in the week you actually need it.",
+    "date": "2026-11-17",
+    "updated": "2026-11-17",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "Hands unboxing a white dropper bottle from a cardboard package with shredded paper.",
+    "words": 907,
+    "source": "generated",
+    "keyword": "how to batch creator content for a product drop",
+    "category": "Playbook",
+    "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 8528484,
       "alt": "Businesswoman in red jacket using a laptop at her desk in an office setting.",
       "src": "https://images.pexels.com/photos/8528484/pexels-photo-8528484.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",

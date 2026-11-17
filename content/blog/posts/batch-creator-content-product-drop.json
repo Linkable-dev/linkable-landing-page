@@ -1,0 +1,122 @@
+{
+  "blocks": [
+    {
+      "text": "Your drop date is set. Product has gone out to creators on a rolling basis, as each one said yes over the past few weeks, and the content is landing the same way: a post here, a clip there, trickling in long after the launch moment has passed and the audience has moved on to something else.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "That trickle isn't bad luck. It's the direct result of a rolling send and an open-ended deadline. If you want content to land together, you have to plan for it to land together.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you batch creator content for a product drop",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "You batch creator content for a drop by compressing the send and the brief into one short window, so every creator gets product and posts within days of each other, right before the date you need the content to peak. In practice that means one shipping day instead of staggered sends spread over weeks, one posting date in the brief instead of \"whenever you get to it\", and content held back from going live until the week you choose, even if it's ready sooner.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "The goal isn't speed for its own sake. It's making sure the moment a shopper lands on your product page or your ads, they see a cluster of recent posts rather than one lonely video from a month ago.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "When should you send product so it arrives together",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Pick the posting week first, then work backwards. Shipping times vary by creator and by courier, so build in a buffer between the day product lands and the day you expect a post. Creators who open a box and film the same afternoon are the exception, not the rule.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "If you're approving creators through [Linkable](/pricing), gifted orders can be created automatically on approval, which means you can approve a whole batch on the same day and have orders go out together rather than one at a time as applications trickle in. That single change does more to fix a staggered send than any amount of chasing people individually.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Build your creator list before you need it, not during the scramble. If you're still sourcing people the week before the drop, you've already lost the batching window. Our post on [building a creator shortlist before outreach](/blog/creator-shortlist-before-outreach) covers how to have that list ready ahead of time.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you brief creators so they all shoot in the same window",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "The brief has to name the date, not a range. \"Post by the 14th\" gets you content clustered around the 14th. \"Post sometime in the next few weeks\" gets you exactly what the phrase suggests, content spread across the next few weeks.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Be specific about what the post needs to show and when it needs to go live, and say plainly that the date is tied to a launch, not a suggestion. Creators plan their own content calendars around other brands too, so a brief that arrives with a fixed date and enough notice tends to get honoured. One that arrives vague tends to get slotted in whenever it's convenient for them. Our [creator brief template for ecommerce](/blog/creator-brief-template-for-ecommerce) has a section specifically for locking in a posting date without it reading as a script.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Tell creators why the date matters. A line like \"this goes live the same week as our drop, so timing matters more than usual\" costs nothing and makes the deadline feel like part of the plan rather than a brand being pushy.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What do you do with creators who run late",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Some will run late no matter how clear the brief was. Decide your cutoff before launch week starts, not during it. If a creator hasn't posted by a point you set in advance, that content either gets repurposed later as evergreen material or dropped from the launch push entirely. Chasing someone the night before a drop rarely produces better content, it mostly produces a rushed post that doesn't match the brief.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Keep a short list of backup creators who applied but weren't part of the first batch, so a late or no-show creator doesn't leave a gap. If you're running this around a bigger seasonal push, our [Q4 creator campaign timeline](/blog/q4-creator-campaign-timeline) has the broader version of this problem, and [handling a creator who misses a deadline](/blog/creator-missed-deadline-handling) covers what to say when it happens.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Turning batched content into launch week, not a trickle",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Having content arrive together is only half the job. You still need to release it on purpose rather than letting everything post the moment it's ready. Ask creators to post on or near one date, then use the days around that date to push the same content into ads, email and product pages so it all works towards the same week instead of spreading thin.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This is also where reporting earns its keep. Looking at what content came in, who posted on time and what each post generated in reach and sales tells you which creators to prioritise for the next drop, which is the whole point of batching in the first place. If you're setting this up for the first time, [launching your first creator campaign](/blog/launch-campaign-linkable) walks through the setup end to end, and [Linkable's creator side](/creators) shows what creators see when a brief lands with a clear date attached.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Pick your next drop date now, work backwards to a single shipping day, and write the posting date into every brief before you send a single unit of product.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Enough that a few no-shows or late posts don't leave your launch week empty, but not so many that quality review becomes impossible in a short window. Our post on how many creators to work with each month is a good starting point for sizing a batch.",
+      "q": "How many creators should you batch into one drop"
+    },
+    {
+      "a": "No. Spread posts across the launch week rather than a single day, so your feed and ads have fresh content for several days instead of one spike followed by silence.",
+      "q": "Should every creator post on the exact same day"
+    },
+    {
+      "a": "Give clear, specific feedback and ask for one fix rather than a full reshoot where time allows. If there's no time left, hold that post out of the launch push and use it later as evergreen content instead.",
+      "q": "What if a creator's content misses the brief close to launch"
+    },
+    {
+      "a": "Start well before the shipping day you've set, so you have a confirmed list and backups ready rather than approving creators the week you need product to go out.",
+      "q": "How far ahead of a drop should you start sourcing creators"
+    }
+  ]
+}
