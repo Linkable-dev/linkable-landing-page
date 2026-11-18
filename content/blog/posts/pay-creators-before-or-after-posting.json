@@ -1,0 +1,112 @@
+{
+  "blocks": [
+    {
+      "text": "You have agreed a fixed fee with a creator, the product has shipped, and now they are asking to be paid before they film anything. It feels rude to say no. It also feels risky to say yes, and you are not sure which instinct to trust.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Should you pay creators before or after posting",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Pay after posting, or split the fee so most of it lands only once content is delivered and approved. Paying everything upfront removes your only real tool for making sure the work actually happens. Once the money has cleared, your request for a revision, a reshoot, or a late video competes with every other thing on that creator's calendar, and you have no way to make it urgent.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This is not about distrust. Most creators deliver. But a payment structure should protect you against the ones who do not, not assume the best case every time.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Why upfront payment removes your negotiating power",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "A fixed fee is an exchange: money for content. The moment you pay in full before anything is posted, you have given your half of the exchange and the creator still owes theirs. There is nothing left for them to lose by being slow, and nothing left for you to withhold if the content is off-brief or never arrives.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Say you run a supplement brand and agree a fixed fee with a creator for one TikTok video. You pay the full amount on the day you send the product. Three weeks pass. The creator is busy, the video slips, you follow up, and you get a vague apology and a promise for next week. You cannot withhold payment because you already sent it. All you can do is wait, or write off the fee and move on.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Compare that with paying half on acceptance and the rest on delivery. The same slow creator now has a reason to finish the work, because the second half is sitting there until they do.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What a fair payment split actually looks like",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "A split that works for both sides usually looks like a small amount on acceptance of the brief, to cover the creator's time and show you are serious, and the rest on delivery of approved content. For gifted collaborations the product itself is the only payment, so this applies mainly to paid and affiliate-with-fee arrangements, which we cover in more detail in [our guide to paying creators](/blog/how-to-pay-creators-ecommerce-campaigns).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Affiliate commission is a separate case. There, the creator is paid a percentage of tracked sales rather than a flat fee, so the structure already ties payment to an outcome rather than a promise. If you want to protect margin on that side, [affiliate commission rates that protect margin](/blog/affiliate-commission-rates-for-creators) is worth reading alongside this.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "When paying upfront is the right call",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "There are cases where full upfront payment is fine. A creator you have worked with across several campaigns, who has never missed a deadline, has earned the benefit of the doubt. Small fees where the downside of a missed deadline is minor are also not worth the friction of a split. The split matters most with new creators, larger fees, and anything tied to a date you cannot move, like a product launch or a seasonal push.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How to set this up without it feeling adversarial",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Put the split in the brief, not in a message after the creator has already assumed full payment upfront. State it plainly: a smaller amount now, the balance on approved delivery, with a clear date for that delivery. This is a term, not a negotiation, and creators who are used to working with brands will recognise it as normal practice rather than a sign you do not trust them. Our [creator contract essentials for small brands](/blog/creator-contract-essentials-small-brands) covers how to write this into a simple agreement so it does not need to be renegotiated every time.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "On Linkable, campaign terms including payment structure are set when you create the campaign, so the split is visible to creators before they apply, which avoids the awkward conversation happening after the fact.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "If a creator pushes back hard on any split at all, treat that as information. It does not mean they are dishonest, but it does mean you should brief smaller and watch delivery closely before committing to a larger fee with them again.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This week, look at any paid creator deal you have open right now. If the full fee has already gone out before a single piece of content has landed, you will know exactly what to change before the next brief goes out.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "There is no fixed industry number, so decide based on risk: a smaller amount on acceptance to cover the creator's time, with the larger share tied to approved delivery. The newer the creator relationship, the smaller the upfront portion should be.",
+      "q": "What percentage should I pay upfront versus on delivery"
+    },
+    {
+      "a": "Not in the same way. Gifted collaborations are paid in product, not cash, so the main protection there is a clear brief and a delivery date rather than a payment split.",
+      "q": "Does this apply to gifted product collaborations too"
+    },
+    {
+      "a": "Some established creators with strong track records will ask for upfront payment and that can be reasonable if they have delivered reliably before. For a new relationship, refusal to accept any split at all is a signal to brief smaller and build trust before increasing the fee.",
+      "q": "What if a creator refuses to accept a split payment"
+    },
+    {
+      "a": "Affiliate commission is paid on tracked sales after they happen, so the payment is already tied to a result rather than a promise, which removes most of the risk a fixed fee carries.",
+      "q": "How does affiliate commission change this decision"
+    }
+  ]
+}
