@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 7310135,
+      "alt": "Box opened to reveal HOME decoration amidst red packing material, labeled Special Delivery.",
+      "src": "https://images.pexels.com/photos/7310135/pexels-photo-7310135.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/wooden-letters-in-box-filled-with-cut-paper-7310135/",
+      "query": "creator unboxing package home",
+      "width": 6634,
+      "credit": {
+        "url": "https://www.pexels.com/@rdne",
+        "name": "RDNE Stock project"
+      },
+      "height": 4423,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/7310135/pexels-photo-7310135.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/7310135/pexels-photo-7310135.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/creator-ambassador-programme-shopify-brands-7310135-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/creator-ambassador-programme-shopify-brands-7310135-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "creator-ambassador-programme-shopify-brands",
+    "title": "How to run a creator ambassador programme for Shopify brands",
+    "description": "Build a creator ambassador programme for Shopify brands by treating repeat creators like a loyalty tier, not another gifting round.",
+    "excerpt": "Most ambassador programmes are just repeated gifting with a nicer name. Here's how to turn your best repeat creators into a real tier with perks that make them stay.",
+    "date": "2026-11-19",
+    "updated": "2026-11-19",
+    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
+    "imageAlt": "Box opened to reveal HOME decoration amidst red packing material, labeled Special Delivery.",
+    "words": 996,
+    "source": "generated",
+    "keyword": "creator ambassador programme for shopify brands",
+    "category": "Playbook",
+    "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 7545333,
       "alt": "Business person handling paper receipts, meticulously organized.",
       "src": "https://images.pexels.com/photos/7545333/pexels-photo-7545333.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",

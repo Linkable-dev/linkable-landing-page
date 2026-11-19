@@ -1,0 +1,117 @@
+{
+  "blocks": [
+    {
+      "text": "Say you have gifted product to a few dozen creators over the past two quarters. A handful of them keep posting without being asked, tag your store in stories, and their followers keep buying. The rest post once and never come back. That handful is already your ambassador programme. The question is whether you treat them like it, or just send them the same box everyone else gets.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What is a creator ambassador programme for Shopify brands?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "A creator ambassador programme for Shopify brands is a defined tier for the creators who already perform, with perks and terms that are visibly better than what a first-time creator gets. It is not a new campaign type, and it is not a loyalty badge on their profile. It is a different deal: faster payouts, higher commission, early access to new drops, input on briefs, and a standing invitation instead of a one-off application. The programme exists so your best creators have a reason to keep choosing you over the next brand that slides into their inbox.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Most brands skip this step. They run a gifting round, get a few creators who perform, then roll them into the next campaign on identical terms to someone who has never posted for the brand. The good creators notice. They do not quit loudly, they just stop replying as fast, and eventually they stop applying at all.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Why most ambassador programmes stall after the first gifting round",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "The usual pattern looks like this. A brand gifts product to twenty creators, five of them post content that actually drives orders, and the brand is thrilled. Next month, the same brand opens a new campaign and sends the same brief, the same product, the same terms, to the same five people plus twenty new ones. Nothing in the deal acknowledges that these five already proved themselves.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "From the creator's side, that is a flat relationship pretending to be a partnership. They did the work of figuring out your product, filming it well, and driving sales, and got treated identically to someone who signed up yesterday. We covered the gifting side of this in [a product seeding campaign strategy that actually gets posts](/blog/product-seeding-campaign-strategy), and the pattern repeats here: without a reason to stay, your best creators drift toward whichever brand pays faster or asks less of them.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you build a real loyalty tier for repeat creators?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Start by defining what earns someone a spot. The cleanest rule is performance, not follower count: creators who have completed a set number of collaborations with you, or whose content has driven tracked sales, move up. Tie it to something measurable in your reporting rather than a gut feeling, because a gut-feeling tier turns into favouritism and creators talk to each other about who gets what.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Once someone qualifies, the terms should change in writing, not just in tone. That means an actual update to their commission rate, their payout timing, or their fee, not a friendlier email. If you are already tracking content delivered, audiences reached and sales per creator, this is just a filter on data you have. We wrote about turning a single successful run into something ongoing in [how to turn one creator campaign into a recurring programme](/blog/turn-one-creator-campaign-recurring-programme), and the ambassador tier is the next layer on top of that: recurring plus upgraded.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Set the bar before you announce it",
+      "type": "h3",
+      "items": null
+    },
+    {
+      "text": "Decide the qualifying threshold privately first. If you announce an ambassador tier before you know who qualifies, you will end up negotiating individually with people who feel left out, which defeats the point of having a tier at all.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What perks actually make creators want to stay",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Creators who already perform are not short of brands asking them to post for free product. The perks that matter are the ones a one-off creator never gets: a higher affiliate commission rate than your standard offer, payout before the usual cycle rather than after, first access to new product before it goes to the wider creator pool, and a say in what the next brief looks like rather than a script handed down. None of that costs much relative to what a repeat creator already earns you in tracked sales.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What does not work as a perk is a badge, a shoutout, or a certificate. Creators have told us plainly what they want from brands, and it is reliable pay and real input, not recognition theatre. If you want the fuller picture, see [what creators want from ecommerce brands today](/blog/what-creators-want-from-ecommerce-brands). The brands that get this right treat the ambassador tier the way a retailer treats a loyalty programme: better margin for the customer, not a certificate on the wall.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How to run the programme without it eating your week",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "An ambassador tier only survives if tracking it is not a side project. You need to see, per creator, what they delivered and what it drove, so the tier stays tied to performance rather than memory. On [Linkable](/pricing), campaign and creator reporting already shows content delivered, audiences reached, engagement and tracked sales per creator, so flagging who has earned ambassador terms is a filter, not a spreadsheet rebuild.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Keep the terms simple enough to repeat without a meeting every time. A fixed commission bump, a fixed payout change, and a standing campaign they get invited to automatically, rather than a new negotiation each round. If a relationship is worth the upgrade, it is worth the same upgrade every time, and we cover the trade-offs between keeping someone exclusive versus working with several creators at once in [exclusivity versus multiple creator brands](/blog/exclusivity-vs-multiple-creator-brands).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This week, pull your last two quarters of creator reporting and shortlist anyone who has posted more than once and driven tracked sales. Draft one upgraded offer for that group, send it as a direct invitation rather than a standard campaign application, and see how many reply within a day. That response rate will tell you more about your programme than any plan on paper.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Keep it small and earned rather than open to everyone. A tier of a dozen or so genuinely repeat performers is easier to manage well than fifty people getting a watered-down version of the same perk.",
+      "q": "How many creators should be in an ambassador tier?"
+    },
+    {
+      "a": "The existence of a tier can be public, but individual terms should not be. Publishing exact commission rates or payout timing invites every creator to compare and negotiate, which slows you down without improving results.",
+      "q": "Should ambassador perks be public?"
+    },
+    {
+      "a": "No. Gifting and paid campaigns are still how you find new creators worth promoting. The ambassador tier is what you offer once someone from that pool has already proved they drive sales.",
+      "q": "Does an ambassador programme replace one-off gifting?"
+    },
+    {
+      "a": "Review the tier on a schedule rather than letting it run forever on past performance. If a creator's content stops converting, move them back to standard terms rather than quietly keeping a perk they are no longer earning.",
+      "q": "What if a repeat creator's results drop off?"
+    }
+  ]
+}
