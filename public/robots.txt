@@ -1,4 +1,40 @@
+# Everyone may read the whole site.
 User-agent: *
+Allow: /
+
+# AI assistants and answer engines are welcome too. They are named here so the
+# choice is explicit: a site that only says "User-agent: *" leaves each
+# operator to guess. Search and user-requested fetches (the ones that quote
+# and link a page in an answer) come first, then the training crawlers.
+# A plain-text summary of the site for these readers is at /llms.txt.
+
+# OpenAI: ChatGPT search, a page a ChatGPT user asked for, model training
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: GPTBot
+Allow: /
+
+# Anthropic: Claude search, a page a Claude user asked for, model training
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity: its index, a page a Perplexity user asked for
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+Allow: /
+
+# Google and Apple: these two are not crawlers but switches for whether pages
+# already crawled by Googlebot and Applebot may be used by Gemini and Apple
+# Intelligence.
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+Allow: /
+
+# Amazon (Alexa and its assistants) and Meta AI
+User-agent: Amazonbot
+User-agent: meta-externalagent
 Allow: /
 
 Sitemap: https://www.linkable.link/sitemap.xml

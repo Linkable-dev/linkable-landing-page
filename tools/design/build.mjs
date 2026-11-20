@@ -79,6 +79,13 @@ ${TRACKING}${css.map((h) => `<link rel="stylesheet" href="${h}">`).join('\n')}
 }
 
 const compiled = new Map();
+// What a page's logic class draws on its first frame: the body's values, and
+// the source of the structured data and of llms.txt, so the three cannot
+// disagree about a price or an answer.
+async function pageVals(key, data) {
+  await renderBody(key, data);
+  return compiled.get(key).vals;
+}
 async function renderBody(key, data) {
   if (!compiled.has(key)) {
     const tpl = fs.readFileSync(path.join(ROOT, `src/design/pages/${key}/template.html`), 'utf8');
@@ -92,7 +99,9 @@ async function renderBody(key, data) {
     // The cookie bar depends on the visitor's stored choice, so it is the
     // runtime's call; the static page ships without it.
     app.state = { cookieDone: true };
-    return render(tree, app.renderVals()).html;
+    const vals = app.renderVals();
+    compiled.get(key).vals = vals;
+    return render(tree, vals).html;
   } finally {
     delete globalThis.__LK_DATA__;
   }
@@ -100,6 +109,7 @@ async function renderBody(key, data) {
 
 async function writePage(meta, data) {
   const body = await renderBody(meta.key, data);
+  if (STRUCTURED[meta.key]) meta = { ...meta, extra: (meta.extra || '') + ldScript(STRUCTURED[meta.key](compiled.get(meta.key).vals, meta)) };
   const json = data ? `<script type="application/json" id="lk-data">${JSON.stringify(data).replace(/</g, '\\u003c')}</script>\n` : '';
   const out = head(meta) + `<body>\n<div id="lk-root">\n${body}\n</div>\n${json}</body>\n</html>\n`;
   const file = path.join(ROOT, meta.file);
@@ -107,9 +117,129 @@ async function writePage(meta, data) {
   fs.writeFileSync(file, out);
 }
 
+/* ------------------------------------------------------- structured data */
+// JSON-LD for search engines and AI assistants. Everything in it is read from
+// what the page itself shows (the values above), never written here: a price or
+// an answer that changes in the design changes here on the next build. Blog
+// posts add their own (BlogPosting, FAQPage) in buildBlog.
+const ldScript = (ld) => (ld.length ? `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n` : '');
+const ORG = {
+  '@type': 'Organization',
+  '@id': SITE + '/#organization',
+  name: 'Linkable',
+  legalName: 'Linkable Ltd',
+  url: SITE + '/',
+  logo: SITE + AUTHOR.avatar,
+  // The profiles the footer links to (tools/design/import.py, LINKS).
+  sameAs: ['https://www.instagram.com/linkable.link/', 'https://www.linkedin.com/company/joinlinkable/', 'https://www.facebook.com/profile.php?id=61571103328154'],
+};
+// The page's FAQ section. Every answer is on the page (one open, the rest a
+// click away), in the page's own words.
+const faqLd = (vals) => (vals.faqs?.length
+  ? [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: vals.faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }]
+  : []);
+// "$1,990" -> "1990". Static pages are rendered in US dollars (TZ above).
+const amount = (shown) => String(shown).replace(/[^0-9.]/g, '');
+const STRUCTURED = {
+  home: (vals, meta) => [
+    { '@context': 'https://schema.org', ...ORG, description: meta.description },
+    { '@context': 'https://schema.org', '@type': 'WebSite', '@id': SITE + '/#website', name: 'Linkable', url: SITE + '/', publisher: { '@id': ORG['@id'] }, inLanguage: 'en-GB' },
+    ...faqLd(vals),
+  ],
+  creators: (vals) => faqLd(vals),
+  pricing: (vals, meta) => [
+    {
+      '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: 'Linkable', url: SITE + meta.url, description: meta.description,
+      applicationCategory: 'BusinessApplication', operatingSystem: 'Web', publisher: { '@id': ORG['@id'] },
+      offers: vals.plans.map((p) => ({ '@type': 'Offer', name: p.name, description: [p.blurb, ...p.features].join(' '), price: amount(p.shown), priceCurrency: vals.curName, url: SITE + meta.url })),
+    },
+    ...faqLd(vals),
+  ],
+  pitch: (vals, meta) => [
+    {
+      '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: 'Linkable Pitch', url: SITE + meta.url, description: meta.description,
+      applicationCategory: 'BusinessApplication', operatingSystem: 'Web', publisher: { '@id': ORG['@id'] },
+      offers: [
+        // US dollars, as on every static page (TZ above); this page's values name the currency only in words.
+        { '@type': 'Offer', name: 'Free', price: amount(vals.freePrice), priceCurrency: 'USD', url: SITE + meta.url },
+        { '@type': 'Offer', name: 'Pitch Pro', price: amount(vals.proPrice), priceCurrency: 'USD', url: SITE + meta.url },
+      ],
+    },
+    ...faqLd(vals),
+  ],
+};
+
 export async function buildStatic() {
   for (const meta of STATIC) await writePage(meta);
+  await buildLlms();
   return STATIC.length;
+}
+
+/* -------------------------------------------------------------- llms.txt */
+// A plain-text map of the site for AI assistants (llmstxt.org): what Linkable
+// is, what it costs, the pages worth reading and every article. Written on
+// every build, the blog sync's included, so a new post or a new price is in it
+// without anyone remembering to add it. Facts come from the pages' own values.
+const md = (s) => String(s).replace(/\s+/g, ' ').trim();
+export async function buildLlms() {
+  const page = Object.fromEntries(STATIC.map((m) => [m.key, m]));
+  const pricing = await pageVals('pricing');
+  const pitch = await pageVals('pitch');
+  const home = await pageVals('home');
+  const creators = await pageVals('creators');
+  const posts = [...readJson(path.join(CONTENT, 'posts.json'), [])].sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
+  const link = (m) => `- [${m.title.replace(/ \| Linkable$/, '')}](${SITE}${m.url === '/' ? '/' : m.url}): ${md(m.description)}`;
+  const post = (p) => `- [${md(p.title)}](${SITE}/blog/${p.slug}): ${md(p.description || p.excerpt)}`;
+  const qa = (faqs) => faqs.map((f) => `- **${md(f.q)}** ${md(f.a)}`);
+  const forCreators = posts.filter((p) => p.category === CREATOR_CATEGORY);
+  const forBrands = posts.filter((p) => p.category !== CREATOR_CATEGORY);
+  const out = [
+    '# Linkable',
+    '',
+    `> ${md(home.faqs[0].a)}`,
+    '',
+    'Linkable has two sides. Brands run creator campaigns: the pages under "For brands". Creators apply to those campaigns and pitch brands directly with Pitch: the pages under "For creators". Prices below are in US dollars; UK brands pay in British pounds and brands in Europe in euros.',
+    '',
+    '## For brands',
+    '',
+    link(page.home), link(page.autopilot), link(page.pricing),
+    '',
+    '### Plans for brands',
+    '',
+    ...pricing.plans.map((p) => `- ${p.name}: ${p.shown} ${p.per === '/month' ? 'a month' : p.per}${p.paid ? ` (${p.note})` : ''}. ${md(p.blurb)} ${p.features.join('. ')}.`),
+    '',
+    '### Questions brands ask',
+    '',
+    ...qa([...home.faqs, ...pricing.faqs.filter((f) => !home.faqs.some((h) => h.q === f.q))]),
+    '',
+    '## For creators',
+    '',
+    link(page.creators), link(page.pitch),
+    '',
+    '### Plans for creators',
+    '',
+    `- Free: ${pitch.freePrice}. ${md(pitch.faqs.find((f) => f.q === 'Is Pitch free?')?.a || '').replace(/^Yes\. /, '')}`,
+    `- Pitch Pro: ${pitch.proPrice} a month (${pitch.proNote}).`,
+    '',
+    '### Questions creators ask',
+    '',
+    ...qa([...creators.faqs, ...pitch.faqs.filter((f) => !creators.faqs.some((c) => c.q === f.q))]),
+    '',
+    '## Articles for brands',
+    '',
+    ...forBrands.map(post),
+    '',
+    ...(forCreators.length ? ['## Articles for creators', '', ...forCreators.map(post), ''] : []),
+    '## More',
+    '',
+    `- [Blog](${SITE}/blog): every article, newest first`,
+    link(page.contact),
+    `- [Sign up as a brand](https://app.linkable.link/auth/brand/sign-up)`,
+    `- [Sign up as a creator](https://app.linkable.link/auth/signup)`,
+    '',
+  ].join('\n');
+  fs.writeFileSync(path.join(ROOT, 'public', 'llms.txt'), out);
+  return posts.length;
 }
 
 /* ------------------------------------------------------------------ blog */
@@ -212,6 +342,7 @@ export async function buildBlog() {
     await writePage({ key: 'post', file: `blog/${p.slug}/index.html`, url: `/blog/${p.slug}`, title: p.title, description: p.description || p.excerpt, image: c.src, imageW: c.imgW, imageH: c.imgH, imageAlt: c.alt, type: 'article', extra }, data);
     n++;
   }
+  await buildLlms(); // the article list in llms.txt follows every blog sync
   return n;
 }
 
