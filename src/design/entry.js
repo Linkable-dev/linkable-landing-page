@@ -2,6 +2,7 @@
 // and logic class are loaded on demand, so each page only downloads its own.
 
 import { initConsent } from '../consent.js';
+import { incomingSource, tagLink } from './links.js';
 import { compile } from './render.js';
 import { mount } from './runtime.js';
 
@@ -17,7 +18,11 @@ async function boot() {
     templates[`./pages/${key}/template.html`](),
     logics[`./pages/${key}/state.js`](),
   ]);
-  const app = mount(document.getElementById('lk-root'), compile(template), new logic.PageLogic());
+  // Sign-up links say which page they are on, or the campaign the visitor
+  // arrived with (links.js).
+  const incoming = incomingSource(window.location.search);
+  const link = (href) => tagLink(href, key, incoming);
+  const app = mount(document.getElementById('lk-root'), compile(template), new logic.PageLogic(), { link });
   document.addEventListener('lk:consent', () => app.setState({ cookieDone: true }));
   // The mobile menu is a <details>; following a link from it should close it.
   document.addEventListener('click', (e) => {
