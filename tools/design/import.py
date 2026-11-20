@@ -248,6 +248,12 @@ def post(body, logic):
     body = patch(body, 'href="#copy-link" aria-label="Copy link"', 'href="{{post.url}}" onClick="{{copyLink}}" aria-label="{{copyLabel}}"')
     body = between(body, '<article class="ps-body">', '<div class="ps-cta">',
                    '<article class="ps-body">\n<sc-html value="{{post.body}}"></sc-html>\n<div class="ps-cta">', 'post body')
+    # The box under the article depends on who the post is for: a brand post
+    # offers the trial, a creator post offers Pitch (build.mjs, postCta). Its
+    # link is swapped in post_links below, once the design's links are mapped.
+    body = patch(body, '>Launch your first gifted campaign</div>', '>{{post.cta.title}}</div>')
+    body = patch(body, '>Creators apply, you choose who to work with and Linkable handles the rest.</p>', '>{{post.cta.text}}</p>')
+    body = patch(body, '>Start your free trial<span class="dot"', '>{{post.cta.label}}<span class="dot"')
     card = ('<sc-for list="{{related}}" as="r"><a class="bl-card" href="{{r.href}}"><div class="bl-img"><img src="{{r.src}}" srcset="{{r.srcset}}" '
             'sizes="(max-width: 620px) 100vw, (max-width: 1000px) 50vw, 400px" alt="{{r.alt}}" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block"></div>'
             '<div style="padding: 18px 4px 4px"><div style="display: flex; align-items: center; gap: 8px; font-size: 13.5px; color: #666563"><span class="bl-tag">{{r.cat}}</span><span>{{r.mins}}</span></div>'
@@ -293,8 +299,14 @@ def pitch(body, logic):
     return body, logic
 
 
+def post_links(body):
+    return patch(body, f'<a class="btn btn-arrow" href="{APP_BRAND_SIGNUP}"', '<a class="btn btn-arrow" href="{{post.cta.href}}"', label='post cta link')
+
+
 PAGE_PATCHES = {'home': home, 'creators': creators, 'contact': contact,
                 'blog': blog, 'post': post, 'legal': legal, 'pitch': pitch}
+# Patches that need the real links, so they run after the link mapping.
+LINK_PATCHES = {'post': post_links}
 
 # Since the 28 Oct 2026 design every page jumps to the top when it opens: the
 # canvas keeps the scroll of an artboard between visits. On the site that would
@@ -403,6 +415,8 @@ for name, key in PAGES.items():
     links = dict(LINKS, **LINK_OVERRIDES.get(key, {}))
     for old, new in links.items():
         body = body.replace(f'href="{old}"', f'href="{new}"')
+    if key in LINK_PATCHES:
+        body = LINK_PATCHES[key](body)
     # Anchors left must point at an id on the same page.
     for target in set(re.findall(r'href="#([\w-]+)"', body)):
         assert f'id="{target}"' in body, f'{name}: link to #{target} has no target on the page'

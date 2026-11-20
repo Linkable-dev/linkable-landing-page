@@ -62,9 +62,9 @@
 <article class="ps-body">
 <sc-html value="{{post.body}}"></sc-html>
 <div class="ps-cta">
-<div style="font-size: 22px; font-weight: 500; letter-spacing: -0.02em; color: #FFFFFF">Launch your first gifted campaign</div>
-<p style="margin: 8px 0 0; font-size: 16px; line-height: 1.55; color: #B5B3AE">Creators apply, you choose who to work with and Linkable handles the rest.</p>
-<a class="btn btn-arrow" href="https://app.linkable.link/auth/brand/sign-up" style="margin-top: 20px; min-height: 44px; font-size: 15px; padding: 0 6px 0 20px; gap: 14px; background: #FFFFFF; color: #232323">Start your free trial<span class="dot" style="width: 32px; height: 32px; background: #232323; color: #FFFFFF"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></span></a>
+<div style="font-size: 22px; font-weight: 500; letter-spacing: -0.02em; color: #FFFFFF">{{post.cta.title}}</div>
+<p style="margin: 8px 0 0; font-size: 16px; line-height: 1.55; color: #B5B3AE">{{post.cta.text}}</p>
+<a class="btn btn-arrow" href="{{post.cta.href}}" style="margin-top: 20px; min-height: 44px; font-size: 15px; padding: 0 6px 0 20px; gap: 14px; background: #FFFFFF; color: #232323">{{post.cta.label}}<span class="dot" style="width: 32px; height: 32px; background: #232323; color: #FFFFFF"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></span></a>
 </div>
 </article>
 </div>

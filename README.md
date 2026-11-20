@@ -86,11 +86,16 @@ POST JSON `{ ...fields, form: "contact" | "newsletter", page }`).
 Articles are stored in the blog Supabase project (tables `blog_posts` / `blog_topics`) and managed from the
 Linkable Ops app (Blog section), which also writes one AI-drafted article per day. This repo only renders them:
 
-- `.github/workflows/blog-sync.yml` runs every two hours, on a `blog-publish` repository dispatch from the ops
+- `.github/workflows/blog-sync.yml` checks every 10 minutes, and runs on a `blog-publish` repository dispatch from the ops
   app, or manually. It executes `tools/blog/sync.mjs`, which pulls the published rows into the content cache,
   renders the blog index and every post from the design templates, updates `public/sitemap.xml`, removes pages
   for unpublished articles and commits. Vercel deploys the push.
 - Repo secrets: `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` (the blog project).
+- Posts are written for brands or for creators. A post in the category `For creators` ends with the Pitch sign-up
+  ("Start pitching for free"); every other post ends with the brand trial. `postCta` in `tools/design/build.mjs`
+  holds both, and tags the link with `utm_source=blog` and the post's slug so the app can tell which article a
+  new account came from. The category name is shared with the ops app (`CREATOR_CATEGORY` in its
+  `server/lib/blog-core.js`).
 - `content/blog/posts.json` lists every post and `content/blog/posts/*.json` holds their bodies, so
   `npm run blog:render` rebuilds the blog offline. Six posts predate the database; they were written in Framer and
   `tools/blog/extract-framer-posts.py` converted them once into the same format.

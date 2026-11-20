@@ -113,6 +113,21 @@ export async function buildStatic() {
 }
 
 /* ------------------------------------------------------------------ blog */
+// The box under an article. The ops app files posts written for creators under
+// this one category (linkable-ops server/lib/blog-core.js, CREATOR_CATEGORY);
+// they end with the Pitch sign-up, every other post with the brand trial. The
+// links carry UTM tags because the app records them on a new account
+// (signup_attributions) and a plain link from this site says nothing more than
+// "came from linkable.link".
+const CREATOR_CATEGORY = 'For creators';
+const APP = 'https://app.linkable.link';
+export function postCta(p) {
+  const tags = `?utm_source=blog&utm_medium=post_cta&utm_campaign=${encodeURIComponent(p.slug)}`;
+  return p.category === CREATOR_CATEGORY
+    ? { title: 'Pitch the brands you want to work with', text: 'Pick a brand, Linkable writes the pitch and sends it to the person who runs partnerships. 10 pitches a month are free.', label: 'Start pitching for free', href: `${APP}/auth/signup${tags}` }
+    : { title: 'Launch your first gifted campaign', text: 'Creators apply, you choose who to work with and Linkable handles the rest.', label: 'Start your free trial', href: `${APP}/auth/brand/sign-up${tags}` };
+}
+
 const minutes = (p) => p.readMinutes || Math.max(3, Math.round((p.words || 0) / 220));
 
 function card(p) {
@@ -182,6 +197,7 @@ export async function buildBlog() {
         shareLinkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`,
         shareX: `https://x.com/intent/post?url=${encodeURIComponent(url)}&text=${encodeURIComponent(p.title)}`,
         credit: credit(p),
+        cta: postCta(p),
         toc,
         body: html,
       },
