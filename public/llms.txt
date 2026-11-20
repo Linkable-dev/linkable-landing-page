@@ -1,0 +1,142 @@
+# Linkable
+
+> Linkable is where ecommerce brands find creators and run every collaboration in one place. You launch a campaign, creators apply, you choose who to work with, and Linkable handles samples, content, usage rights, tracking and commission payouts.
+
+Linkable has two sides. Brands run creator campaigns: the pages under "For brands". Creators apply to those campaigns and pitch brands directly with Pitch: the pages under "For creators". Prices below are in US dollars; UK brands pay in British pounds and brands in Europe in euros.
+
+## For brands
+
+- [Creator Marketing for Ecommerce Brands](https://www.linkable.link/): Run gifted, paid and affiliate creator campaigns in one place. Find relevant creators, manage collaborations, get content and track performance with Linkable.
+- [Autopilot: Creator Campaigns That Run Themselves](https://www.linkable.link/autopilot): Autopilot sets up your creator campaigns, sources and matches creators and keeps every collaboration moving, so your team doesn’t have to.
+- [Creator Marketing Pricing for Ecommerce Brands](https://www.linkable.link/pricing): Explore Linkable pricing for ecommerce brands. Find creators and run gifted, paid and affiliate campaigns, with everything managed in one place.
+
+### Plans for brands
+
+- Free: $0 forever. For brands working with their own creators. Unlimited private campaigns. Your own application link to share. Samples, content and usage rights handled. No card needed.
+- Starter: $99 a month (or $990 a year, save 17%). For brands getting started with creators. Work with up to 10 new creators a month. Run up to 2 public campaigns at once. Unlimited private campaigns. Campaign and creator insights. Dedicated support and onboarding.
+- Growth: $199 a month (or $1,990 a year, save 17%). For brands working with creators every month. Work with up to 50 new creators a month. Run up to 10 public campaigns at once. Unlimited private campaigns. Campaign and creator insights. Dedicated support and onboarding.
+- Scale: $499 a month (or $4,990 a year, save 17%). For brands running a full creator program. Work with up to 100 new creators a month. Run up to 20 public campaigns at once. Unlimited private campaigns. Advanced campaign and creator insights. Priority support and onboarding.
+
+### Questions brands ask
+
+- **What is Linkable?** Linkable is where ecommerce brands find creators and run every collaboration in one place. You launch a campaign, creators apply, you choose who to work with, and Linkable handles samples, content, usage rights, tracking and commission payouts.
+- **How do I find the right creators?** Creators in our network apply to your campaign, and AI matching suggests the best fits with the reasons they suit your brand. You can also invite creators directly. You always choose who you work with.
+- **What can I offer creators?** Free product, a fixed fee, commission on sales, or any mix of the three. You set it per campaign.
+- **Do I need a Shopify store?** No. Linkable works without Shopify. Connect it when you want product sync, automatic audience discounts and sales attribution.
+- **How does the free trial work?** Every paid plan is free for the first 30 days, with full access to the platform. Change plan or cancel any time.
+- **What counts towards my monthly creator limit?** Each new creator you start working with in a month counts once. Applications and invitations are unlimited on every plan.
+- **What is the 2.5% fee?** It applies only to sales tracked through creator links. Everything else is covered by your plan.
+- **Who owns the content creators make?** You agree usage rights in each campaign, and they are saved with every piece of content in your library, so you always know where you can use it.
+- **Can your team run campaigns for us?** Yes. Our managed service plans your campaigns, finds the right creators and manages every collaboration from start to finish. Talk to our team to set it up.
+- **Is there a free plan?** Yes. On the Free plan you run unlimited private campaigns with your own creators, shared through your own application link, free forever. You only pay 2.5% of creator driven sales. On Free, Linkable doesn’t bring you creators or reach out to them for you. Upgrade any time to get creators from Linkable applying too.
+- **Can I change plan later?** Yes. Move up or down a plan, or cancel, whenever you need to.
+- **How does yearly billing work?** Pay once a year and save 17% compared with paying monthly.
+- **Which currency are prices in?** Prices are shown in US dollars. UK brands pay in British pounds, brands in Europe pay in euros, and everyone else pays in US dollars.
+- **How much does the managed service cost?** It depends on the campaigns you want us to run. Talk to our team and we’ll put together a plan for your brand.
+
+## For creators
+
+- [Brand Collaborations for Creators](https://www.linkable.link/creators): Discover gifted, paid and affiliate collaborations with ecommerce brands. Create content, promote products you love and earn through Linkable.
+- [Pitch Brands With AI: Land Brand Deals as a Creator](https://www.linkable.link/pitch): Find brands worth pitching, get a pitch written for you and sent to the person who runs partnerships, with follow ups handled. Free for 10 pitches a month.
+
+### Plans for creators
+
+- Free: $0. Every creator gets 10 pitches a month for free, follow ups included. Pitch Pro gives you unlimited pitches to brands on Linkable, 100 a month to any other brand, and Auto Pitch, which pitches 25 brands for you every week.
+- Pitch Pro: $19 a month (or $190 a year, save 17%).
+
+### Questions creators ask
+
+- **Is Linkable free for creators?** Yes. Creating a profile, applying to campaigns and pitching brands is always free.
+- **Do I need a big following?** No. Brands look for creators who fit their audience, not just the biggest numbers. Many campaigns are open to smaller creators.
+- **How do I get paid?** Commission is tracked through your own link and paid out to you. Fixed fees are agreed with each brand before you start.
+- **Which platforms can I use?** Instagram and TikTok. Connect your accounts and your audience insights are added to your profile automatically.
+- **What can I pitch?** Any idea for a brand on Linkable. Set the content, the deliverables and your rate, and the brand replies in your inbox.
+- **Who owns the content I make?** You do. Usage rights are agreed per campaign, so you always know how a brand can use your content.
+- **Can I work with brands outside the UK?** Yes. Brands on Linkable work with creators in many countries, and each campaign shows where it ships.
+- **Is Pitch free?** Yes. Every creator gets 10 pitches a month for free, follow ups included. Pitch Pro gives you unlimited pitches to brands on Linkable, 100 a month to any other brand, and Auto Pitch, which pitches 25 brands for you every week.
+- **Which brands can I pitch?** Any brand you want to work with, including brands that aren’t on Linkable yet. Linkable also suggests brands that fit your niche and audience.
+- **Who receives my pitch?** We find the person who runs creator partnerships at the brand and send your pitch to them, not to a generic inbox.
+- **Can I edit the pitch before it’s sent?** Yes. Everything AI drafts is yours to change, from the idea to what you’ll create and what you ask for.
+- **Can I cancel Pitch Pro?** Yes, any time. You keep Pro until the end of your billing period, then move back to the free plan.
+- **Is there a yearly plan?** Yes. Pay for Pitch Pro once a year and save 17% compared with paying monthly.
+
+## Articles for brands
+
+- [How to vet creators for brand safety risks](https://www.linkable.link/blog/vet-creators-brand-safety-risks): A practical process for checking creator content and conduct before you send product, not after a risky post goes live.
+- [How to run a creator ambassador programme for Shopify brands](https://www.linkable.link/blog/creator-ambassador-programme-shopify-brands): Build a creator ambassador programme for Shopify brands by treating repeat creators like a loyalty tier, not another gifting round.
+- [Should you pay creators before or after posting](https://www.linkable.link/blog/pay-creators-before-or-after-posting): Should you pay creators before or after posting? Paying upfront feels easier but it removes your only real tool for getting content delivered.
+- [How to batch creator content for a product drop](https://www.linkable.link/blog/batch-creator-content-product-drop): Here's how to batch creator content for a product drop so posts cluster in launch week instead of trickling in for weeks afterwards.
+- [How to negotiate creator rates as a small brand](https://www.linkable.link/blog/negotiate-creator-rates-small-brand): Learn how to negotiate creator rates as a small brand with counters that protect margin and keep the creator relationship intact.
+- [Creator Marketing for Vitamins and Wellness Brands](https://www.linkable.link/blog/creator-marketing-vitamins-wellness-brands): How vitamins and wellness brands can brief creators for gifted content that stays compliant and still sounds like the creator, not the label.
+- [Seasonal creator campaigns outside of Q4 cost less](https://www.linkable.link/blog/seasonal-creator-campaigns-outside-q4): Most brands pour their budget into Q4. Seasonal creator campaigns outside of Q4, like January resets, cost less and face far less competition for creators.
+- [Signs a creator campaign is underperforming before the report](https://www.linkable.link/blog/signs-creator-campaign-underperforming): Learn the early signs a creator campaign is underperforming, from low application rates to content with no sales, so you can fix it mid flight.
+- [How to Set Up Affiliate Tracking on Shopify](https://www.linkable.link/blog/how-to-set-up-affiliate-tracking-shopify): Learn how to set up affiliate tracking on Shopify so commission numbers match reality, covering unique links, discount codes and order sync.
+- [How to keep creators posting after launch](https://www.linkable.link/blog/keep-creators-posting-after-launch): Learn how to keep creators posting after launch with a follow-up plan that turns one post into months of content and sales.
+- [How to turn creator content into ad creative](https://www.linkable.link/blog/turn-creator-content-into-ad-creative): Learn how to spot creator posts that already proved themselves organically and turn them into paid ad creative that performs.
+- [Creator marketing for low ticket products that scales](https://www.linkable.link/blog/creator-marketing-low-ticket-products): Creator marketing for low ticket products relies on volume, not polish from a few creators. Here's the model that works.
+- [FTC disclosure rules for creator content and brand risk](https://www.linkable.link/blog/ftc-disclosure-rules-creator-content): FTC disclosure rules for creator content put compliance risk on your brand, not the creator. Here's how to manage it properly.
+- [Creator Marketing for Outdoor and Camping Brands](https://www.linkable.link/blog/creator-marketing-outdoor-camping-brands): Creator marketing for outdoor and camping brands works better when the brief centres on location and season, not studio-style posts.
+- [How to add creator content to product pages](https://www.linkable.link/blog/add-creator-content-product-pages): Learn how to add creator content to product pages so shoppers get proof right before they buy, not just in an ad they scrolled past.
+- [Creator Marketing for New Shopify Stores With No Reviews](https://www.linkable.link/blog/creator-marketing-new-shopify-stores): Creator marketing for new Shopify stores works differently with no reviews or orders. Here's how to build social proof before you have sales history.
+- [Creator Marketing for Subscription Box Brands That Fights Churn](https://www.linkable.link/blog/creator-marketing-subscription-box-brands): Creator marketing for subscription box brands works best when creators show the unboxing again each month, not just at launch.
+- [How to give creators feedback without scripting them](https://www.linkable.link/blog/give-creators-feedback-without-scripting): Learn how to give creators feedback that fixes tone and clarity without turning their post into a stiff, scripted advert.
+- [How to split creator budget across campaign types](https://www.linkable.link/blog/split-creator-budget-across-campaign-types): Learn how to split creator budget across gifting, paid and affiliate campaigns so you get content, reach and sales, not just free product.
+- [How to build a creator shortlist before outreach](https://www.linkable.link/blog/creator-shortlist-before-outreach): Learn how to build a creator shortlist before outreach so you message people who actually fit, not fifty strangers who never reply.
+- [Creator Marketing for Jewelry and Accessory Brands](https://www.linkable.link/blog/creator-marketing-jewelry-accessory-brands): Creator marketing for jewelry and accessory brands lives or dies on hand shots and lighting. Here's what the brief needs to say.
+- [How to set creator campaign goals before you launch](https://www.linkable.link/blog/how-to-set-creator-campaign-goals): Learn how to set creator campaign goals before launch so you know what a campaign needs to prove and can judge the results honestly.
+- [Creator content usage rights explained for DTC brands](https://www.linkable.link/blog/creator-content-usage-rights-explained): Creator content usage rights explained: gifted product does not automatically give you ad usage, so agree terms before you post anything paid.
+- [How to measure creator content quality beyond views](https://www.linkable.link/blog/measure-creator-content-quality-beyond-views): View counts don't tell you if content sold anything. Here's how to measure creator content quality beyond views and rehire the right people.
+- [How to spot fake followers before gifting product](https://www.linkable.link/blog/spot-fake-followers-before-gifting): Learn how to spot fake followers before gifting product, with a five-minute comment and posting-history check any brand can run.
+- [Creator marketing for baby and kids brands, done right](https://www.linkable.link/blog/creator-marketing-baby-kids-brands): Parents buy baby and kids products on trust, not price. Here's how creator marketing for baby and kids brands turns real households into sales.
+- [How to choose between exclusivity and multiple creator brands](https://www.linkable.link/blog/exclusivity-vs-multiple-creator-brands): How to choose between exclusivity and multiple creator brands, and why exclusivity usually costs more than it protects for a new programme.
+- [How to handle a creator who misses a deadline](https://www.linkable.link/blog/creator-missed-deadline-handling): How to handle a creator who misses a deadline without losing the campaign, by building slack and fallback content into the brief from day one.
+- [How to turn one creator campaign into a recurring programme](https://www.linkable.link/blog/turn-one-creator-campaign-recurring-programme): Turn a one-off creator campaign into a recurring programme with a scheduling change, not a new strategy or a bigger budget.
+- [How to track which creator content actually drives sales](https://www.linkable.link/blog/track-creator-content-drives-sales): Likes and views don't prove sales. Here's how to track which creator content actually drives revenue using unique links and codes.
+- [Creator marketing for candle and home fragrance brands](https://www.linkable.link/blog/creator-marketing-candle-home-fragrance-brands): Creator marketing for candle and home fragrance brands works through ritual and setting, not product demos. Here's how to brief and run it.
+- [What makes a creator application worth accepting](https://www.linkable.link/blog/creator-application-worth-accepting): Follower count rarely predicts good content. Learn what makes a creator application worth accepting, from fit signals to past work quality.
+- [How to renegotiate a creator deal that underperforms](https://www.linkable.link/blog/renegotiate-underperforming-creator-deal): Learn how to renegotiate a creator deal that underperforms before you cut the relationship, with a practical middle path between firing and flat fees.
+- [What creators want from ecommerce brands today](https://www.linkable.link/blog/what-creators-want-from-ecommerce-brands): What creators want from ecommerce brands: a clear brief, fair pay, fast product, respected usage rights and a real person to contact.
+- [How to brief creators on product claims without scripts](https://www.linkable.link/blog/brief-creators-product-claims): How to brief creators on product claims so content stays accurate and compliant, without writing word-for-word scripts for every post.
+- [How to scale creator marketing without an agency](https://www.linkable.link/blog/scale-creator-marketing-without-agency): Learn how to scale creator marketing without an agency using templates, creator tiers and automation, and when a managed service makes more sense.
+- [How to pay creators for your ecommerce campaigns](https://www.linkable.link/blog/how-to-pay-creators-ecommerce-campaigns): A clear guide to how to pay creators for ecommerce campaigns: gifted, paid and affiliate models, timing, and keeping payouts painless as you scale.
+- [Creator gifting etiquette for brands that creators respect](https://www.linkable.link/blog/creator-gifting-etiquette-for-brands): Learn creator gifting etiquette for brands: what makes creators say yes, what makes them decline, and how to make gifted product feel fair.
+- [How to run a creator campaign on a Shopify store](https://www.linkable.link/blog/run-creator-campaign-shopify-store): A step-by-step guide to running a creator campaign on a Shopify store, from picking the product to recruiting, shipping, approving and paying creators.
+- [Creator marketing mistakes ecommerce brands keep making](https://www.linkable.link/blog/creator-marketing-mistakes-ecommerce-brands): The creator marketing mistakes ecommerce brands make again and again, from vague briefs to no tracking, and how to fix each one.
+- [Creator marketing for home and lifestyle brands, done right](https://www.linkable.link/blog/creator-marketing-home-lifestyle-brands): Creator marketing for home and lifestyle brands works best through unboxing, room tours and seasonal timing, not quick product demos.
+- [Long term creator partnerships vs one off posts](https://www.linkable.link/blog/long-term-creator-partnerships-vs-one-off-posts): Compare long term creator partnerships vs one off posts, how ambassador deals compound, and when a single collaboration is the right call.
+- [Repurposing creator content across channels, properly](https://www.linkable.link/blog/repurposing-creator-content-across-channels): A practical guide to repurposing creator content across channels: product pages, email, ads and social, plus the rights and etiquette to get right.
+- [How to write a creator outreach message that gets replies](https://www.linkable.link/blog/creator-outreach-message-that-works): Learn how to write a creator outreach message that gets replies, with what to include, what to cut, and templates you can adapt today.
+- [Creator whitelisting and Spark Ads explained for DTC brands](https://www.linkable.link/blog/creator-whitelisting-spark-ads-explained): What creator whitelisting and Spark Ads are, what to agree with creators upfront, and when running ads through their handle beats brand ads.
+- [Creator marketing for fashion and activewear brands that sells](https://www.linkable.link/blog/creator-marketing-fashion-activewear-brands): Creator marketing for fashion and activewear brands means fit content, styling videos and clear returns data, not just outfit posts.
+- [How creator marketing attribution problems skew your data](https://www.linkable.link/blog/creator-marketing-attribution-problems): Creator marketing attribution problems make last-click reporting misleading. See what tracked sales show and how to decide with imperfect data.
+- [A Q4 creator campaign timeline that starts before Black Friday](https://www.linkable.link/blog/q4-creator-campaign-timeline): A practical q4 creator campaign timeline showing when to recruit, ship product, approve content and switch on affiliate links before Black Friday.
+- [TikTok vs Instagram creators for ecommerce: which to pick](https://www.linkable.link/blog/tiktok-vs-instagram-creators-ecommerce): Compare tiktok creators vs instagram creators for ecommerce by product type, funnel stage and content style, and how to run both without doubling your work.
+- [Creator applications vs outbound recruiting for your brand](https://www.linkable.link/blog/creator-applications-vs-outbound-recruiting): Creator applications vs outbound recruiting compared on cost, speed and quality, with a practical way to combine both for Shopify brands.
+- [Creator marketing for coffee and food brands that repeats](https://www.linkable.link/blog/creator-marketing-coffee-food-brands): Creator marketing for coffee and food brands works differently to skincare or apparel. Here's how to handle sampling, recipes and subscriptions.
+- [Creator marketing KPIs for ecommerce, stage by stage](https://www.linkable.link/blog/creator-marketing-kpis-for-ecommerce): Learn which creator marketing KPIs for ecommerce actually matter at each campaign stage, and which vanity metrics to stop reporting.
+- [Creator contract essentials for small brands](https://www.linkable.link/blog/creator-contract-essentials-small-brands): The handful of terms every small brand needs in a creator contract: usage rights, exclusivity, deliverables and payment timing, explained plainly.
+- [UGC vs influencer content for ads and how they differ](https://www.linkable.link/blog/ugc-vs-influencer-content-for-ads): UGC vs influencer content for ads serve different jobs. Learn the difference and how to brief creators so you get both, without paying twice.
+- [How to evaluate a creator before working with them](https://www.linkable.link/blog/how-to-evaluate-a-creator-before-working-with-them): Learn how to evaluate a creator before working with them: audience fit, past brand work, engagement quality and the red flags to check first.
+- [Creator marketing for supplement brands that stays compliant](https://www.linkable.link/blog/creator-marketing-for-supplement-brands): Learn how to run creator marketing for supplement brands that avoids medical claims and builds trust with credible creators.
+- [Discount codes vs affiliate links for creators](https://www.linkable.link/blog/discount-codes-vs-affiliate-links-creators): Discount codes vs affiliate links for creators: how tracking, leakage and customer experience differ, and how to use both without cutting into margin.
+- [A product seeding campaign strategy that actually gets posts](https://www.linkable.link/blog/product-seeding-campaign-strategy): A product seeding campaign strategy that gets creators posting: who to send to, what to expect, when to follow up, and how to measure results.
+- [Affiliate commission rates for creators that protect margin](https://www.linkable.link/blog/affiliate-commission-rates-for-creators): How to set affiliate commission rates for creators that feel worth the effort without eating your margin, and when to add a flat fee.
+- [Micro influencers for ecommerce brands: why smaller wins](https://www.linkable.link/blog/micro-influencers-for-ecommerce-brands): Why micro influencers for ecommerce brands often convert better than big names, how many to run, and how to manage them without a spreadsheet.
+- [Creator marketing for skincare brands: what actually sells](https://www.linkable.link/blog/creator-marketing-for-skincare-brands): How creator marketing for skincare brands works: routines, before-and-after rules, ingredient claims, and which creators actually drive sales.
+- [How to measure creator marketing ROI without guessing](https://www.linkable.link/blog/how-to-measure-creator-marketing-roi): Learn how to measure creator marketing ROI by separating content value, reach and tracked sales, and accepting what you cannot attribute.
+- [A creator brief template for ecommerce that stops reshoots](https://www.linkable.link/blog/creator-brief-template-for-ecommerce): A one-page creator brief template for ecommerce brands that gives creators everything they need to deliver usable content the first time.
+- [How to find creators for your Shopify brand every month](https://www.linkable.link/blog/how-to-find-creators-shopify-brand): How to find creators for your Shopify brand with a repeatable process: applications first, then targeted discovery, then hand-picked invitations.
+- [Gifted vs paid creator collaborations: which do you need](https://www.linkable.link/blog/gifted-vs-paid-creator-collaborations): Gifted vs paid creator collaborations explained: when free product works, when to pay, and how to move a creator up without overpaying.
+- [How to Onboard Your First 10 Creators on Linkable](https://www.linkable.link/blog/onboard-first-creators): Linkable helps ecommerce brands collaborate with creators more effectively, from discovering the right partners to sending products, launching campaigns, and tracking real performance in one place.
+- [How to Launch Your First Creator Campaign on Linkable](https://www.linkable.link/blog/launch-campaign-linkable): Linkable helps ecommerce brands collaborate with creators more effectively, from discovering the right partners to sending products, launching campaigns, and tracking real performance in one place.
+- [How Ecommerce Brands Can Build Creator Partnerships That Actually Drive Revenue](https://www.linkable.link/blog/creator-partnerships-that-sell): Linkable helps ecommerce brands collaborate with creators more effectively, from discovering the right partners to sending products, launching campaigns, and tracking real performance in one place.
+- [How to activate creators and drive your first sales on Linkable](https://www.linkable.link/blog/creator-activation-playbook): Linkable helps ecommerce brands collaborate with creators more effectively, from discovering the right partners to sending products, launching campaigns, and tracking real performance in one place.
+- [TikTok Shop vs Driving Traffic to Shopify: What’s the Smarter Play for DTC Brands?](https://www.linkable.link/blog/tiktok-shop-vs-driving-traffic-to-shopify): Linkable helps ecommerce brands collaborate with creators more effectively, from discovering the right partners to sending products, launching campaigns, and tracking real performance in one place.
+- [The Hidden Cost of Uncontrolled Discount Codes](https://www.linkable.link/blog/leaked-discount-codes): Linkable helps ecommerce brands collaborate with creators more effectively, from discovering the right partners to sending products, launching campaigns, and tracking real performance in one place.
+
+## More
+
+- [Blog](https://www.linkable.link/blog): every article, newest first
+- [Contact Linkable – Speak With the Team](https://www.linkable.link/contact): Get in touch with the Linkable team for support, partnerships, or press inquiries. We usually reply within 24 hours.
+- [Sign up as a brand](https://app.linkable.link/auth/brand/sign-up)
+- [Sign up as a creator](https://app.linkable.link/auth/signup)

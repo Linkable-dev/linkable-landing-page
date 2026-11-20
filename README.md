@@ -59,6 +59,13 @@ node tools/design/build.mjs                                    # templates + con
   `https://linkable-landing-page.vercel.app` (or `SITE_ORIGIN` if set), so previews never fetch images from the
   wrong site. When www.linkable.link points at Vercel, set `SITE_ORIGIN=https://www.linkable.link` on the Vercel
   project. Canonical links keep pointing at www.linkable.link.
+- **Search engines and AI assistants.** `public/robots.txt` names the AI crawlers and answer engines it lets in
+  (OpenAI, Anthropic, Perplexity, Google, Apple, Amazon, Meta). `public/llms.txt` is a plain-text map of the site
+  for them: what Linkable is, the plans, the pages' own questions and answers and every article, grouped for
+  brands and for creators. It is written by the build (`buildLlms` in `tools/design/build.mjs`), the blog sync
+  included, so do not edit it by hand. The same build adds JSON-LD to the static pages (`STRUCTURED`):
+  Organization and WebSite on home, the plans as offers on pricing and Pitch, and each page's FAQ section. All of
+  it is read from the values the page renders, so a price changed in the design changes there too.
 - **Fonts** are self-hosted (`satoshi-variable.woff2`, `fraunces-*.woff2`), so no request goes to Google before consent.
 - **Cookies.** Pages draw the design's cookie bar; `src/consent.js` keeps the tracking tags parked until the
   visitor accepts, and the footer's "Cookie settings" link (added by the importer) reopens the preferences dialog.
