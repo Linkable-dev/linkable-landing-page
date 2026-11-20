@@ -1,0 +1,107 @@
+{
+  "blocks": [
+    {
+      "text": "You approve a creator application on a Friday, product goes out Monday, and the content lands two weeks later. Somewhere in that gap, nobody actually looked at what this person posts when they are not talking about your brand. That is the moment brand safety problems start, and by the time the post is live, your options are take it down and cause a scene, or leave it up and hope nobody connects it to you.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you vet creators for brand safety risks",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "You vet creators for brand safety by checking three things before you send anything: what they have already posted, how they talk about brands and products, and whether their audience looks real. Do this at the application stage, not after content is filmed. A ten-minute scroll through a creator's last few months of posts catches most of the problems that would otherwise surface after you have already paid them or shipped product.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "The point is not to find a reason to reject everyone. Most applicants are fine. The point is to catch the small number who are not, before their next post is one you are tagged in.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What should you actually look at in their existing content",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Scroll their last few months of posts on the platform they would use for your campaign, not their bio or their follower count. Look for how they handle other brand partnerships: do they disclose them, or bury a paid post as if it were organic. Look for tone around controversial topics, political commentary, or anything that reads as a pattern rather than a one-off joke. One edgy caption months ago is not a reason to pass. A consistent pattern of inflammatory commentary, or content that sits oddly next to your product category, is.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Pay attention to comment sections too. A creator cannot fully control who comments, but if their posts regularly attract abusive or spammy comments that go unmoderated, that is the environment your product would sit in. For supplement, skincare or beauty brands this matters more, since claims and before-and-after content draw more scrutiny. Our post on [briefing creators on product claims](/blog/brief-creators-product-claims) covers the flip side of this: once you have vetted someone, you still need to brief them so they do not introduce new risk through what they say about your product.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Does follower count tell you anything about safety risk",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Not directly, but fake or bought followers correlate with other shortcuts, including recycled captions, stock disclosure language, and content that was clearly never watched by a real audience. Checking engagement against follower count is a basic filter: if a creator has a large following but comments and views look thin or generic, treat the application with more caution across the board, not just on the numbers. We have a full walkthrough of this in [how to spot fake followers before gifting](/blog/spot-fake-followers-before-gifting), which is worth running alongside the content check, not instead of it.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Should you put brand safety terms in the contract",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Yes, and this is the part most brands skip. A short clause giving you the right to request removal of content that misrepresents your product, or that you reasonably consider damaging to the brand, costs you nothing upfront and saves an argument later. It will not stop a creator from posting something off-brand on their own feed, but it does mean you are not negotiating from scratch when it happens. [Creator contract essentials for small brands](/blog/creator-contract-essentials-small-brands) has language you can adapt, and it is worth pairing with clear usage rights so you know what you can and cannot do with the content once it exists.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Where does this fit in your actual workflow",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Vetting has to happen before approval, not after content is submitted. If you are reviewing applications manually, build the content and engagement check into the same pass where you check fit and audience, so it never becomes a separate step that gets skipped when you are busy. On Linkable, applications and creator profiles sit in one place, so you can review a creator's history and engagement before approving them for a campaign, rather than discovering a problem after product has already shipped. Say you run a coffee subscription brand getting a wave of applications ahead of a seasonal push: a quick pass through each profile before approval catches the ones worth a closer look, and lets you move fast on the rest.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This is also where consistency matters more than speed. A brand that vets every applicant the same way, even when the queue is long, ends up with fewer surprises than one that vets carefully early on and then waves people through once the campaign gets busy.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What do you do if a problem shows up after the fact",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "If a creator posts something off-brand after you have already sent product or paid them, go back to what your contract actually allows before you react publicly. A calm, direct message asking for the post to come down, with your contract terms as backup, resolves most situations without drama. Save the public response, if you need one at all, for cases where the creator refuses or the content has already spread. Treat it as a reason to tighten your vetting process going forward rather than a one-off bad outcome, since the same gaps that let one risky creator through will let the next one through too.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Go through your current approved creator list this week and spend ten minutes on each one you have not personally scrolled recently. Build that check into your approval step for every new applicant from here, and if you are setting up a new campaign, [see how Linkable's application review fits into launching a campaign](/blog/launch-campaign-linkable) before you open applications.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "A few months of recent posts is usually enough to spot a pattern. You are looking for consistency in tone and disclosure, not auditing their entire account history.",
+      "q": "How far back should you check a creator's content history"
+    },
+    {
+      "a": "The vetting itself should be the same either way, since the brand safety risk comes from what they post, not how they are compensated. Paid deals usually justify a slightly deeper look simply because more budget is at stake.",
+      "q": "Should you vet creators differently for gifted versus paid collaborations"
+    },
+    {
+      "a": "Undisclosed paid partnerships are the clearest signal, since it shows how they will likely handle your own sponsored content and whether they take disclosure rules seriously at all.",
+      "q": "What is the single biggest red flag when vetting a creator"
+    },
+    {
+      "a": "A content and engagement check takes a few minutes per creator and fits inside your normal application review, so it should not meaningfully delay launch if it is built into that step rather than added afterward.",
+      "q": "Can brand safety vetting slow down how fast you launch a campaign"
+    }
+  ]
+}
