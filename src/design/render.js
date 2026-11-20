@@ -10,6 +10,11 @@
 //   onClick="{{fn}}"            becomes data-on="<n>"; the function is returned
 //                               in `handlers[n]` for the runtime to dispatch
 //
+// render(tree, vals, { link }) passes every href through `link` on its way
+// out (see links.js: the source tags on sign-up links). It is here, and not in
+// the build, because this is the one place both the static pages and the
+// browser's re-renders go through. Trusted HTML (<sc-html>) is not touched.
+//
 // It is a string renderer so the same code produces the static index.html at
 // build time (Node, no DOM) and every re-render in the browser.
 
@@ -66,7 +71,7 @@ const escAttr = (s) => escText(s).replace(/"/g, '&quot;');
 //   { tag, attrs: [[name, escapedValue]], kids } element
 //   { raw: 'html' }                             <sc-html> output
 // toHtml() serialises it; the static pages are that string.
-export function render(tree, vals) {
+export function render(tree, vals, { link } = {}) {
   const handlers = [];
   const scopes = [vals];
 
@@ -97,9 +102,17 @@ export function render(tree, vals) {
       }
       if (v === null || v === undefined) return null;
       if (typeof v === 'boolean') return [name, String(v)];
-      return [name, escAttr(String(v))];
+      return [name, escAttr(link && name === 'href' ? link(String(v)) : String(v))];
     }
-    if (!raw.includes('{{')) return [name, raw];
+    if (!raw.includes('{{')) {
+      // A link written out in the template. It is already HTML; only one that
+      // `link` changes is re-escaped, and the ones it changes hold no entity.
+      if (link && name === 'href' && !raw.includes('&')) {
+        const out = link(raw);
+        if (out !== raw) return [name, escAttr(out)];
+      }
+      return [name, raw];
+    }
     return [name, raw.replace(INLINE, (_, p) => escAttr(str(lookup(p))))];
   };
 

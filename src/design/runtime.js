@@ -198,11 +198,12 @@ function verify(root, html) {
   }
 }
 
-export function mount(root, tree, app) {
+// `opts` goes to render(): { link } rewrites hrefs (links.js).
+export function mount(root, tree, app, opts) {
   let handlers = [];
   let prev = null;
   const draw = () => {
-    const r = render(tree, app.renderVals());
+    const r = render(tree, app.renderVals(), opts);
     handlers = r.handlers;
     if (prev) patchChildren(root, prev, r.nodes);
     else morphHtml(root, r.html);

@@ -15,6 +15,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { compile, render } from '../../src/design/render.js';
+import { tagLink } from '../../src/design/links.js';
 import { AUTHOR, CONTENT, SITE, esc, fmtDate, heroInfo, readJson, renderArticle, wordCount } from '../blog/lib.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
@@ -101,7 +102,9 @@ async function renderBody(key, data) {
     app.state = { cookieDone: true };
     const vals = app.renderVals();
     compiled.get(key).vals = vals;
-    return render(tree, vals).html;
+    // Sign-up links carry the page they are on (src/design/links.js); the
+    // browser runtime renders with the same function.
+    return render(tree, vals, { link: (href) => tagLink(href, key) }).html;
   } finally {
     delete globalThis.__LK_DATA__;
   }

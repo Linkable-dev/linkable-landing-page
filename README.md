@@ -66,6 +66,12 @@ node tools/design/build.mjs                                    # templates + con
   included, so do not edit it by hand. The same build adds JSON-LD to the static pages (`STRUCTURED`):
   Organization and WebSite on home, the plans as offers on pricing and Pitch, and each page's FAQ section. All of
   it is read from the values the page renders, so a price changed in the design changes there too.
+- **Sign-up links.** Every link to the app's sign up says where it was clicked: `utm_source=website`,
+  `utm_medium=cta`, `utm_campaign=<page>` (`src/design/links.js`). The app stores these on a new account. A visitor
+  who arrives with a campaign of ours (`utm_*` or an ad click id) keeps that campaign on the sign-up links and on
+  the site's own links as they move between pages; nothing is stored on their device. `render.js` applies it to
+  every `href`, so the built pages and the browser's re-renders agree, and a design import cannot drop it. The box
+  under a blog article keeps its own tags (`postCta`), and log in links are never tagged.
 - **Fonts** are self-hosted (`satoshi-variable.woff2`, `fraunces-*.woff2`), so no request goes to Google before consent.
 - **Cookies.** Pages draw the design's cookie bar; `src/consent.js` keeps the tracking tags parked until the
   visitor accepts, and the footer's "Cookie settings" link (added by the importer) reopens the preferences dialog.
