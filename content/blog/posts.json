@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 6963599,
+      "alt": "Close-up of woman with red nails typing on a smartphone in bed. Cozy and relaxed setting.",
+      "src": "https://images.pexels.com/photos/6963599/pexels-photo-6963599.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/hands-of-a-woman-with-red-nails-using-a-smartphone-6963599/",
+      "query": "creator typing message phone bedroom",
+      "width": 6720,
+      "credit": {
+        "url": "https://www.pexels.com/@cottonbro",
+        "name": "cottonbro studio"
+      },
+      "height": 4480,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/6963599/pexels-photo-6963599.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/6963599/pexels-photo-6963599.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/how-to-pitch-a-brand-for-a-collaboration-6963599-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/how-to-pitch-a-brand-for-a-collaboration-6963599-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "how-to-pitch-a-brand-for-a-collaboration",
+    "title": "How to Pitch a Brand for a Collaboration That Gets a Reply",
+    "description": "Learn how to pitch a brand for a collaboration: pick the right fit, find the right person, lead with one idea, and follow up once.",
+    "excerpt": "The whole pitch in five moves: pick a brand that fits your content, find the right person, lead with one idea, say what you want, and follow up once.",
+    "date": "2026-11-21",
+    "updated": "2026-11-21",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "Close-up of woman with red nails typing on a smartphone in bed. Cozy and relaxed setting.",
+    "words": 719,
+    "source": "generated",
+    "keyword": "how to pitch a brand for a collaboration",
+    "category": "For creators",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 4549413,
       "alt": "A woman working remotely using a laptop and smartphone, focusing on social media content.",
       "src": "https://images.pexels.com/photos/4549413/pexels-photo-4549413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
