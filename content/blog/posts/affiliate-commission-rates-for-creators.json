@@ -41,7 +41,7 @@
       "items": null
     },
     {
-      "text": "On Linkable, affiliate sales are tracked through unique creator links and discount codes, with commission payouts handled through the platform, and tracked sales carry a 2.9% fee on top of your plan. That's a small number but it sits on top of whatever you're paying the creator, so build it into the margin calculation rather than treating it as a rounding error.",
+      "text": "On Linkable, affiliate sales are tracked through unique creator links and discount codes, with commission payouts handled through the platform, and tracked sales carry a 2.5% fee on top of your plan. That's a small number but it sits on top of whatever you're paying the creator, so build it into the margin calculation rather than treating it as a rounding error.",
       "type": "p",
       "items": null
     },
@@ -111,7 +111,7 @@
       "q": "Do I need to disclose commission rates to other creators"
     },
     {
-      "a": "Yes. Linkable charges 2.9% of tracked sales on every plan, on top of whatever commission you agree with the creator, so that fee needs to be built into your margin calculation.",
+      "a": "Yes. Linkable charges 2.5% of tracked sales on every plan, on top of whatever commission you agree with the creator, so that fee needs to be built into your margin calculation.",
       "q": "Does Linkable take a cut of affiliate sales on top of the creator's commission"
     },
     {
