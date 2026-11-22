@@ -62,6 +62,7 @@ Linkable has two sides. Brands run creator campaigns: the pages under "For brand
 
 ## Articles for brands
 
+- [Rank creator leaderboards for ecommerce campaigns by sales](https://www.linkable.link/blog/creator-leaderboards-ecommerce-campaigns): Rank creator leaderboards for ecommerce campaigns by tracked sales, not followers, to find the creators who will post again.
 - [How to vet creators for brand safety risks](https://www.linkable.link/blog/vet-creators-brand-safety-risks): A practical process for checking creator content and conduct before you send product, not after a risky post goes live.
 - [How to run a creator ambassador programme for Shopify brands](https://www.linkable.link/blog/creator-ambassador-programme-shopify-brands): Build a creator ambassador programme for Shopify brands by treating repeat creators like a loyalty tier, not another gifting round.
 - [Should you pay creators before or after posting](https://www.linkable.link/blog/pay-creators-before-or-after-posting): Should you pay creators before or after posting? Paying upfront feels easier but it removes your only real tool for getting content delivered.

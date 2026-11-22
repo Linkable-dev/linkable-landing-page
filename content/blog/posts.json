@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 7947999,
+      "alt": "Focused business analysis with charts and graphs on a laptop in a modern office setting.",
+      "src": "https://images.pexels.com/photos/7947999/pexels-photo-7947999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/person-using-black-and-gray-laptop-7947999/",
+      "query": "laptop spreadsheet creator rankings",
+      "width": 6655,
+      "credit": {
+        "url": "https://www.pexels.com/@rdne",
+        "name": "RDNE Stock project"
+      },
+      "height": 4437,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/7947999/pexels-photo-7947999.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/7947999/pexels-photo-7947999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/creator-leaderboards-ecommerce-campaigns-7947999-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/creator-leaderboards-ecommerce-campaigns-7947999-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "creator-leaderboards-ecommerce-campaigns",
+    "title": "Rank creator leaderboards for ecommerce campaigns by sales",
+    "description": "Rank creator leaderboards for ecommerce campaigns by tracked sales, not followers, to find the creators who will post again.",
+    "excerpt": "Follower-count leaderboards tell you who is popular. Sales-ranked leaderboards tell you who to invite back, and that is the only ranking worth keeping.",
+    "date": "2026-11-22",
+    "updated": "2026-11-22",
+    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
+    "imageAlt": "Focused business analysis with charts and graphs on a laptop in a modern office setting.",
+    "words": 861,
+    "source": "generated",
+    "keyword": "creator leaderboards for ecommerce campaigns",
+    "category": "Measurement",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 6963599,
       "alt": "Close-up of woman with red nails typing on a smartphone in bed. Cozy and relaxed setting.",
       "src": "https://images.pexels.com/photos/6963599/pexels-photo-6963599.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",

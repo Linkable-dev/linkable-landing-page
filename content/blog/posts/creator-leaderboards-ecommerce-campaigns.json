@@ -1,0 +1,112 @@
+{
+  "blocks": [
+    {
+      "text": "You run three or four campaigns a quarter and you keep a running list of who you have worked with. Somewhere on that list is a column for followers, maybe one for likes, and you reach for it every time a new product launches. The creators at the top keep getting invited back. Some of them never post again after the first box.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What is a creator leaderboard for ecommerce campaigns?",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "A creator leaderboard for ecommerce campaigns is a ranking of the creators you have worked with, ordered by a metric you choose, so you know who to prioritise for the next campaign. The metric most brands default to is followers or engagement rate. The metric that actually predicts who will show up and post again is tracked sales per creator, because it is the only number that reflects what their specific audience did after seeing the content, not how many people were exposed to it.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Why follower count leaderboards mislead you",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "A follower count is a static number a creator had before they ever touched your product. It tells you nothing about whether their audience buys skincare, trusts recommendations, or even watches to the end of a video. Two creators can have the same following and produce completely different results: one drives a steady trickle of orders through their link, the other drives views and nothing else.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Engagement rate is only a small improvement. Comments and likes measure whether people liked watching the video, not whether they bought anything. Say you run a small supplements brand and you send product to a creator with a large, chatty following. The post gets plenty of comments about the packaging and almost no clicks on the link in bio. Ranked by engagement, that creator looks like a star. Ranked by sales, they would sit near the bottom.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How to build a leaderboard ranked by tracked sales",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Start from the tracking you already have, not a new tool. If a creator worked on an affiliate link or a unique discount code, you have a sales number tied directly to them. If they worked gifted with no tracked link, you only have anecdotal signal, which is worth noting on the leaderboard but should not rank above tracked numbers.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "On [Linkable](/pricing), reporting shows tracked sales per creator alongside content delivered and audience reached, so the ranking is built from the same data you already review per campaign. If you are setting this up manually in a spreadsheet, pull three columns: tracked sales, cost (product, fee or commission paid), and sales per dollar spent. Sort by the last column, not the first, because a creator who generated a modest amount of sales from a free product is often a better bet than one who generated twice as much from a paid fee.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Give gifted creators a fair comparison",
+      "type": "h3",
+      "items": null
+    },
+    {
+      "text": "Gifted creators without a tracked link will always look worse on a pure sales leaderboard, even when their content is strong. Before you rank them against paid or affiliate creators, check whether they were ever given a trackable link or code. If not, that is a gap in your own process, not evidence the creator underperformed. Our [product seeding guide](/blog/product-seeding-campaign-strategy) covers how to set gifted creators up with tracking from the first box.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What the sales ranking tells you about who posts again",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Creators near the top of a sales-ranked leaderboard tend to be the ones who keep posting without being chased. They are not necessarily your biggest names. Often they are mid-sized accounts whose audience matches your product closely enough that a single post converts well, and that match is exactly what makes a second and third collaboration easy to agree on. A follower-ranked leaderboard hides this pattern completely, because it puts reach at the top rather than fit.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This is also the ranking worth checking before you plan next quarter's budget. Our post on [creator marketing KPIs](/blog/creator-marketing-kpis-for-ecommerce) walks through which stage-by-stage numbers matter before a campaign, during it and after, and tracked sales per creator is the number that should carry the most weight once a campaign has run its course.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How to use the leaderboard without turning it into a popularity contest",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "A leaderboard is a prioritisation tool, not a verdict. Do not drop a creator permanently because one product did not suit their audience. Check the leaderboard against the product category before you judge: a creator who sold well for a coffee brand's subscription box may rank lower on a one-off accessory drop simply because the offer did not fit.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Review the ranking after every campaign rather than once a quarter, so new creators get a fair chance to climb before you default back to the same names. If you are still working out which sales are actually attributable to which creator in the first place, our guide on [tracking which creator content drives sales](/blog/track-creator-content-drives-sales) is worth reading before you build the leaderboard at all.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Pull your last two campaigns this week, line up tracked sales against follower count for every creator involved, and see how much the order changes. If the names at the top move, you have been inviting the wrong people back.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Yes, but compare them on sales per dollar spent rather than raw sales, since a gifted creator only cost the product while a paid creator also cost a fee. Ranking by raw sales alone unfairly favours whichever group had the bigger budget behind them.",
+      "q": "Should gifted creators and paid creators go on the same leaderboard?"
+    },
+    {
+      "a": "Update it after every campaign rather than on a fixed schedule, so the ranking reflects recent performance and new creators are not stuck behind names from months ago.",
+      "q": "How often should I update a creator leaderboard?"
+    },
+    {
+      "a": "Keep the content and note it separately from the sales ranking. Strong content with weak sales usually points to an offer or audience mismatch rather than a creator worth dropping, and it may still be reusable as ad creative.",
+      "q": "What if a creator has strong content but low tracked sales?"
+    },
+    {
+      "a": "Linkable reporting shows tracked sales, content delivered and audience reached per creator and per campaign, which gives you the figures needed to rank creators by sales without building a separate spreadsheet.",
+      "q": "Does Linkable calculate a sales leaderboard automatically?"
+    }
+  ]
+}
