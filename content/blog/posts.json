@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 6684798,
+      "alt": "Person typing on a laptop indoors in Portugal, showing productivity and technology use.",
+      "src": "https://images.pexels.com/photos/6684798/pexels-photo-6684798.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/close-up-photo-of-person-using-computer-laptop-6684798/",
+      "query": "creator typing email laptop",
+      "width": 6016,
+      "credit": {
+        "url": "https://www.pexels.com/@kampus",
+        "name": "Kampus Production"
+      },
+      "height": 4016,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/6684798/pexels-photo-6684798.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/6684798/pexels-photo-6684798.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/brand-pitch-email-template-creators-6684798-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/brand-pitch-email-template-creators-6684798-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "brand-pitch-email-template-creators",
+    "title": "Brand pitch email template for creators that works",
+    "description": "A brand pitch email template for creators, with the reasoning behind each line and the mistakes that kill most pitches.",
+    "excerpt": "A short, specific template for pitching brands, plus the three things that make most creator pitches end up ignored: length, flattery and no real idea.",
+    "date": "2026-11-24",
+    "updated": "2026-11-24",
+    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
+    "imageAlt": "Person typing on a laptop indoors in Portugal, showing productivity and technology use.",
+    "words": 809,
+    "source": "generated",
+    "keyword": "brand pitch email template for creators",
+    "category": "For creators",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 7947999,
       "alt": "Focused business analysis with charts and graphs on a laptop in a modern office setting.",
       "src": "https://images.pexels.com/photos/7947999/pexels-photo-7947999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -3469,56 +3519,6 @@
   },
   {
     "heroImage": {
-      "id": 6593779,
-      "alt": "An Asian woman vlogs at home using a smartphone and ring light, perfect setup for influencers.",
-      "src": "https://images.pexels.com/photos/6593779/pexels-photo-6593779.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "page": "https://www.pexels.com/photo/woman-filming-vlog-on-smartphone-camera-6593779/",
-      "query": "content creator filming smartphone ring light",
-      "width": 6027,
-      "credit": {
-        "url": "https://www.pexels.com/@shvetsa",
-        "name": "Anna Shvets"
-      },
-      "height": 4018,
-      "srcset": [
-        {
-          "w": 940,
-          "url": "https://images.pexels.com/photos/6593779/pexels-photo-6593779.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-        },
-        {
-          "w": 1880,
-          "url": "https://images.pexels.com/photos/6593779/pexels-photo-6593779.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-        }
-      ],
-      "provider": "pexels",
-      "files": [
-        {
-          "path": "/assets/blog/how-to-find-creators-shopify-brand-6593779-940.jpg",
-          "w": 940
-        },
-        {
-          "path": "/assets/blog/how-to-find-creators-shopify-brand-6593779-1880.jpg",
-          "w": 1880
-        }
-      ]
-    },
-    "slug": "how-to-find-creators-shopify-brand",
-    "title": "How to find creators for your Shopify brand every month",
-    "description": "How to find creators for your Shopify brand with a repeatable process: applications first, then targeted discovery, then hand-picked invitations.",
-    "excerpt": "A repeatable sourcing process for Shopify brands: let creators apply, use discovery to fill the gaps, then invite by hand. Plus the signals that matter more than follower count.",
-    "date": "2026-09-08",
-    "updated": "2026-09-08",
-    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
-    "imageAlt": "An Asian woman vlogs at home using a smartphone and ring light, perfect setup for influencers.",
-    "words": 1348,
-    "source": "generated",
-    "keyword": "how to find creators for your shopify brand",
-    "category": "Sourcing",
-    "readMinutes": 7,
-    "author": "Linkable Team"
-  },
-  {
-    "heroImage": {
       "id": 6958455,
       "alt": "A person unboxes a small item from a cardboard package filled with crinkle paper, indoors.",
       "src": "https://images.pexels.com/photos/6958455/pexels-photo-6958455.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -3565,6 +3565,56 @@
     "keyword": "gifted vs paid creator collaborations",
     "category": "Strategy",
     "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
+      "id": 6593779,
+      "alt": "An Asian woman vlogs at home using a smartphone and ring light, perfect setup for influencers.",
+      "src": "https://images.pexels.com/photos/6593779/pexels-photo-6593779.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/woman-filming-vlog-on-smartphone-camera-6593779/",
+      "query": "content creator filming smartphone ring light",
+      "width": 6027,
+      "credit": {
+        "url": "https://www.pexels.com/@shvetsa",
+        "name": "Anna Shvets"
+      },
+      "height": 4018,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/6593779/pexels-photo-6593779.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/6593779/pexels-photo-6593779.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/how-to-find-creators-shopify-brand-6593779-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/how-to-find-creators-shopify-brand-6593779-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "how-to-find-creators-shopify-brand",
+    "title": "How to find creators for your Shopify brand every month",
+    "description": "How to find creators for your Shopify brand with a repeatable process: applications first, then targeted discovery, then hand-picked invitations.",
+    "excerpt": "A repeatable sourcing process for Shopify brands: let creators apply, use discovery to fill the gaps, then invite by hand. Plus the signals that matter more than follower count.",
+    "date": "2026-09-08",
+    "updated": "2026-09-08",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "An Asian woman vlogs at home using a smartphone and ring light, perfect setup for influencers.",
+    "words": 1348,
+    "source": "generated",
+    "keyword": "how to find creators for your shopify brand",
+    "category": "Sourcing",
+    "readMinutes": 7,
     "author": "Linkable Team"
   }
 ]
