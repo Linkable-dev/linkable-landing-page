@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 7180911,
+      "alt": "Two adults unpack and photograph a cardboard box using a smartphone indoors.",
+      "src": "https://images.pexels.com/photos/7180911/pexels-photo-7180911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/a-man-opening-a-brown-cardboard-box-7180911/",
+      "query": "creator filming product unboxing table",
+      "width": 6720,
+      "credit": {
+        "url": "https://www.pexels.com/@thirdman",
+        "name": "Thirdman"
+      },
+      "height": 4480,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/7180911/pexels-photo-7180911.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/7180911/pexels-photo-7180911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/creator-content-planning-product-launch-7180911-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/creator-content-planning-product-launch-7180911-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "creator-content-planning-product-launch",
+    "title": "Creator content planning for a product launch, done right",
+    "description": "Creator content planning for a product launch means content shot and approved before launch day, not posted live. Here's how to plan it.",
+    "excerpt": "If your plan is for creators to post on launch day, you have no plan. Here's how to get content shot, approved and banked before the date you actually care about.",
+    "date": "2026-11-26",
+    "updated": "2026-11-26",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "Two adults unpack and photograph a cardboard box using a smartphone indoors.",
+    "words": 1021,
+    "source": "generated",
+    "keyword": "creator content planning for a product launch",
+    "category": "Playbook",
+    "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 6684798,
       "alt": "Person typing on a laptop indoors in Portugal, showing productivity and technology use.",
       "src": "https://images.pexels.com/photos/6684798/pexels-photo-6684798.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -3519,56 +3569,6 @@
   },
   {
     "heroImage": {
-      "id": 6958455,
-      "alt": "A person unboxes a small item from a cardboard package filled with crinkle paper, indoors.",
-      "src": "https://images.pexels.com/photos/6958455/pexels-photo-6958455.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "page": "https://www.pexels.com/photo/man-unpacking-a-package-6958455/",
-      "query": "creator unboxing product package",
-      "width": 6720,
-      "credit": {
-        "url": "https://www.pexels.com/@karola-g",
-        "name": "https://kaboompics.com/"
-      },
-      "height": 4480,
-      "srcset": [
-        {
-          "w": 940,
-          "url": "https://images.pexels.com/photos/6958455/pexels-photo-6958455.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-        },
-        {
-          "w": 1880,
-          "url": "https://images.pexels.com/photos/6958455/pexels-photo-6958455.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-        }
-      ],
-      "provider": "pexels",
-      "files": [
-        {
-          "path": "/assets/blog/gifted-vs-paid-creator-collaborations-6958455-940.jpg",
-          "w": 940
-        },
-        {
-          "path": "/assets/blog/gifted-vs-paid-creator-collaborations-6958455-1880.jpg",
-          "w": 1880
-        }
-      ]
-    },
-    "slug": "gifted-vs-paid-creator-collaborations",
-    "title": "Gifted vs paid creator collaborations: which do you need",
-    "description": "Gifted vs paid creator collaborations explained: when free product works, when to pay, and how to move a creator up without overpaying.",
-    "excerpt": "A guide to deciding between gifted product and paid fees for creator collaborations, plus how to graduate a creator from one to the other without wasting budget.",
-    "date": "2026-09-08",
-    "updated": "2026-09-08",
-    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
-    "imageAlt": "A person unboxes a small item from a cardboard package filled with crinkle paper, indoors.",
-    "words": 949,
-    "source": "generated",
-    "keyword": "gifted vs paid creator collaborations",
-    "category": "Strategy",
-    "readMinutes": 5,
-    "author": "Linkable Team"
-  },
-  {
-    "heroImage": {
       "id": 6593779,
       "alt": "An Asian woman vlogs at home using a smartphone and ring light, perfect setup for influencers.",
       "src": "https://images.pexels.com/photos/6593779/pexels-photo-6593779.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -3615,6 +3615,56 @@
     "keyword": "how to find creators for your shopify brand",
     "category": "Sourcing",
     "readMinutes": 7,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
+      "id": 6958455,
+      "alt": "A person unboxes a small item from a cardboard package filled with crinkle paper, indoors.",
+      "src": "https://images.pexels.com/photos/6958455/pexels-photo-6958455.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/man-unpacking-a-package-6958455/",
+      "query": "creator unboxing product package",
+      "width": 6720,
+      "credit": {
+        "url": "https://www.pexels.com/@karola-g",
+        "name": "https://kaboompics.com/"
+      },
+      "height": 4480,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/6958455/pexels-photo-6958455.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/6958455/pexels-photo-6958455.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/gifted-vs-paid-creator-collaborations-6958455-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/gifted-vs-paid-creator-collaborations-6958455-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "gifted-vs-paid-creator-collaborations",
+    "title": "Gifted vs paid creator collaborations: which do you need",
+    "description": "Gifted vs paid creator collaborations explained: when free product works, when to pay, and how to move a creator up without overpaying.",
+    "excerpt": "A guide to deciding between gifted product and paid fees for creator collaborations, plus how to graduate a creator from one to the other without wasting budget.",
+    "date": "2026-09-08",
+    "updated": "2026-09-08",
+    "image": "ZnqzigwxjMB49H2WwyNeBgiGM",
+    "imageAlt": "A person unboxes a small item from a cardboard package filled with crinkle paper, indoors.",
+    "words": 949,
+    "source": "generated",
+    "keyword": "gifted vs paid creator collaborations",
+    "category": "Strategy",
+    "readMinutes": 5,
     "author": "Linkable Team"
   }
 ]

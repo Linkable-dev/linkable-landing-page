@@ -1,0 +1,132 @@
+{
+  "blocks": [
+    {
+      "text": "Say your launch date is a Tuesday. You sent product to a dozen creators two weeks ago, you have a countdown graphic ready, and your plan is for everyone to post that morning. Tuesday comes. Two creators post. One posts a story that disappears in a day. The rest are still filming, or waiting on a reshoot note, or they forgot the date entirely.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This is the normal result of planning a launch around posting instead of around content. By the time you notice the gap, the launch window has passed and there is nothing to show for the spend.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What does creator content planning for a product launch actually mean",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "It means every piece of content is filmed, reviewed and approved before launch day, so launch day is only a publishing schedule, not a production schedule. The creators still post on or around the date, but the content itself is already sitting in your library, checked against the brief, ready to go. Nothing about the launch depends on a creator finishing a video on time, because the videos are already finished.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "That shift changes what you are managing. Instead of chasing deliverables on the day, you are sequencing an asset library you already own. If a creator drops out or misses a deadline, you find out while you still have weeks to fix it, not hours.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Why does posting live on launch day go wrong so often",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Because launch day sits at the end of a chain with no slack in it. The product has to ship, the creator has to receive it, film it, edit it, and you have to approve it, all before a fixed date that does not move. Add a delayed courier, a creator who travels that week, or a brief that needed a reshoot, and the chain breaks somewhere near the end, which is exactly when you have no time left to recover.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Content made this way also tends to be worse. A creator rushing to hit a deadline posts the first cut rather than the best cut. If you want content you can reuse on ads and product pages later, read [how to turn creator content into ad creative](/blog/turn-creator-content-into-ad-creative) alongside this, because rushed content rarely survives that second life.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How far ahead should you brief and ship for a launch",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Work backwards from the date you actually care about, not the date product ships. Shipping, filming, a first draft, notes and a final approved cut each take time, and they happen one after another, not at once. If you only give creators the window between receiving product and launch day, you have compressed five steps into one.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "A brief that is clear the first time removes one of the biggest causes of delay: the reshoot. [A creator brief template for ecommerce that stops reshoots](/blog/creator-brief-template-for-ecommerce) covers what to specify up front so a creator does not need a second round just to get the shot right. Pair that with claims guidance so nothing in the first cut needs to be pulled for compliance reasons, which is its own kind of delay. See [how to brief creators on product claims without scripts](/blog/brief-creators-product-claims).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Build in a buffer for approval, not just production",
+      "type": "h3",
+      "items": null
+    },
+    {
+      "text": "Most brands plan time for filming and forget to plan time for their own review. If notes come back late, the creator's reshoot slot gets pushed, and the whole timeline slides. Block your own approval time on the calendar the same way you block the creator's deadline.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you keep a bank of approved content ready to publish",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Treat approval as a status, not a final step. As each piece of content clears review, it moves into a library sorted by format and by which part of launch week it is meant to cover, teaser, day one, and the week after. On Linkable, approved content sits in a library with usage rights tracked, so you can see at a glance what is ready and what still needs a decision, across every creator in the campaign rather than in a folder per person.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Having a bank also means launch day is no longer a single bet. If one creator's video underperforms in the first few hours, you already have others queued and can push a different one instead of waiting on a new one to be made.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What should the launch week schedule actually look like",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Spread posts across the days around launch rather than stacking them all on one morning. A teaser or two in the days before, the strongest pieces on launch day itself, and a second wave in the week after keeps the product visible past the first twenty-four hours, which is when most brands go quiet. Keeping creators posting past the launch date is its own problem worth planning for separately, covered in [how to keep creators posting after launch](/blog/keep-creators-posting-after-launch).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Say you run a small coffee brand launching a new blend. Instead of asking six creators to post on the same Tuesday, you schedule two teasers the Thursday before, three posts on launch day from your strongest creators, and the remaining content trickles out through the following week as reviews and restock updates. The product stays visible for two weeks instead of one morning, off a single batch of content made the same way.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "This is the same logic behind [a creator content approval process that doesn't slow you down](/blog/creator-content-approval-process): the goal is never speed on the day, it is having done the slow part early enough that the day itself is simple.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What to do this week",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Pick your launch date, then count backwards and write down the date product needs to ship, the date drafts are due, and the date final cuts need to be approved. If any of those dates is already this week, your timeline is too tight and you should either move the launch or trim the creator list to ones who can realistically hit it. Brands running their first launch campaign on Linkable can start from [how to launch your first creator campaign on Linkable](/blog/launch-campaign-linkable) and build the timeline into the brief from day one.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Enough that losing one or two does not break the schedule. Build a shortlist larger than your final list so a late creator does not leave a gap in launch week.",
+      "q": "How many creators do I need content from before launch day"
+    },
+    {
+      "a": "Have a backup piece from another creator ready to fill that slot, and move the late content to the second wave of posts after launch instead of dropping it.",
+      "q": "What if a creator's content isn't ready in time"
+    },
+    {
+      "a": "Yes. The timeline is about having content ready, not about how the creator is being paid. Apply the same brief and deadline structure to gifted, paid and affiliate creators in the same launch.",
+      "q": "Should gifted and paid creators follow the same content timeline"
+    },
+    {
+      "a": "In one shared library the whole team can see, sorted by creator and by which part of launch week each piece is meant for, so nothing is scattered across individual messages or folders.",
+      "q": "Where should approved launch content live before it's posted"
+    }
+  ]
+}
