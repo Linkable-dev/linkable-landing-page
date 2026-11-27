@@ -219,6 +219,56 @@
   },
   {
     "heroImage": {
+      "id": 6333750,
+      "alt": "Adult man wearing a beanie records a tech review vlog indoors using a smartphone and ring light.",
+      "src": "https://images.pexels.com/photos/6333750/pexels-photo-6333750.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/a-man-wearing-white-striped-shirt-and-brown-beanie-doing-a-vlog-6333750/",
+      "query": "creator filming product review phone",
+      "width": 6467,
+      "credit": {
+        "url": "https://www.pexels.com/@karola-g",
+        "name": "kaboompics"
+      },
+      "height": 4311,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/6333750/pexels-photo-6333750.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/6333750/pexels-photo-6333750.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/brand-deals-small-following-6333750-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/brand-deals-small-following-6333750-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "brand-deals-small-following",
+    "title": "How to get brand deals with a small following",
+    "description": "A practical guide to getting brand deals with a small following, built on fit, proof and the right pitch instead of follower count.",
+    "excerpt": "Small accounts land brand deals all the time, just not by chasing reach. Here is what to show instead, and which brands say yes first.",
+    "date": "2026-11-27",
+    "updated": "2026-11-27",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "Adult man wearing a beanie records a tech review vlog indoors using a smartphone and ring light.",
+    "words": 733,
+    "source": "generated",
+    "keyword": "how to get brand deals with a small following",
+    "category": "For creators",
+    "readMinutes": 4,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
       "id": 7180911,
       "alt": "Two adults unpack and photograph a cardboard box using a smartphone indoors.",
       "src": "https://images.pexels.com/photos/7180911/pexels-photo-7180911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -3569,56 +3619,6 @@
   },
   {
     "heroImage": {
-      "id": 6593779,
-      "alt": "An Asian woman vlogs at home using a smartphone and ring light, perfect setup for influencers.",
-      "src": "https://images.pexels.com/photos/6593779/pexels-photo-6593779.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "page": "https://www.pexels.com/photo/woman-filming-vlog-on-smartphone-camera-6593779/",
-      "query": "content creator filming smartphone ring light",
-      "width": 6027,
-      "credit": {
-        "url": "https://www.pexels.com/@shvetsa",
-        "name": "Anna Shvets"
-      },
-      "height": 4018,
-      "srcset": [
-        {
-          "w": 940,
-          "url": "https://images.pexels.com/photos/6593779/pexels-photo-6593779.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-        },
-        {
-          "w": 1880,
-          "url": "https://images.pexels.com/photos/6593779/pexels-photo-6593779.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-        }
-      ],
-      "provider": "pexels",
-      "files": [
-        {
-          "path": "/assets/blog/how-to-find-creators-shopify-brand-6593779-940.jpg",
-          "w": 940
-        },
-        {
-          "path": "/assets/blog/how-to-find-creators-shopify-brand-6593779-1880.jpg",
-          "w": 1880
-        }
-      ]
-    },
-    "slug": "how-to-find-creators-shopify-brand",
-    "title": "How to find creators for your Shopify brand every month",
-    "description": "How to find creators for your Shopify brand with a repeatable process: applications first, then targeted discovery, then hand-picked invitations.",
-    "excerpt": "A repeatable sourcing process for Shopify brands: let creators apply, use discovery to fill the gaps, then invite by hand. Plus the signals that matter more than follower count.",
-    "date": "2026-09-08",
-    "updated": "2026-09-08",
-    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
-    "imageAlt": "An Asian woman vlogs at home using a smartphone and ring light, perfect setup for influencers.",
-    "words": 1348,
-    "source": "generated",
-    "keyword": "how to find creators for your shopify brand",
-    "category": "Sourcing",
-    "readMinutes": 7,
-    "author": "Linkable Team"
-  },
-  {
-    "heroImage": {
       "id": 6958455,
       "alt": "A person unboxes a small item from a cardboard package filled with crinkle paper, indoors.",
       "src": "https://images.pexels.com/photos/6958455/pexels-photo-6958455.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -3665,6 +3665,56 @@
     "keyword": "gifted vs paid creator collaborations",
     "category": "Strategy",
     "readMinutes": 5,
+    "author": "Linkable Team"
+  },
+  {
+    "heroImage": {
+      "id": 6593779,
+      "alt": "An Asian woman vlogs at home using a smartphone and ring light, perfect setup for influencers.",
+      "src": "https://images.pexels.com/photos/6593779/pexels-photo-6593779.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "page": "https://www.pexels.com/photo/woman-filming-vlog-on-smartphone-camera-6593779/",
+      "query": "content creator filming smartphone ring light",
+      "width": 6027,
+      "credit": {
+        "url": "https://www.pexels.com/@shvetsa",
+        "name": "Anna Shvets"
+      },
+      "height": 4018,
+      "srcset": [
+        {
+          "w": 940,
+          "url": "https://images.pexels.com/photos/6593779/pexels-photo-6593779.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "w": 1880,
+          "url": "https://images.pexels.com/photos/6593779/pexels-photo-6593779.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+      ],
+      "provider": "pexels",
+      "files": [
+        {
+          "path": "/assets/blog/how-to-find-creators-shopify-brand-6593779-940.jpg",
+          "w": 940
+        },
+        {
+          "path": "/assets/blog/how-to-find-creators-shopify-brand-6593779-1880.jpg",
+          "w": 1880
+        }
+      ]
+    },
+    "slug": "how-to-find-creators-shopify-brand",
+    "title": "How to find creators for your Shopify brand every month",
+    "description": "How to find creators for your Shopify brand with a repeatable process: applications first, then targeted discovery, then hand-picked invitations.",
+    "excerpt": "A repeatable sourcing process for Shopify brands: let creators apply, use discovery to fill the gaps, then invite by hand. Plus the signals that matter more than follower count.",
+    "date": "2026-09-08",
+    "updated": "2026-09-08",
+    "image": "oKC7eyfhhTpy1BKnKx3AXAE53iE",
+    "imageAlt": "An Asian woman vlogs at home using a smartphone and ring light, perfect setup for influencers.",
+    "words": 1348,
+    "source": "generated",
+    "keyword": "how to find creators for your shopify brand",
+    "category": "Sourcing",
+    "readMinutes": 7,
     "author": "Linkable Team"
   }
 ]

@@ -127,8 +127,8 @@ Linkable has two sides. Brands run creator campaigns: the pages under "For brand
 - [Creator marketing for skincare brands: what actually sells](https://www.linkable.link/blog/creator-marketing-for-skincare-brands): How creator marketing for skincare brands works: routines, before-and-after rules, ingredient claims, and which creators actually drive sales.
 - [How to measure creator marketing ROI without guessing](https://www.linkable.link/blog/how-to-measure-creator-marketing-roi): Learn how to measure creator marketing ROI by separating content value, reach and tracked sales, and accepting what you cannot attribute.
 - [A creator brief template for ecommerce that stops reshoots](https://www.linkable.link/blog/creator-brief-template-for-ecommerce): A one-page creator brief template for ecommerce brands that gives creators everything they need to deliver usable content the first time.
-- [How to find creators for your Shopify brand every month](https://www.linkable.link/blog/how-to-find-creators-shopify-brand): How to find creators for your Shopify brand with a repeatable process: applications first, then targeted discovery, then hand-picked invitations.
 - [Gifted vs paid creator collaborations: which do you need](https://www.linkable.link/blog/gifted-vs-paid-creator-collaborations): Gifted vs paid creator collaborations explained: when free product works, when to pay, and how to move a creator up without overpaying.
+- [How to find creators for your Shopify brand every month](https://www.linkable.link/blog/how-to-find-creators-shopify-brand): How to find creators for your Shopify brand with a repeatable process: applications first, then targeted discovery, then hand-picked invitations.
 - [How to Onboard Your First 10 Creators on Linkable](https://www.linkable.link/blog/onboard-first-creators): Linkable helps ecommerce brands collaborate with creators more effectively, from discovering the right partners to sending products, launching campaigns, and tracking real performance in one place.
 - [How to Launch Your First Creator Campaign on Linkable](https://www.linkable.link/blog/launch-campaign-linkable): Linkable helps ecommerce brands collaborate with creators more effectively, from discovering the right partners to sending products, launching campaigns, and tracking real performance in one place.
 - [How Ecommerce Brands Can Build Creator Partnerships That Actually Drive Revenue](https://www.linkable.link/blog/creator-partnerships-that-sell): Linkable helps ecommerce brands collaborate with creators more effectively, from discovering the right partners to sending products, launching campaigns, and tracking real performance in one place.
@@ -138,6 +138,7 @@ Linkable has two sides. Brands run creator campaigns: the pages under "For brand
 
 ## Articles for creators
 
+- [How to get brand deals with a small following](https://www.linkable.link/blog/brand-deals-small-following): A practical guide to getting brand deals with a small following, built on fit, proof and the right pitch instead of follower count.
 - [Brand pitch email template for creators that works](https://www.linkable.link/blog/brand-pitch-email-template-creators): A brand pitch email template for creators, with the reasoning behind each line and the mistakes that kill most pitches.
 - [How to Pitch a Brand for a Collaboration That Gets a Reply](https://www.linkable.link/blog/how-to-pitch-a-brand-for-a-collaboration): Learn how to pitch a brand for a collaboration: pick the right fit, find the right person, lead with one idea, and follow up once.
 
