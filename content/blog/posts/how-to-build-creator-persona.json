@@ -1,0 +1,123 @@
+{
+  "blocks": [
+    {
+      "text": "You have a slide somewhere that says your ideal creator is twenty-five to thirty-four, female, interested in wellness, based in a city. Nobody on your team uses it. Nobody can use it, because it does not tell a creator what to film or tell you which application to accept when it lands in your inbox.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How do you build a creator persona",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "You build a creator persona by describing how someone films, talks to camera and edits, not who they are on paper. A persona should tell you things like: shoots handheld in natural light, talks fast and informally, cuts frequently, leads with a problem before showing the product, avoids scripted lines. Those details predict whether a creator's content will fit your brand. Age bracket and city do not.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Think of it as a casting brief for a short film, not a market research profile. A casting director does not pick actors by postcode. They pick by how someone moves, speaks and holds attention, because that is what ends up on screen.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Why demographics don't tell you enough",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Two creators can share an age, location and follower count and produce completely different content. One films in a single static shot with a calm voiceover. The other jump-cuts between five locations with captions doing half the talking. If your persona only describes the first creator's demographics, you will keep approving applications from the second type and then be surprised the content does not fit your product page or your ads.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Demographics also age badly. A brand that launched three years ago targeting a specific age bracket may now be selling to a completely different crowd, but if the persona was never updated, outreach keeps chasing the wrong people. Filming style and tone stay relevant longer because they describe a skill and a habit, not a snapshot of who happened to buy last quarter.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "What to include in a creator persona",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "A usable persona covers five things: how the creator films (handheld, tripod, studio setup), how they talk (scripted and polished, or loose and conversational), how they structure a video (hook first, product reveal first, story first), how heavily they edit (quick cuts and captions, or long unbroken takes), and what platform habits they already have (Reels, TikTok, long-form reviews).",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": null,
+      "type": "ul",
+      "items": [
+        "Filming style: handheld and imperfect, or tripod and composed",
+        "Tone: warm and chatty, or direct and informative",
+        "Structure: hook then product, or story then product",
+        "Edit pace: fast cuts with captions, or minimal editing",
+        "Platform habit: short vertical video, or longer explainer content"
+      ]
+    },
+    {
+      "text": "Write the persona as a short paragraph a creator themselves would recognise, not a list of boxes you ticked. If you cannot picture the finished video from the persona, it is not specific enough yet.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How to use the persona in outreach and briefs",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Say you run a small skincare brand and your persona is ",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "films in natural morning light, talks like she is telling a friend what worked, shows her actual routine rather than a single demo shot. You use that line in your outreach message instead of a follower count filter, and you use it again in your [creator brief](/blog/creator-brief-template-for-ecommerce) so the creator knows what tone you are expecting before they film anything.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "On Linkable, this persona also sharpens who you invite. The platform's matching looks at a creator's actual content and audience, so a persona written around filming style and tone gives you something concrete to check against when you [discover and invite creators](/pricing) rather than scrolling profiles by follower count alone. It also helps you read applications faster: you can [evaluate a creator](/blog/how-to-evaluate-a-creator-before-working-with-them) against the persona in a minute instead of guessing from a grid of thumbnails.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "How to test and refine the persona over time",
+      "type": "h2",
+      "items": null
+    },
+    {
+      "text": "Write the persona down, run a handful of collaborations against it, then check which creators actually matched it once the content arrived. Some will have described themselves one way in their profile and filmed something else entirely. That mismatch is useful: it tells you whether your persona description needs sharper language or whether your [outreach message](/blog/creator-outreach-message-that-works) is attracting the wrong people in the first place.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Keep the persona as a living paragraph, not a one-off exercise. Update it after a batch of content comes in, especially if one filming style is consistently converting better on your product pages or in ads than another. Over a few campaigns you will end up with a persona that reads less like a guess and more like a spec sheet for what works.",
+      "type": "p",
+      "items": null
+    },
+    {
+      "text": "Pull up your current creator targeting notes this week and rewrite them in terms of filming style, tone and structure instead of age and location. Use that version in your next outreach batch and compare how many applications actually match the brief before you send a single product out.",
+      "type": "p",
+      "items": null
+    }
+  ],
+  "faqs": [
+    {
+      "a": "Yes. A brand selling both a quick-fix product and a longer routine-based product often needs two personas, one for fast demonstrative content and one for slower, story-led content.",
+      "q": "Can one brand have more than one creator persona"
+    },
+    {
+      "a": "No. Follower count tells you reach, not fit. Keep reach requirements separate from the persona, which should only describe filming style, tone and structure.",
+      "q": "Should a creator persona mention follower count"
+    },
+    {
+      "a": "Review it after every few campaigns, or sooner if the content you are approving keeps missing the mark despite creators matching your stated audience.",
+      "q": "How often should a creator persona be updated"
+    },
+    {
+      "a": "No. The persona tells you who to approach, the brief tells the creator what to make. You still need both.",
+      "q": "Does a creator persona replace a creative brief"
+    }
+  ]
+}
